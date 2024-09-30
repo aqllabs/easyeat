@@ -1,0 +1,31 @@
+{
+    "products" : [
+        {
+            "id": "additional_points",
+            "name": "Additional Points"
+        }
+    ],
+    "prices": [
+        {
+            "unit_amount": 499,
+            "currency": "eur",
+            "product": "additional_points",
+            "nickname": "additional_50_points",
+            "metadata": {"points": 50}
+        },
+        {
+            "unit_amount": 999,
+            "currency": "eur",
+            "product": "additional_points",
+            "nickname": "additional_100_points",
+            "metadata": {"points": 100}
+        },
+        {
+            "unit_amount": 1499,
+            "currency": "eur",
+            "product": "additional_points",
+            "nickname": "additional_300_points",
+            "metadata": {"points": 300}
+        }
+    ]
+}

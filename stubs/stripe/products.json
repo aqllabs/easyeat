@@ -1,0 +1,14 @@
+[
+    {
+        "id": "starter",
+        "name": "Starter"
+    },
+    {
+        "id": "pro",
+        "name": "Pro"
+    },
+    {
+        "id": "elite",
+        "name": "Elite"
+    }
+]

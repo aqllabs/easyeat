@@ -1,0 +1,70 @@
+name: Laravel Unit Test
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - uses: actions/checkout@v4
+
+      - name: Copy .env
+        run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+      - name: Validate composer.json and composer.lock
+        run: composer validate --strict
+
+      - name: Cache Composer packages
+        id: composer-cache
+        uses: actions/cache@v3
+        with:
+          path: vendor
+          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-php-
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      # Install Node.js and npm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      # Install npm packages
+      - name: Install npm dependencies
+        run: npm install
+
+      # Run build script
+      - name: Build assets
+        run: npm run build
+
+      - name: Generate key
+        run: php artisan key:generate
+
+      - name: Directory Permissions
+        run: chmod -R 777 storage bootstrap/cache
+
+      - name: Create Database
+        run: |
+          mkdir -p database
+          touch database/database.sqlite
+
+      - name: Clear Caches
+        run: |
+          php artisan cache:clear
+          php artisan config:clear
+          php artisan optimize:clear
+
+      - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
+        run: php artisan test
