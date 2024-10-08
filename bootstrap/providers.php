@@ -7,4 +7,5 @@ return [
     App\Providers\JetstreamServiceProvider::class,
     App\Providers\LemonSqueezyServiceProvider::class,
     App\Providers\OpenAIServiceProvider::class,
+    App\Providers\VoltServiceProvider::class,
 ];

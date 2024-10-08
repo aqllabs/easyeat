@@ -17,6 +17,16 @@
         "vite": "^5.0"
     },
     "dependencies": {
-        "puppeteer": "^22.7.1"
+        "@meilisearch/instant-meilisearch": "^0.20.1",
+        "@vitejs/plugin-react": "^4.3.2",
+        "jotai": "^2.10.0",
+        "leaflet": "^1.9.4",
+        "leaflet.markercluster": "^1.5.3",
+        "puppeteer": "^22.7.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-instantsearch": "^7.13.2",
+        "react-leaflet": "^4.2.1",
+        "react-leaflet-markercluster": "^3.0.0-rc1"
     }
 }
