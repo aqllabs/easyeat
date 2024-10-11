@@ -1,4 +1,3 @@
-
 [phases.setup]
 nixPkgs = ["...", "python311Packages.supervisor"]
 
@@ -13,6 +12,9 @@ cmds = [
 
 [start]
 cmd = '/assets/start.sh'
+
+[variables]
+IS_LARAVEL = "true"
 
 [staticAssets]
 "start.sh" = '''
