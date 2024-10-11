@@ -6,7 +6,7 @@
     <livewire:content-with-image/>
     @livewire('problem', [
         'heading' => 'Dine with Confidence: Embracing Dietary Diversity with EasyEat',
-        'text' => 'Navigating dietary restrictions while dining out can be challenging. EasyEat is here to transform your dining experience by connecting you with restaurants that cater to your specific needs. Whether you're gluten-free, vegan, have allergies, or follow any other dietary regimen, we've got you covered.',
+        'text' => "Navigating dietary restrictions while dining out can be challenging. EasyEat is here to transform your dining experience by connecting you with restaurants that cater to your specific needs. Whether you're gluten-free, vegan, have allergies, or follow any other dietary regimen, we've got you covered.",
         'steps' => [
             ['emoji' => '🔍', 'text' => 'Find Suitable Restaurants: Easily discover dining options that match your dietary requirements.'],
             ['emoji' => '🍽️', 'text' => 'Detailed Menu Information: Access comprehensive menu details and ingredient lists.'],

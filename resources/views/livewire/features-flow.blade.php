@@ -7,10 +7,10 @@
 
     <div class="container">
         <div class="flex flex-col items-center">
-            <h2 class="inline text-4xl font-semibold">{{ __('Features Flow') }}</h2>
+            <h2 class="inline text-4xl font-semibold">{{ __('How EasyEat Works') }}</h2>
 
             <p class="mt-4 text-lg sm:text-center">
-                {{ __('In this section you can show your product features, with image and descriptions') }}
+                {{ __('Discover how EasyEat helps you find the perfect dining spot for your dietary needs') }}
             </p>
         </div>
 
@@ -18,40 +18,38 @@
             <div
                 class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl"
             >
-                <img alt="saas img" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600" />
+                <img alt="Restaurant Search" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600x400?text=Restaurant+Search" />
             </div>
 
             <div class="lg:mt-8">
-                <div class="badge badge-primary">{{ __('Dashboard') }}</div>
-                <h3 class="mt-2 text-3xl font-semibold">{{ __('Admin Panel') }}</h3>
+                <div class="badge badge-primary">{{ __('Search') }}</div>
+                <h3 class="mt-2 text-3xl font-semibold">{{ __('Find Restaurants') }}</h3>
                 <p class="mt-2 text-base font-medium">
-                    {{ __('Control your web app directly from Admin Panel') }}
+                    {{ __('Easily search for restaurants that cater to your specific dietary needs') }}
                 </p>
 
                 <ul class="mt-4 list-inside list-disc text-base">
-                    <li>{{ __('Users Dashboard') }}</li>
-                    <li>{{ __('Widgets') }}</li>
-                    <li>{{ __('Roles') }}</li>
-                    <li>{{ __('Stats') }}</li>
+                    <li>{{ __('Filter by dietary restrictions') }}</li>
+                    <li>{{ __('Search by location') }}</li>
+                    <li>{{ __('View detailed menu information') }}</li>
+                    <li>{{ __('Read user reviews') }}</li>
                 </ul>
             </div>
         </div>
 
         <div class="mt-8 grid gap-8 lg:mt-20 lg:grid-cols-2 lg:gap-12">
             <div>
-                <div class="badge badge-primary">{{ __('Control') }}</div>
-                <h3 class="mt-2 text-3xl font-semibold">{{ __('Managing Entities') }}</h3>
+                <div class="badge badge-primary">{{ __('Personalize') }}</div>
+                <h3 class="mt-2 text-3xl font-semibold">{{ __('Customize Your Profile') }}</h3>
                 <p class="mt-2 text-base">
-                    {{ __('Our SaaS platform offers seamless management, allowing you to effortlessly oversee
-                    users, projects, and resources in one centralized hub. Gain real-time insights,
-                    streamline workflows, and optimize resource allocation for unparalleled efficiency.') }}
+                    {{ __('Create a personalized profile to get tailored restaurant recommendations based on your dietary preferences and restrictions.') }}
                 </p>
 
                 <ul class="mt-4 list-inside list-disc text-base">
-                    <li>{{ __('User-Friendly Tools') }}</li>
-                    <li>{{ __('Resource Management') }}</li>
-                    <li>{{ __('Task Assignment') }}</li>
-                    <li>{{ __('Robust Control') }}</li>
+                    <li>{{ __('Set dietary preferences') }}</li>
+                    <li>{{ __('Save favorite restaurants') }}</li>
+                    <li>{{ __('Get personalized recommendations') }}</li>
+                    <li>{{ __('Track your dining history') }}</li>
                 </ul>
             </div>
 
@@ -59,7 +57,7 @@
                 <div
                     class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl"
                 >
-                    <img alt="saas img" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600" />
+                    <img alt="User Profile" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600x400?text=User+Profile" />
                 </div>
             </div>
         </div>
@@ -68,23 +66,21 @@
             <div
                 class="overflow-hidden rounded-lg bg-base-200 shadow-md transition-all hover:shadow-xl"
             >
-                <img alt="saas img" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600" />
+                <img alt="Community Reviews" class="overflow-hidden rounded-ss-lg" src="https://placehold.co/600x400?text=Community+Reviews" />
             </div>
 
             <div class="lg:mt-8">
-                <div class="badge badge-primary">{{ __('Workflows') }}</div>
-                <h3 class="mt-2 text-3xl font-semibold">{{ __('Seamless Integrations') }}</h3>
+                <div class="badge badge-primary">{{ __('Community') }}</div>
+                <h3 class="mt-2 text-3xl font-semibold">{{ __('Share Your Experience') }}</h3>
                 <p class="mt-2 text-base">
-                    {{ __('Connect key tools seamlessly with our SaaS platform, streamlining your processes and
-                    boosting productivity. Experience a cohesive digital ecosystem that empowers your
-                    business for innovation and growth.') }}
+                    {{ __('Contribute to our community by sharing your dining experiences and helping others with similar dietary needs.') }}
                 </p>
 
                 <ul class="mt-4 list-inside list-disc text-base">
-                    <li>{{ __('Real-time chat with Slack') }}</li>
-                    <li>{{ __('Engage your customer with Email') }}</li>
-                    <li>{{ __('Getting order from Amazon') }}</li>
-                    <li>{{ __('Using Ai from OpenAI') }}</li>
+                    <li>{{ __('Write detailed reviews') }}</li>
+                    <li>{{ __('Rate restaurants for dietary accommodations') }}</li>
+                    <li>{{ __('Share photos of menu items') }}</li>
+                    <li>{{ __('Engage with other community members') }}</li>
                 </ul>
             </div>
         </div>
