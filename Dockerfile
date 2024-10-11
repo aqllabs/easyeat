@@ -1,0 +1,21 @@
+FROM serversideup/php:8.3-fpm-nginx
+
+ENV PHP_OPCACHE_ENABLE=1
+
+USER root
+
+RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
+RUN apt-get install -y nodejs
+
+# Install required PHP extensions
+RUN apt-get update && apt-get install -y \
+    libicu-dev \
+    && docker-php-ext-install intl bcmath exif
+
+COPY --chown=www-data:www-data . /var/www/html
+
+USER www-data
+
+RUN npm install
+RUN composer install --no-interaction --optimize-autoloader --no-dev --ignore-platform-reqs
+RUN npm run build

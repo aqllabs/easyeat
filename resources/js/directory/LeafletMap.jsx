@@ -10,7 +10,7 @@ import {
 import L from "leaflet";
 import { hoveredIdAtom, clickedIdAtom } from "@/Atoms";
 import { useAtomValue, useSetAtom } from "jotai";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export function CustomGeoSearch() {
     // Hong Kong coordinates
@@ -47,6 +47,8 @@ function Restaurants() {
     const map = useMap();
 
     const [mapBounds, setMapBounds] = useState(null);
+    const [selectedItem, setSelectedItem] = useState(null);
+    const markerRefs = useRef({});
 
     const onViewChange = ({ target }) => {
         const newBounds = {
@@ -94,8 +96,15 @@ function Restaurants() {
         if (clickedItem) {
             map.setView(clickedItem._geoloc, 15, { animate: true });
             setClickedId(null);
+            setSelectedItem(clickedItem);
+
+            // Open the popup for the clicked item
+            const marker = markerRefs.current[clickedItem.objectID];
+            if (marker) {
+                marker.openPopup();
+            }
         }
-    }, [clickedItemId, items, map]);
+    }, [clickedItemId, items, map, setClickedId]);
 
     return (
         <>
@@ -115,6 +124,11 @@ function Restaurants() {
                     zIndexOffset={item.id === hoveredItemId ? 25 : 1}
                     riseOffset={item.id === hoveredItemId ? 25 : 0}
                     icon={item.id === hoveredItemId ? customIcon : markerIcon}
+                    ref={(ref) => {
+                        if (ref) {
+                            markerRefs.current[item.objectID] = ref;
+                        }
+                    }}
                 >
                     <Popup>
                         <strong>{item.name}</strong>

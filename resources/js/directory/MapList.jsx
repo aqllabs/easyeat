@@ -5,7 +5,12 @@ import {
     useRefinementList,
 } from "react-instantsearch";
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
-import { RefinementList, InfiniteHits, Configure } from "react-instantsearch";
+import {
+    RefinementList,
+    Hits,
+    Configure,
+    Pagination,
+} from "react-instantsearch";
 import { CustomGeoSearch } from "./LeafletMap.jsx";
 import { useSetAtom } from "jotai";
 import { hoveredIdAtom, clickedIdAtom } from "@/Atoms";
@@ -43,27 +48,23 @@ function MapList({ wire, ...props }) {
                 <StickyHeader />
                 <VirtualFilters />
                 <div className="flex flex-col md:flex-row">
-                    <div className="max-h-[calc(100dvh-4rem)] min-h-[calc(100dvh-4rem)] bg-base-200 sm:hidden md:block  w-full overflow-y-auto md:w-1/2">
+                    <div className="max-h-[calc(100dvh-4rem)] min-h-[calc(100dvh-4rem)] bg-base-200 sm:hidden md:block w-full overflow-y-auto md:w-1/2">
                         <NoResultsBoundary fallback={<NoResults />}>
-                            <InfiniteHits
-                                cache={sessionStorageCache}
+                            <Hits
                                 hitComponent={Hit}
                                 classNames={{
                                     root: "flex flex-col justify-center",
                                     list: "p-4",
                                     item: "mt-2",
-                                    loadMore:
-                                        "btn btn-primary mt-2 mb-2 mx-auto ",
                                 }}
-                                showPrevious={false}
-                                bannerComponent={() => (
-                                    <div className="alert alert-info">
-                                        No results
-                                    </div>
-                                )}
-                                translations={{
-                                    showMoreButtonText: "Load More",
-                                    disabledLoadMore: "No more results",
+                            />
+                            <Pagination
+                                classNames={{
+                                    root: "flex flex-row justify-center my-4",
+                                    list: "flex flex-row",
+                                    item: "mx-1",
+                                    link: "btn btn-sm",
+                                    selectedItem: "btn-primary",
                                 }}
                             />
                         </NoResultsBoundary>
@@ -72,7 +73,7 @@ function MapList({ wire, ...props }) {
                         <CustomGeoSearch />
                     </div>
                 </div>
-                <Configure hitsPerPage={40} />
+                <Configure hitsPerPage={20} />
             </InstantSearch>
         </div>
     );

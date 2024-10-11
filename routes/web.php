@@ -14,6 +14,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Middleware\Subscribed;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Livewire\RestaurantDirectory;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('sitemap', [SitemapController::class, 'index'])->name('sitemap');

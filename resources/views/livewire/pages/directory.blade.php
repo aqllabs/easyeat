@@ -3,7 +3,7 @@
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
 
-new #[Layout('layouts.app')]
+new #[Layout('layouts.guest')]
 class extends Component {
     //
 }; ?>
