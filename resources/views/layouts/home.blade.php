@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('seo.title', config('app.name', 'Laravel'))</title>
+    <title>@yield('seo.title', config('app.name', 'EasyEat'))</title>
 
     <meta name="description" content="@yield('seo.description', 'Your default description goes here')">
     <meta name="keywords" content="@yield('seo.keywords', 'your, default, keywords')">
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('seo.title', config('app.name', 'Laravel'))">
+    <meta name="twitter:title" content="@yield('seo.title', config('app.name', 'EasyEat'))">
     <meta name="twitter:description" content="@yield('seo.description', 'Your default description goes here')">
     <meta name="twitter:image" content="@yield('seo.image', 'Your default description goes here')">
     <meta name="twitter:site" content="@yourtwitterhandle">
     <!-- OG-->
-    <meta name="og:title" content="@yield('seo.title', config('app.name', 'Laravel'))">
+    <meta name="og:title" content="@yield('seo.title', config('app.name', 'EasyEat'))">
     <meta name="og:description" content="@yield('seo.description', 'Your default description goes here')">
     <meta name="og:image" content="@yield('seo.image', 'Your default description goes here')">
 
