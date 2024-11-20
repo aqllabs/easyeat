@@ -18,12 +18,28 @@ function convertToJsonEncode($match)
     return "'images' => " . ($arr ? "json_encode(" . var_export($arr, true) . ")" : "json_encode([])");
 }
 
+// Function to process remarks field
+function processRemarks($match)
+{
+    // Remove escaped quotes and slashes
+    $str = str_replace(['\\"', '\\/'], ['"', '/'], $match[1]);
+
+    // If it's just empty quotes, return empty string
+    if ($str === '""') {
+        return "'remarks' => ''";
+    }
+
+    // Otherwise, properly encode any HTML/content
+    return "'remarks' => " . json_encode($str);
+}
+
 // Process images field
 $pattern = "/'images' => '(.*?)'/s";
 $content = preg_replace_callback($pattern, 'convertToJsonEncode', $content);
 
 // Process remarks field
-$content = str_replace("'remarks' => '\"\"'", "'remarks' => ''", $content);
+$pattern = "/'remarks' => '(.*?)'/s";
+$content = preg_replace_callback($pattern, 'processRemarks', $content);
 
 // Save the processed file
 file_put_contents($outputFile, $content);
