@@ -10,6 +10,8 @@ export default {
         "./storage/framework/views/*.php",
         "./resources/views/**/*.blade.php",
         "./resources/js/**/*.jsx",
+        "./vendor/livewire/flux-pro/stubs/**/*.blade.php",
+        "./vendor/livewire/flux/stubs/**/*.blade.php",
     ],
 
     theme: {
@@ -23,6 +25,6 @@ export default {
     plugins: [forms, typography, require("daisyui")],
 
     daisyui: {
-        themes: ["cupcake"],
+        themes: ["bumblebee"],
     },
 };

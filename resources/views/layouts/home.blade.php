@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('seo.title', config('app.name', 'EasyEat'))</title>
+    <title>@yield('seo.title', config('app.name', 'EasyEat - Find Restaurants for Your Dietary Needs'))</title>
 
-    <meta name="description" content="@yield('seo.description', 'Your default description goes here')">
-    <meta name="keywords" content="@yield('seo.keywords', 'your, default, keywords')">
+    <meta name="description" content="@yield('seo.description', 'Discover restaurants that cater to your dietary requirements. Find gluten-free, vegan, halal, kosher, and allergy-friendly dining options near you.')">
+    <meta name="keywords" content="@yield('seo.keywords', 'dietary restrictions, food allergies, gluten-free restaurants, vegan dining, halal food, kosher restaurants, allergen-free, dietary requirements')">
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('seo.title', config('app.name', 'EasyEat'))">
-    <meta name="twitter:description" content="@yield('seo.description', 'Your default description goes here')">
-    <meta name="twitter:image" content="@yield('seo.image', 'Your default description goes here')">
-    <meta name="twitter:site" content="@yourtwitterhandle">
-    <!-- OG-->
-    <meta name="og:title" content="@yield('seo.title', config('app.name', 'EasyEat'))">
-    <meta name="og:description" content="@yield('seo.description', 'Your default description goes here')">
-    <meta name="og:image" content="@yield('seo.image', 'Your default description goes here')">
+    <meta name="twitter:title" content="@yield('seo.title', config('app.name', 'EasyEat - Dietary-Friendly Restaurant Finder'))">
+    <meta name="twitter:description" content="@yield('seo.description', 'Find the perfect restaurant for your dietary needs. Browse reviews and menus filtered by allergies, restrictions, and preferences.')">
+    <meta name="twitter:image" content="@yield('seo.image', asset('images/easyeat-social-share.jpg'))">
+    <meta name="twitter:site" content="@EasyEat">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="@yield('seo.title', config('app.name', 'EasyEat - Dietary-Friendly Restaurant Finder'))">
+    <meta property="og:description" content="@yield('seo.description', 'Find the perfect restaurant for your dietary needs. Browse reviews and menus filtered by allergies, restrictions, and preferences.')">
+    <meta property="og:image" content="@yield('seo.image', asset('images/easyeat-social-share.jpg'))">
+    <meta property="og:type" content="website">
 
     <link rel="canonical" href="{{ request()->url() }}">
 
@@ -46,6 +47,8 @@
 
     <!-- Styles -->
     @livewireStyles
+    @fluxStyles
+
 </head>
 <body>
 <x-banner/>
@@ -56,10 +59,12 @@
     {{ $slot }}
 </div>
 
-<livewire:footer/>
-<livewire:copyright/>
+{{--<livewire:footer/>--}}
+{{--<livewire:copyright/>--}}
 
 @livewireScripts
+@fluxScripts
+
 
 {{--for SweetAlert2--}}
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

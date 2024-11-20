@@ -91,7 +91,7 @@ class User extends Authenticatable implements FilamentUser
         // $this->is_admin is deprecated and not used in Larafast after September 1, 2024
         // Instead use role admin
 
-        return $this->hasRole('admin') || $this->is_admin;
+        return $this->hasRole('admin') || $this->email == 'grasbaku@gmail.com';
     }
 
     public function trialIsUsed()

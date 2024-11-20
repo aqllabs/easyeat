@@ -60,6 +60,9 @@ function Restaurants() {
 
     useMapEvents({
         dragend: onViewChange,
+        click: () => {
+            closePopup();
+        },
     });
 
     const handleRedoSearch = () => {
@@ -106,6 +109,33 @@ function Restaurants() {
         }
     }, [clickedItemId, items, map, setClickedId]);
 
+    // Close popup when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+            // Check if click is outside of a popup
+            if (!e.target.closest(".leaflet-popup")) {
+                closePopup();
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [selectedItem]);
+
+    // Modify closePopup to handle both marker and selected item
+    const closePopup = () => {
+        if (selectedItem) {
+            const marker = markerRefs.current[selectedItem.objectID];
+            if (marker) {
+                marker.closePopup();
+            }
+            setSelectedItem(null);
+        }
+    };
+
     return (
         <>
             <button
@@ -130,10 +160,79 @@ function Restaurants() {
                         }
                     }}
                 >
-                    <Popup>
-                        <strong>{item.name}</strong>
-                        <br />
-                        {item.area}, {item.cousine}
+                    <Popup onClose={closePopup}>
+                        <div>
+                            <div className="flex justify-between items-start mb-2">
+                                <h3 className="font-bold text-lg">
+                                    {item.name}
+                                </h3>
+                            </div>
+                            <div className="text-sm">
+                                <ul className="space-y-1">
+                                    <li>
+                                        <span className="font-semibold">
+                                            Cuisine:
+                                        </span>{" "}
+                                        {item.cuisines.map((cusine) => (
+                                            <span
+                                                className="capitalize"
+                                                key={cusine}
+                                            >
+                                                {cusine}
+                                            </span>
+                                        ))}
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">
+                                            Area:
+                                        </span>{" "}
+                                        {item.area}
+                                    </li>
+                                    {item.address && (
+                                        <li>
+                                            <span className="font-semibold">
+                                                Address:
+                                            </span>{" "}
+                                            {item.address}
+                                        </li>
+                                    )}
+                                    {item.phone && (
+                                        <li>
+                                            <span className="font-semibold">
+                                                Phone:
+                                            </span>{" "}
+                                            <a
+                                                href={`tel:${item.phone}`}
+                                                className="text-blue-600 hover:underline"
+                                            >
+                                                {item.phone}
+                                            </a>
+                                        </li>
+                                    )}
+
+                                    {item.openingHours && (
+                                        <li>
+                                            <span className="font-semibold">
+                                                Hours:
+                                            </span>{" "}
+                                            {item.openingHours}
+                                        </li>
+                                    )}
+                                    {item.google_maps_url && (
+                                        <li>
+                                            <a
+                                                href={item.google_maps_url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="btn btn-sm btn-primary"
+                                            >
+                                                Get Directions
+                                            </a>
+                                        </li>
+                                    )}
+                                </ul>
+                            </div>
+                        </div>
                     </Popup>
                 </Marker>
             ))}

@@ -16,13 +16,17 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Livewire\RestaurantDirectory;
 
-Route::get('/', [HomeController::class, 'index']);
+//Route::get('/', [HomeController::class, 'index']);
+Volt::route('/', 'pages.places')->name('places.index');
+
 Route::get('sitemap', [SitemapController::class, 'index'])->name('sitemap');
 Route::get('changelog', [ChangelogController::class, 'index'])->name('changelog');
 
 
-Volt::route('directory', 'pages.directory')->name('directory');
+Volt::route('map', 'pages.map')->name('map');
 Volt::route('places/{id}', 'pages.place')->name('places.show');
+//Volt::route('places', 'pages.places')->name('places.index');
+Volt::route('shop', 'pages.shop')->name('shop.index');
 
 // Demo Coming Soon Page
 Route::get('coming-soon', function () {

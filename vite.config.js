@@ -20,7 +20,7 @@ export default defineConfig({
                 "resources/js/app.js",
                 "resources/js/directory/MapList.js",
             ],
-            refresh: true,
+            refresh: [...refreshPaths, "resources/js/*", "app/**"],
         }),
     ],
 });
