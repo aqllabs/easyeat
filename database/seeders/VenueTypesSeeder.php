@@ -13,8 +13,8 @@ class VenueTypesSeeder extends Seeder
             'id' => 1,
             'name' => 'restaurant',
             'display_name' => 'Restaurant',
-            'created_at' => 1732055703000,
-            'updated_at' => 1732055708000,
+            'created_at' => '2024-11-20 04:20:10',
+            'updated_at' => '2024-11-20 04:20:10',
         ]);
         DB::table('venue_types')->insert([
             'id' => 8,
