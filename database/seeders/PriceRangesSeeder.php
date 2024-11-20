@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class price_rangesSeeder extends Seeder
+class PriceRangesSeeder extends Seeder
 {
     public function run()
     {

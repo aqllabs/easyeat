@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class venue_typesSeeder extends Seeder
+class VenueTypesSeeder extends Seeder
 {
     public function run()
     {

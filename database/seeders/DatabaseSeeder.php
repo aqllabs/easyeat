@@ -23,14 +23,14 @@ class DatabaseSeeder extends Seeder
         // $this->call(AreaSeeder::class);
         // $this->call(VenueSeeder::class);
 
-        $this->call(areasSeeder::class);
-        $this->call(cuisinesSeeder::class);
-        $this->call(diet_categoriesSeeder::class);
-        $this->call(halal_assurancesSeeder::class);
-        $this->call(venue_typesSeeder::class);
-        $this->call(price_rangesSeeder::class);
-        $this->call(venuesSeeder::class);
-        $this->call(cuisine_venueSeeder::class);
-        $this->call(diet_category_venueSeeder::class);
+        $this->call(AreasSeeder::class);
+        $this->call(CuisinesSeeder::class);
+        $this->call(DietCategoriesSeeder::class);
+        $this->call(HalalAssurancesSeeder::class);
+        $this->call(VenueTypesSeeder::class);
+        $this->call(PriceRangesSeeder::class);
+        $this->call(VenuesSeeder::class);
+        $this->call(CuisineVenueSeeder::class);
+        $this->call(DietCategoryVenueSeeder::class);
     }
 }

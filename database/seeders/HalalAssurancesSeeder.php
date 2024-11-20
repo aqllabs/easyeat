@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class halal_assurancesSeeder extends Seeder
+class HalalAssurancesSeeder extends Seeder
 {
     public function run()
     {
