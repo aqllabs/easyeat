@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         $this->call(HalalAssurancesSeeder::class);
         $this->call(VenueTypesSeeder::class);
         $this->call(PriceRangesSeeder::class);
-        $this->call(VenuesSeeder::class);
+        $this->call(VenuesSeeder2::class);
         $this->call(CuisineVenueSeeder::class);
         $this->call(DietCategoryVenueSeeder::class);
     }
