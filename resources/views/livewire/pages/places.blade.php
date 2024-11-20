@@ -32,6 +32,13 @@ class extends Component {
     #[Url]
     public $search = '';
 
+    public $showFilters = false;
+
+    public function toggleFilters()
+    {
+        $this->showFilters = !$this->showFilters;
+    }
+
     public function updated($property)
     {
         if (str_starts_with($property, 'filterValues')) {
@@ -84,25 +91,29 @@ class extends Component {
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Search Section -->
-    {{-- array to string --}}
-
-    <flux:button href="{{route('map')}}" icon="map">View on Map</flux:button>
-
-    <div class="mb-8">
-        <div class="max-w-xl mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
+        <div class="w-full sm:max-w-xl">
             <input
                 wire:model.live="search"
                 type="text"
                 placeholder="Halal Western"
                 class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
             >
-            {{--            add a map button with map icon--}}
+        </div>
+        <div class="flex gap-2">
+            <flux:button href="{{route('map')}}" icon="map">View on Map</flux:button>
+            <flux:button 
+                wire:click="toggleFilters"
+                class="sm:hidden"
+            >
+                Filters
+            </flux:button>
         </div>
     </div>
 
-    <div class="flex gap-8">
+    <div class="flex flex-col sm:flex-row gap-8">
         <!-- Filters Sidebar -->
-        <div class="w-64 flex-shrink-0">
+        <div class="w-full sm:w-64 flex-shrink-0 {{ !$showFilters ? 'hidden sm:block' : '' }}">
             <h2 class="text-lg font-semibold mb-4">Filtered Search</h2>
 
             <!-- Dietary Preference -->
@@ -178,20 +189,19 @@ class extends Component {
             </div>
         </div>
 
-
         <!-- Venue Cards -->
         <div class="flex-1">
             <div class="grid grid-cols-1 gap-6">
                 @foreach($venues as $venue)
-                    <div class="card card-side bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
-                        <figure class="w-1/3">
+                    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
+                        <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
                                 src="{{ $venue->thumbnail_url ? "https://discoverhongkong.com/".$venue->thumbnail_url : 'https://placehold.co/600x400' }}"
                                 alt="{{ $venue->name }}"
-                                class="h-56 w-full object-cover"
+                                class="w-full h-full object-cover"
                             >
                         </figure>
-                        <div class="card-body w-2/3">
+                        <div class="card-body sm:w-2/3">
                             <div class="flex justify-between items-start">
                                 <a href="{{ route('places.show', $venue->id) }}" class="hover:text-primary transition-colors">
                                     <h3 class="card-title">{{ $venue->name }}</h3>
