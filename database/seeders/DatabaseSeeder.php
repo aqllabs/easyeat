@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(AreaSeeder::class);
         // $this->call(VenueSeeder::class);
 
-        $this->call("areaSeeder");
+        $this->call("areasSeeder");
         $this->call("cuisinesSeeder");
         $this->call("diet_categoriesSeeder");
         $this->call("halal_assurancesSeeder");
