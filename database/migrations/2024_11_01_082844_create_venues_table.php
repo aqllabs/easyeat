@@ -11,45 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-
-
         Schema::create('venue_types', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->string('display_name')->nullable();
             $table->timestamps();
-        });
-
-        Schema::create('cuisines', function (Blueprint $table) {
-            $table->id();
-            $table->string('name')->unique();
-            $table->string('display_name')->nullable();
-            $table->timestamps();
-        });
-
-        Schema::create('cuisine_venue', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('venue_id')->constrained()->onDelete('cascade');
-            $table->foreignId('cuisine_id')->constrained()->onDelete('cascade');
-            $table->timestamps();
-
-            $table->unique(['venue_id', 'cuisine_id']);
-        });
-
-        Schema::create('diet_categories', function (Blueprint $table) {
-            $table->id();
-            $table->string('name')->unique();
-            $table->string('display_name')->nullable();
-            $table->timestamps();
-        });
-
-        Schema::create('diet_category_venue', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('venue_id')->constrained()->onDelete('cascade');
-            $table->foreignId('diet_category_id')->constrained()->onDelete('cascade');
-            $table->timestamps();
-
-            $table->unique(['venue_id', 'diet_category_id']);
         });
 
         Schema::create('halal_assurances', function (Blueprint $table) {
@@ -70,6 +36,13 @@ return new class extends Migration
         });
 
         Schema::create('areas', function (Blueprint $table) {
+            $table->id();
+            $table->string('name')->unique();
+            $table->string('display_name')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('cuisines', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->string('display_name')->nullable();
@@ -98,6 +71,31 @@ return new class extends Migration
             $table->foreignId('price_range_id')->nullable()->constrained()->nullOnDelete();
             $table->foreignId('venue_type_id')->nullable()->constrained()->nullOnDelete();
             $table->foreignId('halal_assurance_id')->nullable()->constrained()->nullOnDelete();
+        });
+
+        Schema::create('cuisine_venue', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('venue_id')->constrained()->onDelete('cascade');
+            $table->foreignId('cuisine_id')->constrained()->onDelete('cascade');
+            $table->timestamps();
+
+            $table->unique(['venue_id', 'cuisine_id']);
+        });
+
+        Schema::create('diet_categories', function (Blueprint $table) {
+            $table->id();
+            $table->string('name')->unique();
+            $table->string('display_name')->nullable();
+            $table->timestamps();
+        });
+
+        Schema::create('diet_category_venue', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('venue_id')->constrained()->onDelete('cascade');
+            $table->foreignId('diet_category_id')->constrained()->onDelete('cascade');
+            $table->timestamps();
+
+            $table->unique(['venue_id', 'diet_category_id']);
         });
     }
 
