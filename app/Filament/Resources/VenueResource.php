@@ -31,7 +31,7 @@ class VenueResource extends Resource
                     ->required(),
                 Forms\Components\TextInput::make('city')
                     ->required(),
-                Forms\Components\TextInput::make('area')
+                Forms\Components\Select::make('area_id')->relationship(name: 'area', titleAttribute: 'display_name')
                     ->required(),
                 Forms\Components\TextInput::make('telephone')
                     ->tel(),
@@ -39,7 +39,7 @@ class VenueResource extends Resource
                 Forms\Components\TextInput::make('email')
                     ->email(),
                 Forms\Components\TextInput::make('google_maps_url'),
-                Forms\Components\Select::make('cuisines')->multiple()->relationship(name: 'cuisines', titleAttribute: 'display_name'),
+                Forms\Components\Select::make('cuisines')->multiple()->relationship(name: 'cuisines', titleAttribute: 'display_name')->preload(),
                 Forms\Components\Select::make('price_range_id')->relationship(name: 'priceRange', titleAttribute: 'display_name'),
                 Forms\Components\TextInput::make('lat')
                     ->required()
@@ -56,9 +56,9 @@ class VenueResource extends Resource
                 Forms\Components\Textarea::make('description')
                     ->columnSpanFull(),
                 Forms\Components\Select::make('diet_categories')->multiple()
-                    ->relationship(name: 'dietCategories', titleAttribute: 'display_name'),
+                    ->relationship(name: 'dietCategories', titleAttribute: 'display_name')->preload(),
                 Forms\Components\Select::make('halal_assurance_id')
-                    ->relationship(name: 'halalAssurance', titleAttribute: 'display_name'),
+                    ->relationship(name: 'halalAssurance', titleAttribute: 'display_name')->preload(),
                 Forms\Components\Select::make('venue_type_id')
                     ->relationship(name: 'venueType', titleAttribute: 'display_name'),
             ]);
