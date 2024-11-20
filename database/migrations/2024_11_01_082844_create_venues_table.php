@@ -11,29 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('venues', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->string('name');
-            $table->string('city');
-            $table->string('address');
-            $table->decimal('lat', 10, 7);
-            $table->decimal('lng', 10, 7);
-            $table->string('google_maps_url');
-            $table->json('images')->nullable();
-            $table->json('remarks')->nullable();
-            $table->string('email')->nullable();
-            $table->string('website')->nullable();
-            $table->string('telephone')->nullable();
-            $table->text('description')->nullable();
-            $table->json('opening_hours')->nullable();
-            $table->string('thumbnail_url')->nullable();
-            $table->date('halal_assurance_expiry_date')->nullable();
-            $table->foreignId('area_id')->nullable()->constrained()->nullOnDelete();
-            $table->foreignId('price_range_id')->nullable()->constrained()->nullOnDelete();
-            $table->foreignId('venue_type_id')->nullable()->constrained()->nullOnDelete();
-            $table->foreignId('halal_assurance_id')->nullable()->constrained()->nullOnDelete();
-        });
+
 
         Schema::create('venue_types', function (Blueprint $table) {
             $table->id();
@@ -96,6 +74,30 @@ return new class extends Migration
             $table->string('name')->unique();
             $table->string('display_name')->nullable();
             $table->timestamps();
+        });
+
+        Schema::create('venues', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('name');
+            $table->string('city');
+            $table->string('address');
+            $table->decimal('lat', 10, 7);
+            $table->decimal('lng', 10, 7);
+            $table->string('google_maps_url');
+            $table->json('images')->nullable();
+            $table->json('remarks')->nullable();
+            $table->string('email')->nullable();
+            $table->string('website')->nullable();
+            $table->string('telephone')->nullable();
+            $table->text('description')->nullable();
+            $table->json('opening_hours')->nullable();
+            $table->string('thumbnail_url')->nullable();
+            $table->date('halal_assurance_expiry_date')->nullable();
+            $table->foreignId('area_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId('price_range_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId('venue_type_id')->nullable()->constrained()->nullOnDelete();
+            $table->foreignId('halal_assurance_id')->nullable()->constrained()->nullOnDelete();
         });
     }
 
