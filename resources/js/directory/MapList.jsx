@@ -7,6 +7,7 @@ import {
     Hits,
     Configure,
     Pagination,
+    useClearRefinements,
 } from "react-instantsearch";
 import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import { CustomGeoSearch } from "./LeafletMap.jsx";
@@ -27,6 +28,9 @@ function MapList({ wire, ...props }) {
     const setClickedId = useSetAtom(clickedIdAtom);
     const setHoveredId = useSetAtom(hoveredIdAtom);
 
+    // Add new state for drawer
+    const [showFilters, setShowFilters] = useState(false);
+
     // Handle map toggle and reset
     const handleMapToggle = () => {
         if (showMap) {
@@ -36,6 +40,11 @@ function MapList({ wire, ...props }) {
         }
         setShowMap(!showMap);
     };
+
+    // Add logging to track drawer state changes
+    React.useEffect(() => {
+        console.log("Drawer state changed:", showFilters);
+    }, [showFilters]);
 
     if (!searchClient) {
         return <div>Loading...</div>;
@@ -51,12 +60,12 @@ function MapList({ wire, ...props }) {
                     persistHierarchicalRootCount: true,
                 }}
             >
-                <StickyHeader />
+                <StickyHeader onFilterClick={() => setShowFilters(true)} />
                 <VirtualFilters />
                 <div className="flex flex-col md:flex-row flex-1">
                     <div
-                        className={`h-full md:h-[calc(100dvh-4rem)] md:w-1/3 w-full bg-base-200 overflow-y-auto relative 
-                        ${showMap ? "hidden" : "block"} md:block`}
+                        className={`h-full md:h-[calc(100dvh-4rem)] md:w-1/3 w-full bg-base-100 overflow-y-auto relative 
+                        hidden md:block`}
                     >
                         <NoResultsBoundary fallback={<NoResults />}>
                             <Hits
@@ -83,20 +92,13 @@ function MapList({ wire, ...props }) {
                     </div>
                     <div
                         className={`h-full md:h-[calc(100dvh-4rem)] md:w-2/3 w-full relative z-[1]
-                        ${showMap ? "block" : "hidden"} md:block`}
+                        block`}
                     >
                         <CustomGeoSearch
                             key={showMap ? "map-visible" : "map-hidden"}
                         />
                     </div>
                 </div>
-                <button
-                    onClick={handleMapToggle}
-                    className="md:hidden fixed bottom-4 right-4 btn btn-primary btn-circle shadow-lg z-[2]"
-                >
-                    {showMap ? "📝" : "🗺️"}
-                </button>
-                <Configure hitsPerPage={20} />
             </InstantSearch>
         </div>
     );
@@ -104,16 +106,19 @@ function MapList({ wire, ...props }) {
 
 export default MapList;
 
-function StickyHeader() {
-    const { items: cuisineItems } = useRefinementList({
+function StickyHeader({ onFilterClick }) {
+    const { items: cuisineItems, refine: refineCuisine } = useRefinementList({
         attribute: "cuisines",
     });
-    const { items: dietItems } = useRefinementList({
+    const { items: dietItems, refine: refineDiet } = useRefinementList({
         attribute: "diet_categories",
     });
-    const { items: halalItems } = useRefinementList({
+    const { items: halalItems, refine: refineHalal } = useRefinementList({
         attribute: "halal_assurance",
     });
+
+    // Add this hook
+    const { refine: clearAllRefinements } = useClearRefinements();
 
     // Count selected items for each filter
     const selectedCuisines =
@@ -123,23 +128,20 @@ function StickyHeader() {
     const selectedHalal =
         halalItems?.filter((item) => item.isRefined).length || 0;
 
-    const { refine, clear } = useRefinementList({ attribute: "cuisines" });
-    const { refine: refineDiet, clear: clearDiet } = useRefinementList({
-        attribute: "diet_categories",
-    });
-    const { refine: refineHalal, clear: clearHalal } = useRefinementList({
-        attribute: "halal_assurance",
-    });
     const setClickedId = useSetAtom(clickedIdAtom);
     const setHoveredId = useSetAtom(hoveredIdAtom);
 
     const handleResetAll = () => {
-        clear();
-        clearDiet();
-        clearHalal();
+        clearAllRefinements();
         setClickedId(null);
         setHoveredId(null);
     };
+
+    // Calculate total selected filters
+    const totalSelectedFilters =
+        selectedCuisines + selectedDiets + selectedHalal;
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <div className="navbar sticky top-0 z-[50] border border-base-300">
@@ -152,7 +154,7 @@ function StickyHeader() {
                         viewBox="0 0 24 24"
                         strokeWidth={2}
                         stroke="currentColor"
-                        className="w-5 h-5 text-accent"
+                        className="w-5 h-5 text-primary"
                     >
                         <path
                             strokeLinecap="round"
@@ -160,17 +162,17 @@ function StickyHeader() {
                             d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
                         />
                     </svg>
-                    <span className="text-xl font-bold text-accent">
+                    <span className="text-xl font-bold text-primary">
                         EasyEat
                     </span>
                 </a>
             </div>
-            <div className="flex-1 flex items-center gap-2">
+            <div className="flex-1 items-center gap-2 hidden md:flex">
                 <div className="dropdown dropdown-end">
                     <label
                         tabIndex={0}
                         className={`btn btn-outline btn-sm m-1 ${
-                            selectedCuisines > 0 ? "btn-primary" : ""
+                            selectedCuisines > 0 ? "btn-secondary" : ""
                         }`}
                     >
                         Cuisine{" "}
@@ -192,8 +194,8 @@ function StickyHeader() {
                                 attribute="cuisines"
                                 classNames={{
                                     list: "w-full space-y-2",
-                                    item: "flex items-center gap-2 hover:bg-base-200 rounded-sm",
-                                    label: "label cursor-pointer flex items-center gap-2 w-full capitalize",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
                                     count: "badge badge-sm ml-auto",
                                     checkbox: "checkbox checkbox-sm ",
                                 }}
@@ -205,7 +207,7 @@ function StickyHeader() {
                     <label
                         tabIndex={0}
                         className={`btn btn-outline btn-sm m-1 ${
-                            selectedDiets > 0 ? "btn-primary" : ""
+                            selectedDiets > 0 ? "btn-secondary" : ""
                         }`}
                     >
                         Diet{" "}
@@ -227,8 +229,8 @@ function StickyHeader() {
                                 attribute="diet_categories"
                                 classNames={{
                                     list: "w-full space-y-2",
-                                    item: "flex items-center gap-2 hover:bg-base-200 rounded-sm",
-                                    label: "label cursor-pointer flex items-center gap-2 w-full capitalize",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
                                     count: "badge badge-sm ml-auto",
                                     checkbox: "checkbox checkbox-sm ",
                                 }}
@@ -241,7 +243,7 @@ function StickyHeader() {
                     <label
                         tabIndex={0}
                         className={`btn btn-outline btn-sm m-1 ${
-                            selectedHalal > 0 ? "btn-primary" : ""
+                            selectedHalal > 0 ? "btn-secondary" : ""
                         }`}
                     >
                         Halal Assurance{" "}
@@ -251,7 +253,10 @@ function StickyHeader() {
                             </span>
                         )}
                     </label>
-                    <div className="dropdown-content card card-compact w-96 p-2 shadow bg-base-100 text-base-content mt-2 left-0 border border-base-300   ">
+                    <div
+                        tabIndex="0"
+                        className="dropdown-content card card-compact w-96 p-2 shadow bg-base-100 text-base-content mt-2 left-0 border border-base-300   "
+                    >
                         <div className="card-body">
                             <h3 className="card-title">
                                 Select Halal Assurance
@@ -262,8 +267,8 @@ function StickyHeader() {
                                 attribute="halal_assurance"
                                 classNames={{
                                     list: "w-full space-y-2",
-                                    item: "flex items-center gap-2 hover:bg-base-200 rounded-sm",
-                                    label: "label cursor-pointer flex items-center gap-2 w-full capitalize",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
                                     count: "badge badge-sm ml-auto",
                                     checkbox: "checkbox checkbox-sm ",
                                 }}
@@ -272,7 +277,150 @@ function StickyHeader() {
                     </div>
                 </div>
             </div>
-            <div className="flex-none">
+            <div className="flex-1 md:hidden">
+                <button
+                    onClick={() => setIsModalOpen(true)}
+                    className={`btn btn-sm ${
+                        totalSelectedFilters > 0 ? "btn-primary" : "btn-ghost"
+                    }`}
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="size-6"
+                    >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                        />
+                    </svg>
+                    {totalSelectedFilters > 0 && (
+                        <span className="badge badge-sm">
+                            {totalSelectedFilters}
+                        </span>
+                    )}
+                </button>
+
+                {/* Modal */}
+                <dialog
+                    className="modal modal-bottom md:modal-middle"
+                    open={isModalOpen}
+                    onClick={(e) => {
+                        if (e.target.closest(".modal-box")) return;
+                        setIsModalOpen(false);
+                    }}
+                >
+                    <div className="modal-box">
+                        <div className="flex justify-between items-center mb-4">
+                            <h3 className="font-bold text-lg">Filters</h3>
+                            <button
+                                className="btn btn-sm btn-circle btn-ghost"
+                                onClick={() => setIsModalOpen(false)}
+                            >
+                                ✕
+                            </button>
+                        </div>
+                        <div className="space-y-6 max-h-[70vh] overflow-y-auto">
+                            {/* Cuisine Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Cuisine
+                                        {selectedCuisines > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedCuisines}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="cuisines"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Diet Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Diet
+                                        {selectedDiets > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedDiets}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="diet_categories"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Halal Assurance Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Halal Assurance
+                                        {selectedHalal > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedHalal}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="halal_assurance"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="modal-action">
+                            <button
+                                className="btn btn-ghost btn-sm"
+                                onClick={handleResetAll}
+                            >
+                                Reset Filters
+                            </button>
+                            <button
+                                className="btn btn-primary btn-sm"
+                                onClick={() => setIsModalOpen(false)}
+                            >
+                                Done
+                            </button>
+                        </div>
+                    </div>
+                </dialog>
+            </div>
+            <div className="flex-none hidden md:block">
                 <button
                     onClick={handleResetAll}
                     className="btn btn-ghost btn-sm"
@@ -313,7 +461,7 @@ function Hit({ hit, wire }) {
             <div className="card-body p-4">
                 <div className="flex justify-between items-start">
                     <a
-                        className="link link-accent no-underline "
+                        className="link link-secondary no-underline "
                         onClick={(e) => {
                             e.stopPropagation();
                             Livewire.navigate(`/places/${hit.id}`);
@@ -325,25 +473,25 @@ function Hit({ hit, wire }) {
 
                 <div className="flex flex-wrap gap-2">
                     {hit.halal_assurance && (
-                        <div className="badge badge-success badge-outline">
+                        <div className="badge badge-primary badge-outline">
                             {hit.halal_assurance}
                         </div>
                     )}
                     {hit.diet_categories?.map((category, index) => (
-                        <div key={index} className="badge badge-accent">
+                        <div key={index} className="badge badge-secondary">
                             {category}
                         </div>
                     ))}
                     {hit.cuisines?.map((cuisine, index) => (
                         <div
                             key={index}
-                            className="badge badge-accent badge-outline"
+                            className="badge badge-secondary badge-outline"
                         >
                             {cuisine}
                         </div>
                     ))}
                     {hit.price_range && (
-                        <div className="badge badge-secondary badge-outline">
+                        <div className="badge badge-accent badge-outline">
                             {hit.price_range}
                         </div>
                     )}
@@ -380,11 +528,15 @@ function Hit({ hit, wire }) {
 
 function VirtualFilters() {
     useRefinementList({
-        attribute: "area",
+        attribute: "cuisines",
         operator: "or",
     });
     useRefinementList({
-        attribute: "cuisines",
+        attribute: "diet_categories",
+        operator: "or",
+    });
+    useRefinementList({
+        attribute: "halal_assurance",
         operator: "or",
     });
     return null;

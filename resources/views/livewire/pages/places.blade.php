@@ -97,7 +97,7 @@ class extends Component {
                 wire:model.live="search"
                 type="text"
                 placeholder="Halal Western"
-                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
             >
         </div>
         <div class="flex gap-2">
@@ -210,13 +210,13 @@ class extends Component {
 
                             <div class="flex flex-wrap gap-2">
                                 @if($venue->halalAssurance)
-                                    <div class="badge badge-success badge-outline">
+                                    <div class="badge badge-primary badge-outline">
                                         {{ $venue->halalAssurance->display_name }}
                                     </div>
                                 @endif
                                 @if($venue->dietCategories)
                                     @foreach($venue->dietCategories as $category)
-                                        <div class="badge badge-accent">
+                                        <div class="badge badge-secondary">
                                             {{ $category->display_name }}
                                         </div>
                                     @endforeach
@@ -224,14 +224,14 @@ class extends Component {
 
                                 @if($venue->cuisines)
                                     @foreach($venue->cuisines as $cuisine)
-                                        <div class="badge badge-accent badge-outline">
+                                        <div class="badge badge-secondary badge-outline">
                                             {{ $cuisine->display_name }}
                                         </div>
                                     @endforeach
                                 @endif
 
                                 @if($venue->price_range)
-                                    <div class="badge badge-secondary badge-outline">
+                                    <div class="badge badge-accent badge-outline">
                                         {{ $venue->price_range->display_name }}
                                     </div>
                                 @endif

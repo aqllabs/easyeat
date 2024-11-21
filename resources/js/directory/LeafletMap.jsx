@@ -6,6 +6,7 @@ import {
     Popup,
     useMapEvents,
     useMap,
+    Rectangle,
 } from "react-leaflet";
 import L from "leaflet";
 import { hoveredIdAtom, clickedIdAtom } from "@/Atoms";
@@ -49,31 +50,58 @@ function Restaurants() {
     const [mapBounds, setMapBounds] = useState(null);
     const [selectedItem, setSelectedItem] = useState(null);
     const markerRefs = useRef({});
+    const [searchBounds, setSearchBounds] = useState(null);
 
     const onViewChange = ({ target }) => {
+        const bounds = target.getBounds();
+        const boundsSize = bounds
+            .getNorthEast()
+            .distanceTo(bounds.getSouthWest());
+
+        // Don't update if the view is too large or too small
+        if (boundsSize > 50000 || boundsSize < 100) {
+            return;
+        }
+
         const newBounds = {
             northEast: target.getBounds().getNorthEast(),
             southWest: target.getBounds().getSouthWest(),
         };
         setMapBounds(newBounds);
-    };
 
-    useMapEvents({
-        dragend: onViewChange,
-        click: () => {
-            closePopup();
-        },
-    });
+        // Update the visual rectangle bounds
+        setSearchBounds([
+            [newBounds.southWest.lat, newBounds.southWest.lng],
+            [newBounds.northEast.lat, newBounds.northEast.lng],
+        ]);
+    };
 
     const handleRedoSearch = () => {
         if (mapBounds) {
-            const updatedRefinement = {
+            refineItems({
                 ...currentRefinement,
                 ...mapBounds,
-            };
-            refineItems(updatedRefinement);
+            });
         }
     };
+
+    const closePopup = () => {
+        console.log("closePopup called");
+        // Close all marker popups
+        Object.values(markerRefs.current).forEach((marker) => {
+            if (marker && marker.isPopupOpen()) {
+                marker.closePopup();
+                console.log("Popup closed for marker");
+            }
+        });
+        setSelectedItem(null);
+    };
+
+    useMapEvents({
+        moveend: (e) => {
+            onViewChange(e);
+        },
+    });
 
     const markerIcon = L.icon({
         iconUrl: "images/marker-icon.png",
@@ -98,7 +126,10 @@ function Restaurants() {
         const clickedItem = items.find((item) => item.id === clickedItemId);
         if (clickedItem) {
             map.setView(clickedItem._geoloc, 15, { animate: true });
-            setClickedId(null);
+            // Wait for animation to complete before clearing clickedId
+            setTimeout(() => {
+                setClickedId(null);
+            }, 1000); // 1 second delay to match default Leaflet animation duration
             setSelectedItem(clickedItem);
 
             // Open the popup for the clicked item
@@ -109,44 +140,18 @@ function Restaurants() {
         }
     }, [clickedItemId, items, map, setClickedId]);
 
-    // Close popup when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (e) => {
-            // Check if click is outside of a popup
-            if (!e.target.closest(".leaflet-popup")) {
-                closePopup();
-            }
-        };
-
-        document.addEventListener("mousedown", handleClickOutside);
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [selectedItem]);
-
-    // Modify closePopup to handle both marker and selected item
-    const closePopup = () => {
-        if (selectedItem) {
-            const marker = markerRefs.current[selectedItem.objectID];
-            if (marker) {
-                marker.closePopup();
-            }
-            setSelectedItem(null);
-        }
-    };
-
     return (
         <>
-            <button
-                onClick={handleRedoSearch}
-                className="absolute top-2.5  left-16 z-50 px-2.5 py-1.5 bg-white border-2 border-gray-300 rounded cursor-pointer"
-                style={{
-                    zIndex: 1000,
-                }}
-            >
-                Redo Search
-            </button>
+            {/* Add Redo Search Button */}
+            <div className="absolute top-4 right-4 z-[1000]">
+                <button
+                    onClick={handleRedoSearch}
+                    className="bg-primary text-black font-bold px-4 py-2 rounded-lg shadow-lg hover:bg-primary/80 transition-colors"
+                >
+                    Redo Search in This Area
+                </button>
+            </div>
+
             {items.map((item) => (
                 <Marker
                     key={item.objectID}
@@ -171,16 +176,15 @@ function Restaurants() {
                                 <ul className="space-y-1">
                                     <li>
                                         <span className="font-semibold">
+                                            Diet:
+                                        </span>{" "}
+                                        {item.diet_categories.join(", ")}
+                                    </li>
+                                    <li>
+                                        <span className="font-semibold">
                                             Cuisine:
                                         </span>{" "}
-                                        {item.cuisines.map((cusine) => (
-                                            <span
-                                                className="capitalize"
-                                                key={cusine}
-                                            >
-                                                {cusine}
-                                            </span>
-                                        ))}
+                                        {item.cuisines.join(", ")}
                                     </li>
                                     <li>
                                         <span className="font-semibold">
@@ -216,6 +220,15 @@ function Restaurants() {
                                                 Hours:
                                             </span>{" "}
                                             {item.openingHours}
+                                        </li>
+                                    )}
+
+                                    {item.price_range && (
+                                        <li>
+                                            <span className="font-semibold">
+                                                Price Range:
+                                            </span>{" "}
+                                            {item.price_range}
                                         </li>
                                     )}
                                     {item.google_maps_url && (

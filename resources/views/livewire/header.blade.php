@@ -3,7 +3,7 @@
         <a href="/" class="flex flex-row items-center justify-center font-bold text-md">
             {{-- <img class="w-16" src="{{ asset('/images/logo.svg') }}" alt=""> --}}
             <span class="ml-2 flex flex-col items-start">
-                    <span class="leading-4 text-secondary">{{ __('EasyEat') }}</span>
+                    <span class="leading-4 text-primary">{{ __('EasyEat') }}</span>
                 </span>
         </a>
     </div>
