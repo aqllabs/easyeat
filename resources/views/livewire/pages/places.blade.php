@@ -128,6 +128,19 @@ class extends Component {
         return $query->paginate(15);
     }
 
+    public function resetFilters()
+    {
+        $this->filterValues = [
+            'diet_categories' => [],
+            'halal_assurance' => [],
+            'venue_type' => [],
+            'areas' => [],
+            'cuisines' => [],
+            'price_range' => [],
+        ];
+        $this->search = '';
+        $this->resetPage();
+    }
 
     public function with()
     {
@@ -157,6 +170,7 @@ class extends Component {
         </div>
         <div class="flex gap-2">
             <flux:button href="{{route('map')}}" icon="map">View on Map</flux:button>
+
             <flux:button 
                 @click="showFilters = !showFilters"
                 class="sm:hidden relative"
@@ -173,13 +187,29 @@ class extends Component {
                     }}
                 </span>
             </flux:button>
+                        <flux:button 
+                wire:click="resetFilters"
+                variant="filled"
+                class="relative sm:hidden"
+            >
+                Reset
+            </flux:button>
         </div>
     </div>
 
     <div class="flex flex-col sm:flex-row gap-8">
         <!-- Filters Sidebar -->
         <div class="w-full sm:w-64 flex-shrink-0" :class="{ 'hidden sm:block': !showFilters }">
-            <h2 class="text-lg font-semibold mb-4">Filtered Search</h2>
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-semibold">Filtered Search</h2>
+                <flux:button 
+                    wire:click="resetFilters"
+                    class="hidden sm:block"
+                    variant="filled"
+                >
+                    Reset
+                </flux:button>
+            </div>
 
             <!-- Dietary Preference -->
             <div class="mb-6">
