@@ -88,4 +88,8 @@ return [
     'resend' => [
         'key' => env('RESEND_API_KEY'),
     ],
+
+    'unsplash' => [
+        'access_key' => env('UNSPLASH_ACCESS_KEY'),
+    ],
 ];

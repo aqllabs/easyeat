@@ -31,7 +31,7 @@ class extends Component
         return cache()->remember('unsplash_image_' . $query, 86400, function() use ($query) {
             try {
                 $response = Http::get('https://api.unsplash.com/photos/random', [
-                    'client_id' => "dHwOm5JNSwQrWv16gxwVaTQoiE8AyNWfozcV-wUZ7TE", 
+                    'client_id' => config('services.unsplash.access_key'),
                     'query' => $query,
                     'orientation' => 'landscape',
                 ]);            
