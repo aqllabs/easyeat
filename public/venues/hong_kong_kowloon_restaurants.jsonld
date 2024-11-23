@@ -1,0 +1,4441 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "247982",
+    "name": "Be With Years",
+    "url": "https://www.happycow.net/reviews/be-with-years-kowloon-247982",
+    "image": "https://images.happycow.net/venues/500/24/79/hcmp247982_1193480.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 27, Pebbles World, Site 3, Whampoa Gardens, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-93663261",
+    "servesCuisine": "Vegan, Italian, Western",
+    "description": "Vegan restaurant that offers mostly western style dishes like pasta, spaghetti, burgers, salads, fries and pancake. 4th location of Years, open since Aug '21.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "393849",
+    "name": "Cafe Zi - 梔子",
+    "url": "https://www.happycow.net/reviews/cafe-zi-kowloon-393849",
+    "image": "https://images.happycow.net/venues/500/39/38/hcmp393849_2614683.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 8 Hillwood Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-70737865",
+    "servesCuisine": "Vegan, Western, Beer/Wine",
+    "description": "A cafe turned vegetarian Feb, 2024 and then fully vegan April 2024. Almost all items are vegan and may include an avocado poke rice bowl, house-made pumpkin curry w/ multigrain rice, avocado & new tuna sourdough bread, Zi 2.1 flower salad w/ mini bagel, spicy tomato & new crab meat spaghetti, new fish and chips w/ broccoli soup.",
+    "openingHours": "Tue-Sun 12:00pm-9:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "342453",
+    "name": "Joys Cafe - 悅素",
+    "url": "https://www.happycow.net/reviews/joys-cafe-kowloon-342453",
+    "image": "https://images.happycow.net/venues/500/34/24/hcmp342453_2046703.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 7 Fuk Wa St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36194840",
+    "servesCuisine": "Vegan, Western",
+    "description": "Vegan restaurant which offers salad, toast, spaghetti, risotto, a burger, dessert, coffee and drinks. A 5 minute walk from Prince Edward MTR station exit A. Smoked eggplant carbonara 煙茄子卡邦尼意大利粉, black truffle risotto 黑菘露蘑菇意大利飯, tempeh burger with salad 天貝悅素肉醬漢堡配沙律, ratatouille 普羅旺斯燉菜, roasted pineapple coconut chia pudding 烤菠蘿椰子奇籽布甸, peach water kefir 水克菲爾蜜桃汁, dirty (coffee) 髒髒咖啡. Reopened September 2024.",
+    "openingHours": "Mon-Sun 12:00pm-8:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "160375",
+    "name": "Love Bento 愛家愛便當",
+    "url": "https://www.happycow.net/reviews/love-bento-kowloon-160375",
+    "image": "https://images.happycow.net/venues/500/16/03/hcmp160375_591611.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 25, 1/F, Shing Yip Industrial Building, 19-21 Shing Yip St, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-97991916",
+    "servesCuisine": "Vegan, Japanese, Fast food, Take-out",
+    "description": "愛家愛便 has been making bentos since 2016 and opened at this space in early-2019. Offers vegan Japanese bentos with different dishes and dessert options daily as well as tomato soup, dumplings, and udon. Reopened August 2024.",
+    "openingHours": "Mon-Sat 12:00pm-9:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206083",
+    "name": "Loving Hut 愛家 - Tseuk Luk",
+    "url": "https://www.happycow.net/reviews/loving-hut-kowloon-206083",
+    "image": "https://images.happycow.net/venues/500/20/60/hcmp206083_1993431.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "33 Tseuk Luk St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27970001",
+    "servesCuisine": "Vegan, Chinese, Western",
+    "description": "Part of international vegan restaurant franchise, each is individually owned and operated. Offers a mix of cuisines including pasta, burger, soy milk soup noodle, wraps, and fried noodles.",
+    "openingHours": "Mon-Fri 9:00am-7:30pm, Sat 9:00am-4:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206680",
+    "name": "RainFlower Home 雨花齋",
+    "url": "https://www.happycow.net/reviews/rainflower-home-kowloon-206680",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4 Sishan St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-81079733",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "Non-profit organization that serves free vegan food.",
+    "openingHours": "Mon-Sun 12:00pm-1:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206466",
+    "name": "Sow Vegan",
+    "url": "https://www.happycow.net/reviews/sow-vegan-kowloon-206466",
+    "image": "https://images.happycow.net/venues/500/20/64/hcmp206466_1196703.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hung Tat Industrial Building, 43 Hung To Rd, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-90293009",
+    "servesCuisine": "Vegan, International, Catering, Gluten-free",
+    "description": "Vegan private dining restaurant that offers fresh ingredients, local and organic when possible. Snacks are made in-house without presevatives. Gluten-free and raw options. Currently accepting bookings upon which the full address is provided.",
+    "openingHours": "Wed-Sun 7:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52173",
+    "name": "Thai Vegetarian Food",
+    "url": "https://www.happycow.net/reviews/thai-vegetarian-food-kowloon-52173",
+    "image": "https://images.happycow.net/venues/500/52/17/hcmp52173_829866.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "28A S. Wall Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-61537421",
+    "servesCuisine": "Vegan, Thai, Take-out",
+    "description": "泰式素食 serves Thai Buddhist vegan food. No garlic, leek, onion, shallot, or spring onion. Relocated from G/F, 28 Nam Kok Rd. NOTE: Please verify if still fully vegan.",
+    "openingHours": "Mon 12:00pm-3:00pm, 6:00pm-10:00pm, Wed-Sun 12:00pm-3:00pm, 6:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "205558",
+    "name": "The Park by Years",
+    "url": "https://www.happycow.net/reviews/the-park-by-years-kowloon-205558",
+    "image": "https://images.happycow.net/venues/500/20/55/hcmp205558_1208152.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "132 Yu Chau St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-53364000",
+    "servesCuisine": "Vegan, Chinese, Western, Take-out",
+    "description": "Contemporary dining est. Jun 2020. Menu offers mostly western style dishes like pasta, spaghetti, burgers, salads, fries and grilled corn. Sweets are cheesecakes and brownies.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "127285",
+    "name": "The Recipe 素食譜",
+    "url": "https://www.happycow.net/reviews/the-recipe-kowloon-127285",
+    "image": "https://images.happycow.net/venues/500/12/72/hcmp127285_1209431.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 57, Ground Floor, Legend Tower, E Plaza, 7 Shing Yip St, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-55394088",
+    "servesCuisine": "Vegan, Chinese, Fast food",
+    "description": "素食譜 is a casual vegan eatery serving mainly rice sets, dumplings, and cart noodles.",
+    "openingHours": "Mon-Fri 11:00am-8:30pm, Sat 11:00am-3:30pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "246937",
+    "name": "Veggie Kingdom 緻素坊",
+    "url": "https://www.happycow.net/reviews/veggie-kingdom-kowloon-246937",
+    "image": "https://images.happycow.net/venues/500/24/69/hcmp246937_1202114.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7/F, VIP Commercial Centre, 120 Canton Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23660336",
+    "servesCuisine": "Vegan, Chinese, Asian",
+    "description": "Managed by the chef who previously managed Deluxe Veggie in midlevels that closed down. Offering dim sum during daytime and Chinese dishes during evening. Examples include vegetable dumplings, mushroom siu mai, sticky rice wrapped in lotus leaf, BBQ veggie pork buns (char siu bao), veggies wrapped in bean curd sheet, rice noodle rolls, turnip cake and more. NOTE: Please verify if honey is used.",
+    "openingHours": "Mon-Sun 11:00am-3:30pm, 6:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "335096",
+    "name": "Yat Sum Vegetarian - 一森素食 - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/yat-sum-vegetarian-tsim-sha-tsui-kowloon-335096",
+    "image": "https://images.happycow.net/venues/500/33/50/hcmp335096_1967711.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rm 206, 2/F, Universal Commercial Building, 65-69 Peking Rd, Tsim Sha Tsui., Kowloon, Hong Kong"
+    },
+    "telephone": "+852-93224249",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "Hong Kong style vegan eatery located one min walk from Tsim Sha Tsui MTR station, exit E. Yat sum means \"one forest.\" Offers pumpkin, chestnut and tofu with rice 南瓜栗子百頁豆腐飯, winter melon, veggie ham and soy strips with rice 冬瓜素火腿枝竹飯, shiitake mushrooms, black fungus and hairy gourds with rice 冬菇雲耳節瓜飯, taro, veggie fish slices and tofu puff in red fermented beancurd sauce with rice 南乳香芋素魚片豆卜飯. Reported open February 2024.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "90252",
+    "name": "Yat Sum Vegetarian - 一森素食 - Yau Ma Tei",
+    "url": "https://www.happycow.net/reviews/yat-sum-vegetarian-kowloon-90252",
+    "image": "https://images.happycow.net/venues/500/90/25/hcmp90252_1562345.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11B, G/F, 9-11 Waterloo Rd, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-93082289",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "一森素食, at 油麻地窩打老道9-11號地下11B號舖, is a Hong Kong style vegetarian eatery. Yat Sum means \"One Forest.\"  Apr 2021 reported fully vegan, despite the name. No MSG. Nearest MTR is Yau Ma Tei exit B2.",
+    "openingHours": "Mon-Sat 11:00am-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "160466",
+    "name": "YEARS",
+    "url": "https://www.happycow.net/reviews/years-kowloon-160466",
+    "image": "https://images.happycow.net/venues/500/16/04/hcmp160466_1197997.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "191-199 Fuk Wah St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-63383719",
+    "servesCuisine": "Vegan, International, Japanese, Western",
+    "description": "Cafe opened Mar 2019 in Sham Shui Po. Fullt vegan since Nov 2020. Menu offers pasta, risotto, salad, burger, and Japanese meal set. Also has latte with oat or soy milk.",
+    "openingHours": "Mon-Thu 12:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "352983",
+    "name": "Yu Dei 余地",
+    "url": "https://www.happycow.net/reviews/yu-dei-kowloon-352983",
+    "image": "https://images.happycow.net/venues/500/35/29/hcmp352983_2159389.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "198 Tai Nan St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-61149315",
+    "servesCuisine": "Vegan, Organic, Raw, Western, Gluten-free",
+    "description": "A vegan cafe with raw vegan options. Options may include sourdough with fermented cream cheese and smoked carrot 煙燻蘿蔔 配 發酵奶油芝士醬酸種麵包, onion sour cream onion with smoked crispy, rosemary baked potato 全素洋蔥酸奶油醬 配 煙燻脆片香草焗薯, cinnamon raisin oatmeal cookies 肉桂燕麥葡萄曲奇. Raw vegan options include cheese dip with air dry seeded chips or organic tempeh 芝士沾醬 配 風乾種子脆片 或 有機天貝.",
+    "openingHours": "Mon 12:00pm-6:00pm, Tue-Wed 6:00pm-9:00pm, Thu-Sat 12:00pm-9:00pm, Sun 12:00pm-6:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "205559",
+    "name": "Ahimsa Buffet 無肉食 - Central",
+    "url": "https://www.happycow.net/reviews/ahimsa-buffet-kowloon-205559",
+    "image": "https://images.happycow.net/venues/500/20/55/hcmp205559_919665.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 5, G/F, My Central, 23 Graham St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23362908",
+    "servesCuisine": "Vegan-friendly, Ovo, Pizza, Chinese, International, Buffet, Salad bar, Take-out",
+    "description": "Buffet restaurant offering a variety of choices. Dishes have ingredients listed. This outlet est. 2020.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "118296",
+    "name": "Ahimsa Buffet 無肉食 - Mong Kok",
+    "url": "https://www.happycow.net/reviews/ahimsa-buffet-kowloon-118296",
+    "image": "https://images.happycow.net/venues/500/11/82/hcmp118296_735585.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2/F, 88 Sai Yee St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28892938",
+    "servesCuisine": "Vegan-friendly, Ovo, Pizza, Chinese, International, Buffet, Salad bar, Take-out",
+    "description": "Vegetarian buffet restaurant offering a variety of choices. Dishes have ingredients listed. This outlet est. 2018.",
+    "openingHours": "Mon-Sun 11:30am-3:30pm, 6:00pm-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51520",
+    "name": "Amazing Kitchen",
+    "url": "https://www.happycow.net/reviews/amazing-kitchen-kowloon-51520",
+    "image": "https://images.happycow.net/venues/500/51/52/hcmp51520_648044.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 110 Fa Yuen St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23091833",
+    "servesCuisine": "Lacto, Chinese, Take-out, Honey",
+    "description": "香積廚素食館, at 旺角花園街110號地下, is a HK style vegetarian restaurant that seats 35. Serves mock meats. Despite some confusion confirmed not fully vegan April 2017 - uses dairy and honey. Limited English spoken. Nearest MTR Mong Kok exits either of B2 or D2.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "245219",
+    "name": "Black Window - 黑窗里",
+    "url": "https://www.happycow.net/reviews/black-window-kowloon-245219",
+    "image": "https://images.happycow.net/venues/500/24/52/hcmp245219_1203609.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Man On Bldg, 79-85 Tai Po Rd, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-97478914",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Western, Asian, Korean",
+    "description": "A vegetarian cafe adjoining books and music shop, previously known as So Boring. Serving mainly Asian rice and noodle dishes. A sample menu includes Korean vegan fried noodles, fried tofu steak with tomato sauce, Malay curry rice, and Thai meatless lettuce wraps. Only provides light meals on Tuesday.",
+    "openingHours": "Mon 12:30pm-5:00pm, 6:30pm-10:00pm, Tue 12:30pm-6:00pm, Thu-Sun 12:30pm-5:00pm, 6:30pm-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "23502",
+    "name": "Bo Kwong Vegetarian Restaurant",
+    "url": "https://www.happycow.net/reviews/bo-kwong-vegetarian-restaurant-kowloon-23502",
+    "image": "https://images.happycow.net/venues/500/23/50/hcmp23502_103838.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 29 & 31 On Shun Bldg., Shung Yan St., Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23444577",
+    "servesCuisine": "Ovo, Chinese, Take-out",
+    "description": "Chinese name: 寶光齋素食館.",
+    "openingHours": "Mon-Sun 7:00am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "393376",
+    "name": "Bodhi Vegetarianism - 菩提素",
+    "url": "https://www.happycow.net/reviews/bodhi-vegetarianism-kowloon-393376",
+    "image": "https://images.happycow.net/venues/500/39/33/hcmp393376_2607799.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 8, G/F & 1/F, 53-59 Kimberley Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23838222",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Buffet",
+    "description": "Chinese vegetarian restaurant offering a buffet consisting of traditional dishes. Most dishes are vegan, including tofu 豆腐, supreme soy sauce fried noodles 豉油王炒麵, choi sum 菜心, tofu puffs with taro 芋頭豆卜, stir-fry vegetarian chicken with celery 素雞西芹, roasted eggplant 烤茄子, lotus root 蓮藕.",
+    "openingHours": "Mon-Sun 11:30am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "17",
+    "name": "Branto Pure Indian Vegetarian Club",
+    "url": "https://www.happycow.net/reviews/branto-pure-indian-vegetarian-club-kowloon-17",
+    "image": "https://images.happycow.net/venues/500/00/17/hcmp17_53466.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/F, 9 Lock Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23668171",
+    "servesCuisine": "Vegan-friendly, Lacto, Indian, Take-out",
+    "description": "Long-time operating place in the heart of Tsim Sha Tsui. Popular among Indians. Always busy so be sure to come early. Try a dosa. From Peking Rd make first right into Lock Rd. Open 11am-3pm, 6pm-11pm.",
+    "openingHours": "Mon-Sun 11:00am-3:00pm, 6:00pm-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51532",
+    "name": "Cafe La Fresco Veggie - Enterprises Square",
+    "url": "https://www.happycow.net/reviews/cafe-la-fresco-veggie-kowloon-51532",
+    "image": "https://images.happycow.net/venues/500/51/53/hcmp51532_1024106.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 2 1/F, Enterprises Square, 9 Sheung Yuet Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28683266",
+    "servesCuisine": "Lacto, Ovo, Western, Take-out",
+    "description": "清新素食咖啡店, at 九龍灣常悅道9道企業廣場1期 1樓2號舖, is a vegetarian cafe with 20 seats. Last orders 30 mins before close. Located immediately next door to Kowloon Bay Post Office.",
+    "openingHours": "Mon-Fri 7:30am-5:00pm, Sat 7:30am-4:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "13241",
+    "name": "Chi Lin Vegetarian",
+    "url": "https://www.happycow.net/reviews/chi-lin-vegetarian-kowloon-13241",
+    "image": "https://images.happycow.net/venues/500/13/24/hcmp13241_71327.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Long Men Lou, Nan Lian Garden, 60 Fung Tak Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36589388",
+    "servesCuisine": "Vegan-friendly, Chinese, Buddhist",
+    "description": "龍門樓 is a Chinese Buddhist eatery beside the waterfall in the Nan Liang Garden. Very busy, pre-booking urged. Nearest MTR Diamond Hill Exit C2, then follow signs.",
+    "openingHours": "Mon-Fri 12:00pm-3:00pm, Mon-Sun 6:00pm-9:00pm, Sat-Sun 12:00pm-5:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "290675",
+    "name": "Ching Ching Veggies 晶晶素食店",
+    "url": "https://www.happycow.net/reviews/ching-ching-veggies-kowloon-290675",
+    "image": "https://images.happycow.net/venues/500/29/06/hcmp290675_1514586.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F 1-3 Wai Chi Lane, Shop G71, Shek Kip Mei (at Pak Tin Shopping Centre), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-46146544",
+    "servesCuisine": "Ovo, Chinese, Fast food, Take-out, Asian",
+    "description": "Vegetarian local-style Chinese takeaway offering vegan steamed minced pork with preserved vegetables 梅菜素肉餅, vegan lotus root patties 素肉蓮藕餅, iced oily chicken 冰鎮油雞, and sticky rice lotus leaf wraps 糯米雞. Dishes are free from MSG and artificial preservatives.",
+    "openingHours": "Mon-Fri 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "294236",
+    "name": "Ching Sum Zai - 清心齋 - Lai Chi Kok",
+    "url": "https://www.happycow.net/reviews/ching-sum-zai-kowloon-294236",
+    "image": "https://images.happycow.net/venues/500/29/42/hcmp294236_1548137.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 125, 1/F Liberte, 833 Lai Chi Kok Rd, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling desserts, savories, mock meats, and sweet buns, some of which are vegan and others that could be made vegan upon request. One of several outlets. Relocated from Liberte, 833 Lai Chi Kok Rd.",
+    "openingHours": "Mon-Sun 12:00pm-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "393699",
+    "name": "Eagle & Sparrow Music Cafe 我行我素音樂餐廳",
+    "url": "https://www.happycow.net/reviews/eagle-and-sparrow-music-cafe-kowloon-393699",
+    "image": "https://images.happycow.net/venues/500/39/36/hcmp393699_2606253.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 23 Man Wai St, Jordan (at 5 mins walk from Austin MTR station Exit A), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-61332363",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Beer/Wine, Catering, French, Breakfast",
+    "description": "A social enterprise vegetarian cafe, previously known as Jazz Bird. Offers items that are or can be made vegan such as poker face bowl 夏威夷波奇飯, El Paso wrap 純素墨西哥卷, bun less burger 生菜漢堡包, keto chocolate tart 純素朱古力撻, and keto blueberry muffin 純素藍莓蛋糕. All profits are for charity.",
+    "openingHours": "Mon-Thu 10:00am-9:00pm, Fri-Sun 11:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52907",
+    "name": "Fat Yau Yuen 佛友源素食",
+    "url": "https://www.happycow.net/reviews/fat-yau-yuen-kowloon-52907",
+    "image": "https://images.happycow.net/venues/500/52/90/hcmp52907_98597.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 8, G/F Fung Cheng Building, 340 Un Chau St, Cheung Sha Wan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23613463",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vego HK food including house-made vegan mock meats. Nearest MTR Cheung Sha Wan exit C2. Open Sunday if the 1st or 15th of lunar month.",
+    "openingHours": "Mon-Sat 8:00am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53425",
+    "name": "Fook Tak Vegetarian Kitchen",
+    "url": "https://www.happycow.net/reviews/fook-tak-vegetarian-kitchen-kowloon-53425",
+    "image": "https://images.happycow.net/venues/500/53/42/hcmp53425_1227819.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 27, 2nd floor, Tsun Yip Cooked Food Market, 67 Tsun Yip St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-93651418",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "福德素食小廚 at 觀塘駿業街67號駿業街熟食市場2樓 is a Cantonese style veggie eatery. MTR exit A2.",
+    "openingHours": "Mon-Fri 11:30am-3:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "25700",
+    "name": "Gaia Veggie Shop - Miramar Shopping Centre",
+    "url": "https://www.happycow.net/reviews/gaia-veggie-shop-miramar-shopping-centre-kowloon-25700",
+    "image": "https://images.happycow.net/venues/500/25/70/hcmp25700_1017028.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 2005, 2/F, Miramar Shopping Centre, 132 Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23761186",
+    "servesCuisine": "Lacto, Ovo, Chinese",
+    "description": "Vegetarian restaurant with 100+ seats. Serves Cantonese Buddhist ovo lacto veggie food. Note that mock meats might contain egg.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "13204",
+    "name": "Gaia Veggie Shop - Pioneer Centre",
+    "url": "https://www.happycow.net/reviews/gaia-veggie-shop-pioneer-centre-kowloon-13204",
+    "image": "https://images.happycow.net/venues/500/13/20/hcmp13204_1331815.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 135, 3/F, Pioneer Centre, 750 Nathan Road (at Prince Edward MTR Station & Bute St), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21481163",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vegetarian restaurant with 100+ seats. Cantonese Buddhist veggie food - the majority of dishes have no eggs.",
+    "openingHours": "Mon-Wed 11:00am-11:00pm, Thu 11:00am-10:00pm, Fri-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52877",
+    "name": "Gaia Veggie Shop - Wong Tai SIn",
+    "url": "https://www.happycow.net/reviews/gaia-veggie-shop-wong-tai-sin-kowloon-52877",
+    "image": "https://images.happycow.net/venues/500/52/87/hcmp52877_521909.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 102, Lions Rise Mall, 8 Muk Lun Street, Wong Tai Sin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28873363",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Another branch of Gaia serving Cantonese Buddhist vegetarian food. Nearest MTR, Wong Tai Sin exit D1. Reopened May 2023.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11351",
+    "name": "Gohappy Veggie 同樂素食",
+    "url": "https://www.happycow.net/reviews/gohappy-veggie-kowloon-11351",
+    "image": "https://images.happycow.net/venues/500/11/35/hcmp11351_1042788.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop FS17, The Feast Food Court, 8/F, The Metropolis, Metropolis Drive, Hung Hom, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31677127",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out, Buddhist",
+    "description": "At the food court inside a mega sized shopping mall opposite to Hung Hom rail station. Nearest MTR - Hom exit C. Previously named Vegetarian Hut. Cashless - accepts Octopus, WeChat Pay and Alipay. Reopened January 2023.",
+    "openingHours": "Mon-Sun 11:00am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51527",
+    "name": "Healthy Veggie 健康齋廚",
+    "url": "https://www.happycow.net/reviews/healthy-veggie-kowloon-51527",
+    "image": "https://images.happycow.net/venues/500/51/52/hcmp51527_603785.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "34 Feifeng St, Wong Tai Sin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-67330283",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Family-friendly casual vegetarian restaurant that provide a variety of choices including dishes with tofu, mock meats, noodles, and different vegetables. Nearest MTR Wong Tai Sin Exit A. Previously at 77 Tai Po St.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206166",
+    "name": "Heartful Veggie 從心素食 - San Po Kong",
+    "url": "https://www.happycow.net/reviews/heartful-veggie-kowloon-206166",
+    "image": "https://images.happycow.net/venues/500/20/61/hcmp206166_1082681.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 107, 1/F, Mikiki, 638 Prince Edward Rd E, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36184826",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese",
+    "description": "Vegetarian restaurant serving lunch and dinner. Dishes are mainly Asian style with a few western ones. Selection includes rice, noodles, mock meats, dumplings, vegetables, fried foods, sushi, and cheese bakes.",
+    "openingHours": "Mon-Sun 11:30am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "267276",
+    "name": "Home Taste Vegetarian 家味蔬食",
+    "url": "https://www.happycow.net/reviews/home-taste-vegetarian-kowloon-267276",
+    "image": "https://images.happycow.net/venues/500/26/72/hcmp267276_1327900.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 29, Fifth Floor, 19-21 Shing Yip Street, Kwun Tong (at Shing Yip Industrial Building), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-63295996",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Take-out, Catering, Taiwanese",
+    "description": "Vegetarian restaurant offering Taiwanese food. Offers noodles, fried rice, and desserts.",
+    "openingHours": "Mon-Fri 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "138994",
+    "name": "Kailash Parbat",
+    "url": "https://www.happycow.net/reviews/kailash-parbat-kowloon-138994",
+    "image": "https://images.happycow.net/venues/500/13/89/hcmp138994_1024570.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3/F, Multifield Plaza, 3-7 Prat Ave, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-34285545",
+    "servesCuisine": "Lacto, Indian, Delivery, Take-out, Indo-Chinese",
+    "description": "Part of international chain of Indian vegetarian restaurants. Extensive menu. Vegans ask for options. Contemporary decor and food.",
+    "openingHours": "Mon-Sun 12:00pm-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "359469",
+    "name": "Kindness Gather - 慈素小聚",
+    "url": "https://www.happycow.net/reviews/kindness-gather-kowloon-359469",
+    "image": "https://images.happycow.net/venues/500/35/94/hcmp359469_2227642.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8/F, Mody House, 30 Mody Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-51220223",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Japanese, Western, Delivery, Take-out, Fusion, Honey",
+    "description": "A fusion style vegetarian restaurant. Dishes that contain egg, dairy and honey are clearly indicated in the menu. Vegan dishes include tempura fried tofu with mango sauce 香芒天婦羅炸豆腐, steam beef balls with fresh yuba 鮮竹蒸牛肉球, Taiwanese bbq pork sandwich 台式叉燒刈包, vegetarian skewer with secret satay sauce 素食串燒拼盤配秘制沙嗲醬 and Sichuan style dandan noodles 四川擔擔麵.",
+    "openingHours": "Mon-Sun 11:30am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "5444",
+    "name": "Kung Tak Lam - Tsim Tsa Tsui",
+    "url": "https://www.happycow.net/reviews/kung-tak-lam-kowloon-5444",
+    "image": "https://images.happycow.net/venues/500/54/44/hcmp5444_653576.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "7/F 1 Peking Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23127800",
+    "servesCuisine": "Lacto, Ovo, Chinese, Cantonese",
+    "description": "功德林 Shanghai style food. Tsim Sha Tsui MTR. Few options for vegans. Note: mock meats contain egg, animal rennet may be used as an ingredient, and alcoholic drinks reported to possibly have animal by-products, please confirm for yourself.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "83243",
+    "name": "Leisurely Veggie 悠蔬食 - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/elegantly-veggie-kowloon-83243",
+    "image": "https://images.happycow.net/venues/500/83/24/hcmp83243_243307.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3/F, China Insurance Building, 48 Cameron Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-37065827",
+    "servesCuisine": "Vegan-friendly, Pizza, Chinese",
+    "description": "HK style vegetarian restaurant in a fine setting and offering a variety of choices. Nearest MTR is Tsim Sha Tsui exit B2.",
+    "openingHours": "Mon-Sun 11:30am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "5956",
+    "name": "Light Vegetarian Restaurant",
+    "url": "https://www.happycow.net/reviews/light-vegetarian-restaurant-kowloon-5956",
+    "image": "https://images.happycow.net/venues/500/59/56/hcmp5956_1814676.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13 Jordan Road, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23842833",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Buffet, Take-out, Banquet",
+    "description": "普光斋 menu is mostly vegan. Buffet lunch 12-3pm; other times order from a la carte menu. Also a takeaway counter. Large place with 2 floors of seating. Look for the large green sign. Located in between Jordan MTR exits B1 & B2.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "63747",
+    "name": "Little Buddha Veggie Delights 小樂佛素食",
+    "url": "https://www.happycow.net/reviews/little-buddha-veggie-delights-kowloon-63747",
+    "image": "https://images.happycow.net/venues/500/63/74/hcmp63747_718069.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 41-43 Station Lane, Ho Man Tin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-95780360",
+    "servesCuisine": "Lacto, Ovo, Chinese, Take-out",
+    "description": "金佛園素食 was reported to have reverted to lacto-ovo vegetarian in 2018. Buddhist. Located opposite Kwun Yam Taoist Temple. Note sister restaurant in Tsing Yi is still lacto-ovo vegetarian. Nearest MTR – Ho Man Tin exit B1. Previously called \nAmitabha Buddha Vegetarian.",
+    "openingHours": "Mon-Sun 8:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "23498",
+    "name": "Lotus Veggie - Fuk Lo Tsun Rd",
+    "url": "https://www.happycow.net/reviews/lotus-veggie-kowloon-23498",
+    "image": "https://images.happycow.net/venues/500/23/49/hcmp23498_319504.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "39 Fuk Lo Tsun Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23828290",
+    "servesCuisine": "Lacto, Ovo, Chinese, Take-out",
+    "description": "50 seats. Dim Sum. A short walk from 'Kowloon Walled City Park'. Nearest station is 'Lok Fu' MTR - Exit 'B'. Chinese name: 蓮花健康素食.",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "87897",
+    "name": "Lotus Veggie 蓮花健康素食 - Jordan",
+    "url": "https://www.happycow.net/reviews/lotus-veggie-kowloon-87897",
+    "image": "https://images.happycow.net/venues/500/87/89/hcmp87897_355219.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "31 Ning Po St, Jordan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23287686",
+    "servesCuisine": "Lacto, Ovo, Chinese, Take-out",
+    "description": "蓮花健康素食, at 九龍佐敦寧波街31號地下, is a branch of the Lotus Veggie chain.",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53424",
+    "name": "Lucky Star Vegetarian",
+    "url": "https://www.happycow.net/reviews/lucky-star-vegetarian-kowloon-53424",
+    "image": "https://images.happycow.net/venues/500/53/42/hcmp53424_99010.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 2B, 48A Glee Path, Mei Foo Sun Chuen, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-62558468",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out, Take-out only",
+    "description": "吉星至素食小食, at 美孚美孚吉利徑48A號2B舖, is a small vegetarian take away. Chinese and English spoken. Nearest MTR Mei Foo exit A. Take-out only.",
+    "openingHours": "Mon-Sun 9:00am-7:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "17608",
+    "name": "Luk Yung Sin Koon",
+    "url": "https://www.happycow.net/reviews/luk-yung-sin-kwun-kowloon-17608",
+    "image": "https://images.happycow.net/venues/500/17/60/hcmp17608_2524140.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "38 Jordan Road, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27308665",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out, Cantonese",
+    "description": "六榕仙館, at 佐敦佐敦道, is a Cantonese restaurant operating since 1968. Lively and busy, many original dishes, has English menu, and sells vegetarian pastries. Near MTR Austin (exit A) or Jordan (exit A). Reported open, Mar 2020.",
+    "openingHours": "Mon-Sun 10:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "16828",
+    "name": "M Garden Vegetarian 常悅素食",
+    "url": "https://www.happycow.net/reviews/m-garden-vegetarian-kowloon-16828",
+    "image": "https://images.happycow.net/venues/500/16/82/hcmp16828_836177.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2/F, Omega Plaza, 32-34A Dundas St, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27873128",
+    "servesCuisine": "Lacto, Ovo, Chinese",
+    "description": "Vegetarian Cantonese food and soups. Dim sum served til 4pm. Take Yau Ma Tei MTR station exit A1.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "208730",
+    "name": "Miu's Veggie 妙善",
+    "url": "https://www.happycow.net/reviews/mius-veggie-kowloon-208730",
+    "image": "https://images.happycow.net/venues/500/20/87/hcmp208730_938884.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 106-107, 1F, Whampoa World Food Court, Phase 8, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31522162",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese",
+    "description": "Presents traditional foods, healthy veg dishes and dim sum. Previously called Qiao Cuisine 巧饍坊.",
+    "openingHours": "Mon-Fri 12:00pm-4:00pm, Mon-Sun 6:00pm-10:00pm, Sat-Sun 11:30am-4:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "246747",
+    "name": "MUM Veggie Cafe - MUM 日常野菜料理",
+    "url": "https://www.happycow.net/reviews/mum-veggie-cafe-kowloon-246747",
+    "image": "https://images.happycow.net/venues/500/24/67/hcmp246747_1246382.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop B, G/F, 34 Yan Oi Street, San Po Kong, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Japanese",
+    "description": "Japanese vegetarian restaurant opened Aug 2021. Offers deli set with rice, miso soup, and mugicha (tea) with either 3 options or 4. Among the vegan dishes are okra with tofu skin, lotus root, kimpira burdock, spinach in sesame sauce, eggplant in miso. Dishes with egg are marked on menu. Accepts cash, octopus, WeChat Pay & AlipayHK.",
+    "openingHours": "Mon-Sun 12:00pm-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "399286",
+    "name": "Sam Bo Vegetarian - 三寶素食",
+    "url": "https://www.happycow.net/reviews/sam-bo-vegetarian-kowloon-399286",
+    "image": "https://images.happycow.net/venues/500/39/92/hcmp399286_2679261.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 5, G/F, Lai Bo Garden, 38 Cheung Wah St, Cheung Sha Wan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-61590949",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese",
+    "description": "Hong Kong style vegetarian eatery., Vegan dishes include vegetarian fried rice with toona sauce 香椿炒飯, fried rice with olive vegetable 欖菜炒飯, vegetarian fukubukuro sushi 福袋壽司, Sam Bo congee 三寶粥, fried spaghetti with shredded mock meat and vegetables 乾炒三絲意粉.",
+    "openingHours": "Mon-Fri 11:30am-3:30pm, Mon-Sun 5:30pm-8:30pm, Sun 11:30am-3:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52168",
+    "name": "Sangeetha",
+    "url": "https://www.happycow.net/reviews/sangeetha-kowloon-52168",
+    "image": "https://images.happycow.net/venues/500/52/16/hcmp52168_1020731.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1-5 & 31, Upper Ground Floor, Wing On Plaza, 62 Mody Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26402123",
+    "servesCuisine": "Vegan-friendly, Lacto, Indian, Take-out",
+    "description": "Franchise located at 尖沙咀麼地道62號永安廣場UG層1-5 31舖. Heavily lacto vegetarian with limited dairy free options. Vegans should always ask. Nearest MTR Tsim Sha Tsui East exit P1.",
+    "openingHours": "Mon-Fri 8:00am-3:00pm, 6:00pm-11:00pm, Sat-Sun 8:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "249517",
+    "name": "Shàn Yuán SùShí - 善緣素食 - Runda Commercial Bldg",
+    "url": "https://www.happycow.net/reviews/shan-yuan-sushi-kowloon-249517",
+    "image": "https://images.happycow.net/venues/500/24/95/hcmp249517_1236341.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop D2, G/F, Runda Commercial Bldg, 70-74 Wuhu St, Hung Hom, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-97818326",
+    "servesCuisine": "Ovo, Chinese",
+    "description": "Chinese style vegetarian restaurant that offers mock meat, wheat gluten, dim sum, fried rice and fried noodles and more.",
+    "openingHours": "Mon-Sun 9:00am-7:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "108548",
+    "name": "Simple me 素來素往",
+    "url": "https://www.happycow.net/reviews/simple-me-kowloon-108548",
+    "image": "https://images.happycow.net/venues/500/10/85/hcmp108548_418722.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "28-30 Pok Man St, Tai Kok Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21161119",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Buffet, Salad bar",
+    "description": "Lacto-ovo vegetarian buffet restaurant with a variety of mostly Cantonese style dishes. Many dishes include an English label. Eggs and milk are indicated.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "281042",
+    "name": "Sin Sin Fong - 善膳坊",
+    "url": "https://www.happycow.net/reviews/sin-sin-fong-kowloon-281042",
+    "image": "https://images.happycow.net/venues/500/28/10/hcmp281042_1433359.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 26 Un Chau Street, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-92217166",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out, Honey",
+    "description": "Vegetarian restaurant which offers local cuisine. Vegan options include tofu, soup, and cookies.",
+    "openingHours": "Mon-Sun 10:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11087",
+    "name": "Sino Vegetarian Restaurant 大中華素食",
+    "url": "https://www.happycow.net/reviews/sino-vegetarian-restaurant-kowloon-11087",
+    "image": "https://images.happycow.net/venues/500/11/08/hcmp11087_1369158.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 131-135 Parkes St, Yau Ma Tei (at Saigon St), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27712393",
+    "servesCuisine": "Chinese, Take-out",
+    "description": "Traditional Chinese restaurant near Jordan MTR Exit A. Menu is mostly vegan. Egg dishes are marked. Busy at lunchtime and early evening. Clean space with modern decor. Has English menu.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "9403",
+    "name": "Smrat Pure Veg - Chungking 5th Floor",
+    "url": "https://www.happycow.net/reviews/smrat-fifth-floor-chungking-kowloon-9403",
+    "image": "https://images.happycow.net/venues/500/94/03/hcmp9403_267713.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop B5, 5/F, Block B Chung King Mansion, 36-44 Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23695762",
+    "servesCuisine": "Lacto, Indian, Fast food, Take-out",
+    "description": "印度素食菜館 sit-down dining, lacto-vegetarian Indian restaurant on the 5th floor inside the big building at Chung King Mansions. Nearest MTR is Tsim Sha Tsui exit H. Confirmed open by owner Aug 2018.",
+    "openingHours": "Mon-Sun 10:00am-3:00pm, 6:00pm-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11055",
+    "name": "Smrat Pure Veg - Chungking Ground Floor",
+    "url": "https://www.happycow.net/reviews/smrat-pure-veg-ground-floor-chungking-kowloon-11055",
+    "image": "https://images.happycow.net/venues/500/11/05/hcmp11055_2698803.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ground Floor, Block B Chung King Mansion, 36-44 Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23695762",
+    "servesCuisine": "Lacto, Indian, Fast food, Take-out",
+    "description": "This one is a snack counter on the ground floor inside the big building at Chung King Mansions. Small seating area.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "337120",
+    "name": "So Yat So - 素一素",
+    "url": "https://www.happycow.net/reviews/so-yat-so-kowloon-337120",
+    "image": "https://images.happycow.net/venues/500/33/71/hcmp337120_1986868.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "B/F, Block C, Hong Kong Industrial Centre, 489-491 Castle Peak Road, Lai Chi Kok, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-37956070",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese",
+    "description": "Offers local style vegetarian meals. Includes braised potato with preserved vegetables 甜梅菜炆薯仔, braised eggplant 紅燒茄子, mixed vegetables 包羅萬有, crispy pipa tofu 琵琶豆腐 and vegetarian sweet & sour pork 素咕嚕.",
+    "openingHours": "Mon-Sat 12:00pm-3:00pm, 5:00pm-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "331151",
+    "name": "Sow Something - 素心事",
+    "url": "https://www.happycow.net/reviews/sow-something-kowloon-331151",
+    "image": "https://images.happycow.net/venues/500/33/11/hcmp331151_1924464.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 04, 1/F, Shing Yip Industrial Building, 19-21 Shing Yip St, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-65920365",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Pizza, Japanese, Western, Juice bar, Beer/Wine",
+    "description": "Vegetarian cafe with vegan options. Items with dairy and egg are clearly marked. No added MSG. Avocado & tomato donburi 丼初相遇豉, dice donburi 三骰丼, grilled rice ball with pickles 日本燒飯糰(三個)配日式漬物, grilled tofu skewers 汁燒日本豆腐串(三串), pickled burdock 日本醬油牛蒡漬.",
+    "openingHours": "Mon-Sun 12:00pm-6:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "118558",
+    "name": "Sujata Cafe",
+    "url": "https://www.happycow.net/reviews/sujata-cafe-kowloon-118558",
+    "image": "https://images.happycow.net/venues/500/11/85/hcmp118558_390349.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 907, 9/F, Wah Shing Centre, 11-13 Shing Yip St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27608003",
+    "servesCuisine": "Lacto, Ovo, American, Western, Honey, Breakfast",
+    "description": "Western style cafe in Kwun Tong Industrial building with Buddhist temple background. Menu offers pasta, sandwiches, burgers, and all day breakfast. Can ask for vegan. Reservations required on Sundays.",
+    "openingHours": "Mon-Sat 11:30am-4:00pm, Sun 11:30am-3:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "393528",
+    "name": "Tang Gallery - Snack Shop",
+    "url": "https://www.happycow.net/reviews/tang-gallery-snack-shop-kowloon-393528",
+    "image": "https://images.happycow.net/venues/500/39/35/hcmp393528_2603024.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "86Q4+P4 Sheung Yuen Leng, Fun Tak Rd, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Chinese",
+    "description": "A Chinese lacto-vegetarian cafe located within the grounds of the garden near the restaurant Chi Lin Vegetarian in the end separated section of a long block of buildings which include other shops selling tea equipment, clothing, etc. Only clearly labeled vegan items are ice cream and ice lollies - recommended to try the purple sticky rice taro coconut cream ice lolly. Other food includes hot noodles, dim sum and pre-packed snacks - vegans please inquire. (Staff states that all food (even the ice cream) had to be consumed inside the cafe because it's forbidden to walk around the garden eating.)",
+    "openingHours": "Mon-Sat 9:00am-8:30pm, Sun 9:30am-5:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11057",
+    "name": "Three Virtues 三德食品 - Jordan",
+    "url": "https://www.happycow.net/reviews/three-virtues-kowloon-11057",
+    "image": "https://images.happycow.net/venues/500/11/05/hcmp11057_383968.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4/F, JD Mall, 233-239 Nathan Rd, Jordan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36221888",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out",
+    "description": "Traditional style vegetarian restaurant serving dim sum and Cantonese dishes with mock meats. Seats for 200+, from single diners to banquets. Takeaway booth is on the ground floor. Near Jordan MTR Exit C1.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11210",
+    "name": "Tin Tin Vegetarian 天天素食 - Sceneway",
+    "url": "https://www.happycow.net/reviews/tin-tin-vegetarian-kowloon-11210",
+    "image": "https://images.happycow.net/venues/500/11/21/hcmp11210_96820.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 17-18, 3/F, Sceneway Plaza, Lam Tin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23468396",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling savories, mockmeats, sweet buns, herbal drinks, and more. Mostly vegan apart from possibly the mock meats. Located a the building on top of MTR station, Lam Tin MTR Exit A.",
+    "openingHours": "Mon-Sun 7:00am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213148",
+    "name": "Tin Tin Vegetarian 天天素食 - Yau Tong",
+    "url": "https://www.happycow.net/reviews/tin-tin-vegetarian-kowloon-213148",
+    "image": "https://images.happycow.net/venues/500/21/31/hcmp213148_968708.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 116, 1/F, Lei Yue Mun Plaza, 80 Lei Yue Mun Rd, Lei Yue Mun, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21105056",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling savories, mockmeats, sweet buns, herbal drinks, and more. Mostly vegan apart from possibly the mock meats.",
+    "openingHours": "Mon-Sun 7:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51528",
+    "name": "Tin Yu Vegetarian",
+    "url": "https://www.happycow.net/reviews/tin-yu-vegetarian-kowloon-51528",
+    "image": "https://images.happycow.net/venues/500/51/52/hcmp51528_834834.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "141 Un Chau St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27081228",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "天譽素食, at 深水埗元州街141號地舖, seats 38. Nearest MTR Sham Shui Po exit D2.",
+    "openingHours": "Mon-Sun 8:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53442",
+    "name": "Tishifang 滴水坊 - Ho Man Tin",
+    "url": "https://www.happycow.net/reviews/tishuifang-kowloon-53442",
+    "image": "https://images.happycow.net/venues/500/53/44/hcmp53442_94276.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/F, Block A, Cambridge Court, 84 Waterloo Rd, Ho Man Tin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27684335",
+    "servesCuisine": "Vegan-friendly, Lacto, Chinese, Buddhist",
+    "description": "Small veg cafe within a Buddhist centre. Food is vegan, milk is available with drinks.",
+    "openingHours": "Tue-Sun 11:00am-6:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51534",
+    "name": "Tishifang 滴水坊 - Kowloon Bay",
+    "url": "https://www.happycow.net/reviews/tishifang-kowloon-51534",
+    "image": "https://images.happycow.net/venues/500/51/53/hcmp51534_1276860.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F,1 Wang Kwong Rd, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31109007",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vegetarian teahouse and restaurant.",
+    "openingHours": "Mon-Thu 12:00pm-5:00pm, Fri 12:00pm-4:00pm, Sat 12:00pm-5:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "91710",
+    "name": "Tong De Veggie 同德素食",
+    "url": "https://www.happycow.net/reviews/tong-de-veggie-kowloon-91710",
+    "image": "https://images.happycow.net/venues/500/91/71/hcmp91710_1307972.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/F, 10 Prat Ave, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28020882",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese",
+    "description": "Lacto-ovo Hong Kong style vegetarian food. Marking of dishes on the menu with egg / milk dishes has errors; vegans should always ask.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "10941",
+    "name": "Treasure Vegetarian Restaurant 新聚寶素食",
+    "url": "https://www.happycow.net/reviews/treasure-vegetarian-restaurant-kowloon-10941",
+    "image": "https://images.happycow.net/venues/500/10/94/hcmp10941_1344899.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F Man On Building, 85 Tai Po Rd, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27082728",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out",
+    "description": "新聚寶素食 is a mid range, HK style restaurant and take away. 2014 relocated from 749 Nathan Rd, Prince Edward. Nearest MTR - Sham Shui Po exit B2.",
+    "openingHours": "Mon-Sun 7:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "385014",
+    "name": "TREEHOUSE - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/treehouse-kowloon-385014",
+    "image": "https://images.happycow.net/venues/500/38/50/hcmp385014_2512285.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop S28, Heath, B/F, Chungking Mansions, 36-44 Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-98523325",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Pizza, International, Organic, Western, Beer/Wine, Delivery, Take-out, Asian, Catering",
+    "description": "Vegetarian restaurant in an eco-friendly space. Serves primarily western style meals like pizza, burgers, wraps, and salads, in addition to several Asian bowls, many of which are vegan. Beverage selection includes cold pressed juices and fresh coconuts. Raw vegan desserts such as chocolate hazelnut cake, raw bites like cookie dough, chocolate coconut, peanut butter bomb and all coconut, all of which are processed under 41 degrees Celsius.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "384404",
+    "name": "Vegan Elements 緣素",
+    "url": "https://www.happycow.net/reviews/vegan-elements-kowloon-384404",
+    "image": "https://images.happycow.net/venues/500/38/44/hcmp384404_2518304.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "51 Ki Lung St, Prince Edward, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-98891259",
+    "servesCuisine": "Ovo, Chinese, International, Western, Juice bar, Take-out, Taiwanese, Korean",
+    "description": "Vegetarian restaurant offering typical local-style foods, previously known as Mei Gui Yuan 梅貴緣. Nearest MTR Prince Edward Exit D. Dishes may include Buddha's delight udon 羅漢齋烏冬, pineapple, cashew & minced meat fried rice 菠蘿腰果玉碎炒飯, steak spaghetti with tomato sauce 茄汁玉排燴意粉, burger king 特級漢堡皇, imitation shark fin soup 碗仔次.",
+    "openingHours": "Mon-Sat 12:00pm-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "416457",
+    "name": "Veggie Factory - San Po Kong - 素食工房",
+    "url": "https://www.happycow.net/reviews/veggie-factory-san-po-kong-kowloon-416457",
+    "image": "https://images.happycow.net/venues/500/41/64/hcmp416457_3064344.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 41 King Fuk St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-35425777",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out, Honey",
+    "description": "Counter selling local style vegetarian meals. Vegan dishes may include stuffed eggplant 釀茄子, bean curd roll 腐皮卷, fried soybean sprouts 炒大豆芽, veggie pipa tofu 琵琶豆腐, potato curry 咖喱薯仔 and more.",
+    "openingHours": "Mon-Sun 11:00am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "226078",
+    "name": "Veggie Factory 素食工房",
+    "url": "https://www.happycow.net/reviews/veggie-factory-kowloon-226078",
+    "image": "https://images.happycow.net/venues/500/22/60/hcmp226078_1063405.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 6, Food Court, 8/F, Dragon Centre, 37 Yen Chow St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-63545263",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Counter selling local style vegetarian meals. Confirmed open, Apr 2021.",
+    "openingHours": "Mon-Sun 11:00am-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "427275",
+    "name": "Veggie So Easy at Loft 206",
+    "url": "https://www.happycow.net/reviews/veggie-so-easy-at-loft-206-kowloon-427275",
+    "image": "https://images.happycow.net/venues/500/42/72/hcmp427275_2997112.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Far East Consortium Bldg, 1/F, 204-206 Nathan Rd, Jordan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-92118099",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out, Fusion",
+    "description": "A casual, mostly vegan, eatery with eggs being the only non-vegan ingredient. Take out option and very few seats.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/veggie-so-easy-at-loft-206-kowloon-427275/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "277023",
+    "name": "Via Vegetarian Restaurant - 維亞軒素食",
+    "url": "https://www.happycow.net/reviews/via-vegetarian-restaurant-kowloon-277023",
+    "image": "https://images.happycow.net/venues/500/27/70/hcmp277023_1402090.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Yee Hing Court, 13 Tak Hing Street, Jordan., Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23828022",
+    "servesCuisine": "Vegan-friendly, Lacto, Chinese, Western, Take-out, Catering",
+    "description": "A Chinese vegetarian restaurant which also offers western-style dishes such as dim sum, pizza, salads, spaghetti and coffee.",
+    "openingHours": "Tue-Sun 11:30am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225098",
+    "name": "Wai Fung 惠豐涼茶素食",
+    "url": "https://www.happycow.net/reviews/wai-fung-kowloon-225098",
+    "image": "https://images.happycow.net/venues/500/22/50/hcmp225098_1056512.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Block B, Proficient Industrial Centre, 6 Wang Kwun Rd, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-34874429",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Takeaway counter that sells vegetarian dim sum, rice and noodle dishes. Point and order.",
+    "openingHours": "Mon-Fri 7:30am-6:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "14022",
+    "name": "Woodlands",
+    "url": "https://www.happycow.net/reviews/woodlands-kowloon-14022",
+    "image": "https://images.happycow.net/venues/500/14/02/hcmp14022_977678.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "16-17 UG/F Wing On Plaza, 62 Mody Road, East Tsim Tsa Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23693718",
+    "servesCuisine": "Lacto, Indian",
+    "description": "Vegetarian Indian restaurant est. 1981. Serves South Indian cuisine. Known for its thalis which change slightly each day. Added a large separate vegan menu in 2019. Approx. 65 seats. At Exit P1 of East TST & TST MTR Stations.",
+    "openingHours": "Mon-Sun 11:30am-3:30pm, 6:30pm-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "220866",
+    "name": "Yuán Shàn SùShí 圓善素食",
+    "url": "https://www.happycow.net/reviews/yuan-shan-sushi-kowloon-220866",
+    "image": "https://images.happycow.net/venues/500/22/08/hcmp220866_1027593.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 434 Ma Tau Wei Rd, To Kwa Wan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26012801",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out",
+    "description": "Casual dining vegetarian cuisine restaurant offering set meals as well as a la carte ordering. Items with dairy and egg are clearly marked. No added MSG. Est. 2020.",
+    "openingHours": "Mon-Sun 11:30am-5:00pm, 6:00pm-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "23501",
+    "name": "Yue Tak Vegetarian 裕德素食",
+    "url": "https://www.happycow.net/reviews/yue-tak-vegetarian-kowloon-23501",
+    "image": "https://images.happycow.net/venues/500/23/50/hcmp23501_97222.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1, G/F, 26-30 Ting Fu St, Ngau Tau Kok (at MTR exit B4), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23318596",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out, Cantonese",
+    "description": "裕德素食 is a small shop that offers HK style fast food for vegetarians.",
+    "openingHours": "Mon-Fri 7:30am-4:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "352906",
+    "name": "Yuen Kei Chai - 源記齋",
+    "url": "https://www.happycow.net/reviews/yuen-mei-chai-kowloon-352906",
+    "image": "https://images.happycow.net/venues/500/35/29/hcmp352906_2157400.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop E, 1 Ngan Fung St, G/F, Wong Tai Sin, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-94487161",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out",
+    "description": "Offers local style vegetarian takeaway meals. Served with soup or soy milk or barley drink. Vegan options include braised vegetarian chicken with courgette 脆肉瓜炆素滑雞, braised eggplant with shredded vegetarian pork 素魚香茄子, sweet & sour vegetarian fish 糖醋素魚, broccoli & vegetarian goose in ginger sauce 薑汁西蘭花素鵝. (These options confirmed to be vegan despite the word vegetarian in the name of the dish.)",
+    "openingHours": "Mon-Sun 9:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "212921",
+    "name": "Yummy Station 知味駅",
+    "url": "https://www.happycow.net/reviews/yummy-station-kowloon-212921",
+    "image": "https://images.happycow.net/venues/500/21/29/hcmp212921_967564.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 33, Food Court, 8/F, Dragon Centre, 37 Yen Chow St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-94585190",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Japanese, Fast food",
+    "description": "Vegetarian cafe serving Asian style meals, like sushi, rice, and noodles. Items with dairy and egg are clearly marked.",
+    "openingHours": "Mon-Sun 11:00am-7:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "83361",
+    "name": "Zhi Chuk Lam Vegetarian 紫竹林素食",
+    "url": "https://www.happycow.net/reviews/zhi-chuk-lam-vegetarian-kowloon-83361",
+    "image": "https://images.happycow.net/venues/500/83/36/hcmp83361_236965.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 03, 1/F, Shing Yip Industrial Building, 19-21 Shing Yip St, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-54038681",
+    "servesCuisine": "Chinese, Honey",
+    "description": "紫竹林素食, at 觀塘成業街19-21號成業工業大廈1樓03室, is a HK style eatery that includes egg and honey - please confirm if this is still the case as of late 2018. Nearest MTR is Kwun Tong exit B1/B2. Open Mon-Fri 12:00pm-2:30pm. Also open for set dinner on Saturday's only by pre-booking.",
+    "openingHours": "Mon-Fri 12:00pm-3:30pm, 6:00pm-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "191285",
+    "name": "Above & Beyond",
+    "url": "https://www.happycow.net/reviews/above-and-beyond-kowloon-191285",
+    "image": "https://images.happycow.net/venues/500/19/12/hcmp191285_2309149.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "17 Science Museum Rd, Tsim Sha Tsui (at Hotel Icon), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-34001318",
+    "servesCuisine": "Lacto, Ovo, Chinese, Asian, Honey, Cantonese, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese fine dining restaurant with panoramic view of Hong Kong skyline. Has a dedicated, separate vegetarian and vegan menu. Includes appetizers, soups, seasonal veggies, main courses and rice & noodle dishes. Many dishes feature bean curd. Recommended to make a reservation for a window table.",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "372769",
+    "name": "AFURI",
+    "url": "https://www.happycow.net/reviews/afuri-kowloon-372769",
+    "image": "https://images.happycow.net/venues/500/37/27/hcmp372769_2540644.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "The One, 100 Nathan Rd, Tsim Sha Tsui, 2/L, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28152177",
+    "servesCuisine": "Ovo, Japanese, Take-out, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese ramen and dumpling restaurant with vegan choices. Menu is clearly labeled and includes fried tofu, vegan ramen, dumplings and donburi.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "316320",
+    "name": "Aidan Cafe - 小火焰",
+    "url": "https://www.happycow.net/reviews/aidan-cafe-kowloon-316320",
+    "image": "https://images.happycow.net/venues/500/31/63/hcmp316320_1780073.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1171-1179, 1/F, Zone A, Lok Fu Place, 198 Junction Road, Lok Fu, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36188203",
+    "servesCuisine": "Ovo, Delivery, Take-out, Korean, Non-veg",
+    "description": "Serves meat, vegan options available. Korean restaurant with a separate vegetarian menu. Vegan dishes include vegetable vermicelli, mushroom naengmyeon, kimchi tteokbokki, tomato salad, Korean stir-fried vegetables and more.",
+    "openingHours": "Mon-Sun 12:00pm-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "115314",
+    "name": "Bafang Dumpling",
+    "url": "https://www.happycow.net/reviews/bafang-dumpling-kowloon-115314",
+    "image": "https://images.happycow.net/venues/500/11/53/hcmp115314_374687.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "37-65 Parkes St, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Fast food, Take-out, Taiwanese, Non-veg",
+    "description": "Serves meat, vegan options available. Taiwanese dumplings chain with steamed and pan-fried vegetable dumplings. Also known as Bafang Yunji.",
+    "openingHours": "Mon-Sun 11:00am-12:00am",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "401460",
+    "name": "Bafang Dumpling - Hung Hom",
+    "url": "https://www.happycow.net/reviews/bafang-dumpling-kowloon-401460",
+    "image": "https://images.happycow.net/venues/500/40/14/hcmp401460_2701096.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "34 Tak Man St, Hung Hom, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Japanese, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese dumpling chain branch serving soup, noodles, dumplings and bubble tea. Online ordering possible; however, does not have socials and/or website. Vegan choices are steamed or pan-fried vegetable dumplings. Also, soy milk for drinks. (Note that the venue explicitly states that does not fry the dumplings separately to the animal products.)",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "247778",
+    "name": "Blossom",
+    "url": "https://www.happycow.net/reviews/blossom-kowloon-247778",
+    "image": "https://images.happycow.net/venues/500/24/77/hcmp247778_1224255.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "45 S Point Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28165138",
+    "servesCuisine": "Lacto, Ovo, International, Non-veg",
+    "description": "Serves meat, vegan options available. International style restaurant with vegan dishes including caramelized banana sourdough, a Hong Kongese salad and black truffle cauliflower rice with spiced tempeh.",
+    "openingHours": "Mon-Sun 9:00am-6:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287390",
+    "name": "Cafe de Coral",
+    "url": "https://www.happycow.net/reviews/cafe-de-coral-kowloon-287390",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No G163-174, G/F, Amoy Garden Phase I, 77 Ngau Tau Kok Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27503496",
+    "servesCuisine": "Lacto, Ovo, Chinese, Fast food, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese fast food restaurant offering vegan claypot rice with Omni-Pork, baked pork chop with tomatoes / chili rice and beech mushroom and cabbage soup.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/cafe-de-coral-kowloon-287390/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287392",
+    "name": "Cafe de Coral - Kai Yip Rd",
+    "url": "https://www.happycow.net/reviews/cafe-de-coral-kai-yip-rd-kowloon-287392",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No 10, Ground Floor, Kai Yip Shopping Centre, Kai Yip Estate, No 18 Kai Yip Rd, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Ovo, Chinese, Fast food, Non-veg",
+    "description": "Serves meat, vegan options available.  Chinese fast food restaurant offering vegan claypot rice with Omni-Pork, baked pork chop with tomatoes / chili rice and beech mushroom and cabbage soup.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/cafe-de-coral-kai-yip-rd-kowloon-287392/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287391",
+    "name": "Cafe de Coral - Telford Plaza",
+    "url": "https://www.happycow.net/reviews/cafe-de-coral-kowloon-287391",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop Unit 614, Level 6, Telford Plaza, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21094299",
+    "servesCuisine": "Ovo, Chinese, Fast food, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese fast food restaurant offering vegan claypot rice with Omni-Pork, baked pork chop with tomatoes / chili rice and beech mushroom and cabbage soup.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/cafe-de-coral-kowloon-287391/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "392644",
+    "name": "Café Influffy - 毛所樹樹",
+    "url": "https://www.happycow.net/reviews/cafe-influffy-koloon-392644",
+    "image": "https://images.happycow.net/venues/500/39/26/hcmp392644_2593970.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Spark City, 124-126 Castle Peak Rd, Cheung Sha Wan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-60318628",
+    "servesCuisine": "Vegan-friendly, Pizza, Western, French, Fusion, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available.. Cat cafe. Some dishes are vegan and some others can be made vegan, which may include Italian pesto spinach & wild mushroom spaghetti, vegetarian scallop risotto, Taiwanese vegetarian sesame oil chicken with spaghetti, vegan chicken nuggets and others. Nearest MTR station Cheung Sha Wan Exit A2. Added meat to the menu July 2024.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "247969",
+    "name": "Calfit",
+    "url": "https://www.happycow.net/reviews/calfit-kowloon-247969",
+    "image": "https://images.happycow.net/venues/500/24/79/hcmp247969_2231941.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4/F, 10 Prat Ave, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-53937474",
+    "servesCuisine": "Lacto, Ovo, Indian, International, Organic, Western, Delivery, Non-veg",
+    "description": "Serves meat, vegan options available. Organic and health focused restaurant with labeled vegan dishes including yellow daal tarka,  chocolate cheesecake, figs salads, avocado quinoa harvest bowls and more. For delivery call +852-6763-4720 and place your order or via Deliveroo.",
+    "openingHours": "Mon-Sun 12:00pm-3:00pm, 6:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "258392",
+    "name": "Cheung Wing Café 祥榮茶冰廳",
+    "url": "https://www.happycow.net/reviews/cheung-wing-cafe-kowloon-258392",
+    "image": "https://images.happycow.net/venues/500/25/83/hcmp258392_1265344.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 245-247 Ngau Tau Kok Rd., Ngau Tau Kok, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23454623",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Fast food, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong-style restaurant serving a variety of vegan dishes, such as Satay Enoki Mushroom and Vermicelli Clay Pot 沙嗲粉絲金菇煲, Spaghetti and Mixed Mushrooms in Tomato Sauce 茄汁什菌燴意粉, Curry Rice with Assorted Vegetables 咖喱什菜飯, and Salt and Pepper Okra with Golden Tofu Dices 椒鹽秋葵拼黃金豆腐.",
+    "openingHours": "Mon-Sun 6:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "392061",
+    "name": "Chun Shui Tang - 春水堂",
+    "url": "https://www.happycow.net/reviews/chun-shui-tang-kowloon-392061",
+    "image": "https://images.happycow.net/venues/500/39/20/hcmp392061_2587028.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 110C&112, 1/F, Mira Place 1, 132 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27305300",
+    "servesCuisine": "Lacto, Ovo, Japanese, Asian, Taiwanese, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Taiwanese teahouse and restaurant offering clearly marked vegan choices including spicy cucumber, deep fried mushrooms, fried sweet potato, vegan noodles and somen.",
+    "openingHours": "Mon-Sun 8:00am-6:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "276898",
+    "name": "Chung Tai Mei Mei",
+    "url": "https://www.happycow.net/reviews/chung-tai-mei-mei-kowloon-276898",
+    "image": "https://images.happycow.net/venues/500/27/68/hcmp276898_1396267.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Mei King St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-28681233",
+    "servesCuisine": "Lacto, Ovo, Chinese, Thai, Delivery, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Restaurant serving Thai and Chinese cuisine. Offers multiple pages of vegetarian and vegan dishes. Vegan faux meats available.",
+    "openingHours": "Mon-Sun 12:00pm-4:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "366339",
+    "name": "CoCo Ichibanya",
+    "url": "https://www.happycow.net/reviews/coco-ichibanya-kowloon-366339",
+    "image": "https://images.happycow.net/venues/500/36/63/hcmp366339_2295896.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 Canton Rd, 3F, Tsim Sha Tsui (at Silvercord), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-35720460",
+    "servesCuisine": "Japanese, Fast food, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese curry house chain with a vegan base of curry sauce \"veggie\" on the menu, which may be customized with toppings of choice. Curry is served with a portion of rice. Indicate spice level and portion size at the time of placing order.",
+    "openingHours": "Mon-Thu 11:30am-9:30pm, Fri-Sat 11:30am-10:30pm, Sun 11:30am-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225371",
+    "name": "Coffee Folks 咖啡人",
+    "url": "https://www.happycow.net/reviews/coffee-folks-kowloon-225371",
+    "image": "https://images.happycow.net/venues/500/22/53/hcmp225371_1578844.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop E6, 1/F, Citi Tower, One Bay East, 83 Hoi Bun Rd, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31885406",
+    "servesCuisine": "Western, Fusion, Non-veg",
+    "description": "Serves meat, vegan options available. Food for vegans from the menu includes mesclun greens, quinoa, mixed rice, turmeric Indian rice with and falafel hummus, impossible bolognese, veggie garden in pomodoro sauce, chia seed pudding, and mini wraps.",
+    "openingHours": "Mon-Fri 8:00am-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "274907",
+    "name": "Comfy by Chef's Stage",
+    "url": "https://www.happycow.net/reviews/comfy-by-chefs-stage-kowloon-274907",
+    "image": "https://images.happycow.net/venues/500/27/49/hcmp274907_1412404.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 25-31, 7 Shing Yip St, Kwun Tong (at the E-Plaza), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27999868",
+    "servesCuisine": "Lacto, Ovo, Western, Take-out, Asian, Fusion, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Western fusion restaurant with vegan choices. Menu is clearly labeled and includes avocado quinoa bowl, OmniPork meatballs, Impossible burger and french fries. Plant-based milk available for coffee beverages.",
+    "openingHours": "Mon-Sun 12:00pm-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "288658",
+    "name": "Crystal Jade La Mian Xiao Long Bao 翡翠拉麵小籠包",
+    "url": "https://www.happycow.net/reviews/crystal-jade-la-mian-xiao-long-bao-kowloon-288658",
+    "image": "https://images.happycow.net/venues/500/28/86/hcmp288658_1496936.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G53A, Telford Plaza I, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23059990",
+    "servesCuisine": "Ovo, Chinese, Delivery, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Traditional Chinese cuisine and modern gastronomy fusion with a vegan twist on iconic dishes. Sample vegan dishes include OmniPork xiao long bao with asparagus lettuce, soup dumplings and meatballs as well as beef with tofu thick soup, sweet and sour chicken and more.",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "326791",
+    "name": "Cutting Onions",
+    "url": "https://www.happycow.net/reviews/cutting-onions-kowloon-326791",
+    "image": "https://images.happycow.net/venues/500/32/67/hcmp326791_1882768.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "63 Ma Tau Wai Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-68966862",
+    "servesCuisine": "Lacto, Ovo, Western, Non-veg",
+    "description": "Serves meat, vegan options available. Cafe that serves burgers and pasta. Offers vegan burgers, vegan desserts and oat and soy milk for coffee.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "117632",
+    "name": "Ever Green 嚐綠",
+    "url": "https://www.happycow.net/reviews/ever-green-kowloon-117632",
+    "image": "https://images.happycow.net/venues/500/11/76/hcmp117632_388644.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 55, G/F, E Plaza, 7 Shing Yip St, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-57037780",
+    "servesCuisine": "Lacto, Ovo, Western, Fast food, Salad bar, Take-out, Asian, Fusion, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Salad for take away. Many veggie choices.",
+    "openingHours": "Mon-Fri 12:00pm-8:00pm, Sat 12:00pm-7:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225336",
+    "name": "Fete Up",
+    "url": "https://www.happycow.net/reviews/fete-up-kowloon-225336",
+    "image": "https://images.happycow.net/venues/500/22/53/hcmp225336_1178716.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "77 Hoi Bun Rd, The Quayside, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-59223308",
+    "servesCuisine": "International, Western, Salad bar, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Menu offers a pre-designed \"vegan crunch\" bowl. Or customize your own choosing a base then toppings and sauce. Based options are brown rice, coconut rice, soba, and Asian salad. Toppings include falafel, kale, roasted pumpkin, tomato, beans, and avocado among others.",
+    "openingHours": "Mon-Fri 11:00am-4:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "214349",
+    "name": "Food Expression 現代煮意",
+    "url": "https://www.happycow.net/reviews/food-expression-kowloon-214349",
+    "image": "https://images.happycow.net/venues/500/21/43/hcmp214349_977122.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "39 Wang Chiu Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26621488",
+    "servesCuisine": "Chinese, Fast food, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Menu includes vegan friendly omnipork dishes.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/food-expression-kowloon-214349/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "421239",
+    "name": "Genki Sushi - MOKO",
+    "url": "https://www.happycow.net/reviews/genki-sushi-kowloon-421239",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 505A, Lvl 5, 193 Prince Edward Rd W, Mong Kok, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27848068",
+    "servesCuisine": "Lacto, Ovo, Japanese, Asian, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese restaurant with vegan and vegetarian menu section that offers a range of vegetable sushi rolls, seaweed salad, edamame and more. One of several locations.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/genki-sushi-kowloon-421239/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287411",
+    "name": "Ging Sun Ho King of Bun - 堅信號上海生煎皇",
+    "url": "https://www.happycow.net/reviews/ging-sun-ho-king-of-bun-kowloon-287411",
+    "image": "https://images.happycow.net/venues/500/28/74/hcmp287411_1496791.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G187-188, G/F, Amoy Plaza Phase 2, 77 Ngau Tau Kok Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23334118",
+    "servesCuisine": "Ovo, Chinese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese take out restaurant offering a selection of vegan noodle dishes made with Omni faux meat products as well as braised eggplants with cucumber & brown sauce. Vegan sides also available. NOTE: Orders must be made a day in advance.",
+    "openingHours": "Mon-Sun 11:00am-6:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "117482",
+    "name": "Gingko House 銀杏館",
+    "url": "https://www.happycow.net/reviews/gingko-house-kowloon-117482",
+    "image": "https://images.happycow.net/venues/500/11/74/hcmp117482_385059.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 20, 1/F, Alhambra Building, 385 Nathan Rd, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27893321",
+    "servesCuisine": "Lacto, Ovo, Chinese, International, Organic, Beer/Wine, Non-veg",
+    "description": "Serves meat, vegan options available. Social enterprise providing employment for senior citizens. Higher-end cuisine, with set menu deals. Has vegetarian menu items.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "253204",
+    "name": "HABITŪ - Kowloon",
+    "url": "https://www.happycow.net/reviews/habitu-kowloon-kowloon-253204",
+    "image": "https://images.happycow.net/venues/500/25/32/hcmp253204_1237549.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop B142, B1, Mira Place One, 132 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-35720846",
+    "servesCuisine": "Lacto, Ovo, Pizza, Italian, Beer/Wine, Delivery, Take-out, Bakery, Catering, European, Non-veg",
+    "description": "Serves meat, vegan options available. Café serving well marked vegan dishes such as avocado tahini salad, zucchini noodles, pullpork pizza, roasted pumpkin salad and cookies. Drinks on offer include beetroot, turmeric and matcha soy latte.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "392070",
+    "name": "Hana-Musubi 華御結 - Austin Station",
+    "url": "https://www.happycow.net/reviews/hana-musubi-kowloon-392070",
+    "image": "https://images.happycow.net/venues/500/39/20/hcmp392070_2587095.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop AUS 112, MTR Austin Station (Paid Concourse), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-51007886",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese chain offering clearly labeled vegan onigiri and salads.",
+    "openingHours": "Mon-Sun 7:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "392069",
+    "name": "Hana-Musubi 華御結 - Mira Place 1 Shop",
+    "url": "https://www.happycow.net/reviews/hana-musubi-kowloon-392069",
+    "image": "https://images.happycow.net/venues/500/39/20/hcmp392069_2587069.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No.106, 1/F, Mira Place 1, 132 Nathan Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26082659",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese onigiri store offering clearly marked vegan onigiri and salads.",
+    "openingHours": "Mon-Fri 7:30am-9:00pm, Sat-Sun 8:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "293243",
+    "name": "Hidden 和洋食屋",
+    "url": "https://www.happycow.net/reviews/hidden-kowloon-293243",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 4, 8/F, International Plaza, 20 Sheung Yuet Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-98581737",
+    "servesCuisine": "Lacto, Ovo, Japanese, Western, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Western-Japanese restaurant with vegan choices. Menu includes OmniPork burger, OmniFillet sandwich, Mexican avocado fries, baked potato with baked beans, Japansese style mixed oden udon, miso soup and more. Specify vegan when ordering.",
+    "openingHours": "Mon-Sat 11:00am-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "288642",
+    "name": "IKEA",
+    "url": "https://www.happycow.net/reviews/ikea-kowloon-288642",
+    "image": "https://images.happycow.net/venues/500/28/86/hcmp288642_1496820.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "IKEA Kowloon Bay L4, MegaBox, 38 Wang Chiu Rd, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31250888",
+    "servesCuisine": "Lacto, Ovo, Western, Fast food, Delivery, Non-veg",
+    "description": "Serves meat, vegan options available. International superstore from Sweden selling furniture and home goods. An onsite bistro offers light meals, snacks, and Swedish meatballs including veggie meatballs which are vegan and are also sold in the store grocery- freezer section. Menu has other vegan-friendly foods such as rice and steamed veggies, pasta marinara, salad, and soup. Serves fountain drinks. Selection may vary by location.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "375811",
+    "name": "Jubilee Court - 銀禧閣",
+    "url": "https://www.happycow.net/reviews/jubilee-court-kowloon-375811",
+    "image": "https://images.happycow.net/venues/500/37/58/hcmp375811_2399575.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "81-83 Chung Hau St (at Metropolitan University of Hong Kong), Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Chinese, Take-out, Asian, Catering, Honey, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong style tea room offering a vegetarian section with items that are or can be made vegan such as noodles, vegetable fried rice and tofu with vegetables.",
+    "openingHours": "Mon-Sat 7:30am-8:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "85004",
+    "name": "Kubrick",
+    "url": "https://www.happycow.net/reviews/kubrick-kowloon-85004",
+    "image": "https://images.happycow.net/venues/500/85/00/hcmp85004_208923.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop H2, Properous Garden, 3 Public Square St, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23848929",
+    "servesCuisine": "Lacto, Ovo, Pizza, Western, Fast food, Bakery, European, Non-veg",
+    "description": "Serves meat, vegan options available. Bookshop and cafe on the ground floor next to Cinematique in Yau Ma Tei. Menu indicates which items are vegan or vegetarian and whether they contain onion or garlic. Has vegan ice cream.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "228891",
+    "name": "Masala Hut",
+    "url": "https://www.happycow.net/reviews/masala-hut-kowloon-228891",
+    "image": "https://images.happycow.net/venues/500/22/88/hcmp228891_1081315.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "22-24 Cameron Rd (at Chatham Rd), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-29710009",
+    "servesCuisine": "Lacto, Ovo, Indian, Buffet, Beer/Wine, Delivery, Take-out, Asian, Catering, Fusion, Non-veg",
+    "description": "Serves meat, vegan options available. Indian street food restaurant offering vegan choices, non-spicy choices, and a daily lunch buffet.",
+    "openingHours": "Mon-Sun 12:00pm-3:00pm, 5:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "397814",
+    "name": "Miss India",
+    "url": "https://www.happycow.net/reviews/miss-india-resturant-kowloon-397814",
+    "image": "https://images.happycow.net/venues/500/39/78/hcmp397814_2654495.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "57 Tung Choi St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-52396969",
+    "servesCuisine": "Lacto, Ovo, Indian, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Indian restaurant with an assortment of vegetarian dishes, some of which can be made vegan upon request. Example items include samosa, Indian salad, vegetable noodles, pakora, curry and more. Specify no dairy or ghee when ordering. Limited Indian choices nearby.",
+    "openingHours": "Mon-Sun 11:30am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "282334",
+    "name": "MUJI Cafe - Telford Plaza",
+    "url": "https://www.happycow.net/reviews/muji-kowloon-282334",
+    "image": "https://images.happycow.net/venues/500/28/23/hcmp282334_1496831.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 401-402, Level 4, Telford Plaza II, 33 Wai Yip St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-39738380",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese café located in a health food store serving seasonal dishes with a selection of vegan choices.",
+    "openingHours": "Mon-Sun 11:30am-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "264116",
+    "name": "Nara Thai Cuisine",
+    "url": "https://www.happycow.net/reviews/nara-thai-cuisine-kowloon-264116",
+    "image": "https://images.happycow.net/venues/500/26/41/hcmp264116_1324028.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 3303, 3/F, Gateway Arcade, Harbour City, 3-27 Canton Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21533660",
+    "servesCuisine": "Lacto, Ovo, Thai, Beer/Wine, Take-out, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Thai restaurant serving vegan dishes such as vegetarian spring rolls, minced OmniPork salad with rice vermicelli & lettuce, papaya salad, mixed vegetable coconut soup, stir-fried OmniPork with eggplant, stir-fried OmniPork & tofu puff, pumpkin & tofu puff red curry, mixed vegetables yellow curry, sweet & sour vegetarian chicken, pad Thai with mixed vegetables.",
+    "openingHours": "Mon-Thu 11:30am-10:00pm, Fri-Sun 11:30am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "240738",
+    "name": "Nood Food",
+    "url": "https://www.happycow.net/reviews/nood-food-kowloon-240738",
+    "image": "https://images.happycow.net/venues/500/24/07/hcmp240738_1322368.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/F, International Trade Tower, 348 Kwun Tong Rd, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-22985356",
+    "servesCuisine": "Lacto, Ovo, International, Western, Salad bar, Juice bar, Delivery, Take-out, Asian, Bakery, Gluten-free, Honey, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. An eatery by PURE with many vegan choices.",
+    "openingHours": "Mon-Fri 8:00am-7:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "324589",
+    "name": "Oka's",
+    "url": "https://www.happycow.net/reviews/okas-kowloon-324589",
+    "image": "https://images.happycow.net/venues/500/32/45/hcmp324589_1861120.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Nathan Rd, Tsim Sha Tsui (at The ONE Shopping Mall), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26279817",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Take-away shop specialising in house-made Japanese cuisine such as onigiri (rice ball), tempura and bento. Offers 4-5 types of vegan onigiri and vegetable tempura.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51526",
+    "name": "Pak Bo 百寶齋廚",
+    "url": "https://www.happycow.net/reviews/pak-bo-kowloon-51526",
+    "image": "https://images.happycow.net/venues/500/51/52/hcmp51526_95492.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "780-782 Nathan Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23802681",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out, Non-veg",
+    "description": "Previously vegetarian restaurant that serves mock meat and vegetable dishes, rice and noodles, and other Chinese food. Use of shrimp reported in Sep 2021. Relocated from Cite 31, Lai Chi Kok Rd.",
+    "openingHours": "Mon-Sun 10:30am-10:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225312",
+    "name": "Paper & Coffee",
+    "url": "https://www.happycow.net/reviews/paper-coffee-kowloon-225312",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4/F, Sir Run Run Shaw Building, Hong Kong Baptist University, Kowloon Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-24832456",
+    "servesCuisine": "Lacto, Ovo, International, Western, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Vegan dishes are labeled, such as vegan balls, fried vegan fish w/soba, assorted mushroom veggies, seasonal veggies w/Japanese rice and burgers like tofu avocado burger.",
+    "openingHours": "Mon-Fri 9:00am-8:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "391881",
+    "name": "Peek-A-Poke",
+    "url": "https://www.happycow.net/reviews/peek-a-poke-kowloon-391881",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop S01B, Heath B/F, Chungking Mansion, 36-44 Nathan Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-63773073",
+    "servesCuisine": "Lacto, Ovo, Japanese, Western, Delivery, Take-out, Fusion, Honey, Hawaiian, Non-veg",
+    "description": "Serves meat, vegan options available. Poke bowl restaurant with vegan poke bowls available.",
+    "openingHours": "Mon-Sun 12:30pm-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "229938",
+    "name": "Pizza Express - Olympian City",
+    "url": "https://www.happycow.net/reviews/pizza-express-kowloon-229938",
+    "image": "https://images.happycow.net/venues/500/22/99/hcmp229938_1089210.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G18, G/F, Olympian City 3, 1 Hoi Wang Rd, Tai Kok Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31641312",
+    "servesCuisine": "Vegan-friendly, Lacto, Pizza, Italian, Fast food, Beer/Wine, Take-out, Gluten-free, Non-veg",
+    "description": "Serves meat, vegan options available. International pizza restaurant chain founded 1965 with its first branch in London and has since grown to operate outlets across the UK and overseas. Created a separate vegan menu in 2018 offering choices including: starters like marinated olives and vegan dough balls, multiple varieties of pizzas (uses vegan cheese & faux meats), an al forno penne pasta, alcoholic drinks like cider and beer, fruit sorbet and carrot cake for dessert. Soya milk is available for coffee and tea. Outside of the UK the options may vary so check with your server.",
+    "openingHours": "Mon-Fri 11:00am-10:00pm, Sat-Sun 8:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "134537",
+    "name": "Pret A Manger - Exchange Tower",
+    "url": "https://www.happycow.net/reviews/pret-a-manger-kowloon-134537",
+    "image": "https://images.happycow.net/venues/500/13/45/hcmp134537_1595816.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 02, G/F, Exchange Tower, 33 Wang Chiu Rd, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-22970017",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Fast food, Take-out, European, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. UK based international chain advertising natural food and organic coffee. Offers ready-to-eat prepackaged foods and drinks, including items like smoothies, bottled juices, porridge, coconut milk yogurt with granola, falafel and hummus salad, fruit salad, baguette sandwiches, wraps, and soups. Vegan items labeled. Est. 1983 and commonly referred to as just Pret.",
+    "openingHours": "Mon-Fri 7:30am-7:00pm, Sat 11:00am-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "398001",
+    "name": "Pret A Manger - Hung Hom",
+    "url": "https://www.happycow.net/reviews/pret-a-manger-kowloon-398001",
+    "image": "https://images.happycow.net/venues/500/39/80/hcmp398001_2673110.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "MTR Hung Hom Station Podium, Hung Hom (at MTR Hung Hom Station), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-25469543",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Fast food, Take-out, European, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. UK based international chain advertising natural food and organic coffee. Offers ready-to-eat prepackaged foods and drinks, including items like smoothies, bottled juices, porridge, coconut milk yogurt with granola, falafel and hummus salad, fruit salad, baguette sandwiches, wraps, and soups. Vegan items labeled. Est. 1983 and commonly referred to as just Pret.",
+    "openingHours": "Mon-Fri 7:00am-7:30pm, Sat 7:30am-7:30pm, Sun 9:00am-7:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "50517",
+    "name": "Saravana 娑羅婆納",
+    "url": "https://www.happycow.net/reviews/saravana-kowloon-50517",
+    "image": "https://images.happycow.net/venues/500/50/51/hcmp50517_1171355.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 105, First Floor, Chung King Mansion, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27397633",
+    "servesCuisine": "Vegan-friendly, Lacto, Indian, Delivery, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Established 2007, Punjabi managed. Nearest MTR - Tsim Sha Tsui exit H. Reported to serve meat March 2024",
+    "openingHours": "Mon-Sun 9:00am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "352073",
+    "name": "Shanghai Lao Lao",
+    "url": "https://www.happycow.net/reviews/shanghai-lao-lao-kowloon-352073",
+    "image": "https://images.happycow.net/venues/500/35/20/hcmp352073_2173619.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "33 Wai Yip St, Telford Plaza Shopping Mall, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26077909",
+    "servesCuisine": "Ovo, Chinese, Non-veg",
+    "description": "Serves meat, vegan options available. Shanghainese style Chinese food. Vegan choices may or could possibly include dim sum, handmade noodles, tofu, rice, dim sum filled with Beyond Meat, tofu in spicy sauce, dumplings with plant based meat filling.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "322016",
+    "name": "Sukiya - すき家",
+    "url": "https://www.happycow.net/reviews/sukiya-kowloon-322016",
+    "image": "https://images.happycow.net/venues/500/32/20/hcmp322016_1836907.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "38 Cameron Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Japanese, Fast food, Take-out, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. An affordable fast food chain from Japan speciaizing in gyudon. Also available as vegan as a combo with stir fried vegetables. NOTE: Reported February 2024 to have limited vegan options – please send updates to HappyCow.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/sukiya-kowloon-322016/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "388229",
+    "name": "Tagline Modern Indian & Arabic Restaurant and Bar",
+    "url": "https://www.happycow.net/reviews/tagline-modern-indian-arabic-restaurant-and-bar-kowloon-388229",
+    "image": "https://images.happycow.net/venues/500/38/82/hcmp388229_2546997.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4th Floor, 10 Prat, 10 Prat Ave, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23293311",
+    "servesCuisine": "Lacto, Ovo, Indian, Beer/Wine, Delivery, Take-out, Catering, Middle Eastern, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Restaurant serving Arabic and Indian food and shisha (hubbly bubbly). Vegan options are labeled. Choices include crunch salad, grilled tofu with quinoa salad, dal tadka, and  vegan seekh kebab.",
+    "openingHours": "Mon-Thu 11:30am-11:00pm, Fri-Sat 11:30am-12:00am, Sun 11:30am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "269068",
+    "name": "Thai Thai Restaurant 泰泰",
+    "url": "https://www.happycow.net/reviews/thai-thai-restaurant-kowloon-269068",
+    "image": "https://images.happycow.net/venues/500/26/90/hcmp269068_1608370.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "182 Woosung St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27798989",
+    "servesCuisine": "Lacto, Ovo, Thai, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Thai restaurant with around six vegan dishes.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "320559",
+    "name": "The Chippy",
+    "url": "https://www.happycow.net/reviews/the-chippy-kowloon-320559",
+    "image": "https://images.happycow.net/venues/500/32/05/hcmp320559_1823125.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "46 Granville Rd (at Granville Food Square 尖沙咀美食坊), Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Fast food, Delivery, Take-out, British, Non-veg",
+    "description": "Serves meat, vegan options available. Fast food restaurant offering vegan minced steak onion pie and vegan chicken & mushroom pie. Contact: 23386801.",
+    "openingHours": "Mon-Sun 11:30am-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "372082",
+    "name": "Three Idiots",
+    "url": "https://www.happycow.net/reviews/three-idiots-kowloon-372082",
+    "image": "https://images.happycow.net/venues/500/37/20/hcmp372082_2539965.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "35A Cheung Ning St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-54028311",
+    "servesCuisine": "Lacto, Ovo, Indian, Beer/Wine, Delivery, Take-out, Catering, Non-veg",
+    "description": "Serves meat, vegan options available. Indian restaurant offering a lunch set that can be made vegan on request.",
+    "openingHours": "Mon-Sun 11:00am-3:00pm, 6:00pm-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "282332",
+    "name": "Tong Kee Bao Dim",
+    "url": "https://www.happycow.net/reviews/tong-kee-bao-dim-kowloon-282332",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "KOB1, Lobby, Kowloon Bay MTR Station, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23434133",
+    "servesCuisine": "Lacto, Ovo, Chinese, Fast food, Delivery, Take-out, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Cantonese restaurant specializing in dim sum with 5+ vegan choices. Delivery available on Foodpanda.",
+    "openingHours": "Mon-Sun 6:30am-8:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "282325",
+    "name": "Trusty Congee King 靠得住",
+    "url": "https://www.happycow.net/reviews/trusty-congee-king-kowloon-282325",
+    "image": "https://images.happycow.net/venues/500/28/23/hcmp282325_1486659.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "520-523, 5/F, Telford Plaza II, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Chinese, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese chain restaurant with a selection of vegan dishes including Omni luncheon rice noodles, Omni strip stir fry udon and omni mince with green beans as well as bowls, buns and more.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/trusty-congee-king-kowloon-282325/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287386",
+    "name": "Trusty Congee King 靠得住 -  Megabox Shop 3 6/F",
+    "url": "https://www.happycow.net/reviews/trusty-congee-king-kowloon-287386",
+    "image": "https://images.happycow.net/venues/500/28/73/hcmp287386_1490534.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 3, 6/F, Enterprise Square Five, Megabox, 38 Wang Chiu Rd, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Chinese, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Serves meat, vegan options available.  Chinese chain restaurant with a selection of vegan dishes including Omni luncheon rice noodles, Omni strip stir fry udon and omni mince with green beans as well as bowls, buns and more.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/trusty-congee-king-kowloon-287386/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "342048",
+    "name": "Yau Yuen Siu Tsui",
+    "url": "https://www.happycow.net/reviews/yau-yuen-siu-tsui-kowloon-342048",
+    "image": "https://images.happycow.net/venues/500/34/20/hcmp342048_2037785.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "36 Man Yuen St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-53002682",
+    "servesCuisine": "Ovo, Chinese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Offers spicy dishes from Shanxi province of China. Includes noodles (ask to omit the meat sauce) and a number of vegetable dishes.",
+    "openingHours": "Mon-Fri 12:00pm-5:00pm, Mon-Sun 6:00pm-10:00pm, Sat-Sun 12:30pm-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "170330",
+    "name": "Ziafat",
+    "url": "https://www.happycow.net/reviews/ziafat-kowloon-170330",
+    "image": "https://images.happycow.net/venues/500/17/03/hcmp170330_648641.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Harilela Mansion Nathan Rd 81, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23121015",
+    "servesCuisine": "Lacto, Ovo, Mediterranean, Middle Eastern, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Arabic cuisine and shisha place where vegans could the the falafel, hummus, a few of the salads like tabbouleh, pita, and lentil soup. To be sure, ask staff if each item is or can be served without yogurt / dairy.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/ziafat-kowloon-170330/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "229741",
+    "name": "Alpha Living Planet 嚐味聆心",
+    "url": "https://www.happycow.net/reviews/alpha-living-planet-kowloon-229741",
+    "image": "https://images.happycow.net/venues/500/22/97/hcmp229741_1337002.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13A Phase 1, Goldfield Ind Bldg, 144 Tai Lin Pai Rd, Kwai Chung, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-55250791",
+    "servesCuisine": null,
+    "description": "Delivery of raw vegan cuisine as well as providing catering consulting, fasting and detox programs, health education and personal coaching.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/alpha-living-planet-kowloon-229741/update\">tell us</a>",
+    "additionalType": "Delivery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Delivery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "70288",
+    "name": "Club O",
+    "url": "https://www.happycow.net/reviews/club-o-kowloon-70288",
+    "image": "https://images.happycow.net/venues/500/70/28/hcmp70288_972663.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room F,G 7/F Cheong Ming Building , 80-86 Argyll St (at enter on Hak Po St), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26190000",
+    "servesCuisine": null,
+    "description": "Green living organization with a vegan shop, an activity center and a resource center. Also does media and outreach work. Whatspp contact: 67736361.",
+    "openingHours": "Tue-Wed 12:00pm-7:00pm, Thu 12:00pm-9:00pm, Fri 12:00pm-7:00pm, Sat 12:00pm-9:00pm, Sun 12:00pm-7:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "208570",
+    "name": "Green Living 綠色心活館",
+    "url": "https://www.happycow.net/reviews/green-living-kowloon-208570",
+    "image": "https://images.happycow.net/venues/500/20/85/hcmp208570_2124037.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room Q, Floor 8, Block 3, Camel Paint Bldg, 60 Kaiyuan Rd, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-52826749",
+    "servesCuisine": null,
+    "description": "Shop selling organic products, handmade vegan foods, raw cakes, and skincare products. Holds workshops.",
+    "openingHours": "Wed-Sun 12:00pm-7:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213998",
+    "name": "GreenWoods - 綠野林",
+    "url": "https://www.happycow.net/reviews/greenwoods-kowloon-213998",
+    "image": "https://images.happycow.net/venues/500/21/39/hcmp213998_1272644.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rm 1103, 11/F, Cheung Lee Commercial Building, 25 Kimberley Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-34282416",
+    "servesCuisine": null,
+    "description": "Raw vegan store offering raw vegan meal delivery. It holds raw vegan cooking workshops regularly. 3% fee for credit cards.",
+    "openingHours": "Mon-Sat 12:00pm-7:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "222910",
+    "name": "Koke Lab",
+    "url": "https://www.happycow.net/reviews/koke-lab-kowloon-222910",
+    "image": "https://images.happycow.net/venues/500/22/29/hcmp222910_1043199.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Vegan pastry kitchen accepting orders for cakes and treats with 4-days notice required. No walk-ins. Contact via instagram direct message.",
+    "openingHours": "Mon-Fri 12:30pm-7:30pm, Sat-Sun 12:30pm-6:00pm",
+    "additionalType": "Bakery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "Bakery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "370644",
+    "name": "Mother Pearl 圓貝",
+    "url": "https://www.happycow.net/reviews/mother-pearl-kowloon-370644",
+    "image": "https://images.happycow.net/venues/500/37/06/hcmp370644_2369450.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop M31, MOKO, 193 Prince Edward Rd W, Mong Kok (at MOKO), Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "A vegan bubble tea & beverages bar offering healthier alternatives while minimizing food waste. In addition to the drinks there is also chia pudding and light snacks like cookies and savory empanadas.",
+    "openingHours": "Mon-Sun 10:30am-9:30pm",
+    "additionalType": "Juice Bar",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Juice Bar"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "365036",
+    "name": "Mother Pearl 圓貝 - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/mother-pearl-kowloon-365036",
+    "image": "https://images.happycow.net/venues/500/36/50/hcmp365036_2286066.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop L216, 2/F, The Eslite Spectrum, Star House, 3 Salisbury Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-55061293",
+    "servesCuisine": null,
+    "description": "A fully vegan bubble tea & beverages bar offering healthier alternatives while minimizing food waste. In addition to the drinks there is also chia pudding and light snacks like cookies and savory empanadas.",
+    "openingHours": "Mon-Thu 10:30am-9:00pm, Fri-Sat 10:30am-10:00pm, Sun 10:30am-9:00pm",
+    "additionalType": "Juice Bar",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Juice Bar"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "274237",
+    "name": "NUTTEA - 堅果奶茶 - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/nuttea-tsim-sha-tsui-kowloon-274237",
+    "image": "https://images.happycow.net/venues/500/27/42/hcmp274237_2480043.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 108A, 1/F, Mira Place, 132 Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-52665341",
+    "servesCuisine": null,
+    "description": "A branch of a nut mylk tea beverage bar chain from Taiwan. Uses different kinds of nuts to make the tea and latte drinks.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "214019",
+    "name": "NUTTEA 堅果奶茶 - Kowloon Bay",
+    "url": "https://www.happycow.net/reviews/nuttea-kowloon-214019",
+    "image": "https://images.happycow.net/venues/500/21/40/hcmp214019_1179152.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop B1B1, G/F, Block A, Proficient Industrial Centre, 6 Wang Kwun Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-64140831",
+    "servesCuisine": null,
+    "description": "Nut mylk tea beverage bar from Taiwan. Uses different kinds of nuts to make the tea and latte drinks. Also sells to go snacks like crepes (wraps).",
+    "openingHours": "Mon-Fri 11:30am-7:00pm, Sat 12:00pm-4:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "336704",
+    "name": "Plant Kitchen",
+    "url": "https://www.happycow.net/reviews/plant-kitchen-kowloon-336704",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rm 14, 18/F, Laurels Industrial Centre, 32 Tai Yau Street, San Po Kong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-91057663",
+    "servesCuisine": null,
+    "description": "Fully vegan and plant-based health food store offing staples including Just egg and Dandies marshmallows. Also offers boxed vegan meals, mixes and more.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/plant-kitchen-kowloon-336704/update\">tell us</a>",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "265582",
+    "name": "Save The Duck",
+    "url": "https://www.happycow.net/reviews/save-the-duck-kowloon-265582",
+    "image": "https://images.happycow.net/venues/500/26/55/hcmp265582_1312872.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 353, 3/F, K11 Musea, Victoria Dockside, 18 Salisbury Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36191251",
+    "servesCuisine": null,
+    "description": "An outerwear brand that uses only synthetic down, animal-free fabric.",
+    "openingHours": "Mon-Sun 11:00am-9:30pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "336705",
+    "name": "Shop at Years",
+    "url": "https://www.happycow.net/reviews/shop-at-years-kowloon-336705",
+    "image": "https://images.happycow.net/venues/500/33/67/hcmp336705_2050506.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "126 Yu Chau Street, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-52949232",
+    "servesCuisine": null,
+    "description": "A lifestyle brand from Hong Kong which offers vegan household, clothing, accessories, lifestyle, food & drinks.",
+    "openingHours": "Mon-Sun 12:00pm-8:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "265036",
+    "name": "Tim Kee Fruit Juice - 添記鮮搾菓汁",
+    "url": "https://www.happycow.net/reviews/tim-kee-fruit-juice-kowloon-265036",
+    "image": "https://images.happycow.net/venues/500/26/50/hcmp265036_1310080.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 174 Fa Yuen St, Mong Kok, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Reported to be an all-vegan take away juice bar at the corner of Fa Yuen Street and Bute Street. Nearest MTR: Mong Kok East.",
+    "openingHours": "Mon-Sun 7:30am-7:30pm",
+    "additionalType": "Juice Bar",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Juice Bar"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "317823",
+    "name": "Veg Formula - 植式",
+    "url": "https://www.happycow.net/reviews/veg-formula-kowloon-317823",
+    "image": "https://images.happycow.net/venues/500/31/78/hcmp317823_1830279.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kowloon Bay (at Various), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-60967384",
+    "servesCuisine": null,
+    "description": "Vegan bakery offering a variety of Asian baked goods. Please note that a three day notice is required - no walk-ins. Appointment can be made for pick-up at MTR stations (East Rail Line, Kwun Tong Line, Tseung Kwan O Line).",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/veg-formula-kowloon-317823/update\">tell us</a>",
+    "additionalType": "Bakery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Bakery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213784",
+    "name": "Vegan Concept",
+    "url": "https://www.happycow.net/reviews/vegan-concept-kowloon-213784",
+    "image": "https://images.happycow.net/venues/500/21/37/hcmp213784_973499.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit 905, 9/F, World Interests Building 8 Tsun Yip Lane, Kwun Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-97985063",
+    "servesCuisine": null,
+    "description": "A vegan lifestyle store that sells cruelty-free and vegan products, such as supplements, skincare, makeup brushes and personal care things.",
+    "openingHours": "Mon-Fri 10:00am-6:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206476",
+    "name": "Vegan Fitness - Tsim Sha Tsui",
+    "url": "https://www.happycow.net/reviews/vegan-fitness-kowloon-206476",
+    "image": "https://images.happycow.net/venues/500/20/64/hcmp206476_974615.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8/F, Kam Hing Bldg, 20 Hillwood Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-91712040",
+    "servesCuisine": null,
+    "description": "Fitness center that offers strategy on how to live a vegan lifestyle.",
+    "openingHours": "Mon-Sun 9:00am-10:30pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "264011",
+    "name": "Africa Center Hong Kong",
+    "url": "https://www.happycow.net/reviews/africa-center-hong-kong-kowloon-264011",
+    "image": "https://images.happycow.net/venues/500/26/40/hcmp264011_1331826.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12/F, 21 Hillwood Road, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-92606185",
+    "servesCuisine": null,
+    "description": "Platform & creative hub that fosters value-creating interactions between African and non-African communities in Asia. Offers a variety of workshop and programs. Also provides a curated private dining experience and catering with a variety of vegan/vegetarian African cuisines. NOTE: One week advanced reservations required for dining and catering. Email africacenter.hongkong@gmail.com if you are interested in booking a lunch/ dinner/ catering. Check website for communal dining experience information.",
+    "openingHours": "Mon-Fri 10:00am-10:00pm, Sat-Sun 9:00am-10:00pm",
+    "additionalType": "Organization",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Organization"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "76117",
+    "name": "Asiaboxx",
+    "url": "https://www.happycow.net/reviews/asiaboxx-kowloon-76117",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yau Tong Industrial Building block 3, 2 Sze Shan Street, Yau Tong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-24983886",
+    "servesCuisine": null,
+    "description": "Sells organic and gluten-free foodstuff: pasta, flour, baking aids, breakfast cereals, porcini mushroom, and more.",
+    "openingHours": "Mon-Fri 9:00am-6:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "78161",
+    "name": "Batata Greens - Prince Edward",
+    "url": "https://www.happycow.net/reviews/batata-greens-prince-edward-kowloon-78161",
+    "image": "https://images.happycow.net/venues/500/78/16/hcmp78161_975655.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "241 Sai Yee St, Shop A, Prince Edward, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-24853523",
+    "servesCuisine": null,
+    "description": "甘薯葉素食 is a vegetarian mini supermarket. Nearest MTR, Prince Edward Exit A, opposite to Boundary Street Sports Centre.",
+    "openingHours": "Mon-Sun 10:00am-8:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "256602",
+    "name": "Blendit",
+    "url": "https://www.happycow.net/reviews/blendit-kowloon-256602",
+    "image": "https://images.happycow.net/venues/500/25/66/hcmp256602_1354539.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "73 Lai Chi Kok Rd, Prince Edward, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-53340188",
+    "servesCuisine": null,
+    "description": "Superfood health shop selling powders, nuts, seeds, dried fruits, vegetables, smoothie packs, nut butter, plant milk and more. Also has vegan superfood bagels with hummus filling.",
+    "openingHours": "Mon-Sun 11:00am-8:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "435893",
+    "name": "ChaTraMue - Monkok",
+    "url": "https://www.happycow.net/reviews/chatramue-kowloon-435893",
+    "image": "https://images.happycow.net/venues/500/43/58/hcmp435893_3100970.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sun Kong House, Sai Yeung Choi St S, Mong Kok, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Chain Thai bubble tea shop with a vegan series featuring plant-based milk alternatives. One of several locations.",
+    "openingHours": "Mon-Sun 12:00am-12:00am",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "65551",
+    "name": "Cheng Si Jie Thai Private Kitchen 鄭​師姐泰式素食私房菜",
+    "url": "https://www.happycow.net/reviews/cheng-si-jie-thai-private-kitchen-kowloon-65551",
+    "image": "https://images.happycow.net/venues/500/65/55/hcmp65551_595211.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2/F, 5 Humphreys Avenue, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27804339",
+    "servesCuisine": null,
+    "description": "鄭​師姐泰式素食私房菜 is a private kitchen that will cater a meal of vegetarian and vegan dishes with Thai influence. Requires booking in advance. Relocated from Unit E, 8/F, Peninsula Apartmenet, 16 Mody Rd, Tsim Sha Tsui.",
+    "openingHours": "Mon-Sun 11:30am-4:00pm, 6:00pm-10:30pm",
+    "additionalType": "Catering",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Catering"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "386493",
+    "name": "Cheong Fat Vegetarian - 昌發素食",
+    "url": "https://www.happycow.net/reviews/cheong-fat-vegetarian-kowloon-386493",
+    "image": "https://images.happycow.net/venues/500/38/64/hcmp386493_2578209.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "(Stall) 1032 Canton Road, Mong Kok, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23960418",
+    "servesCuisine": null,
+    "description": "Vegetarian store selling frozen food, mock meats and tofu products, many of which are vegan by default.",
+    "openingHours": "Mon-Sun 8:00am-7:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "78710",
+    "name": "D. M. G. Vegetarian Food Shop 德妙光幸福素食店",
+    "url": "https://www.happycow.net/reviews/d-m-g-vegetarian-food-shop-kowloon-78710",
+    "image": "https://images.happycow.net/venues/500/78/71/hcmp78710_1082161.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Good Dragon Building, 184 Ki Lung St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23569188",
+    "servesCuisine": null,
+    "description": "德妙光幸福素食店 store at 深水埗基隆街184號龍祥大廈地下 sells mock meats and vegetarian products. Relocated from Yu Chau St.",
+    "openingHours": "Mon-Sat 10:00am-5:30pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "412116",
+    "name": "Dood Bottega Gelateria",
+    "url": "https://www.happycow.net/reviews/dood-bottega-gelateria-kowloon-412116",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18 Salisbury Rd, Victoria Dockside K11 Musea B2/F, Shop B201-23, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-96996624",
+    "servesCuisine": null,
+    "description": "An artisan ice cream place offering vegan options.",
+    "openingHours": "Mon-Sun 1:00pm-9:30pm",
+    "additionalType": "Ice Cream",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Ice Cream"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "254584",
+    "name": "Eton Vegetarian - 裕景素食",
+    "url": "https://www.happycow.net/reviews/eton-vegetarian-kowloon-254584",
+    "image": "https://images.happycow.net/venues/500/25/45/hcmp254584_1374466.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 156, 2/F, Shui Wo Street Market, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-61001830",
+    "servesCuisine": null,
+    "description": "Chinese style store that sells vegan products including wheat gluten, mock meats, light snacks, fried tofu skin and other items",
+    "openingHours": "Mon-Sun 8:00am-7:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "245857",
+    "name": "Europa Tea Foundry",
+    "url": "https://www.happycow.net/reviews/europa-tea-foundry-kowloon-245857",
+    "image": "https://images.happycow.net/venues/500/24/58/hcmp245857_1178585.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "21 Sheung Yuet Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-34682727",
+    "servesCuisine": null,
+    "description": "A tea room offers a selection of tea and bubble tea from Taiwan. Also serves a variety of snacks, cakes, and steamed rice bowls.",
+    "openingHours": "Mon-Sun 11:30am-8:30pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "265027",
+    "name": "Evergreen Vegetarian - 禾之家素食士多",
+    "url": "https://www.happycow.net/reviews/evergreen-vegetarian-kowloon-265027",
+    "image": "https://images.happycow.net/venues/500/26/50/hcmp265027_1311539.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kiosk I, G/F, Pioneer Centre, 750 Nathan Rd, Prince Edward, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-24988728",
+    "servesCuisine": null,
+    "description": "A vegetarian store that sells frozen and dried food, meat alternatives, sauces, and snacks.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "265080",
+    "name": "HEA Ice Cream 迆雪糕專門店",
+    "url": "https://www.happycow.net/reviews/hea-ice-cream-kowloon-265080",
+    "image": "https://images.happycow.net/venues/500/26/50/hcmp265080_1311749.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No 5, Nam Fung Mansion, 10F, Boundary St, Sham Shui Po, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-53455954",
+    "servesCuisine": null,
+    "description": "An ice cream parlour that offers some vegan ice cream with local Hong Kong style flavours such as ginger tofu pudding and salty & sour lemon. Please note that the cones and other snacks are not vegan.",
+    "openingHours": "Tue-Sun 12:30pm-8:00pm",
+    "additionalType": "Ice Cream",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Ice Cream"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "56810",
+    "name": "Health Aims - Hung Hom",
+    "url": "https://www.happycow.net/reviews/health-aims-kowloon-56810",
+    "image": "https://images.happycow.net/venues/500/56/81/hcmp56810_99756.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 728, Metropolis Mall, 6 Metropolis Dr, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-81009939",
+    "servesCuisine": null,
+    "description": "Hung Hom branch of the organic food shop. Nearest Hung Hom MTR exit - C.",
+    "openingHours": "Mon-Sun 10:00am-9:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "387462",
+    "name": "Healthy Life 健樂生活",
+    "url": "https://www.happycow.net/reviews/healthy-life-kowloon-387462",
+    "image": "https://images.happycow.net/venues/500/38/74/hcmp387462_3062989.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1920 New Tech Plaza, 34 Tai Yau Street, San Po Kong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-90128896",
+    "servesCuisine": null,
+    "description": "Vegetarian shop selling a variety of vegan-friendly products such as mock meats, tempeh, cup noodles, snacks, sauces and beverages.",
+    "openingHours": "Mon-Fri 9:00am-6:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52879",
+    "name": "Higher Taste Vegetarian",
+    "url": "https://www.happycow.net/reviews/higher-taste-vegetarian-kowloon-52879",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6/F Ocean View Court, 27 Chatham Road South, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-27230260",
+    "servesCuisine": null,
+    "description": "Promotes vegetarianism and teaches cooking classes.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/higher-taste-vegetarian-kowloon-52879/update\">tell us</a>",
+    "additionalType": "Organization",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Organization"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "384154",
+    "name": "Kactus Koffee",
+    "url": "https://www.happycow.net/reviews/kactus-koffee-kowloon-384154",
+    "image": "https://images.happycow.net/venues/500/38/41/hcmp384154_2501423.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F 47 Man Ying St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-67961507",
+    "servesCuisine": null,
+    "description": "Korean-style coffee shop with oat milk and almond milk for drinks.",
+    "openingHours": "Mon-Sun 8:00am-8:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "407795",
+    "name": "Ki Tsui Cake Shop",
+    "url": "https://www.happycow.net/reviews/ki-tsui-cake-shop-kowloon-407795",
+    "image": "https://images.happycow.net/venues/500/40/77/hcmp407795_2778940.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "135 Fa Yuen St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23941727",
+    "servesCuisine": null,
+    "description": "Small bakery located in a market selling Chinese pastries. Offers vegan rice flour pancakes filled with red bean.",
+    "openingHours": "Tue-Sun 8:00am-7:30pm",
+    "additionalType": "Bakery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Bakery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "56454",
+    "name": "LUSH - Harbour City",
+    "url": "https://www.happycow.net/reviews/lush-kowloon-56454",
+    "image": "https://images.happycow.net/venues/500/56/45/hcmp56454_95620.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "K7A & B, LCX, Level 3, Harbour City, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-37912131",
+    "servesCuisine": null,
+    "description": "Cosmetics company with outlets globally selling handmade cosmetics & beauty products which are not tested on animals. Ingredients are mostly vegan. Find selections of soap, shampoo, conditioner, lotion, lip balm, deodorant, and other body care products.",
+    "openingHours": "Mon-Sun 10:00am-10:00pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "56452",
+    "name": "LUSH - Mong Kok",
+    "url": "https://www.happycow.net/reviews/lush-kowloon-56452",
+    "image": "https://images.happycow.net/venues/500/56/45/hcmp56452_95605.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "68 Sai Yeung Choi St South, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23910600",
+    "servesCuisine": null,
+    "description": "Cosmetics company with outlets globally selling handmade cosmetics & beauty products which are not tested on animals. Ingredients are mostly vegan. Find selections of soap, shampoo, conditioner, lotion, lip balm, deodorant, and other body care products. At Mong Kok MTR exit D3.",
+    "openingHours": "Mon-Fri 10:00am-11:00pm, Sat 10:00am-12:00am, Sun 10:00am-11:00pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "61605",
+    "name": "Maharaja's Indian Emporium",
+    "url": "https://www.happycow.net/reviews/maharajas-indian-emporium-kowloon-61605",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "205, Haiphong Mansions, 99-101, Nathan Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23662941",
+    "servesCuisine": null,
+    "description": "This Indian grocery supermarket, established since 1999, sells mostly vegetarian products. Delivers throughout HK.",
+    "openingHours": "Mon-Sat 10:00am-9:00pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "57019",
+    "name": "Manna Organic Station - Amoy Plaza",
+    "url": "https://www.happycow.net/reviews/manna-organic-station-kowloon-57019",
+    "image": "https://images.happycow.net/venues/500/57/01/hcmp57019_103867.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G128A, G/F, Phase. 1, Amoy Plaza, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23053400",
+    "servesCuisine": null,
+    "description": "淘大店, at 九龍灣淘大花園1期地下G128A舖, is part of organic shop chain. Nearest Kowloon Bay MTR exit - A.",
+    "openingHours": "Mon-Thu 10:30am-8:00pm, Fri-Sun 11:00am-9:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "249320",
+    "name": "Mat Su Cha Kei - 松茶榭",
+    "url": "https://www.happycow.net/reviews/mat-su-cha-kei-kowloon-249320",
+    "image": "https://images.happycow.net/venues/500/24/93/hcmp249320_1213125.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "60 Fung Tak Rd, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-36589390",
+    "servesCuisine": null,
+    "description": "Tea house in the nursery serving traditional teas including Da Hong Pao, Tie Lou Han, Bai Ji Quan, Bu Zhi Chun and more.",
+    "openingHours": "Mon-Sun 12:00pm-7:30pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "63592",
+    "name": "MFS",
+    "url": "https://www.happycow.net/reviews/mfs-kowloon-63592",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop GK1-2, Ground Floor, Amoy Plaza, Phase 2, Kowloon Bay, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-56249838",
+    "servesCuisine": null,
+    "description": "名果店, Ming Fruit Shop Limited, operates multiple outlets in HK; this one is in Amoy Plaza. The store consists of two sections: one selling imported fruit; the other a takeaway juice bar offering pre-packed cut fruit and on-the-spot juices/shakes (some drinks contain dairy).",
+    "openingHours": "Mon-Sun 7:00am-10:30pm",
+    "additionalType": "Juice Bar",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Juice Bar"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "228758",
+    "name": "Mrs Fong Dessert 方太糕品鋪",
+    "url": "https://www.happycow.net/reviews/mrs-fong-dessert-kowloon-228758",
+    "image": "https://images.happycow.net/venues/500/22/87/hcmp228758_1080666.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "198 Temple Street, Yau Ma Tei, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-56285486",
+    "servesCuisine": null,
+    "description": "Takeaway counter selling low-sugar, oil-free traditional Chinese desserts which are vegetarian and vegan. Relocated from G/F, 196 Shanghai St, Jordan.",
+    "openingHours": "Mon-Sun 10:00am-8:00pm",
+    "additionalType": "Bakery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Bakery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "319113",
+    "name": "Muji",
+    "url": "https://www.happycow.net/reviews/muji-kowloon-319113",
+    "image": "https://images.happycow.net/venues/500/31/91/hcmp319113_1808109.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop LG1-30, Level LG1, Festival Walk, 80 Tat Chee Ave (at Festival Walk), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-39713208",
+    "servesCuisine": null,
+    "description": "Serves meat, vegan options available. Cafe located inside the store offering a few vegan items such as vegan all day breakfast and hot & cold plates.",
+    "openingHours": "Mon-Thu 11:00am-10:00pm, Fri 11:00am-10:30pm, Sat 10:00am-10:30pm, Sun 11:00am-10:30pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "382604",
+    "name": "N1 Coffee & Co",
+    "url": "https://www.happycow.net/reviews/n1-coffee-co-kowloon-382604",
+    "image": "https://images.happycow.net/venues/500/38/26/hcmp382604_2583163.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "34 Mody Rd, Shop G, Tsim Sha Tsui (at Lyton Building), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-35684726",
+    "servesCuisine": null,
+    "description": "Cafe with Western-style breakfast bar and plant-based milk alternatives. Most vegetarian dishes can easily be made vegan upon request.",
+    "openingHours": "Mon-Sun 9:00am-6:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206143",
+    "name": "Nature's Village 樂健坊",
+    "url": "https://www.happycow.net/reviews/natures-village-kowloon-206143",
+    "image": "https://images.happycow.net/venues/500/20/61/hcmp206143_922999.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2A, G/F, Yan On Building, 1 Guanghua St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-31885183",
+    "servesCuisine": null,
+    "description": "Health store stocking a variety of goods including bodybuilding and nutritional supplements, vitamins, oils, protein bars, and hair care products.",
+    "openingHours": "Mon-Sat 1:00pm-10:00pm, Sun 12:00pm-8:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "56450",
+    "name": "Neal's Yard Remedies - Ocean Terminal",
+    "url": "https://www.happycow.net/reviews/neals-yard-remedies-kowloon-56450",
+    "image": "https://images.happycow.net/venues/500/56/45/hcmp56450_95619.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Facesss, Ocean Terminal, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Lotions and body care products counter within Facesss at Ocean Terminal.",
+    "openingHours": "Mon-Sun 10:00am-10:00pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "395084",
+    "name": "NOC Coffee Co - Whampoa",
+    "url": "https://www.happycow.net/reviews/noc-coffee-co-whampoa-kowloon-395084",
+    "image": "https://images.happycow.net/venues/500/39/50/hcmp395084_2621229.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 8 Tak Fung St, Kowloon, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Serves meat, vegan options available. Restaurant with some vegan options, including coffee with oat milk, bowls, and an avocado sandwich.",
+    "openingHours": "Mon-Sun 8:00am-8:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "377959",
+    "name": "Sages 8 - 八美花",
+    "url": "https://www.happycow.net/reviews/sages-8-kowloon-377959",
+    "image": "https://images.happycow.net/venues/500/37/79/hcmp377959_2686449.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rm 1502, 15/F, Midas Plaza, 1 Tai Yau St, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-67984948",
+    "servesCuisine": null,
+    "description": "Health food store with a range of dried and frozen vegan grocery products, snacks, sauces, and drinks. Offers vegan breakfast and burgers.",
+    "openingHours": "Mon-Sat 11:00am-7:30pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "226037",
+    "name": "Shing Kee Vegetarian 成記素食",
+    "url": "https://www.happycow.net/reviews/shing-kee-vegetarian-kowloon-226037",
+    "image": "https://images.happycow.net/venues/500/22/60/hcmp226037_1062943.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "W88 G/F Tai Shing Street Wet Market, Wong Tai Sin, Kln, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-96310789",
+    "servesCuisine": null,
+    "description": "Vegetarian food store that sells frozen mock meats.",
+    "openingHours": "Mon-Fri 9:00am-4:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "123384",
+    "name": "Sweet Secrets",
+    "url": "https://www.happycow.net/reviews/sweet-secrets-kowloon-123384",
+    "image": "https://images.happycow.net/venues/500/12/33/hcmp123384_525592.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 1203, 12/F Wing Lee Industrial Building, Mongkok, 54 Tong Mi Rd (at Dragon Rose Ltd), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-93719089",
+    "servesCuisine": null,
+    "description": "Online bakery and sweets shop with vegan cake, cookie, raw tart options. Accepts custom orders and can cater for gluten-free and vegan. All orders to be made via website. Storefront closed early 2021 - now offers delivery or pick up from an address in Kowloon (provided upon ordering).",
+    "openingHours": "Mon-Sat 9:00am-5:30pm",
+    "additionalType": "Delivery",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Delivery"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "223107",
+    "name": "Vege Prosper 素茂 - San Po Kong",
+    "url": "https://www.happycow.net/reviews/vege-prosper-kowloon-223107",
+    "image": "https://images.happycow.net/venues/500/22/31/hcmp223107_1044857.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit 13, 8/F, Laurels Industrial Centre, 32 Tai Yau St, San Po Kong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-54894489",
+    "servesCuisine": null,
+    "description": "Vegetarian food store selling a variety of mock meats and ingredients for cooking at home.",
+    "openingHours": "Mon-Fri 9:00am-5:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "84141",
+    "name": "Veggie Smart - San Po Kong",
+    "url": "https://www.happycow.net/reviews/veggie-smart-kowloon-84141",
+    "image": "https://images.happycow.net/venues/500/84/14/hcmp84141_388647.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1713 Laurels Industrial Centre, 32 Tai Yau St, San Po Kong, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-26414488",
+    "servesCuisine": null,
+    "description": "小麥芽, at 香港九龍新蒲崗大有街32號泰力工業中心17樓13室, is a vegetarian grocer est 2014. Offers food, snacks, drinks and lunchboxes. Nearest MTRs; Diamond Hill or Wong Tai Sin.",
+    "openingHours": "Mon-Sat 11:00am-7:30pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "64773",
+    "name": "Yes Natural - Lai Chi Kok",
+    "url": "https://www.happycow.net/reviews/yes-natural-kowloon-64773",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "RM204, Laford Centre, 838 Lai Chi Kok Rd, Cheung Sha Wan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-21119663",
+    "servesCuisine": null,
+    "description": "悅意軒 is a vegetarian health store at 九龍荔枝角長義街10號昌隆工業大廈12樓A室. Relocated from Flat A, 12/F, Cheung Lung Industrial Building, 10 Cheung Yee St.",
+    "openingHours": "Mon 1:00pm-5:30pm, Tue-Sat 10:00am-5:30pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "26996",
+    "name": "Yes Natural - Tai Po Rd",
+    "url": "https://www.happycow.net/reviews/yes-natural-tai-po-rd-kowloon-26996",
+    "image": "https://images.happycow.net/venues/500/26/99/hcmp26996_95501.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 44 Tai Po Rd, Sham Shui Po (at Prince Edward MTR Station Exit A), Kowloon, Hong Kong"
+    },
+    "telephone": "+852-23178283",
+    "servesCuisine": null,
+    "description": "Large selection of healthy and organic food without chemical additives. Fresh organic vegetable, mock meat, organic cotton clothing, healthy bread, environmental cleaning products and skin care products, Buddhism books and products.",
+    "openingHours": "Mon 1:00pm-9:00pm, Tue-Sat 10:00am-9:00pm, Sun 10:30am-6:00pm",
+    "additionalType": "Health Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Health Store"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53443",
+    "name": "Yoga Interactive Vegetarian",
+    "url": "https://www.happycow.net/reviews/yoga-interactive-vegetarian-kowloon-53443",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Flat B, 15/F, Hillview Court, 30 Hillwood Rd, Tsim Sha Tsui, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-97409846",
+    "servesCuisine": null,
+    "description": "互動瑜伽素食, at 尖沙咀山林道30-32號昌林閣15樓B座, is a private kitchen that opens only for advance reservations with a minimum of 12 guests required.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/yoga-interactive-vegetarian-kowloon-53443/update\">tell us</a>",
+    "additionalType": "Catering",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Catering"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "401122",
+    "name": "Zombie Specialty Coffee",
+    "url": "https://www.happycow.net/reviews/zombie-specialty-coffee-kowloon-401122",
+    "image": "https://images.happycow.net/venues/500/40/11/hcmp401122_2720182.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1, No. 9-13, Kwun Chung St, Jordan, Kowloon, Hong Kong"
+    },
+    "telephone": "+852-37051090",
+    "servesCuisine": null,
+    "description": "Cafe with plant-based milk alternatives available with an additional upcharge. Also offers avocado toast that can be made vegan upon request (omit honey).",
+    "openingHours": "Mon-Fri 8:00am-7:00pm, Sat-Sun 9:00am-7:00pm",
+    "additionalType": "Coffee & Tea",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Coffee & Tea"
+    }
+  }
+]

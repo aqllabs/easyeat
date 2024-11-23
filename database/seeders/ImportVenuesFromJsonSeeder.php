@@ -23,14 +23,14 @@ class ImportVenuesFromJsonSeeder extends Seeder
         // Ensure reference data exists
         // $this->seedReferenceData();
 
-        // Get JSON files from storage/app/venues/*.json
-        $files = Storage::disk('local')->files('venues');
+        // Get JSON files from storage/app/public/venues/*.json
+        $files = glob(public_path('venues/*.jsonld'));
         $this->command->info(sprintf('Found %d files to process', count($files)));
 
         foreach ($files as $file) {
             $this->command->info("Processing file: {$file}");
 
-            $venues = json_decode(Storage::disk('local')->get($file), true);
+            $venues = json_decode(file_get_contents($file), true);
 
             // Handle both single venue and array of venues
             if (!isset($venues[0])) {
