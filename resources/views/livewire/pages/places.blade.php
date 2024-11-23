@@ -41,8 +41,6 @@ class extends Component {
     #[Url]
     public $search = '';
 
-    public $showFilters = false;
-
     public $filterValues = [
         'diet_categories' => [],
         'halal_assurance' => [],
@@ -146,7 +144,7 @@ class extends Component {
 }; ?>
 
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" x-data="{ showFilters: false }">
     <!-- Search Section -->
     <div class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
         <div class="w-full sm:max-w-xl">
@@ -160,17 +158,35 @@ class extends Component {
         <div class="flex gap-2">
             <flux:button href="{{route('map')}}" icon="map">View on Map</flux:button>
             <flux:button 
-                wire:click="toggleFilters"
-                class="sm:hidden"
+                @click="showFilters = !showFilters"
+                class="sm:hidden relative"
             >
                 Filters
+                <span 
+                    class="absolute -top-2 -right-2 h-5 w-5 bg-primary rounded-full text-xs flex items-center justify-center text-white"
+                    x-show="
+                        @js(
+                            collect($this->filterValues)
+                                ->flatten()
+                                ->filter()
+                                ->count()
+                        )
+                    "
+                >
+                    {{ 
+                        collect($this->filterValues)
+                            ->flatten()
+                            ->filter()
+                            ->count() 
+                    }}
+                </span>
             </flux:button>
         </div>
     </div>
 
     <div class="flex flex-col sm:flex-row gap-8">
         <!-- Filters Sidebar -->
-        <div class="w-full sm:w-64 flex-shrink-0 {{ !$showFilters ? 'hidden sm:block' : '' }}">
+        <div class="w-full sm:w-64 flex-shrink-0" :class="{ 'hidden sm:block': !showFilters }">
             <h2 class="text-lg font-semibold mb-4">Filtered Search</h2>
 
             <!-- Dietary Preference -->
@@ -253,7 +269,7 @@ class extends Component {
                     <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                         <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
-                                src="{{ $venue->thumbnail_url ? "https://discoverhongkong.com/".$venue->thumbnail_url : 'https://placehold.co/600x400' }}"
+                                src="{{ $venue->thumbnail_url ? (str_contains($venue->thumbnail_url, 'happycow') ? $venue->thumbnail_url : 'https://discoverhongkong.com/'.$venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
                                 alt="{{ $venue->name }}"
                                 class="w-full h-full object-cover"
                             >

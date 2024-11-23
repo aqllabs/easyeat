@@ -18,7 +18,7 @@ class extends Component {
     <div class="flex items-center justify-between mb-6">
         <div>
             <h1 class="text-4xl font-bold">{{ $place->name }}</h1>
-            <div class="text-gray-600">{{ $place->venueType->display_name  }}</div>
+            <div class="text-gray-600">{{ $place->venueType?->display_name }}</div>
         </div>
     </div>
 
@@ -41,10 +41,10 @@ class extends Component {
     <!-- Tags -->
     <div class="flex flex-wrap gap-2 mb-6">
         @foreach($place->cuisines as $cuisine)
-            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">{{ $cuisine->display_name }}</span>
+            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">{{ $cuisine->display_name ?? '' }}</span>
         @endforeach
         @foreach($place->dietCategories as $category)
-            <span class="px-3 py-1 bg-green-100 rounded-full text-sm">{{ $category->display_name }}</span>
+            <span class="px-3 py-1 bg-green-100 rounded-full text-sm">{{ $category->display_name ?? '' }}</span>
         @endforeach
     </div>
 
@@ -64,18 +64,18 @@ class extends Component {
             @endif
             <div>
                 <h3 class="font-semibold">Halal Status:</h3>
-                <p>{{ $place->halalAssurance->display_name }}</p>
+                <p>{{ $place->halalAssurance?->display_name ?? 'Not Specified' }}</p>
                 @if($place->halal_assurance_expiry_date)
                 <p class="text-sm text-gray-500">Valid until: {{ $place->halal_assurance_expiry_date->format('d M Y') }}</p>
                 @endif
             </div>
             <div>
                 <h3 class="font-semibold">Address:</h3>
-                <p>{{ $place->address }}, {{ $place->area->display_name }}, {{ $place->city }}</p>
+                <p>{{ $place->address }}, {{ $place->area?->display_name ?? '' }}, {{ $place->city }}</p>
             </div>
             <div>
                 <h3 class="font-semibold">Price Range:</h3>
-                <p>{{ $place->priceRange->display_name }}</p>
+                <p>{{ $place->priceRange?->display_name ?? '' }}</p>
             </div>
             @if($place->telephone)
             <div>
@@ -86,7 +86,7 @@ class extends Component {
             @if($place->opening_hours)
             <div>
                 <h3 class="font-semibold">Opening Hours:</h3>
-                <p>{{ json_encode($place->opening_hours) }}</p>
+                <p>{{ json_decode($place->opening_hours)->raw }}</p>
             </div>
             @endif
         </div>
