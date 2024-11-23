@@ -164,14 +164,6 @@ class extends Component {
                 Filters
                 <span 
                     class="absolute -top-2 -right-2 h-5 w-5 bg-primary rounded-full text-xs flex items-center justify-center text-white"
-                    x-show="
-                        @js(
-                            collect($this->filterValues)
-                                ->flatten()
-                                ->filter()
-                                ->count()
-                        )
-                    "
                 >
                     {{ 
                         collect($this->filterValues)
@@ -269,7 +261,7 @@ class extends Component {
                     <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                         <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
-                                src="{{ $venue->thumbnail_url ? (str_contains($venue->thumbnail_url, 'happycow') ? $venue->thumbnail_url : 'https://discoverhongkong.com/'.$venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
+                                src="{{ $venue->thumbnail_url ? "https://discoverhongkong.com/".$venue->thumbnail_url : 'https://placehold.co/600x400' }}"
                                 alt="{{ $venue->name }}"
                                 class="w-full h-full object-cover"
                             >
