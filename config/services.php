@@ -83,6 +83,7 @@ return [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
         'redirect' => '/auth/callback/google',
+        'maps_api_key' => env('GOOGLE_MAPS_API_KEY'),
     ],
 
     'resend' => [
