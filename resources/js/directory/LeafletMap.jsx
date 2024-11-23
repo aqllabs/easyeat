@@ -234,7 +234,13 @@ function Restaurants() {
                                     {item.google_maps_url && (
                                         <li>
                                             <a
-                                                href={item.google_maps_url}
+                                                href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                                                    item.address
+                                                )}&query_place_id=${
+                                                    item.google_maps_url.split(
+                                                        ":"
+                                                    )[1]
+                                                }`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="btn btn-sm btn-primary"

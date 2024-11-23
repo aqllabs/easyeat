@@ -16,7 +16,7 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
 
     // add domain without host, used for Browsershot Dynamic Open Graph Images
-    'app_domain' => env('APP_DOMAIN', 'larafast.com'),
+    'app_domain' => env('APP_DOMAIN', 'easyeat.aqllabs.io'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment

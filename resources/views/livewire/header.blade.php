@@ -10,7 +10,7 @@
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
             {{-- <li><a href="#features">{{ __('About Us') }}</a></li> --}}
-            {{-- <li><a href="{{ route('places.index') }}">{{ __('Explore') }}</a></li> --}}
+            <li><a href="{{ route('places.index') }}">{{ __('Explore') }}</a></li>
             <li><a href="{{ route('map') }}">{{ __('Map') }}</a></li>
             {{-- <li><a href="{{ route('shop.index') }}">{{ __('Shop') }}</a></li> --}}
             {{-- <li><a href="#pricing">{{ __('Pricing') }}</a></li> --}}

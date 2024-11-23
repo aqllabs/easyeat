@@ -19,7 +19,30 @@ new #[Layout('layouts.home')]
 class extends Component {
     use WithPagination;
 
+    // Define URL parameters for all filter types
+    #[Url(as: 'cuisines')]
+    public $selectedCuisines = '';
+
+    #[Url(as: 'diet')]
+    public $selectedDiet = '';
+
+    #[Url(as: 'area')]
+    public $selectedArea = '';
+
+    #[Url(as: 'halal')]
+    public $selectedHalal = '';
+
+    #[Url(as: 'venue')]
+    public $selectedVenue = '';
+
+    #[Url(as: 'price')]
+    public $selectedPrice = '';
+
     #[Url]
+    public $search = '';
+
+    public $showFilters = false;
+
     public $filterValues = [
         'diet_categories' => [],
         'halal_assurance' => [],
@@ -29,28 +52,62 @@ class extends Component {
         'price_range' => [],
     ];
 
-    #[Url]
-    public $search = '';
-
-    public $showFilters = false;
-
-    public function toggleFilters()
+    protected function getFilterArray($string)
     {
-        $this->showFilters = !$this->showFilters;
+        if (empty($string)) return [];
+        if (is_array($string)) return array_filter($string);
+        return array_filter(explode(',', $string));
+    }
+
+    protected function getFilterString($array)
+    {
+        if (empty($array)) return '';
+        if (is_string($array)) return $array;
+        return implode(',', array_filter($array));
+    }
+
+    public function mount()
+    {
+        // Initialize all filterValues from URL parameters
+        $this->filterValues = [
+            'cuisines' => $this->getFilterArray($this->selectedCuisines),
+            'diet_categories' => $this->getFilterArray($this->selectedDiet),
+            'areas' => $this->getFilterArray($this->selectedArea),
+            'halal_assurance' => $this->getFilterArray($this->selectedHalal),
+            'venue_type' => $this->getFilterArray($this->selectedVenue),
+            'price_range' => $this->getFilterArray($this->selectedPrice),
+        ];
     }
 
     public function updated($property)
     {
         if (str_starts_with($property, 'filterValues')) {
+            // Update all URL parameters when any filter changes
+            $this->selectedCuisines = $this->getFilterString($this->filterValues['cuisines']);
+            $this->selectedDiet = $this->getFilterString($this->filterValues['diet_categories']);
+            $this->selectedArea = $this->getFilterString($this->filterValues['areas']);
+            $this->selectedHalal = $this->getFilterString($this->filterValues['halal_assurance']);
+            $this->selectedVenue = $this->getFilterString($this->filterValues['venue_type']);
+            $this->selectedPrice = $this->getFilterString($this->filterValues['price_range']);
             $this->resetPage();
         }
     }
 
     protected function loadVenues()
     {
-        $query = Venue::search($this->search)->query(fn (Builder $query) => $query->with('dietCategories:id,display_name', 'halalAssurance:id,display_name', 'venueType:id,display_name', 'cuisines:id,display_name', 'priceRange:id,display_name'));
-;
-        // Apply filters if they are set
+        $query = Venue::search($this->search)
+            ->query(fn (Builder $query) => 
+                $query->with([
+                    'dietCategories:id,display_name',
+                    'halalAssurance:id,display_name',
+                    'venueType:id,display_name',
+                    'cuisines:id,display_name',
+                    'priceRange:id,display_name',
+                    'area:id,display_name'
+                ])
+            );
+
+        // Apply filters using relationships
         if (!empty($this->filterValues['diet_categories'])) {
             $query->whereIn('diet_categories', $this->filterValues['diet_categories']);
         }

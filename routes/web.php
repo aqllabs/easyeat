@@ -17,7 +17,7 @@ use Livewire\Volt\Volt;
 use App\Livewire\RestaurantDirectory;
 
 //Route::get('/', [HomeController::class, 'index']);
-Volt::route('/', 'pages.places')->name('places.index');
+Volt::route('/', 'pages.home2')->name('home');
 
 Route::get('sitemap', [SitemapController::class, 'index'])->name('sitemap');
 Route::get('changelog', [ChangelogController::class, 'index'])->name('changelog');
@@ -25,7 +25,7 @@ Route::get('changelog', [ChangelogController::class, 'index'])->name('changelog'
 
 Volt::route('map', 'pages.map')->name('map');
 Volt::route('places/{id}', 'pages.place')->name('places.show');
-//Volt::route('places', 'pages.places')->name('places.index');
+Volt::route('places', 'pages.places')->name('places.index');
 Volt::route('shop', 'pages.shop')->name('shop.index');
 
 // Demo Coming Soon Page
