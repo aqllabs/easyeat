@@ -39,26 +39,28 @@ class Venue extends Model
 
     public function toSearchableArray()
     {
-        $array['id'] = $this->id;
-        $array['name'] = $this->name;
-        $array['description'] = $this->description;
-        $array['city'] = $this->city;
-        $array['area'] = $this->area->display_name;
-        $array['address'] = $this->address;
-        $array['telephone'] = $this->telephone;
-        $array['email'] = $this->email;
-        $array['website'] = $this->website;
-        $array['google_maps_url'] = $this->google_maps_url;
-        $array['cuisines'] = $this->cuisines->pluck('display_name')->toArray();
-        $array['diet_categories'] = $this->dietCategories->pluck('display_name')->toArray();
-        $array['halal_assurance'] = $this->halalAssurance->display_name;
-        $array['price_range'] = $this->priceRange->display_name;
-        $array['venue_type'] = $this->venueType->display_name;
-        $array['thumbnail_url'] = $this->thumbnail_url;
-
-        $array['_geo'] = [
-            'lat' => (float) $this->lat,
-            'lng' => (float) $this->lng,
+        $array = [
+            'id' => $this->id,
+            'name' => $this->name,
+            'description' => $this->description,
+            'city' => $this->city,
+            'area' => $this->area?->display_name ?? null,
+            'address' => $this->address,
+            'telephone' => $this->telephone,
+            'email' => $this->email,
+            'website' => $this->website,
+            'google_maps_url' => $this->google_maps_url,
+            'cuisines' => $this->cuisines?->pluck('display_name')->toArray() ?? [],
+            'diet_categories' => $this->dietCategories?->pluck('display_name')->toArray() ?? [],
+            'halal_assurance' => $this->halalAssurance?->display_name ?? null,
+            'price_range' => $this->priceRange?->display_name ?? null,
+            'venue_type' => $this->venueType?->display_name ?? null,
+            'thumbnail_url' => $this->thumbnail_url,
+            'opening_hours' => $this->opening_hours,
+            '_geo' => [
+                'lat' => (float) $this->lat,
+                'lng' => (float) $this->lng,
+            ]
         ];
 
         return $array;
