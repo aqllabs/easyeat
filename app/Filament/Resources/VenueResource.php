@@ -7,6 +7,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use App\Models\DietCategory;
 use App\Models\HalalAssurance;
@@ -80,35 +81,30 @@ class VenueResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('address')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('city')
+                // Tables\Columns\TextColumn::make('city')
+                //     ->searchable(),
+                Tables\Columns\TextColumn::make('area.name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('area')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('telephone')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('website')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('email')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('cuisine.name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('price_range.display_name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('lat')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('lng')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('diet_category.name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('halal_assurance.display_name')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('venue_type.name')
-                    ->searchable(),
+                Tables\Columns\TextColumn::make('cuisine')->
+                    state(fn($record) => $record->cuisines->pluck('display_name')->join(', ')),
+                Tables\Columns\TextColumn::make('price_range.display_name'),
+                Tables\Columns\TextColumn::make('diet_category')
+                    ->state(fn($record) => $record->dietCategories->pluck('display_name')->join(', ')),
+                Tables\Columns\TextColumn::make('halal_assurance.display_name'),
+                Tables\Columns\TextColumn::make('venue_type')
+                    ->state(fn($record) => $record->venueType->display_name)
             ])
             ->filters([
-                //
+                SelectFilter::make('cousines')
+                ->relationship('cuisines', 'display_name')
+                ->multiple()
+                ->searchable()
+                ->preload(),
+                SelectFilter::make('diet_categories')
+                ->relationship('dietCategories', 'display_name')
+                ->multiple()
+                ->searchable()
+                ->preload(),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
