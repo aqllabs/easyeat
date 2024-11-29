@@ -90,7 +90,7 @@ class VenueResource extends Resource
                 Tables\Columns\TextColumn::make('price_range.display_name'),
                 Tables\Columns\TextColumn::make('diet_category')
                     ->state(fn($record) => $record->dietCategories->pluck('display_name')->join(', ')),
-                Tables\Columns\TextColumn::make('halal_assurance.display_name'),
+                Tables\Columns\TextColumn::make('halalAssurance.display_name'),
                 Tables\Columns\TextColumn::make('venue_type')
                     ->state(fn($record) => $record->venueType->display_name)
             ])
