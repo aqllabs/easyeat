@@ -1,10 +1,7 @@
 <div class="max-w-7xl m-auto navbar bg-base-100">
     <div class="navbar-start">
         <a href="/" class="flex flex-row items-center justify-center font-bold text-md">
-            {{-- <img class="w-16" src="{{ asset('/images/logo.svg') }}" alt=""> --}}
-            <span class="ml-2 flex flex-col items-start">
-                    <span class="leading-4 text-primary">{{ __('EasyEat') }}</span>
-                </span>
+            <img class="w-16" src="{{ asset('/images/easyeat2.png') }}" alt="">
         </a>
     </div>
     <div class="navbar-center hidden lg:flex">

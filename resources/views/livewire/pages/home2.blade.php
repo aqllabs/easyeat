@@ -141,14 +141,19 @@ class extends Component
             
             <div class="hidden md:block">
                 <div class="w-96 h-64 rounded-lg overflow-hidden">
-                    <img src="{{ $this->getUnsplashImage('food collage') }}" alt="Food Collage" class="w-full h-full object-cover">
+                    <img src="{{ asset('/images/food-collage.jpeg') }}" alt="Food Collage" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
 
         <!-- Dietary Requirements Section -->
         <section class="mb-16">
-            <h2 class="text-xl text-gray-600 mb-6">Search by Dietary Requirement</h2>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl text-gray-600">Search by Dietary Requirement</h2>
+                <a href="{{ route('places.index', ['filter' => 'dietary']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                    See More →
+                </a>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 @foreach ($dietary_counts as $diet)
                     <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
@@ -167,7 +172,12 @@ class extends Component
 
         <!-- Locations Section -->
         <section class="mb-16">
-            <h2 class="text-xl text-gray-600 mb-6">Search by Location</h2>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl text-gray-600">Search by Location</h2>
+                <a href="{{ route('places.index', ['filter' => 'location']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                    See More →
+                </a>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 @foreach ($location_counts as $location)
                     <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
@@ -186,7 +196,12 @@ class extends Component
 
         <!-- Cuisines Section -->
         <section class="mb-16">
-            <h2 class="text-xl text-gray-600 mb-6">Search by Cuisine</h2>
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl text-gray-600">Search by Cuisine</h2>
+                <a href="{{ route('places.index', ['filter' => 'cuisine']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                    See More →
+                </a>
+            </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 @foreach ($cuisine_counts as $cuisine)
                     <a href="{{ route('places.index', ['cuisine' => $cuisine['name']]) }}" 
