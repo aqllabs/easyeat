@@ -30,6 +30,7 @@ class Venue extends Model
         'halal_assurance_id',
         'venue_type',
         'halal_assurance_expiry_date',
+        'vegetarian_type_id',
     ];
 
     protected $casts = [
@@ -57,6 +58,7 @@ class Venue extends Model
             'venue_type' => $this->venueType?->display_name ?? null,
             'thumbnail_url' => $this->thumbnail_url,
             'opening_hours' => $this->opening_hours,
+            'vegetarian_type' => $this->vegetarianType?->display_name ?? null,
             '_geo' => [
                 'lat' => (float) $this->lat,
                 'lng' => (float) $this->lng,
@@ -94,5 +96,10 @@ class Venue extends Model
     public function area()
     {
         return $this->belongsTo(Area::class);
+    }
+
+    public function vegetarianType()
+    {
+        return $this->belongsTo(VegetarianType::class);
     }
 }
