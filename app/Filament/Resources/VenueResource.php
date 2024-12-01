@@ -62,6 +62,9 @@ class VenueResource extends Resource
                     ->relationship(name: 'halalAssurance', titleAttribute: 'display_name')->preload(),
                 Forms\Components\Select::make('venue_type_id')
                     ->relationship(name: 'venueType', titleAttribute: 'display_name'),
+                Forms\Components\Select::make('vegetarian_type_id')
+                    ->relationship(name: 'vegetarianType', titleAttribute: 'display_name')
+                    ->preload(),
             ]);
     }
 
@@ -85,26 +88,31 @@ class VenueResource extends Resource
                 //     ->searchable(),
                 Tables\Columns\TextColumn::make('area.name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('cuisine')->
-                    state(fn($record) => $record->cuisines->pluck('display_name')->join(', ')),
+                Tables\Columns\TextColumn::make('cuisine')->state(fn($record) => $record->cuisines->pluck('display_name')->join(', ')),
                 Tables\Columns\TextColumn::make('price_range.display_name'),
                 Tables\Columns\TextColumn::make('diet_category')
                     ->state(fn($record) => $record->dietCategories->pluck('display_name')->join(', ')),
                 Tables\Columns\TextColumn::make('halalAssurance.display_name'),
                 Tables\Columns\TextColumn::make('venue_type')
-                    ->state(fn($record) => $record->venueType->display_name)
+                    ->state(fn($record) => $record->venueType->display_name),
+                Tables\Columns\TextColumn::make('vegetarian_type')
+                    ->state(fn($record) => $record->vegetarianType?->display_name),
             ])
             ->filters([
                 SelectFilter::make('cousines')
-                ->relationship('cuisines', 'display_name')
-                ->multiple()
-                ->searchable()
-                ->preload(),
+                    ->relationship('cuisines', 'display_name')
+                    ->multiple()
+                    ->searchable()
+                    ->preload(),
                 SelectFilter::make('diet_categories')
-                ->relationship('dietCategories', 'display_name')
-                ->multiple()
-                ->searchable()
-                ->preload(),
+                    ->relationship('dietCategories', 'display_name')
+                    ->multiple()
+                    ->searchable()
+                    ->preload(),
+                SelectFilter::make('vegetarian_type')
+                    ->relationship('vegetarianType', 'display_name')
+                    ->searchable()
+                    ->preload(),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
