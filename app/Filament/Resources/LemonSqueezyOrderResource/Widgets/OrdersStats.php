@@ -9,7 +9,7 @@ use Filament\Widgets\StatsOverviewWidget\Stat;
 
 class OrdersStats extends BaseWidget
 {
-    protected static ?string $heading = 'Chart';
+    protected ?string $heading = 'Chart';
 
     use InteractsWithPageTable;
 
@@ -42,7 +42,7 @@ class OrdersStats extends BaseWidget
                     ->toArray())
                 ->color('primary'),
 
-            Stat::make('Total Sales', '$'.number_format($total, 2))
+            Stat::make('Total Sales', '$' . number_format($total, 2))
                 ->chart($orders
                     ->sortBy('created_at')
                     ->groupBy('created_at')
@@ -53,13 +53,13 @@ class OrdersStats extends BaseWidget
                     ->toArray())
                 ->color('success'),
 
-            Stat::make('Sales Today', '$'.number_format($totalToday, 2))
-                ->description('$'.number_format($totalToday - $totalYesterday, 2))
+            Stat::make('Sales Today', '$' . number_format($totalToday, 2))
+                ->description('$' . number_format($totalToday - $totalYesterday, 2))
                 ->descriptionIcon($totalToday >= $totalYesterday ? 'heroicon-m-arrow-trending-up' : 'heroicon-m-arrow-trending-down')
                 ->color($totalToday >= $totalYesterday ? 'success' : 'danger'),
 
-            Stat::make('Last 7 Days', '$'.number_format($lastSevenDays, 2))
-                ->description('$'.number_format($lastSevenDays - $previousSevenDays, 2))
+            Stat::make('Last 7 Days', '$' . number_format($lastSevenDays, 2))
+                ->description('$' . number_format($lastSevenDays - $previousSevenDays, 2))
                 ->descriptionIcon($lastSevenDays >= $previousSevenDays ? 'heroicon-m-arrow-trending-up' : 'heroicon-m-arrow-trending-down')
                 ->chart($orders
                     ->where('created_at', '>', now()->subDays(7)->startOfDay())

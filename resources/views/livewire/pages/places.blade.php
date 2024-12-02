@@ -14,7 +14,7 @@ use App\Models\PriceRange;
 use App\Models\Area;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\WithPagination;
-
+use App\Models\VegetarianType;
 new #[Layout('layouts.home')]
 class extends Component {
     use WithPagination;
@@ -38,6 +38,9 @@ class extends Component {
     #[Url(as: 'price')]
     public $selectedPrice = '';
 
+    #[Url(as: 'vegetarian')]
+    public $selectedVegetarian = '';
+
     #[Url]
     public $search = '';
 
@@ -48,6 +51,7 @@ class extends Component {
         'areas' => [],
         'cuisines' => [],
         'price_range' => [],
+        'vegetarian_type' => [],
     ];
 
     protected function getFilterArray($string)
@@ -74,6 +78,7 @@ class extends Component {
             'halal_assurance' => $this->getFilterArray($this->selectedHalal),
             'venue_type' => $this->getFilterArray($this->selectedVenue),
             'price_range' => $this->getFilterArray($this->selectedPrice),
+            'vegetarian_type' => $this->getFilterArray($this->selectedVegetarian),
         ];
     }
 
@@ -87,6 +92,7 @@ class extends Component {
             $this->selectedHalal = $this->getFilterString($this->filterValues['halal_assurance']);
             $this->selectedVenue = $this->getFilterString($this->filterValues['venue_type']);
             $this->selectedPrice = $this->getFilterString($this->filterValues['price_range']);
+            $this->selectedVegetarian = $this->getFilterString($this->filterValues['vegetarian_type']);
             $this->resetPage();
         }
     }
@@ -101,7 +107,8 @@ class extends Component {
                     'venueType:id,display_name',
                     'cuisines:id,display_name',
                     'priceRange:id,display_name',
-                    'area:id,display_name'
+                    'area:id,display_name',
+                    'vegetarianType:id,display_name',
                 ])
             );
 
@@ -124,6 +131,9 @@ class extends Component {
         if (!empty($this->filterValues['price_range'])) {
             $query->whereIn('price_range', $this->filterValues['price_range']);
         }
+        if (!empty($this->filterValues['vegetarian_type'])) {
+            $query->whereIn('vegetarian_type', $this->filterValues['vegetarian_type']);
+        }
 
         return $query->paginate(15);
     }
@@ -137,9 +147,18 @@ class extends Component {
             'areas' => [],
             'cuisines' => [],
             'price_range' => [],
+            'vegetarian_type' => [],
         ];
         $this->search = '';
         $this->resetPage();
+        //reset url parameters
+        $this->selectedCuisines = '';
+        $this->selectedDiet = '';
+        $this->selectedArea = '';
+        $this->selectedHalal = '';
+        $this->selectedVenue = '';
+        $this->selectedPrice = '';
+        $this->selectedVegetarian = '';
     }
 
     public function with()
@@ -152,6 +171,7 @@ class extends Component {
             'areas' => cache()->remember('areas', now()->addHour(), fn() => Area::orderBy('name')->get(['id', 'display_name'])),
             'cuisines' => cache()->remember('cuisines', now()->addHour(), fn() => Cuisine::all(['id', 'display_name'])),
             'price_range' => cache()->remember('price_range', now()->addHour(), fn() => PriceRange::all(['id', 'display_name'])),
+            'vegetarian_type' => cache()->remember('vegetarian_type', now()->addHour(), fn() => VegetarianType::all(['id', 'display_name'])),
         ];
     }
 }; ?>
@@ -164,7 +184,7 @@ class extends Component {
             <input
                 wire:model.live="search"
                 type="text"
-                placeholder="Halal Western"
+                placeholder="Search for a place"
                 class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary"
             >
         </div>
@@ -225,62 +245,122 @@ class extends Component {
 
             <!-- Halal Assurance -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.halal_assurance" label="Halal Assurance">
+                <flux:select 
+                    :filter="false"
+                    placeholder="Select Halal Assurance"
+                    variant="listbox"
+                    clearable
+                    class="border-0 p-0"
+                    wire:model.live="filterValues.halal_assurance" 
+                    label="Halal Assurance"
+                    multiple
+                >
                     @foreach($halal_assurance as $assurance)
-                        <flux:checkbox
-                            label="{{ $assurance->display_name }}"
-                            value="{{ $assurance->display_name }}"
-                        />
+                        <flux:option value="{{ $assurance->display_name }}">
+                            {{ $assurance->display_name }}
+                        </flux:option>
                     @endforeach
-                </flux:checkbox.group>
+                </flux:select>
             </div>
 
             <!-- Venue Type -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.venue_type" label="Venue Type">
+                <flux:select 
+                    wire:model.live="filterValues.venue_type" 
+                    label="Venue Type"
+                    placeholder="Select Venue Type"
+                    class="border-0 p-0"
+                    :filter="false"
+                    variant="listbox"
+                    clearable
+                    multiple
+                >
                     @foreach($venue_type as $type)
-                        <flux:checkbox
-                            label="{{ $type->display_name }}"
-                            value="{{ $type->display_name }}"
-                        />
+                        <flux:option value="{{ $type->display_name }}">
+                            {{ $type->display_name }}
+                        </flux:option>
                     @endforeach
-                </flux:checkbox.group>
+                </flux:select>
+            </div>
+
+            <!-- Vegetarian Type -->    
+            <div class="mb-6">
+                <flux:select 
+                    wire:model.live="filterValues.vegetarian_type" 
+                    label="Vegetarian Type"
+                    class="border-0 p-0"
+                    placeholder="Select Vegetarian Type"
+                    multiple
+                    :filter="false"
+                    variant="listbox"
+                    clearable
+                >
+                    @foreach($vegetarian_type as $type)
+                        <flux:option value="{{ $type->display_name }}">
+                            {{ $type->display_name }}
+                        </flux:option>
+                    @endforeach
+                </flux:select>
             </div>
 
             <!-- Area -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.areas" label="Area">
+                <flux:select 
+                    wire:model.live="filterValues.areas" 
+                    label="Area"
+                    searchable
+                    placeholder="Select Area"
+                    class="border-0 p-0"
+                    variant="listbox"
+                    clearable   
+                    multiple
+                >
                     @foreach($areas as $area)
-                        <flux:checkbox
-                            label="{{ $area->display_name }}"
-                            value="{{ $area->display_name }}"
-                        />
+                        <flux:option value="{{ $area->display_name }}">
+                            {{ $area->display_name }}
+                        </flux:option>
                     @endforeach
-                </flux:checkbox.group>
+                </flux:select>
             </div>
 
             <!-- Cuisines -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.cuisines" label="Cuisines">
+                <flux:select 
+                    wire:model.live="filterValues.cuisines" 
+                    label="Cuisines"
+                    placeholder="Select Cuisines"
+                    multiple
+                    class="border-0 p-0"
+                    variant="listbox"
+                    clearable
+                    searchable
+                >
                     @foreach($cuisines as $cuisine)
-                        <flux:checkbox
-                            label="{{ $cuisine->display_name }}"
-                            value="{{ $cuisine->display_name }}"
-                        />
+                        <flux:option value="{{ $cuisine->display_name }}">
+                            {{ $cuisine->display_name }}
+                        </flux:option>
                     @endforeach
-                </flux:checkbox.group>
+                </flux:select>
             </div>
 
             <!-- Price Range -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.price_range" label="Price Range">
+                <flux:select 
+                    class="border-0 p-0"
+                    wire:model.live="filterValues.price_range" 
+                    placeholder="Select Price Range"
+                    label="Price Range"
+                    multiple
+                    :filter="false"
+                    variant="listbox"
+                    clearable
+                >
                     @foreach($price_range as $range)
-                        <flux:checkbox
-                            label="{{ $range->display_name }}"
-                            value="{{ $range->display_name }}"
-                        />
+                        <flux:option value="{{ $range->display_name }}">
+                            {{ $range->display_name }}
+                        </flux:option>
                     @endforeach
-                </flux:checkbox.group>
+                </flux:select>
             </div>
         </div>
 
@@ -315,6 +395,12 @@ class extends Component {
                                             {{ $category->display_name }}
                                         </div>
                                     @endforeach
+                                @endif
+
+                                @if($venue->vegetarianType)
+                                    <div class="badge badge-secondary">
+                                        {{ $venue->vegetarianType->display_name }}
+                                    </div>
                                 @endif
 
                                 @if($venue->cuisines)

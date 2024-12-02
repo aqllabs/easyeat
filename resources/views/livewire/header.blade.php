@@ -1,7 +1,7 @@
-<div class="max-w-7xl m-auto navbar bg-base-100">
-    <div class="navbar-start">
+<div class="max-w-7xl mx-auto navbar bg-base-100">
+    <div class="sm:navbar-start px-4 sm:px-6 lg:px-8">
         <a href="/" class="flex flex-row items-center justify-center font-bold text-md">
-            <img class="w-16" src="{{ asset('/images/easyeat2.png') }}" alt="">
+            <img class="ml-2 w-24 h-12 object-fill" src="{{ asset('/images/easyeat2.png') }}" alt="">
         </a>
     </div>
     <div class="navbar-center hidden lg:flex">

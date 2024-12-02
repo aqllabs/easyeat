@@ -71,14 +71,11 @@ class extends Component
             ->whereNotNull('venues.area_id')
             ->groupBy('areas.id', 'areas.display_name')
             ->orderByDesc('count')
-            ->limit(4)
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
-                    'image' => $this->getUnsplashImage($item->display_name . ' location')
-
                 ];
             });
     }
@@ -91,13 +88,27 @@ class extends Component
             ->select('cuisines.display_name', DB::raw('count(DISTINCT venues.id) as count'))
             ->groupBy('cuisines.id', 'cuisines.display_name')
             ->orderByDesc('count')
-            ->limit(4)
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
-                    'image' => $this->getUnsplashImage($item->display_name . ' food')
+                ];
+            });
+    }
+
+    public function getVenueTypeCounts()
+    {
+        return DB::table('venues')
+            ->join('venue_types', 'venues.venue_type_id', '=', 'venue_types.id')
+            ->select('venue_types.display_name', DB::raw('count(venues.id) as count'))
+            ->groupBy('venue_types.id', 'venue_types.display_name')
+            ->orderByDesc('count')
+            ->get()
+            ->map(function($item) {
+                return [
+                    'name' => $item->display_name,
+                    'count' => $item->count . '+',
                 ];
             });
     }
@@ -108,6 +119,7 @@ class extends Component
             'dietary_counts' => cache()->remember('dietary_counts', now()->addHour(), fn() => $this->getDietaryCounts()),
             'location_counts' => cache()->remember('location_counts', now()->addHour(), fn() => $this->getLocationCounts()),
             'cuisine_counts' => cache()->remember('cuisine_counts', now()->addHour(), fn() => $this->getCuisineCounts()),
+            'venue_type_counts' => cache()->remember('venue_type_counts', now()->addHour(), fn() => $this->getVenueTypeCounts()),
         ];
     }
 }
@@ -154,19 +166,27 @@ class extends Component
                     See More →
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                @foreach ($dietary_counts as $diet)
-                    <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
-                       class="card relative h-48 overflow-hidden">
-                        @if($diet['image'])
-                            <img src="{{ $diet['image'] }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
-                        @endif
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
-                            <span class="text-2xl font-bold mb-1">{{ $diet['count'] }}</span>
-                            <span class="font-semibold text-center px-2">{{ $diet['name'] }}</span>
+            <div class="carousel w-full relative">
+                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                    @foreach ($dietary_counts as $diet)
+                        <div id="dietary-{{ $loop->index }}" class="carousel-item w-72">
+                            <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
+                               class="card relative h-48 w-full overflow-hidden">
+                                @if($diet['image'])
+                                    <img src="{{ $diet['image'] }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                @endif
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                    <span class="text-2xl font-bold mb-1">{{ $diet['count'] }}</span>
+                                    <span class="font-semibold text-center px-2">{{ $diet['name'] }}</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                @endforeach
+                    @endforeach
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle">❮</button>
+                    <button class="btn btn-circle">❯</button>
+                </div>
             </div>
         </section>
 
@@ -178,19 +198,24 @@ class extends Component
                     See More →
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                @foreach ($location_counts as $location)
-                    <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
-                       class="card relative h-48 overflow-hidden">
-                        @if($location['image'])
-                            <img src="{{ $location['image'] }}" alt="{{ $location['name'] }}" class="absolute inset-0 w-full h-full object-cover">
-                        @endif
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
-                            <span class="text-2xl font-bold mb-1">{{ $location['count'] }}</span>
-                            <span class="font-semibold text-center px-2">{{ $location['name'] }}</span>
+            <div class="carousel w-full relative">
+                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                    @foreach ($location_counts as $index => $location)
+                        <div id="location-{{ $index }}" class="carousel-item w-72">
+                            <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
+                               class="card relative h-48 w-full overflow-hidden">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                    <span class="text-2xl font-bold mb-1">{{ $location['count'] }}</span>
+                                    <span class="font-semibold text-center px-2">{{ $location['name'] }}</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                @endforeach
+                    @endforeach
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle">❮</button>
+                    <button class="btn btn-circle">❯</button>
+                </div>
             </div>
         </section>
 
@@ -202,20 +227,84 @@ class extends Component
                     See More →
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                @foreach ($cuisine_counts as $cuisine)
-                    <a href="{{ route('places.index', ['cuisine' => $cuisine['name']]) }}" 
-                       class="card relative h-48 overflow-hidden">
-                        @if($cuisine['image'])
-                            <img src="{{ $cuisine['image'] }}" alt="{{ $cuisine['name'] }}" class="absolute inset-0 w-full h-full object-cover">
-                        @endif
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
-                            <span class="text-2xl font-bold mb-1">{{ $cuisine['count'] }}</span>
-                            <span class="font-semibold text-center px-2">{{ $cuisine['name'] }}</span>
+            <div class="carousel w-full relative">
+                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                    @foreach ($cuisine_counts as $index => $cuisine)
+                        <div id="cuisine-{{ $index }}" class="carousel-item w-72">
+                            <a href="{{ route('places.index', ['cuisine' => $cuisine['name']]) }}" 
+                               class="card relative h-48 w-full overflow-hidden">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                    <span class="text-2xl font-bold mb-1">{{ $cuisine['count'] }}</span>
+                                    <span class="font-semibold text-center px-2">{{ $cuisine['name'] }}</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                @endforeach
+                    @endforeach
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle">❮</button>
+                    <button class="btn btn-circle">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue Types Section -->
+        <section class="mb-16">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl text-gray-600">Search by Venue Type</h2>
+                <a href="{{ route('places.index', ['filter' => 'venue_type']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                    See More →
+                </a>
+            </div>
+            <div class="carousel w-full relative">
+                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                    @foreach ($venue_type_counts as $index => $venue_type)
+                        <div id="venue-type-{{ $index }}" class="carousel-item w-72">
+                            <a href="{{ route('places.index', ['venue_type' => $venue_type['name']]) }}" 
+                               class="card relative h-48 w-full overflow-hidden">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                    <span class="text-2xl font-bold mb-1">{{ $venue_type['count'] }}</span>
+                                    <span class="font-semibold text-center px-2">{{ $venue_type['name'] }}</span>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle">❮</button>
+                    <button class="btn btn-circle">❯</button>
+                </div>
             </div>
         </section>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousels = document.querySelectorAll('.carousel');
+        
+        carousels.forEach(carousel => {
+            const scrollContainer = carousel.querySelector('.carousel-center');
+            const prevBtn = carousel.querySelector('.btn-circle:first-child');
+            const nextBtn = carousel.querySelector('.btn-circle:last-child');
+            
+            if (!scrollContainer || !prevBtn || !nextBtn) return;
+            
+            prevBtn.addEventListener('click', () => {
+                const itemWidth = scrollContainer.querySelector('.carousel-item').offsetWidth;
+                scrollContainer.scrollBy({
+                    left: -itemWidth,
+                    behavior: 'smooth'
+                });
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                const itemWidth = scrollContainer.querySelector('.carousel-item').offsetWidth;
+                scrollContainer.scrollBy({
+                    left: itemWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>
