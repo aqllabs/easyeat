@@ -19,6 +19,7 @@
         "laravel/scout": "^10.11",
         "laravel/socialite": "^5.12",
         "laravel/tinker": "^2.9",
+        "league/flysystem-aws-s3-v3": "^3.29",
         "lemonsqueezy/laravel": "^1.5",
         "livewire/flux-pro": "^1.0",
         "livewire/livewire": "^3.0",

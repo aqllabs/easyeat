@@ -2,6 +2,7 @@
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 use App\Models\Venue;
+use Illuminate\Support\Facades\Storage;
 
 new #[Layout('layouts.home')] 
 class extends Component {
@@ -25,13 +26,17 @@ class extends Component {
     <!-- Main Image Gallery -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div class="aspect-video rounded-lg overflow-hidden">
-            <img src="{{ "https://discoverhongkong.com/".$place->thumbnail_url }}" alt="{{ $place->name }}" class="w-full h-full object-cover">
+            <img src="{{ $place->thumbnail_url ? Storage::disk('s3')->temporaryUrl($place->thumbnail_url, now()->addMinutes(5)) : 'https://placehold.co/600x400' }}" 
+                 alt="{{ $place->name }}" 
+                 class="w-full h-full object-cover">
         </div>
         @if($place->images)
         <div class="grid grid-cols-2 gap-4">
             @foreach(array_slice($place->images, 0, 2) as $image)
             <div class="aspect-square rounded-lg overflow-hidden">
-                <img src="{{"https://discoverhongkong.com/".$image }}" alt="{{ $place->name }}" class="w-full h-full object-cover">
+                <img src="{{ Storage::disk('s3')->temporaryUrl($image, now()->addMinutes(5)) }}" 
+                     alt="{{ $place->name }}" 
+                     class="w-full h-full object-cover">
             </div>
             @endforeach
         </div>

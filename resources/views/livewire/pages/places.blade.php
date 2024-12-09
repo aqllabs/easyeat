@@ -15,6 +15,7 @@ use App\Models\Area;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\WithPagination;
 use App\Models\VegetarianType;
+use Illuminate\Support\Facades\Storage;
 new #[Layout('layouts.home')]
 class extends Component {
     use WithPagination;
@@ -371,7 +372,7 @@ class extends Component {
                     <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                         <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
-                                src="{{ $venue->thumbnail_url ? (str_starts_with($venue->thumbnail_url, 'https') ? $venue->thumbnail_url : 'https://discoverhongkong.com/'.$venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
+                                src="{{ $venue->thumbnail_url ? Storage::disk('s3')->temporaryUrl($venue->thumbnail_url, now()->addMinutes(5)) : 'https://placehold.co/600x400' }}"
                                 alt="{{ $venue->name }}"
                                 class="w-full h-full object-cover"
                             >
