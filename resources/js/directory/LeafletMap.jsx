@@ -11,7 +11,7 @@ import {
 import L from "leaflet";
 import { hoveredIdAtom, clickedIdAtom } from "@/Atoms";
 import { useAtomValue, useSetAtom } from "jotai";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useMemo } from "react";
 
 export function CustomGeoSearch() {
     // Hong Kong coordinates
@@ -51,6 +51,31 @@ function Restaurants() {
     const [selectedItem, setSelectedItem] = useState(null);
     const markerRefs = useRef({});
     const [searchBounds, setSearchBounds] = useState(null);
+    const [isLocating, setIsLocating] = useState(false);
+    const [userLocation, setUserLocation] = useState(null);
+    const [iconLoadError, setIconLoadError] = useState(false);
+
+    const defaultIcon = L.icon({
+        iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
+        shadowUrl:
+            "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+    });
+
+    const userLocationIcon = useMemo(() => {
+        try {
+            return L.icon({
+                iconUrl: "/images/pin.png",
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32],
+            });
+        } catch (error) {
+            setIconLoadError(true);
+            return defaultIcon;
+        }
+    }, []);
 
     const onViewChange = ({ target }) => {
         const bounds = target.getBounds();
@@ -140,17 +165,136 @@ function Restaurants() {
         }
     }, [clickedItemId, items, map, setClickedId]);
 
+    const handleLocationClick = () => {
+        setIsLocating(true);
+
+        if (!navigator.geolocation) {
+            toast.error("Geolocation is not supported by your browser");
+            setIsLocating(false);
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const { latitude, longitude } = position.coords;
+                const newLocation = [latitude, longitude];
+                setUserLocation(newLocation);
+                map.setView(newLocation, 15, {
+                    animate: true,
+                });
+                setIsLocating(false);
+            },
+            (error) => {
+                console.error("Error getting location:", error);
+                let errorMessage = "Error getting your location";
+
+                switch (error.code) {
+                    case error.PERMISSION_DENIED:
+                        errorMessage =
+                            "Please allow location access to use this feature";
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        errorMessage = "Location information is unavailable";
+                        break;
+                    case error.TIMEOUT:
+                        errorMessage = "Location request timed out";
+                        break;
+                }
+
+                console.error(errorMessage);
+                setIsLocating(false);
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 5000,
+                maximumAge: 0,
+            }
+        );
+    };
+
+    // Cleanup on unmount
+    useEffect(() => {
+        return () => {
+            // Cleanup markers
+            Object.values(markerRefs.current).forEach((marker) => {
+                if (marker) {
+                    marker.remove();
+                }
+            });
+            markerRefs.current = {};
+
+            // Reset states
+            setUserLocation(null);
+            setIsLocating(false);
+            setSelectedItem(null);
+        };
+    }, []);
+
+    // Combine related states
+    const [locationState, setLocationState] = useState({
+        isLocating: false,
+        userLocation: null,
+        error: null,
+    });
+
     return (
         <>
             {/* Add Redo Search Button */}
             <div className="absolute top-4 right-4 z-[1000]">
                 <button
                     onClick={handleRedoSearch}
-                    className="bg-primary text-black font-bold px-4 py-2 rounded-lg shadow-lg hover:bg-primary/80 transition-colors"
+                    className="bg-secondary text-black font-bold px-4 py-2 rounded-lg shadow-lg hover:bg-primary/80 transition-colors"
                 >
                     Redo Search in This Area
                 </button>
             </div>
+
+            {/* Location Button */}
+            <div className="absolute bottom-8 right-4 z-[1000]">
+                <button
+                    onClick={handleLocationClick}
+                    disabled={isLocating}
+                    className="btn btn-circle btn-secondary shadow-lg"
+                >
+                    {isLocating ? (
+                        <span className="loading loading-spinner"></span>
+                    ) : (
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth={1.5}
+                            stroke="currentColor"
+                            className="w-6 h-6"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                            />
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                            />
+                        </svg>
+                    )}
+                </button>
+            </div>
+
+            {/* User Location Marker */}
+            {userLocation && (
+                <Marker
+                    position={userLocation}
+                    icon={iconLoadError ? defaultIcon : userLocationIcon}
+                >
+                    <Popup>
+                        <div className="text-center">
+                            <p className="font-semibold">You are here</p>
+                        </div>
+                    </Popup>
+                </Marker>
+            )}
 
             {items.map((item) => (
                 <Marker

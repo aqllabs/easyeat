@@ -28,8 +28,8 @@ export default {
         themes: [
             {
                 mytheme: {
-                    primary: "#FFC629", // Main CTA buttons, important highlights, brand identity
-                    secondary: "#FF4D4D", // Secondary actions, notifications, badges
+                    primary: "#757366", // Main CTA buttons, important highlights, brand identity
+                    secondary: "#ff9f33", // Secondary actions, notifications, badges
                     accent: "#00B5B5", // Accent elements, success states, positive interactions
                     neutral: "#1A1A1A", // Text, headers, navigation elements
                     "base-100": "#ffffff", // Main background

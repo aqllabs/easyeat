@@ -64,7 +64,7 @@ function MapList({ wire, ...props }) {
                 <VirtualFilters />
                 <div className="flex flex-col md:flex-row flex-1">
                     <div
-                        className={`h-full md:h-[calc(100dvh-4rem)] md:w-1/3 w-full bg-base-100 overflow-y-auto relative 
+                        className={`h-full md:h-[calc(100dvh-4rem)] md:w-1/3 w-full bg-base-100 overflow-y-auto relative
                         hidden md:block`}
                     >
                         <NoResultsBoundary fallback={<NoResults />}>
@@ -109,13 +109,22 @@ export default MapList;
 function StickyHeader({ onFilterClick }) {
     const { items: cuisineItems, refine: refineCuisine } = useRefinementList({
         attribute: "cuisines",
+        operator: "or",
+        showMore: true,
     });
     const { items: dietItems, refine: refineDiet } = useRefinementList({
         attribute: "diet_categories",
+        operator: "or",
     });
     const { items: halalItems, refine: refineHalal } = useRefinementList({
         attribute: "halal_assurance",
+        operator: "or",
     });
+    const { items: vegetarianItems, refine: refineVegetarian } =
+        useRefinementList({
+            attribute: "vegetarian_type",
+            operator: "or",
+        });
 
     // Add this hook
     const { refine: clearAllRefinements } = useClearRefinements();
@@ -127,6 +136,8 @@ function StickyHeader({ onFilterClick }) {
         dietItems?.filter((item) => item.isRefined).length || 0;
     const selectedHalal =
         halalItems?.filter((item) => item.isRefined).length || 0;
+    const selectedVegetarian =
+        vegetarianItems?.filter((item) => item.isRefined).length || 0;
 
     const setClickedId = useSetAtom(clickedIdAtom);
     const setHoveredId = useSetAtom(hoveredIdAtom);
@@ -139,32 +150,22 @@ function StickyHeader({ onFilterClick }) {
 
     // Calculate total selected filters
     const totalSelectedFilters =
-        selectedCuisines + selectedDiets + selectedHalal;
+        selectedCuisines + selectedDiets + selectedHalal + selectedVegetarian;
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <div className="navbar sticky top-0 z-[50] border border-base-300">
-            <div className="mr-4">
-                {/* arrow left */}
-                <a href="/" className="btn btn-ghost btn-sm ">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2}
-                        stroke="currentColor"
-                        className="w-5 h-5 text-primary"
-                    >
-                        <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-                        />
-                    </svg>
-                    <span className="text-xl font-bold text-primary">
-                        EasyEat
-                    </span>
+            <div className="px-2">
+                <a
+                    href="/"
+                    className="flex flex-row items-center justify-center font-bold text-md"
+                >
+                    <img
+                        className=" w-24 h-12 object-fill"
+                        src="/images/easyeat2.png"
+                        alt=""
+                    />
                 </a>
             </div>
             <div className="flex-1 items-center gap-2 hidden md:flex">
@@ -192,12 +193,14 @@ function StickyHeader({ onFilterClick }) {
                                 sortBy={["count:desc"]}
                                 operator="or"
                                 attribute="cuisines"
+                                showMore={true}
                                 classNames={{
-                                    list: "w-full space-y-2",
+                                    list: "w-full space-y-2 overflow-y-auto h-64",
                                     item: "hover:bg-base-200 rounded-sm",
                                     label: "label cursor-pointer flex items-center gap-2 w-full p-2",
                                     count: "badge badge-sm ml-auto",
                                     checkbox: "checkbox checkbox-sm ",
+                                    showMore: "btn btn-sm btn-primary",
                                 }}
                             />
                         </div>
@@ -276,6 +279,46 @@ function StickyHeader({ onFilterClick }) {
                         </div>
                     </div>
                 </div>
+
+                {/* Vegetarian Type Filter */}
+                <div className="dropdown dropdown-end">
+                    <label
+                        tabIndex={0}
+                        className={`btn btn-outline btn-sm m-1 ${
+                            selectedVegetarian > 0 ? "btn-secondary" : ""
+                        }`}
+                    >
+                        Vegetarian Type{" "}
+                        {selectedVegetarian > 0 && (
+                            <span className="badge badge-sm ml-2">
+                                {selectedVegetarian}
+                            </span>
+                        )}
+                    </label>
+                    <div
+                        tabIndex={0}
+                        className="dropdown-content z-[100] card card-compact w-64 p-2 shadow-lg bg-base-100 text-base-content mt-2 left-0 border border-base-300"
+                    >
+                        <div className="card-body">
+                            <h3 className="card-title">
+                                Select Vegetarian Type
+                            </h3>
+                            <RefinementList
+                                sortBy={["count:desc"]}
+                                operator="or"
+                                attribute="vegetarian_type"
+                                classNames={{
+                                    list: "w-full space-y-2 overflow-y-auto max-h-64",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                    count: "badge badge-sm ml-auto",
+                                    checkbox: "checkbox checkbox-sm",
+                                    showMore: "btn btn-sm btn-primary",
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="flex-1 md:hidden">
                 <button
@@ -337,8 +380,9 @@ function StickyHeader({ onFilterClick }) {
                                         )}
                                     </h3>
                                     <RefinementList
-                                        sortBy={["count:desc"]}
                                         operator="or"
+                                        showMore={true}
+                                        limit={5}
                                         attribute="cuisines"
                                         classNames={{
                                             list: "w-full space-y-2",
@@ -530,6 +574,7 @@ function VirtualFilters() {
     useRefinementList({
         attribute: "cuisines",
         operator: "or",
+        showMore: true,
     });
     useRefinementList({
         attribute: "diet_categories",
@@ -537,6 +582,10 @@ function VirtualFilters() {
     });
     useRefinementList({
         attribute: "halal_assurance",
+        operator: "or",
+    });
+    useRefinementList({
+        attribute: "vegetarian_type",
         operator: "or",
     });
     return null;
