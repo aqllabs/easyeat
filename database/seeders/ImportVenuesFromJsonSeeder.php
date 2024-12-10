@@ -10,6 +10,7 @@ use App\Models\DietCategory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
+use App\Models\Area;
 
 class ImportVenuesFromJsonSeeder extends Seeder
 {
@@ -24,7 +25,7 @@ class ImportVenuesFromJsonSeeder extends Seeder
         // $this->seedReferenceData();
 
         // Get JSON files from storage/app/public/venues/*.json
-        $files = glob(public_path('venues/*.jsonld'));
+        $files = glob(public_path('venues/withareas/*.jsonld'));
         $this->command->info(sprintf('Found %d files to process', count($files)));
 
         foreach ($files as $file) {
@@ -72,7 +73,30 @@ class ImportVenuesFromJsonSeeder extends Seeder
         }
 
 
-        // Create venue
+        $area = Area::where('name', $data['area'])->first();
+
+        if (!$area) {
+            $area = null;
+        }
+
+        // Download and upload image if available
+        $imagePath = '';
+        if (!empty($data['image'])) {
+            try {
+                $imageUrl = $data['image'];
+                $imageContent = @file_get_contents($imageUrl);
+
+                if ($imageContent !== false) {
+                    $imagePath = 'venues/thumbnail_' . basename($imageUrl);
+                    Storage::disk('s3')->put($imagePath, $imageContent);
+                } else {
+                    $this->command->warn("Could not download image for venue: {$data['name']}");
+                }
+            } catch (\Exception $e) {
+                $this->command->warn("Error processing image for svenue {$data['name']}: {$e->getMessage()}");
+            }
+        }
+
         $venue = Venue::create([
             'name' => $data['name'],
             'description' => $data['description'],
@@ -80,13 +104,14 @@ class ImportVenuesFromJsonSeeder extends Seeder
             'city' => 'Hong Kong',
             'telephone' => $data['telephone'] ?? null,
             'website' => $data['url'] ?? null,
-            'thumbnail_url' => $data['image'] ?? null,
+            'thumbnail_url' => $imagePath,
             'price_range_id' => $priceRange?->id,
             'venue_type_id' => $venueType->id,
             'opening_hours' => json_encode(['raw' => $data['openingHours'] ?? null]),
             'lat' => $coordinates['lat'],
             'lng' => $coordinates['lng'],
             'google_maps_url' => $this->generateGoogleMapsUrl($coordinates['lat'], $coordinates['lng']),
+            'area_id' => $area?->id,
         ]);
 
         // Process cuisines first

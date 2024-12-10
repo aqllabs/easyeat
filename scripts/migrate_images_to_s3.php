@@ -55,7 +55,7 @@ class ImageMigrator
             // Process thumbnail
             if ($venue->thumbnail_url) {
                 $newThumbnailUrl = $this->processImage(
-                    $venue->thumbnail_url,
+                    'https://discoverhongkong.com/' . $venue->thumbnail_url,
                     "venues/{$venue->id}/thumbnail_" . basename($venue->thumbnail_url)
                 );
                 if ($newThumbnailUrl) {

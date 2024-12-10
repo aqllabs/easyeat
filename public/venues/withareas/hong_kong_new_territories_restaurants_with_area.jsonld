@@ -1,0 +1,1933 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52916",
+    "name": "Ching Chung Koon 青松觀",
+    "url": "https://www.happycow.net/reviews/ching-chon-koon-new-territories-52916",
+    "image": "https://images.happycow.net/venues/500/52/91/hcmp52916_824783.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1/F, Ching Chung Taoist Association Building, 28 Tsing Chung Koon Road, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24617117",
+    "servesCuisine": "Vegan, Chinese, Take-out",
+    "description": "Taoist temple whose name means \"Green Pine Monastery,\" est. 1949. Take MTR to Siu Hong, change to LRT numbers 505, 615 or 615P, 2n stop is Ching Chung.",
+    "openingHours": "Mon-Sun 11:30am-4:30pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52915",
+    "name": "Ching Leung Fat Yuen Ching Yan Siu Chok",
+    "url": "https://www.happycow.net/reviews/ching-leung-fat-yeung-ching-yan-siu-chok-new-territories-52915",
+    "image": "https://images.happycow.net/venues/500/52/91/hcmp52915_113822.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tuen Fu Rd, Fu Tei, Tuen Mun (at off Castle Peak Rd), New Territories, Hong Kong"
+    },
+    "telephone": "+852-96431800",
+    "servesCuisine": "Vegan, Chinese, Take-out",
+    "description": "Cafeteria at the Buddhist Ching Leung Nunnery, seats up to 200. Closes July month. Fixed menu that varies based on size of dining group. Directions: From Siu Hong MTR Exit F, take the bridge across the main road, the footpath swings right past cycle parking, after the cycle area turn left, next is Tuen Fu Rd, turn right on Tuen Fu Rd then 1st left opposite the fire station on to Tuen On Lane, and the monastery exit is on right just before the roundabout.",
+    "openingHours": "Sun 12:00pm-4:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    },
+    "area": "Peak"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51562",
+    "name": "Eat Well Cafe 慧食營",
+    "url": "https://www.happycow.net/reviews/eat-well-cafe-new-territories-51562",
+    "image": "https://images.happycow.net/venues/500/51/56/hcmp51562_103890.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kadoorie Farm and Botanic Garden, Lam Kam Rd, Tai Po, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24889945",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "嘉道理農場素食亭, at 大埔林村林錦公路嘉道理農場內. Cafe run by New Life Psychiatric Rehabilitation Association. Located on Kadoorie Farm and Botanic Garden (KFBG) which is on the slopes of HK's highest mountain with forest, theme gardens, vegetable terraces, walking trails and roads, conservation and eco education facilities. From Tai Wo MTR take 64K bus towards Yuen Long (west). After 20 minutes just before the top of the very steep hill is the Kadoorie Farm bus stop. Opposite direction, 15 minutes on 64K from Kam Sheung Rd MTR. Previously named Sun Garden Cafe.",
+    "openingHours": "Mon-Sun 9:30am-4:30pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    },
+    "area": "Tai Po"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "211331",
+    "name": "Friends of Years",
+    "url": "https://www.happycow.net/reviews/friends-of-years-new-territories-211331",
+    "image": "https://images.happycow.net/venues/500/21/13/hcmp211331_1198313.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "20 Sam Pei Square, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-52969864",
+    "servesCuisine": "Vegan, Western, European",
+    "description": "Vegan cafe est. 2020 in Tsuen Wan. Menu offers pasta, risotto, salad, and burger options as well as coffees with oat or soy milk. Instagram: @years.hk",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "73650",
+    "name": "LN Fortunate Coffee 幸福咖啡 - Kwai Hing",
+    "url": "https://www.happycow.net/reviews/loving-nature-new-territories-73650",
+    "image": "https://images.happycow.net/venues/500/73/65/hcmp73650_1017588.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 107, 1/F, Edge, 30-34 Kwai Wing Rd, Kwai Chung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-36283884",
+    "servesCuisine": "Vegan, Pizza, International, Western, Take-out, Asian, Bakery, Fusion",
+    "description": "Vegan bakery & coffee cafe franchise originating from Hsinchu Taiwan and operates outlets across Southeast Asia. The \"LN\" stands for \"Loving Nature\" which is its principal philosophy that all earthly creatures are one family. Each location is individually operated and menu selections may vary. Serves coffee, tea, and other drinks (with plant milk); vegan ice cream, cakes, and freshly baked breads; meals and savories. Cuisine types range from Asian dishes like rice and noodles to western ones like burgers, pasta, and sandwiches.",
+    "openingHours": "Mon-Sat 10:30am-5:30pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegan"
+    },
+    "area": "Kwai Chung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206995",
+    "name": "RainFlower Home 雨花齋 - Fo Tan",
+    "url": "https://www.happycow.net/reviews/rainflower-home-new-territories-206995",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "16A,Yue Cheong Centre,1 Wong Chuk Yeung St, New Territories, Hong Kong"
+    },
+    "telephone": "+852-81079733",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "Non-profit organization that serves free vegan food.",
+    "openingHours": "Mon-Sun 12:30pm-1:30pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206745",
+    "name": "RainFlower Home 雨花齋 - Yuen Long",
+    "url": "https://www.happycow.net/reviews/rainflower-home-new-territories-206745",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "745 Tai Chi Ling, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-51662078",
+    "servesCuisine": "Vegan, Chinese",
+    "description": "Non-profit organization that serves free vegan food.",
+    "openingHours": "Mon-Sun 12:00pm-1:00pm",
+    "additionalType": "Vegan",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegan"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "211355",
+    "name": "Ahimsa Buffet 無肉食",
+    "url": "https://www.happycow.net/reviews/ahimsa-buffet-new-territories-211355",
+    "image": "https://images.happycow.net/venues/500/21/13/hcmp211355_962603.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 213, 2/F, Nina Mall 2, 98 Tai Ho Rd, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23369818",
+    "servesCuisine": "Vegan-friendly, Ovo, Pizza, Chinese, International, Buffet, Salad bar, Take-out",
+    "description": "Vegetarian semi-buffet restaurant offering a variety of choices. This outlet est. 2020.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "343058",
+    "name": "Almond Dessert - 杏甜品 - Kwai Fong",
+    "url": "https://www.happycow.net/reviews/almond-dessert-kwai-fong-new-territories-343058",
+    "image": "https://images.happycow.net/venues/500/34/30/hcmp343058_2101685.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 477-478, 4/F, Metroplaza, 223 Hing Fong Rd (at Metroplaza), New Territories, Hong Kong"
+    },
+    "telephone": "+852-96028135",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Western, Take-out, Fusion",
+    "description": "Vegetarian Chinese dessert restaurant which offers vegetarian/vegan meals. Vegan options are clearly marked with \"全素\" and include pesto ravioli (意大利餃), white truffle risotto in bamboo tube (意大利白松露鮮蘑菇竹筒燴飯), bird's nest stew (甜菊代糖燉燕窩), jelly with mango smoothie, mini taro balls and coconut (呂宋芒椰木蓮凍), dried longan pulp and red date soup (原盅雪梨桂圓肉燉紅棗) and more.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "323226",
+    "name": "Bao Lian Vegetarian Food - 寶蓮素食",
+    "url": "https://www.happycow.net/reviews/bao-lian-vegetarian-food-new-territories-323226",
+    "image": "https://images.happycow.net/venues/500/32/32/hcmp323226_1859333.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G17-18, G/F, 328 Plaza, 328 Sha Tsui Road, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-93318747",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Buffet, Take-out",
+    "description": "Chinese vegetarian restaurant offering a buffet consisting of traditional dishes, most of which are vegan.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52920",
+    "name": "Chai Chi Bo",
+    "url": "https://www.happycow.net/reviews/chai-chi-bo-new-territories-52920",
+    "image": "https://images.happycow.net/venues/500/52/92/hcmp52920_794272.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 14, G/F, HIng Loong Building, 2 Hung Min Court, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24422986",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out",
+    "description": "Buddhist eatery, seats 35. Some English spoken.",
+    "openingHours": "Mon-Sun 7:30am-7:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225385",
+    "name": "Chi Hong 慈航淨院",
+    "url": "https://www.happycow.net/reviews/chi-hong-new-territories-225385",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1A Sun Tin Village, Tai Wai, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Buddhist vegetarian restaurant.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/chi-hong-new-territories-225385/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tai Wai"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "273803",
+    "name": "Ching Sum Zai 清心齋 - Metro City Plaza",
+    "url": "https://www.happycow.net/reviews/ching-sum-zai-metro-city-plaza-new-territories-273803",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 1021, 1/F, Metro City Plaza II, 8 Mau Yip Rd, Tseung Kwan O, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling desserts, savories, mock meats, and sweet buns, some of which are vegan and others that could be made vegan upon request. One of several outlets.",
+    "openingHours": "Mon-Sun 11:30am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tseung Kwan O"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213158",
+    "name": "Ching Sum Zai 清心齋 - TKO",
+    "url": "https://www.happycow.net/reviews/ching-sum-zai-new-territories-213158",
+    "image": "https://images.happycow.net/venues/500/21/31/hcmp213158_968946.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop EF11, Food Lane, G/F, TKO Gateway, 2 Sheung Ning Rd, Tseung Kwan O, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling desserts, savories, mock meats, and sweet buns. One of several outlets.",
+    "openingHours": "Mon-Sun 11:30am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tseung Kwan O"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "24592",
+    "name": "Delicious Vegetarian",
+    "url": "https://www.happycow.net/reviews/delicious-vegetarian-kitchen-new-territories-24592",
+    "image": "https://images.happycow.net/venues/500/24/59/hcmp24592_542120.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "82 Shui Che Kwun St, Prosperity Building G/F, New Territories, Hong Kong"
+    },
+    "telephone": "+852-34817799",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out",
+    "description": "HK style restaurant, take away, and health food shop. Buddhist family run. Seats 32. Nearest LRT - Tai Tong Road Station.",
+    "openingHours": "Mon-Sat 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "64124",
+    "name": "Eat Well Canteen 慧食堂",
+    "url": "https://www.happycow.net/reviews/eat-well-canteen-new-territories-64124",
+    "image": "https://images.happycow.net/venues/500/64/12/hcmp64124_984043.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "11 Wan Tau Kok Lane, Tai Po, New Territories, Hong Kong"
+    },
+    "telephone": "+852-29962800",
+    "servesCuisine": "Chinese",
+    "description": "Est Aug 2015 with a vegan food chef at that time. Part of Green Hub & managed by Kadoorie Farm. Kadoorie policy is not vegan and they specifically request HappyCow do not list this as a vegan cafe. Located in the canteen block of the ex Tai Po police station. Venue also used for non-vegan cookery classes. Last orders 3:30pm.",
+    "openingHours": "Mon 10:00am-5:00pm, Wed-Sun 10:00am-5:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tai Po"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "300153",
+    "name": "Fat Chee Vegetarian 佛慈齋",
+    "url": "https://www.happycow.net/reviews/fat-chee-vegetarian-new-territories-300153",
+    "image": "https://images.happycow.net/venues/500/30/01/hcmp300153_1597211.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop A55, G/F, Phase 1, Kingswood Richly Plaza, 1 Tin Wu Road, Tin Shui Wai, New Territories, Hong Kong"
+    },
+    "telephone": "+852-21857559",
+    "servesCuisine": "Vegan-friendly, Chinese",
+    "description": "Vegetarian store serving savories, mock meats, meals, sweet buns, dried goods, snacks, sauces and drinks, many of which are vegan.",
+    "openingHours": "Mon-Sun 10:00am-7:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tin Shui Wai"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52919",
+    "name": "Fat Chee Vegetarian 佛慈齋",
+    "url": "https://www.happycow.net/reviews/fat-chee-vegetarian-new-territories-52919",
+    "image": "https://images.happycow.net/venues/500/52/91/hcmp52919_97840.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F 22 Fuk Hong Street, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24793686",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vegetarian food.",
+    "openingHours": "Mon-Sun 8:30am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52914",
+    "name": "Fok Hing Food Shop",
+    "url": "https://www.happycow.net/reviews/fok-hing-food-shop-new-territories-52914",
+    "image": "https://images.happycow.net/venues/500/52/91/hcmp52914_1024258.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 8, G/F, Man Bo Building, 2 Tsing Hoi Circuit, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24417806",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Daytime eatery. Chinese name is 福興素食店.",
+    "openingHours": "Mon-Sat 7:00am-3:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51563",
+    "name": "Fung Ying Seen Koon Vegetarian Kitchen",
+    "url": "https://www.happycow.net/reviews/fung-ying-seen-koon-vegetarian-kitchen-new-territories-51563",
+    "image": "https://images.happycow.net/venues/500/51/56/hcmp51563_381056.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "66 Pak Wo Rd, Fanling, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26693033",
+    "servesCuisine": "Chinese",
+    "description": "蓬瀛仙館齋廚, at 粉嶺百和路66號 is a 1929 founded Taoist temple complex with a vegetarian restaurant of 480 seats. Note Nov 2017 staff advise some dishes contain egg. Follow signs from Fanling MTR exit B and under the subway.",
+    "openingHours": "Mon-Sun 11:00am-4:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Fanling"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "60442",
+    "name": "Gaia Veggie Shop - Ma On Shan",
+    "url": "https://www.happycow.net/reviews/gaia-veggie-shop-new-territories-60442",
+    "image": "https://images.happycow.net/venues/500/60/44/hcmp60442_265243.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 3217-18, 3/F, Sunshine City Plaza, 18 On Luk St, Ma On Shan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-22345595",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese",
+    "description": "大自然素食 at 馬鞍山鞍祿街18號新港城中心3樓3217舖 is a branch of this veg food chain. Previously at shop number 3005 in the same complex.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Ma On Shan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "25698",
+    "name": "Gaia Veggie Shop - Tsuen Wan",
+    "url": "https://www.happycow.net/reviews/gaia-veggie-shop-new-territories-25698",
+    "image": "https://images.happycow.net/venues/500/25/69/hcmp25698_775426.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 433, 4/F, Tsuen Wan Plaza, 4-30 Tai Pa Street, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-21481819",
+    "servesCuisine": "Vegan-friendly, Lacto, Chinese, Take-out",
+    "description": "Vegetarian restaurant with 70+ seats near Tsuen Wan West Station Exit A. Cantonese Buddhist veggie food.",
+    "openingHours": "Mon-Sun 11:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "254744",
+    "name": "Green Entrance - 入素",
+    "url": "https://www.happycow.net/reviews/green-entrance-new-territories-254744",
+    "image": "https://images.happycow.net/venues/500/25/47/hcmp254744_1237202.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "804, 8/F, Life@KCC, 72-76 Kwai Cheong Rd, Kwai Chung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-64886804",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Western, Asian",
+    "description": "A modern vegetarian restaurant that offers a variety of choices for savoury and sweets. Items with dairy and egg are clearly marked.",
+    "openingHours": "Mon-Sun 11:30am-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Kwai Chung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "212911",
+    "name": "Green Entrance 入素",
+    "url": "https://www.happycow.net/reviews/green-entrance-new-territories-212911",
+    "image": "https://images.happycow.net/venues/500/21/29/hcmp212911_967693.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 237, 2/F, Kings Wing Plaza 1, 3 On Kwan St, Shek Mun, Sha Tin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-35903570",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Western",
+    "description": "Vegetarian restaurant offering a variety of choices. Items with dairy and egg are clearly marked.",
+    "openingHours": "Mon-Sun 11:30am-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Sha Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "417922",
+    "name": "HAHA",
+    "url": "https://www.happycow.net/reviews/haha-new-territories-417922",
+    "image": "https://images.happycow.net/venues/500/41/79/hcmp417922_2897895.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "217 Kam Tin Rd, Kam Tin, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Western, Take-out",
+    "description": "Art. Food. Goods. Take-out vegetarian light food and art gallery. Sister branch of the nearby restaurant \"Kok Kok\". May sit down and order at \"Kok Kok\". Vegan dishes include nacho chip 墨西哥粟米片, chocolate cookies 純素朱古力曲奇, deep-fried Chinese yam dumplings 淮山炸餃子, quick pickled vegetables 淺漬芽菜,青瓜,本地有機茄子,通菜.",
+    "openingHours": "Mon-Sun 1:00pm-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Kam Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "226366",
+    "name": "Heartful Veggie 從心素食",
+    "url": "https://www.happycow.net/reviews/heartful-veggie-new-territories-226366",
+    "image": "https://images.happycow.net/venues/500/22/63/hcmp226366_1082665.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 263C, L2, East Point City, Tseung Kwan O, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23656788",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese",
+    "description": "Vegetarian restaurant serving lunch and dinner. Dishes are mainly Asian style with a few western ones. Selection includes rice, noodles, mock meats, dumplings, vegetables, fried foods, sushi, and cheese bakes.",
+    "openingHours": "Mon-Sun 11:30am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tseung Kwan O"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "223109",
+    "name": "Hong Kong Adventist Hospital Cafeteria",
+    "url": "https://www.happycow.net/reviews/hong-kong-adventist-hospital-cafeteria-new-territories-223109",
+    "image": "https://images.happycow.net/venues/500/22/31/hcmp223109_1044858.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6/F, Main Building, 199 Tsuen King Circuit, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-22756690",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Fast food, Take-out, Breakfast",
+    "description": "Hospital with vegetarian cafeteria that's open to public. The menu is designed by nutritionist, and dishes are labeled.",
+    "openingHours": "Mon-Sun 8:00am-7:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225383",
+    "name": "Huì Quán Sì 慧泉寺",
+    "url": "https://www.happycow.net/reviews/hui-quan-si-new-territories-225383",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "98 Pai Tau Village, Sha Tin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26910333",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Monastery restaurant that serves dishes with mock meat, vegetables, and rice. Call ahead.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/hui-quan-si-new-territories-225383/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Sha Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "334073",
+    "name": "Janes & Beans - 珍心",
+    "url": "https://www.happycow.net/reviews/janes-and-beans-new-territories-334073",
+    "image": "https://images.happycow.net/venues/500/33/40/hcmp334073_2006579.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 2086, 2/F, Sheung Shui Centre, 3 Chi Cheong Rd, Sheung Shui, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Take-out",
+    "description": "Soft opening Feb. 2023. Vegetarian takeaway counter specializing in soy milk and tofu. Vegan dishes may include sticky rice roll, freshly made silken tofu, steamed rice roll, soup, vegetarian noodles, vegetarian bento, freshly made tofu pudding.",
+    "openingHours": "Mon-Sun 12:00pm-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Sheung Shui"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51554",
+    "name": "Ka Ka Lok Fast Food Shop",
+    "url": "https://www.happycow.net/reviews/ka-ka-lok-fast-food-shop-new-territories-51554",
+    "image": "https://images.happycow.net/venues/500/51/55/hcmp51554_305241.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 7, G/F, Kwai Po Building, 112 Lei Muk Rd, Kwai Chung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24222122",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "家家樂素食快餐店, at 葵涌梨木道112號葵寶大廈7號地下, seats 14. Free dinner given one or two evenings each month to elderly customers. Mock meats may not be vegan - please verify and let HappyCow know!",
+    "openingHours": "Mon-Sat 7:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Kwai Chung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "229833",
+    "name": "Lap Shing Vegetarian 立成健康素食",
+    "url": "https://www.happycow.net/reviews/lap-shing-vegetarian-new-territories-229833",
+    "image": "https://images.happycow.net/venues/500/22/98/hcmp229833_1088155.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 10B, G/F, Chun Shek Commercial Complex, Chun Shek Estate, Shatin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-31562822",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Takeaway vegetarian kitchen in Chun Shek Estate. Makes foods like beancurd rolls, noodles, mock tuna rice balls.",
+    "openingHours": "Mon-Sun 10:00am-7:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "249167",
+    "name": "Lotus Veggie - Tai Po",
+    "url": "https://www.happycow.net/reviews/lotus-veggie-new-territories-249167",
+    "image": "https://images.happycow.net/venues/500/24/91/hcmp249167_1211267.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Tak Hong Bldg, 80 Kwong Fuk Rd, Tai Po, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23312833",
+    "servesCuisine": "Lacto, Ovo, Chinese, Take-out, Honey",
+    "description": "Another branch of the Lotus Veggie chain. Serves various traditional Chinese dishes. Name and address in Chinese: 蓮花健康素食, 大埔廣福道80號德康樓地下.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tai Po"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225387",
+    "name": "Mǎn Yuàn Fú Jù 滿願福聚素食",
+    "url": "https://www.happycow.net/reviews/man-yuan-fu-ju-new-territories-225387",
+    "image": "https://images.happycow.net/venues/500/22/53/hcmp225387_1064796.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop C5, G/F, Wo Yi Hop Road Cooked Food Market, 24 Wo Yi Hop Rd, Kwai Chung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24991899",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vegetarian food shop that sells dishes with vegetables, mock meats, soy products, and sprouts.",
+    "openingHours": "Mon-Sat 8:00am-9:00pm, Sun 12:00pm-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Kwai Chung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51569",
+    "name": "Mighty Vegetarian 大力素食 - Yuen Long\"",
+    "url": "https://www.happycow.net/reviews/mighty-vegetarian-new-territories-51569",
+    "image": "https://images.happycow.net/venues/500/51/56/hcmp51569_295788.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 7, G/F, Fook Cheong Bldg, 21-43 Ma Wang Rd, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24758928",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "大力齋廚, is a vegetarian restaurant. Re-opening here July 2015; previously at 38, G/F, Transport Plaza, 2-6 Fung Cheung Rd.",
+    "openingHours": "Tue-Sun 11:30am-4:00pm, 5:00pm-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51573",
+    "name": "Mighty Vegetarian 大力齋廚 - Tuen Mun",
+    "url": "https://www.happycow.net/reviews/mighty-vegetarian-new-territories-51573",
+    "image": "https://images.happycow.net/venues/500/51/57/hcmp51573_783960.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, Block A, Wai Cheung Industrial Centre, 5 Shek Pai Tau Rd, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24634888",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "大力齋廚, at 屯門石排頭道5號偉昌工業中心A座地下, seats 100. Nearest LRT Shek Pai.",
+    "openingHours": "Mon 11:30am-9:30pm, Wed-Sun 11:30am-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "19763",
+    "name": "Miu Fat Chai - Tsuen Wan",
+    "url": "https://www.happycow.net/reviews/miu-fat-chai-vegetarian-restaurant-new-territories-19763",
+    "image": "https://images.happycow.net/venues/500/19/76/hcmp19763_785946.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 79 Ho Pui Street, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24120301",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Making vegetarian dishes with presentation like non-vegetarian recipes. Seats 100. Nearest MTRs, Tsuen Wan exit B1 or Tsuen Wan West exit D.",
+    "openingHours": "Mon-Sun 7:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51572",
+    "name": "Miu Fat Chai - Tuen Mun",
+    "url": "https://www.happycow.net/reviews/miu-fat-chai-new-territories-51572",
+    "image": "https://images.happycow.net/venues/500/51/57/hcmp51572_699353.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 8 Ming Ngai St, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24507288",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "妙法齋, at 元朗紅棉圍2號興隆樓地下14號舖, has 40 seats. Last orders 9:30pm. English spoken. Nearest MTR Tuen Mun exit F2, LRT Ho Tin.",
+    "openingHours": "Mon-Tue 7:00am-10:00pm, Thu-Sun 7:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "63736",
+    "name": "O Veg 素苗",
+    "url": "https://www.happycow.net/reviews/o-veg-new-territories-63736",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 53 Tai Kong Po, Kam Tin, Yuen Long , New Territories, Hong Kong"
+    },
+    "telephone": "+852-28933037",
+    "servesCuisine": null,
+    "description": "素苗, at 元朗錦田大江埔53號地下, is a short taxi ride from Kam Sheung Rd MTR station. It's private dining, village style, accompanied by the owner's dogs and cats.",
+    "openingHours": "Fri-Sun 6:30pm-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52174",
+    "name": "Pizzaveg - Tuen Mun",
+    "url": "https://www.happycow.net/reviews/pizza-veg-new-territories-52174",
+    "image": "https://images.happycow.net/venues/500/52/17/hcmp52174_953996.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 7D, G/F, Kim Po Building, 5 Tsing Min Path, Tseng Choi St, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-34880072",
+    "servesCuisine": "Lacto, Pizza, Italian, Fast food, Take-out",
+    "description": "常嚐素, 屯門井財街青棉徑5號金寶大廈地下7D號舖, makes veggie pizza. Vegan rice cheese is available upon request. Siu Hong mtr exit A.",
+    "openingHours": "Mon-Sun 11:00am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "249165",
+    "name": "Po Lin Vegetarian - 普蓮素食",
+    "url": "https://www.happycow.net/reviews/po-lin-vegetarian-new-territories-249165",
+    "image": "https://images.happycow.net/venues/500/24/91/hcmp249165_1211221.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "38 On Ning Rd, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-27150833",
+    "servesCuisine": "Ovo, Chinese, Guangdong",
+    "description": "Guangdong style restaurant that offers main dishes, bean curd, soup, casserole, deep-fried, baked, noodles, rice and dim sum and more.",
+    "openingHours": "Mon-Sun 9:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225386",
+    "name": "Pǔ Guāng Míng Sì 普光明寺",
+    "url": "https://www.happycow.net/reviews/pu-guang-ming-si-new-territories-225386",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "96 Mei Tin Rd, Tai Wai, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Temple restaurant that serves vegetarian food.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/pu-guang-ming-si-new-territories-225386/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tai Wai"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "256572",
+    "name": "Queenheaded 聚鍋",
+    "url": "https://www.happycow.net/reviews/queenheaded-new-territories-256572",
+    "image": "https://images.happycow.net/venues/500/25/65/hcmp256572_3117912.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 15, G/F, Lakeshore Building, 7 Tseng Choi Str., Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Fast food, Catering, Honey, Breakfast",
+    "description": "Re-opened as vegetarian & vegan ONLY in 2024. (Closed July 2023.) Vegetarian \"cha chaan teng\" which offers cart noodles, two-dish meal set and more. Vegan dishes include veggie cart noodles 素車仔麵, veggie tuna sandwich 素吞拿魚三文治, Korean kimchi fried rice 韓式泡菜炒飯, veggie satay beef instant noodles 素沙嗲肉公仔麵 and spicy stir fried rice noodles with veggie beef 麻辣素牛河. Phone number submitted: 47010019.",
+    "openingHours": "Tue-Sun 8:30am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "290327",
+    "name": "SIK6 SOU3 - 食素",
+    "url": "https://www.happycow.net/reviews/sik6-sou3-new-territories-290327",
+    "image": "https://images.happycow.net/venues/500/29/03/hcmp290327_1514734.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 11-12 Chi Lok Fa Yuen, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24049938",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Fast food, Take-out, Honey, Breakfast",
+    "description": "A vegetarian \"cha chaan teng\" in Tuen Mun. Serves cart noodle 三餸麵餐, rice with three choices of sides 三餸套餐, vegetarian pork chop rice 素豬扒飯, vegetarian cod steak rice 素鱈魚扒飯. Has vegan options and others that could possibly be made vegan upon request.",
+    "openingHours": "Mon-Sun 8:30am-8:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52912",
+    "name": "So Yuet Hin 素悅軒",
+    "url": "https://www.happycow.net/reviews/so-yuet-hin-new-territories-52912",
+    "image": "https://images.happycow.net/venues/500/52/91/hcmp52912_295884.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 15, 25 Shiu Wo St, Brighton Place, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-34864428",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Serves vegetarian food, indoors and out, has 30 seats. Nearest MTR Tsuen Wan exit B1.",
+    "openingHours": "Mon 11:30am-8:00pm, Wed-Sun 11:30am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "262201",
+    "name": "Su Zhi Yuan - 素之苑 - Maybe closed",
+    "url": "https://www.happycow.net/reviews/su-zhi-yuan-new-territories-262201",
+    "image": "https://images.happycow.net/venues/500/26/22/hcmp262201_1317480.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 48, Wah Lok Mansion, 2 Tsing Shan Square, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-69376322",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out",
+    "description": "A vegetarian restaurant offers local style takeaway meals. Served with beetroot and fig soup (紅菜頭無花果湯) and 2 or 3 dishes. Vegan choice of dishes includes vegetarian teriyaki eel 照燒汁素鰻魚, coriander king oyster mushroom 香茜吉鮑菇, stir-fried mixed vegetables 炒時菜. The choice changes daily. Relocated from Shop 48, Wah Lok Mansion, 2 Tsing Shan Square, Tuen Mun,. NOTE: Maybe closed June 2024 - please send updates to HappyCow.",
+    "openingHours": "Mon-Wed 11:00am-8:00pm, Fri-Sun 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225389",
+    "name": "SùCài SīFáng Cài 素菜私房菜",
+    "url": "https://www.happycow.net/reviews/sucai-sifang-cai-new-territories-225389",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "125 Che Keng Tuk Rd, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Private dining restaurant that requires booking.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/sucai-sifang-cai-new-territories-225389/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225393",
+    "name": "Tin Ching Vegetarian 天晴素食",
+    "url": "https://www.happycow.net/reviews/tin-ching-vegetarian-new-territories-225393",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 3C, G/F, Kam Wing Mansion, 66 Shui Che Kwun St, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-67460727",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "Vegetarian eatery that sells soy milk, dim sum, rice, herbal teas, and mock meats.",
+    "openingHours": "Mon 9:00am-7:00pm, Wed-Sun 9:00am-7:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "434706",
+    "name": "Tin Hau Temple - 大樹下天后古廟齋菜食堂",
+    "url": "https://www.happycow.net/reviews/tin-hau-temple-new-territories-434706",
+    "image": "https://images.happycow.net/venues/500/43/47/hcmp434706_3122558.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tai Shu Ha Rd E, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24751809",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Honey",
+    "description": "Vegetarian restaurant within Tai Shu Ha Tin Hau Temple. Dishes that contain egg or dairy are clearly labeled in the menu. Vegan dishes include signature salt baked vegan chicken with sand ginger powder 金牌砂薑鹽焗雞, satay vegan pork fillet with glass noodles 沙嗲粉絲豬柳, vegan prawns with XO sauce and glass noodles XO粉絲大蝦, vegan mapo tofu 麻婆豆腐, vegan lamb stew with bean curd sheet and shiitake mushrooms 枝竹北菇羊腩. (Take mini-bus 73 from Long Ping MTR station. Free parking available.)",
+    "openingHours": "Mon-Tue 10:30am-4:30pm, Thu-Sun 10:30am-4:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213149",
+    "name": "Tin Tin Vegetarian 天天素食",
+    "url": "https://www.happycow.net/reviews/tin-tin-vegetarian-new-territories-213149",
+    "image": "https://images.happycow.net/venues/500/21/31/hcmp213149_968777.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop A440-1, 1/F, Nan Fung Centre, 264 Castle Peak Rd, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24125712",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling savories, mockmeats, sweet buns, herbal drinks, and more. Mostly vegan apart from possibly the mock meats.",
+    "openingHours": "Mon-Sun 7:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11209",
+    "name": "Tin Tin Vegetarian 天天素食 - Fou Wah Centre",
+    "url": "https://www.happycow.net/reviews/tin-tin-vegetarian-new-territories-11209",
+    "image": "https://images.happycow.net/venues/500/11/20/hcmp11209_103911.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 2B, 1F, Fou Wah Centre, 210 Castle Peak Rd, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-25959178",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out",
+    "description": "Vegetarian takeaway counter selling savories, mockmeats, sweet buns, herbal drinks, and more. Mostly vegan apart from possibly the mock meats. Located immediately inside the entrance to the building. Near MTR exits Tsuen Wan exit B2 or E.",
+    "openingHours": "Mon-Sun 7:30am-10:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213285",
+    "name": "Tsui Lin Vegetarian 翠蓮素食",
+    "url": "https://www.happycow.net/reviews/tsui-lin-vegetarian-new-territories-213285",
+    "image": "https://images.happycow.net/venues/500/21/32/hcmp213285_971201.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 81 Chung On St, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23516888",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Buffet",
+    "description": "Chinese vegetarian restaurant offering buffet and a la carte menu.",
+    "openingHours": "Mon-Sun 9:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "225390",
+    "name": "TT Veggie 活力素食 - University of Science and Technology",
+    "url": "https://www.happycow.net/reviews/tt-veggie-new-territories-225390",
+    "image": "https://images.happycow.net/venues/500/22/53/hcmp225390_2733430.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "LG7/F, Academic Building, Hong Kong University of Science and Technology, Clear Water Bay, Sai Kung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24261838",
+    "servesCuisine": "Vegan-friendly, Chinese, International, Take-out",
+    "description": "International style vegetarian eatery located on the university campus.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/tt-veggie-new-territories-225390/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Sai Kung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "255827",
+    "name": "Veg-mind Cafe",
+    "url": "https://www.happycow.net/reviews/veg-mind-cafe-new-territories-255827",
+    "image": "https://images.happycow.net/venues/500/25/58/hcmp255827_1254571.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 17, G/F, Sky City, 110 Ko Po Tsuen, Kam Tin, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-28816621",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Honey, Breakfast",
+    "description": "A vegetarian cafe with vegan options. Serves deep fried avocado, deep fried chips with black truffle dressing, avocado & grilled tomato spaghetti with avocado sauce, and deep fried tofu pumpkin sauce & mixed nuts risotto. (HappyCow could find no social media or contact info. If you have information would you please send us an update? Thank you!)",
+    "openingHours": "Mon-Fri 9:00am-7:00pm, Sat-Sun 9:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51550",
+    "name": "Vegetarian Family - 素食·家",
+    "url": "https://www.happycow.net/reviews/vegetarian-family-new-territories-51550",
+    "image": "https://images.happycow.net/venues/500/51/55/hcmp51550_424355.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 55, 1/F, Tsuen Cheong Centre Tsuen On Building, Sai Lau Kok Rd, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-64652456",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out",
+    "description": "素食新一代, at 荃灣西樓角路荃昌中心昌安商場1樓52&55號, has 24 seats. English spoken by staff. Nearest MTR - Tsuen Wan exit B2.",
+    "openingHours": "Mon-Sun 10:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "365267",
+    "name": "Veggie Factory - Tsuen Wan 素食工房",
+    "url": "https://www.happycow.net/reviews/veggie-factory-new-territories-365267",
+    "image": "https://images.happycow.net/venues/500/36/52/hcmp365267_2290218.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 25, 1/F, Indihome, 138 Yeung Uk Rd, New Territories, Hong Kong"
+    },
+    "telephone": "+852-63545263",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Counter selling local style vegetarian meals. Vegan dishes include stuffed eggplant 釀茄子, bean curd roll 腐皮卷, fried soybean sprouts 炒大豆芽, veggie pipa tofu 琵琶豆腐, potato curry 咖喱薯仔.",
+    "openingHours": "Mon-Sun 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "313264",
+    "name": "Veggie Sincere - 善祥素食",
+    "url": "https://www.happycow.net/reviews/veggie-sincere-new-territories-313264",
+    "image": "https://images.happycow.net/venues/500/31/32/hcmp313264_1750899.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 61, G/F, Waldorf Shopping Arcade, 1 Tuen Lee Street, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-69982327",
+    "servesCuisine": "Vegan-friendly, Lacto, Chinese, Take-out",
+    "description": "Vegetarian dumpling restaurant that also serves noodles, pasta, and sandwiches. Vegan options include pasta, chicken noodles, and tomato & tuna sandwich. Previously called Whole-Hearted Veggie - 從善素食.",
+    "openingHours": "Mon-Sun 9:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "59038",
+    "name": "Wai Fung 惠豐涼茶素食",
+    "url": "https://www.happycow.net/reviews/wai-fung-new-territories-59038",
+    "image": "https://images.happycow.net/venues/500/59/03/hcmp59038_104891.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 114,G/F, Yuet Wu Villa Commercial Complex, Yuet Wu Villa, 2 Wu Sau St, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "Takeaway counter that sells vegetarian dim sum, rice and noodle dishes. Point and order. Nearest LRT Siu Hei.",
+    "openingHours": "Mon-Sun 6:00am-11:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "206746",
+    "name": "Wo Che Estate Vegetarian Restaurant 天賜素齋",
+    "url": "https://www.happycow.net/reviews/wo-che-estate-vegetarian-new-territories-206746",
+    "image": "https://images.happycow.net/venues/500/20/67/hcmp206746_1237205.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 20, 2/F, Wo Che Plaza, Shatin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26963345",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese",
+    "description": "Restaurant that offers rice and noodles, mock meat, vegetables dishes. One dish is Reported to contain eggs.",
+    "openingHours": "Mon-Sun 9:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "336997",
+    "name": "Woodlands - CUHK",
+    "url": "https://www.happycow.net/reviews/woodlands-cuhk-new-territories-336997",
+    "image": "https://images.happycow.net/venues/500/33/69/hcmp336997_1985322.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "LG104 Benjamin Franklin Centre (at Chinese University of Hong Kong), New Territories, Hong Kong"
+    },
+    "telephone": "+852-55818105",
+    "servesCuisine": "Vegan-friendly, Lacto, Indian, Take-out",
+    "description": "Vegetarian Indian restaurant est. 1981. Serves South Indian cuisine. Known for its thalis which change slightly each day. Added a large, separate vegan menu in 2019. Vegan dishes include masala dosa, onion uttappam, Woodlands special thali poori or chapathi, baingan burtha, sambar rice and channa bathura.",
+    "openingHours": "Mon-Sat 11:00am-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51564",
+    "name": "Wun Chuen Vegetarian Centre",
+    "url": "https://www.happycow.net/reviews/wun-chuen-vegetarian-centre-new-territories-51564",
+    "image": "https://images.happycow.net/venues/500/51/56/hcmp51564_103328.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wun Chuen Sin Koon, 188 Ping Che Rd, Ta Kauling, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26742194",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "雲泉素食中心, at 粉嶺打鼓嶺平輋路雲泉仙館, is a taoist temple cuisine restaurant with 200 seats. Directions: outside Fanling rail station exit C, take minibus number 52K, after 15 minutes a stop right outside Wun Chuen Sin Koon temple.",
+    "openingHours": "Mon-Sat 11:30am-3:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "212084",
+    "name": "Yau Veggie Bistro 游",
+    "url": "https://www.happycow.net/reviews/yau-veggie-bistro-new-territories-212084",
+    "image": "https://images.happycow.net/venues/500/21/20/hcmp212084_962368.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 118, The Mills, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-68990989",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Asian, European, Fusion",
+    "description": "Fine dining vegetarian fusion cuisine est. spring 2020 with 2 locations at this mall as of June 2024. Uses egg and dairy but some dishes can be adapted for vegans. Example of meals range from lasagna and pasta to donburi. Book at least 3 days in advance. One minute walk from Exit B2 HKU station. Relocated from Shop C, 16 South Lane, Western District. Please make reservation and pre-order at least 3 days in advance. Please Whatsapp / Signal 6899 0989 for reservation.",
+    "openingHours": "Mon-Sun 12:00pm-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "409662",
+    "name": "Yau Veggie Diner",
+    "url": "https://www.happycow.net/reviews/yau-veggie-diner-new-territories-409662",
+    "image": "https://images.happycow.net/venues/500/40/96/hcmp409662_2803001.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 102, The Mills, 45 Pak Tin Par St, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-98811091",
+    "servesCuisine": "Vegan-friendly, Lacto, Western, Fast food, Beer/Wine",
+    "description": "Vegetarian fast food-style burger restaurant. Sister branch of the fine dining vegetarian fusion cuisine \"Yau Veggie Bistro 游\". Aim is to blur the lines between vegetarian and mainstream foods. All burgers can be prepared vegan. Please advise of any food allergies or dietary preference. All milkshakes and sundaes are vegan. Vegan dishes include a variety of burgers such as bacon cheeseburger, buffalo, Oklahoma onion, lamb & Carolina. Also has tater tots.",
+    "openingHours": "Mon-Sun 12:00pm-8:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "213997",
+    "name": "Yu Fu Abundance 如庫豐生有機食堂",
+    "url": "https://www.happycow.net/reviews/yu-fu-abundance-new-territories-213997",
+    "image": "https://images.happycow.net/venues/500/21/39/hcmp213997_975182.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Room 501, Block B, Po Yip Building, 62-70 Texaco Rd, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-94800745",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Organic, Delivery, Take-out",
+    "description": "Vegetarian restaurant and organic grocery store. Vegan food is marked, and vegan cheese is an option.",
+    "openingHours": "Tue-Sun 12:00pm-9:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "51557",
+    "name": "Yu Yi Vegetarian Dim Sum",
+    "url": "https://www.happycow.net/reviews/yu-yi-vegetarian-dim-sum-new-territories-51557",
+    "image": "https://images.happycow.net/venues/500/51/55/hcmp51557_185546.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 814, G/F, Kwai Chung Plaza, 7 Kwai Foo Rd, Kwai Fong, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24010719",
+    "servesCuisine": "Vegan-friendly, Chinese, Fast food, Take-out, Take-out only",
+    "description": "如意素食點心, at 葵芳葵富路7號葵涌廣場地下814號舖, is a dim sum take away. Also sells frozen food. Nearest MTR Kwai Fong exit D. Take-out only.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/yu-yi-vegetarian-dim-sum-new-territories-51557/update\">tell us</a>",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "52177",
+    "name": "Yuen Yuen Vegetarian Restaurant 圓玄素食館",
+    "url": "https://www.happycow.net/reviews/yuen-yuen-vegetarian-restaurant-new-territories-52177",
+    "image": "https://images.happycow.net/venues/500/52/17/hcmp52177_2737481.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yuen Yeun Institute, Sam Dip Tam, Tsuen Wan, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24909882",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "樂農, at 荃灣三疊潭圓玄學院圓玄樂農素食館, is part of a social enterprise offering vegetarian food. Located in Sam Dip Tam, the Yuen Yuen Institute was founded in 1950 to spread the principles of Confucianism, Buddhism, Taoism. Directions: From Tsuen Wan MTR Exit B1 walk 5 minutes to Shiu Wo Street. Then take minibus 81 to Yuen Yuen Institute. Second website: http://www.yuenyuen.org.hk. Previously called \nHappy Veggies - Yuen Yuen . Reopened November 2021.",
+    "openingHours": "Mon-Sun 11:00am-4:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": true,
+      "category": "vegetarian"
+    },
+    "area": "Tsuen Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53427",
+    "name": "Yuet Wu Vegetarian",
+    "url": "https://www.happycow.net/reviews/yuet-wu-vegetarian-new-territories-53427",
+    "image": "https://images.happycow.net/venues/500/53/42/hcmp53427_103920.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 117,G/F, Yuet Wu Villa Commercial Complex, Yuet Wu Villa, 2 Wu Sau St, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-24309238",
+    "servesCuisine": "Vegan-friendly, Ovo, Chinese, Fast food, Take-out",
+    "description": "悅湖素食, at 屯門湖秀街2號悅湖山莊悅湖商場地下117號舖, is an herbal tea and snack shop. Nearest LRT Siu Hei.",
+    "openingHours": "Mon-Sun 6:00am-10:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "332953",
+    "name": "Aroi Thai",
+    "url": "https://www.happycow.net/reviews/aroi-thai-new-territories-332953",
+    "image": "https://images.happycow.net/venues/500/33/29/hcmp332953_1942532.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop N211, 33 Tin Wah Rd, Tin Shui Wai (at T Town), New Territories, Hong Kong"
+    },
+    "telephone": "+852-31840280",
+    "servesCuisine": "Lacto, Ovo, Thai, Take-out, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Thai restaurant with vegan choices. Menu includes vegan vegetable rice paper rolls, stir-fried vegetables in coconut milk, kale with minced garlic and more.",
+    "openingHours": "Mon-Sun 7:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tin Shui Wai"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "183767",
+    "name": "Casa",
+    "url": "https://www.happycow.net/reviews/casa-new-territories-183767",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5 Sha Tsui Path, Sai Kung, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Spanish, Latin, Non-veg",
+    "description": "Serves meat, vegan options available. Tapas restaurant with vegan options marked on the tapas and main menus. Choose from Tandoori fried mushrooms, chaat bombs, cashew & sesame salad, chips, curry 'n' chips (jackfruit) and tiramisu. Some additional vegan dishes are available on request.",
+    "openingHours": "Mon-Fri 4:00pm-11:00pm, Sat-Sun 12:00pm-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Sai Kung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "262708",
+    "name": "ClubONE in Mangrove - 會所1號 紅樹林岸",
+    "url": "https://www.happycow.net/reviews/clubone-in-mangrove-new-territories-262708",
+    "image": "https://images.happycow.net/venues/500/26/27/hcmp262708_1295922.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hong Kong Wetland Park, Wetland Park Rd, Tin Shui Wai, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26172030",
+    "servesCuisine": "Lacto, Ovo, Chinese, Fast food, Take-out, Fusion, Non-veg",
+    "description": "Serves meat, vegan options available. A restaurant inside Hong Kong Wetland Park serving vegan dishes such as rice noodles with vegetarian meat sauce 素肉醬擔擔米線, cold spicy vegetarian dish rice 涼拌麻辣雜錦素飯, black pepper vegetarian duck rice 黑椒素鴨飯, curry potato and vegetarian beef spaghetti 咖喱薯仔素牛肉意粉 and Buddha's delight rice 羅漢齋飯.",
+    "openingHours": "Mon 10:00am-5:00pm, Wed-Sun 10:00am-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tin Shui Wai"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "269585",
+    "name": "Crystal Jade",
+    "url": "https://www.happycow.net/reviews/crystal-jade-new-territories-269585",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "3 Tuen Lung St, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Lacto, Ovo, Chinese, Non-veg",
+    "description": "Serves meat, vegan options available. Singaporean-based restaurant group with outlets in multiple countries. Has a vegetarian menu, most of which are new pork with discounts at Omnipork Green Common.  A few examples of the vegan dishes are steamed vegetable dumplings, bean curd skin, black fungus appetizer, vegetables and tofu.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "229733",
+    "name": "Crystal Jade 翡翠拉麵小籠包",
+    "url": "https://www.happycow.net/reviews/crystal-jade-new-territories-229733",
+    "image": "https://images.happycow.net/venues/500/22/97/hcmp229733_1087531.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop A238, 2/F, New Town Plaza Phase 3, 2-8 Sha Tin Centre St, Sha Tin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-35808772",
+    "servesCuisine": "Ovo, Chinese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Specializes in Chinese regional cuisine like la mian noodles and xiao long bao buns. Ask which ones are vegan.",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Sha Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "337745",
+    "name": "Fat Kee Congee & Noodles 發記粥麵",
+    "url": "https://www.happycow.net/reviews/fat-kee-congee-and-noodles-new-territories-337745",
+    "image": "https://images.happycow.net/venues/500/33/77/hcmp337745_2143271.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "CFS18, 2/F, Tai Po Market Complex, Heung Sze Wui St, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26388079",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Take-out, Honey, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese congee and noodles stall at Tai Po Market Complex. Vegan dishes include corn congee 粟米粥, vegetarian sampan congee 素艇仔粥, vegetarian beef rice rolls 素牛肉腸粉, vegetarian fried noodles 素撈麵, and vegetarian ham noodles soup 素火腿湯麵.",
+    "openingHours": "Mon-Sun 7:00am-4:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "59236",
+    "name": "Food Lab",
+    "url": "https://www.happycow.net/reviews/food-lab-new-territories-59236",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop S031, G/F, 8W, 8 Science Park West Avenue, Phase 2, Hong Kong Science Park, Sha Tin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-26766900",
+    "servesCuisine": "Lacto, Ovo, Italian, Organic, Western, Juice bar, Gluten-free, Non-veg",
+    "description": "Serves meat, vegan options available. Farm-to-table organic restaurant. Marks diet suitability of each dish against vegan, gluten free, nut content. 10% service charge. Formerly known as IPC Foodlab.",
+    "openingHours": "Mon-Fri 8:00am-9:00pm, Sat-Sun 11:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Sha Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "266212",
+    "name": "Ging Sun Ho - Tuen Mun - 堅信號",
+    "url": "https://www.happycow.net/reviews/ging-sun-ho-tuen-mun-new-territories-266212",
+    "image": "https://images.happycow.net/venues/500/26/62/hcmp266212_1324613.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop A101-A102B, G/F, Zone A, H.A.N.D.S, 2A Tuen Mun Heung Sze Wui Road, Tuen Mun, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23333828",
+    "servesCuisine": "Vegan-friendly, Lacto, Chinese, Honey, Shanghainese, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese restaurant serving vegan dishes such as preserved radish in Shanghai sauce 上海醬蘿蔔, sweet and sour OmniPork 甜酸菠蘿素咕嚕肉, sichuan dan dan noodles 新肉絲四川擔擔麵, soy sauce fried noodles with pork 豉油皇新肉絲炒幼麵 and more. NOTE: Reported September 2024 to have limited vegan options – please send updates to HappyCow.",
+    "openingHours": "Mon-Sun 8:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tuen Mun"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "260753",
+    "name": "Ging Sun Ho - 堅信號",
+    "url": "https://www.happycow.net/reviews/ging-sun-ho-new-territories-260753",
+    "image": "https://images.happycow.net/venues/500/26/07/hcmp260753_1288760.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 197, 1/F, Maritime Square 2, 31-33 Tsing King Rd, Tsing Yi, New Territories, Hong Kong"
+    },
+    "telephone": "+852-27272733",
+    "servesCuisine": "Lacto, Chinese, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese restaurant serving vegan dishes such as OmniPork soup dumplings (Xiao Long Bao) 高質「素」小籠包, sweet & sour OmniPork 甜酸菠蘿素咕嚕肉, OmniPork strips with dan dan noodles 新肉絲四川擔擔麵, stir-fried OmniPork strips with thin noodles in soya sauce 豉油皇新肉絲炒幼麵, spicy / garlic cucumber 麻辣 / 涼拌青瓜, and preserved radish 上海醬蘿蔔.",
+    "openingHours": "Mon-Sun 11:00am-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tsing Yi"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "404285",
+    "name": "Happy Noodles - 開心麵",
+    "url": "https://www.happycow.net/reviews/happy-noodles-new-territories-404285",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop CF15, 2/F, Shek Wu Hui Municipal Services Building, 13 Chi Cheong Rd, Sheung Shui (at Shek Wu Hui Market Cooked Food Centre), New Territories, Hong Kong"
+    },
+    "telephone": "+852-26708823",
+    "servesCuisine": "Ovo, Chinese, Fast food, Take-out, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong style eatery in Shek Wu Hui Market Cooked Food Centre offering vegan choices with rice such as sweet & sour plant-based spareribs, braised eggplant, braised tofu, plant-based minced meat, preserved vegetables & bitter melon and stir-fried plant-based pork belly.",
+    "openingHours": "Mon-Sun 7:30am-4:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Shek Wu Hui"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "300668",
+    "name": "IKEA",
+    "url": "https://www.happycow.net/reviews/ikea-new-territories-300668",
+    "image": "https://images.happycow.net/venues/500/30/06/hcmp300668_1599155.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "L6, No. 138 Sha Tin Rural Committee Rd, Sha Tin, New Territories, Hong Kong"
+    },
+    "telephone": "+852-31250888",
+    "servesCuisine": "Lacto, Ovo, Western, Fast food, Delivery, Non-veg",
+    "description": "Serves meat, vegan options available. International superstore from Sweden selling furniture and home goods. An onsite bistro offers light meals, snacks, and Swedish meatballs including veggie meatballs which are vegan and are also sold in the store grocery- freezer section. Menu has other vegan-friendly foods such as rice and steamed veggies, pasta marinara, salad, and soup. Serves fountain drinks. Selection may vary by location.",
+    "openingHours": "Mon-Sun 11:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Sha Tin"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "202377",
+    "name": "JOMO",
+    "url": "https://www.happycow.net/reviews/jomo-new-territories-202377",
+    "image": "https://images.happycow.net/venues/500/20/23/hcmp202377_898661.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tong Chun St, 23, New Territories, Hong Kong"
+    },
+    "telephone": "+852-23313003",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Take-out, Bakery, European, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Names stands for \"Joy of Missing Out.\" Modern cafe & bakery with a number of clearly indicated vegan food, drinks, cake options. Example of savory items include avocado mushroom toast, vegan burger, quinoa chickpea salad, and sweet potato fries. Serves coffee, green tea, and smoothies.",
+    "openingHours": "Mon-Fri 11:00am-6:00pm, Sat-Sun 11:00am-8:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "265086",
+    "name": "Kin Kee Fast Food",
+    "url": "https://www.happycow.net/reviews/kin-kee-fast-food-new-territories-265086",
+    "image": "https://images.happycow.net/venues/500/26/50/hcmp265086_1329081.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "42 Fuk Man Rd, Sai Kung, New Territories, Hong Kong"
+    },
+    "telephone": "+852-28844869",
+    "servesCuisine": "Lacto, Ovo, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. HK-style cart noodles with vegan choices, including the soup base. (If you have further information, please send HappyCow an update. Thank you!)",
+    "openingHours": "Mon-Sun 11:00am-10:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Sai Kung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "229804",
+    "name": "Kok Kok",
+    "url": "https://www.happycow.net/reviews/kok-kok-new-territories-229804",
+    "image": "https://images.happycow.net/venues/500/22/98/hcmp229804_1088221.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 90 Shing Mun San Tsuen, Kam Tin, Yuen Long, New Territories, Hong Kong"
+    },
+    "telephone": "+852-98898579",
+    "servesCuisine": "Ovo, Thai, Beer/Wine, Non-veg",
+    "description": "Serves meat, vegan options available. Thai food restaurant in Kam Tin. Meatless vegetarian dishes are marked on the menu. Example of food include: fried omnipork balls, yellow curry, noodles with gravy, and fried omnipork wonton.",
+    "openingHours": "Mon-Sun 11:30am-9:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Yuen Long"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "287909",
+    "name": "Kyo Watami",
+    "url": "https://www.happycow.net/reviews/kyo-watami-new-territories-287909",
+    "image": "https://images.happycow.net/venues/500/28/79/hcmp287909_1490495.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tat Tung Rd, New Territories, Hong Kong"
+    },
+    "telephone": "+852-36950660",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese restaurant with a fair amount of vegan dishes including OmniCrab cakes, OmniFish and chips, OminPork strip with kimchi, grilled sweet corn, cold soba and more.",
+    "openingHours": "Mon-Sun 11:30am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  }
+]

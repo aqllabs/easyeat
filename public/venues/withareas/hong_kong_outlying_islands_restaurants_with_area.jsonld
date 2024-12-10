@@ -1,0 +1,665 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "435897",
+    "name": "Deli Vegetarian Cafe 緻寶齋",
+    "url": "https://www.happycow.net/reviews/deli-vegetarian-cafe-hong-kong-435897",
+    "image": "https://images.happycow.net/venues/500/43/58/hcmp435897_3100992.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ngong Ping Rd, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": "Ovo, Chinese",
+    "description": "Vegetarian restaurant with mock meat. Menu includes a range of Chinese-inspired meals, many of which are vegan or can easily be modified upon request. Offers noodles, dim sum, mango beverages and more. Specify vegan when ordering.",
+    "openingHours": "Mon-Sun 11:00am-5:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "58459",
+    "name": "Kwun Yam Temple",
+    "url": "https://www.happycow.net/reviews/kwun-yam-temple-outlying-islands-58459",
+    "image": "https://images.happycow.net/venues/500/58/45/hcmp58459_117918.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Keng Shan Rd, Hang Pui, Lantau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29855238",
+    "servesCuisine": "Vegan-friendly, Chinese",
+    "description": "Buddhist monastery serving a soup plus 4/5-dish buffet lunch daily. No egg or milk used. Arrive early to guarantee food is still available. Take bus 11, Tung Chung - Tai O or bus 21, Ngong Ping to Tai O or  1, Mui Wo - Tai O. Then 10 minutes walk to temple. Buy a ticket at the Temple office, then lunch itself is pay-as-you-like.",
+    "openingHours": "Mon-Sun 12:00pm-1:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53273",
+    "name": "Lee Ocarina Cafe",
+    "url": "https://www.happycow.net/reviews/lee-ocarina-cafe-outlying-islands-53273",
+    "image": "https://images.happycow.net/venues/500/53/27/hcmp53273_556008.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Yung Shue Wan Main Street 45, Lamma Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-92027785",
+    "servesCuisine": "Vegan-friendly, Lacto, Italian, Western",
+    "description": "Opened Jul 2014 an all veg cafe situated 20 meters off the main drag in Yung Shue Wan.",
+    "openingHours": "Mon-Fri 11:00am-6:00pm, Sat-Sun 11:00am-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Lamma Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53430",
+    "name": "Ling Yan Abbey",
+    "url": "https://www.happycow.net/reviews/ling-yan-abbey-outlying-islands-53430",
+    "image": "https://images.happycow.net/venues/500/53/43/hcmp53430_103940.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Keung Shan Village, Tai O, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29855255",
+    "servesCuisine": "Vegan-friendly, Chinese, Take-out",
+    "description": "靈隱寺 at 大嶼山大澳薑山村 is a Buddhist monastery selling lunch daily. No egg or milk used. Location: Take buses 1 Mui Wo - Tai O; 11 Tung Chung - Tai O; or 21, Ngong Ping to Tai O. Then 10 minutes walk to temple.",
+    "openingHours": "Sat-Sun 12:00pm-3:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "30103",
+    "name": "Lo Hon Buddhist Monastery",
+    "url": "https://www.happycow.net/reviews/lo-hon-buddhist-monastery-lantau-island-30103",
+    "image": "https://images.happycow.net/venues/500/30/10/hcmp30103_100793.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shek Mun Kap Village, Lantau Island (at Tung Chung Rd), Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29881419",
+    "servesCuisine": "Lacto, Chinese, Buddhist",
+    "description": "Offers a fixed day's menu. Will open weekdays when reserve 1 week ahead and minimum 10 diners. Directions: Take mini bus 34 from Tung Chung to Shek Mun Kap terminus, then walk 5 minutes. Or take Bus 3M which runs between Mui Wo ferry terminal and Tung Chung. Also bus 11 runs between Tai O and Tung Chung. Get off at Lo Hon Pavillion bus stop, then walk 10 minutes.",
+    "openingHours": "Mon-Fri 12:00pm-3:00pm, Sat-Sun 12:00pm-2:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "232688",
+    "name": "Luen On - 聯安燒臘",
+    "url": "https://www.happycow.net/reviews/luen-on-outlying-islands-232688",
+    "image": "https://images.happycow.net/venues/500/23/26/hcmp232688_3073115.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop A, G/F, 9E Wing Hing St, Peng Chau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29839820",
+    "servesCuisine": "Vegan-friendly, Chinese",
+    "description": "Reported closed 2023. Reopened April 2024 at a different location. Same owner/same phone/similar menu. A local style vegetarian restaurant. All dishes are Buddhist-friendly. Vegan dishes include braised eggplant with shredded vegetarian pork 魚香茄子, stewed pumpkin and taro 芋頭炆南瓜, sweet and sour wheat gluten 酸齋, vegetarian duck 素鴨, steamed minced vegetarian pork with preserved vegetables 梅菜蒸肉餅, vegetarian Mapo tofu 麻婆豆腐. Seats 15.",
+    "openingHours": "Mon-Fri 11:30am-4:00pm, 5:00pm-9:00pm, Sat 11:30am-9:00pm, Sun 11:30am-4:00pm, 5:00pm-9:00pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Peng Chau"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "30",
+    "name": "Po Lin Monastery 寶蓮禪寺齋堂",
+    "url": "https://www.happycow.net/reviews/po-lin-monastery-lantau-island-30",
+    "image": "https://images.happycow.net/venues/500/00/30/hcmp30_281784.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ngong Ping, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29855248",
+    "servesCuisine": "Vegan-friendly, Chinese",
+    "description": "Buddhist vegetarian canteen restaurant within Po Lin Monastery. Fixed menu in the canteen. Seats 300+. Meal ticket includes admission to the Tian Tan Buddha museum inside the big Buddha. Access via 25 min cable car trip from Tung Chung or much cheaper bus trip from Mui Wo ferry terminal or Tung Chung station. Warning: some non-vegan desserts may use beef tallow.",
+    "openingHours": "Mon-Sun 11:30am-4:30pm",
+    "additionalType": "Vegetarian",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "vegetarian"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "185209",
+    "name": "Disneyland - Crystal Lotus",
+    "url": "https://www.happycow.net/reviews/disneyland-crystal-lotus-outlying-islands-185209",
+    "image": "https://images.happycow.net/venues/500/18/52/hcmp185209_2257930.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Disneyland Hotel, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-35106000",
+    "servesCuisine": "Chinese, Beer/Wine, Non-veg",
+    "description": "Serves meat, vegan options available. Upscale Chinese restaurant at Disney resort hotel. One page of the menu lists vegan items, including dishes using omnipork (mock meat).",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/disneyland-crystal-lotus-outlying-islands-185209/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "362593",
+    "name": "Disneyland - Plaza Inn",
+    "url": "https://www.happycow.net/reviews/plaza-inn-outlying-islands-362593",
+    "image": "https://images.happycow.net/venues/500/36/25/hcmp362593_2258004.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Main St USA, Hong Kong Disneyland Resort, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-21625010",
+    "servesCuisine": "Lacto, Ovo, Chinese, Beer/Wine, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Cantonese restaurant with table service. Vegetarian dishes include braised deep fried tofu with mushrooms, pea sprouts with bean curd sheets in soy milk, steamed kale with preserved vegetables, sautéed vegetables with garlic and stir fried pea sprouts, and more. Specify vegan.",
+    "openingHours": "Mon 11:00am-9:00pm, Wed-Sun 11:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "255826",
+    "name": "Garden Cafe 新輝茶室",
+    "url": "https://www.happycow.net/reviews/garden-cafe-outlying-islands-255826",
+    "image": "https://images.happycow.net/venues/500/25/58/hcmp255826_1254625.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop 11A, G/F, Lo Wai Tsuen, Pui O, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-67956200",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Pizza, Chinese, International, Buffet, Fast food, Take-out, Bakery, Catering, Fusion, Honey, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong-style café serving vegan dishes such as chop burger, chop in miso soup with rice noodles, chop laksa, noodle soup with sausage and toast with vegan spread. Serves vegetarian lunch buffet on every Monday, reservations required.",
+    "openingHours": "Mon-Sun 7:30am-4:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "138459",
+    "name": "HKG - Beef & Liberty Burgers - T1",
+    "url": "https://www.happycow.net/reviews/beef-and-liberty-burgers-outlying-islands-138459",
+    "image": "https://images.happycow.net/venues/500/13/84/hcmp138459_525727.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "East Hall, Unit 7E138, Departures, Terminal 1, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-21521966",
+    "servesCuisine": "Lacto, American, Beer/Wine, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Despite the name, the menu denotes a few vegan options like the Impossible Burger with vegan mayonnaise, falafel burger, salads, and sorbet for dessert. Ask for vegan burger buns. On the International Departures upper food deck facing Louis Vitton. NOTE: As of 15 Dec, all beef burgers can be changed to Impossible patty for an additional HKD 20 and the buns can be changed to beetroot vegan bun for an additional HKD 5. NOTE: Reported April 2024 to have limited vegan options – please send updates to HappyCow.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/beef-and-liberty-burgers-outlying-islands-138459/update\">tell us</a>",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "380348",
+    "name": "HKG - Moon Thai Express - T1",
+    "url": "https://www.happycow.net/reviews/moon-thai-express-outlying-islands-380348",
+    "image": "https://images.happycow.net/venues/500/38/03/hcmp380348_2453760.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sky Plaza Road Food Court, Departures, L7 (at Hong Kong International Airport), Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-37980051",
+    "servesCuisine": "Ovo, Chinese, Thai, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Casual Thai eatery with clearly labeled vegan dishes that include fried vegetables, rolls and more.",
+    "openingHours": "Mon-Sun 6:00am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "122915",
+    "name": "HKG - Pret A Manger - T1",
+    "url": "https://www.happycow.net/reviews/pizza-express-outlying-islands-122915",
+    "image": "https://images.happycow.net/venues/500/12/29/hcmp122915_458570.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hong Kong International Airport, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-25231772",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Western, Fast food, Take-out, European, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. UK based international chain advertising natural food and organic coffee. Offers ready-to-eat prepackaged foods and drinks, including items like smoothies, bottled juices, porridge, coconut milk yogurt with granola, falafel and hummus salad, fruit salad, baguette sandwiches, wraps, and soups. Vegan items labeled. Est. 1983 and commonly referred to as just Pret. At T1 Arrival Hall.",
+    "openingHours": "Mon-Sun 7:00am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "350671",
+    "name": "HKG - Root98 Grab 'n' Go - T1",
+    "url": "https://www.happycow.net/reviews/root98-grab-n-go-outlying-islands-350671",
+    "image": "https://images.happycow.net/venues/500/35/06/hcmp350671_2234087.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Level 5, Arrivals Hall B, Terminal 1, Hong Kong International Airport, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-21274536",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, International, Western, Juice bar, Non-veg",
+    "description": "Serves meat, vegan options available. Health food restaurant offering western-style dishes as well as a selection of slow-pressed juices. Vegan dishes include crunchy Thai vermicelli salad, Mediterranean kale & quinoa salad, and cauliflower & chickpea salad.",
+    "openingHours": "Mon-Fri 7:00am-11:00pm, Sun 7:00am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "276125",
+    "name": "Hoho Kitchen",
+    "url": "https://www.happycow.net/reviews/hoho-kitchen-outlying-islands-276125",
+    "image": "https://images.happycow.net/venues/500/27/61/hcmp276125_1422346.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 29 Peng Chau Wing On Street, Peng Chau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29838218",
+    "servesCuisine": "Lacto, Ovo, Chinese, Fast food, Take-out, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong style restaurant serving vegan dishes such as tomato and potato curry rice/spaghetti 咖喱蕃茄薯仔飯/意粉, sauce fried noodles 豉油皇炒麵/米粉/通粉/意粉, mixed vegetables fried spaghetti 雜菜炒意粉 and more.",
+    "openingHours": "Mon-Sun 11:00am-8:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Peng Chau"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "268245",
+    "name": "Hoi Wan Vegetarian - 海韻素食菜館",
+    "url": "https://www.happycow.net/reviews/hoi-wan-vegetarian-outlying-islands-268245",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13B, Nam Chung Tsuen, Tai O, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29855187",
+    "servesCuisine": "Ovo, Chinese, Beer/Wine, Non-veg",
+    "description": "Serves meat, vegan options available. Chinese restaurant serving vegan dishes such as vegetarian taro fish 芋頭魚, braised tofu 紅燒豆腐, vegetarian pineapple chicken 菠蘿素雞, \"the Buddha's delight pan-fried noodles\" 羅漢齋炒麵. Has separate vegan/vegetarian menu (or a section on the menu).",
+    "openingHours": "Mon-Wed 11:30am-7:30pm, Fri-Sun 11:30am-7:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "386017",
+    "name": "Jez's Corner",
+    "url": "https://www.happycow.net/reviews/jezs-corner-outlying-islands-386017",
+    "image": "https://images.happycow.net/venues/500/38/60/hcmp386017_2522936.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "55A G/F, Yung Shue Wan Main St, Lamma Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-94399627",
+    "servesCuisine": "Ovo, Take-out, Indonesian, Non-veg",
+    "description": "Serves meat, vegan options available. Small restaurant with one table serving mostly Indonesian food. Green and red curries can be made vegan with tempeh and tofu. Also offers tempeh skewers.",
+    "openingHours": "Mon-Wed 10:00am-9:00pm, Fri-Sun 10:00am-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Lamma Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "230060",
+    "name": "LA EAT 嚟食",
+    "url": "https://www.happycow.net/reviews/la-eat-outlying-islands-230060",
+    "image": "https://images.happycow.net/venues/500/23/00/hcmp230060_1267550.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ground Floor, No. 3 kin San lane Cheung Chau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-52455961",
+    "servesCuisine": "Chinese, Fusion, Malaysian, Indonesian, Non-veg",
+    "description": "Serves meat, vegan options available. Has separate vegan menu. Chinese address: 長洲建新里5號地下前座.",
+    "openingHours": "Mon-Sun 12:00pm-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Cheung Chau"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "331143",
+    "name": "Little Thai by Bee",
+    "url": "https://www.happycow.net/reviews/little-thai-by-bee-outlying-islands-331143",
+    "image": "https://images.happycow.net/venues/500/33/11/hcmp331143_3044227.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "51 Yung Shue Wan Main St, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-60809195",
+    "servesCuisine": "Lacto, Ovo, Thai, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Family run Thai restaurant. Can make almost any vegetarian dish vegan on request.",
+    "openingHours": "Tue-Sun 12:00pm-9:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "413551",
+    "name": "Matsuzaka Express - 松坂壽司麵食鐵板燒",
+    "url": "https://www.happycow.net/reviews/matsuzaka-express-outlying-islands-413551",
+    "image": "/img/placeholder-bg-big.svg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 6 & 7B Ngong Ping Theme Village Ngong Ping, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-25118618",
+    "servesCuisine": "Lacto, Ovo, Japanese, Take-out, Non-veg",
+    "description": "Serves meat, vegan options available. Japanese restaurant offering vegan sushi rolls and other vegetarian dishes that can be made vegan upon request.",
+    "openingHours": "Mon-Fri 10:00am-5:00pm, Sat-Sun 10:00am-5:30pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "249296",
+    "name": "Oolaa - Tung Chung",
+    "url": "https://www.happycow.net/reviews/oolaa-outlying-islands-249296",
+    "image": "https://images.happycow.net/venues/500/24/92/hcmp249296_1233931.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop G30, G/F, Phase 2, Citygate Outlets, 20 Tat Tung Rd, Tung Chung, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-23192008",
+    "servesCuisine": "Lacto, Ovo, International, Western, Beer/Wine, Asian, Non-veg",
+    "description": "Serves meat, vegan options available. Local restaurant chain. The a la carte menu has around 10 vegan options, such as avocado & beetroot Vietnamese rice paper roll and veggie curry. Tofu scramble is available at breakfast.",
+    "openingHours": "Mon-Sun 7:00am-11:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Tung Chung"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "288047",
+    "name": "Pause Cafe",
+    "url": "https://www.happycow.net/reviews/pause-cafe-outlying-islands-288047",
+    "image": "https://images.happycow.net/venues/500/28/80/hcmp288047_2324357.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 21 Chung Hau St, Mui Wo, Lantau Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-52675549",
+    "servesCuisine": "Lacto, Ovo, Western, Take-out, Gluten-free, Breakfast, Non-veg",
+    "description": "Serves meat, vegan options available. Western cafe with vegan choices. Menu includes toasted bagel, mushroom tacos, almond chia pudding, masala bowl, bibimbap, vegetable soup and more.",
+    "openingHours": "Mon-Fri 7:00am-5:00pm, Sat-Sun 7:00am-6:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Lantau Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "257288",
+    "name": "TL Cafe 凱得餐廳",
+    "url": "https://www.happycow.net/reviews/tl-cafe-outlying-islands-257288",
+    "image": "https://images.happycow.net/venues/500/25/72/hcmp257288_1260679.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 117 Tai San Praya Road, Cheung Chau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29818977",
+    "servesCuisine": "Vegan-friendly, Lacto, Ovo, Chinese, Fast food, Honey, Non-veg",
+    "description": "Serves meat, vegan options available. Hong Kong-style restaurant serving vegan dishes such as Mixed Vegetables Fried Rice 什菜炒飯, Potato Curry Rice 咖哩薯仔飯, Vegetarian Singaporean Fried Rice Noodles 素炒星洲米, Soy Sauce Fried Noodles 豉油皇炒麵, Mixed Vegetables Fried Noodles 什菜炒麵.",
+    "openingHours": "Mon-Sat 7:30am-5:00pm",
+    "additionalType": "Veg-options",
+    "priceRange": "$",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "veg-options"
+    },
+    "area": "Cheung Chau"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "12203",
+    "name": "Ah Por Tofu Fa",
+    "url": "https://www.happycow.net/reviews/ah-por-tofu-fa-outlying-islands-12203",
+    "image": "https://images.happycow.net/venues/500/12/20/hcmp12203_676597.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Tai Wan San Tsuen Village, Family Walk, Lamma Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Tofu Fa sells tofu dessert and soya milk. Longtime established, open air. Open Sat, Sun, public holidays from morning until food sells out. All vegan with the exception of honey as a condiment.",
+    "openingHours": "Mon-Fri 10:30am-5:30pm, Sat-Sun 9:30am-5:30pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    },
+    "area": "Lamma Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "11327",
+    "name": "Herboland",
+    "url": "https://www.happycow.net/reviews/herboland-lamma-island-11327",
+    "image": "https://images.happycow.net/venues/500/11/32/hcmp11327_1012966.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "lot 287 D.D. 4 Hung Shing Ye Beach, Lamma Island, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-90946206",
+    "servesCuisine": null,
+    "description": "Open air organic tea shop serves herbal teas and cookies in an herb garden. Organics herbs, fruits, veggies grown and sold. On Lamma Island Family Walk, East of the of beach.",
+    "openingHours": "Sat-Sun 11:00am-4:00pm",
+    "additionalType": "Other",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Other"
+    },
+    "area": "Lamma Island"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "278303",
+    "name": "Home Veggie Shop - 愛回家養生店 - Maybe closed",
+    "url": "https://www.happycow.net/reviews/home-veggie-shop-outlying-islands-278303",
+    "image": "https://images.happycow.net/venues/500/27/83/hcmp278303_1442733.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 53 Tin Liu New Village, Ma Wan., Outlying Islands, Hong Kong"
+    },
+    "telephone": null,
+    "servesCuisine": null,
+    "description": "Vegetarian grocery store that sells dried and frozen foods, mock meats, snacks, and sauces. NOTE: Maybe closed June 2023 - please send updates to HappyCow.",
+    "openingHours": "Call for hours - <a class=\"text-primary-500\" href=\"/reviews/home-veggie-shop-outlying-islands-278303/update\">tell us</a>",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    },
+    "area": "Ma Wan"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "53457",
+    "name": "Shaolin Wushu Culture Centre",
+    "url": "https://www.happycow.net/reviews/shaolin-wushu-culture-centre-outlying-islands-53457",
+    "image": "https://images.happycow.net/venues/500/53/45/hcmp53457_103945.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shek Tsai Po, Tai O, Lantau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-29858338",
+    "servesCuisine": null,
+    "description": "This centre, at 大嶼山大澳石仔埗街, offers a variety of Shaolin martial arts courses, life enhancement exercises, training camps, vegan food for groups, accommodation, as well as Shaolin martial arts performances. Pre-booking required.",
+    "openingHours": "Mon-Sun 12:00pm-2:00pm, 6:00pm-8:00pm",
+    "additionalType": "Organization",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Organization"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "identifier": "212648",
+    "name": "Veggie Island 小島素味 - Maybe closed",
+    "url": "https://www.happycow.net/reviews/veggie-island-outlying-islands-212648",
+    "image": "https://images.happycow.net/venues/500/21/26/hcmp212648_1230013.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "G/F, 111B Tai San Back St, Cheung Chau, Outlying Islands, Hong Kong"
+    },
+    "telephone": "+852-96513856",
+    "servesCuisine": null,
+    "description": "Vegetarian store selling dried and frozen foodstuff, drinks, sauces, and pet food. NOTE: Maybe closed October 2022 - please send updates to HappyCow.",
+    "openingHours": "Tue-Sun 11:00am-6:00pm",
+    "additionalType": "Veg Store",
+    "priceRange": "?",
+    "additionalProperty": {
+      "isNew": false,
+      "isTop": false,
+      "category": "Veg Store"
+    },
+    "area": "Cheung Chau"
+  }
+]
