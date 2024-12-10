@@ -386,27 +386,27 @@ class extends Component {
 
                             <div class="flex flex-wrap gap-2">
                                 @if($venue->halalAssurance)
-                                    <div class="badge badge-primary badge-outline">
+                                    <div class="badge badge-primary">
                                         {{ $venue->halalAssurance->display_name }}
                                     </div>
                                 @endif
                                 @if($venue->dietCategories)
                                     @foreach($venue->dietCategories as $category)
-                                        <div class="badge badge-accent">
+                                        <div class="badge badge-primary">
                                             {{ $category->display_name }}
                                         </div>
                                     @endforeach
                                 @endif
 
                                 @if($venue->vegetarianType)
-                                    <div class="badge badge-secondary">
+                                    <div class="badge badge-primary">
                                         {{ $venue->vegetarianType->display_name }}
                                     </div>
                                 @endif
 
                                 @if($venue->cuisines)
                                     @foreach($venue->cuisines as $cuisine)
-                                        <div class="badge badge-secondary badge-outline">
+                                        <div class="badge badge-primary badge-outline">
                                             {{ $cuisine->display_name }}
                                         </div>
                                     @endforeach

@@ -260,7 +260,7 @@ class extends Component
                 <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
                     @foreach ($venue_type_counts as $index => $venue_type)
                         <div id="venue-type-{{ $index }}" class="carousel-item w-72">
-                            <a href="{{ route('places.index', ['venue_type' => $venue_type['name']]) }}" 
+                            <a href="{{ route('places.index', ['venue' => $venue_type['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $venue_type['count'] }}</span>
