@@ -161,7 +161,7 @@ class extends Component
         <!-- Dietary Requirements Section -->
         <section class="mb-16">
             <div class="flex justify-between items-center mb-6">
-                <h2 class="text-xl text-gray-600">Search by Dietary Requirement</h2>
+                <h2 class="text-xl text-gray-600">Search by Dietary Needs</h2>
                 <a href="{{ route('places.index', ['filter' => 'dietary']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
                     See More →
                 </a>
