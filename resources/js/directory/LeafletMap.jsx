@@ -243,7 +243,7 @@ function Restaurants() {
             <div className="absolute top-4 right-4 z-[1000]">
                 <button
                     onClick={handleRedoSearch}
-                    className="bg-secondary text-black font-bold px-4 py-2 rounded-lg shadow-lg hover:bg-primary/80 transition-colors"
+                    className="bg-primary text-black font-bold px-4 py-2 rounded-lg shadow-lg hover:bg-primary/80 transition-colors"
                 >
                     Redo Search in This Area
                 </button>
@@ -254,7 +254,7 @@ function Restaurants() {
                 <button
                     onClick={handleLocationClick}
                     disabled={isLocating}
-                    className="btn btn-circle btn-secondary shadow-lg"
+                    className="btn btn-circle btn-primary shadow-lg"
                 >
                     {isLocating ? (
                         <span className="loading loading-spinner"></span>

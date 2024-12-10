@@ -392,7 +392,7 @@ class extends Component {
                                 @endif
                                 @if($venue->dietCategories)
                                     @foreach($venue->dietCategories as $category)
-                                        <div class="badge badge-secondary">
+                                        <div class="badge badge-accent">
                                             {{ $category->display_name }}
                                         </div>
                                     @endforeach
