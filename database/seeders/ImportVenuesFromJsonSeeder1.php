@@ -72,9 +72,11 @@ class ImportVenuesFromJsonSeeder extends Seeder
             $priceRange = null;
         }
 
-        $area = null;
-        if (isset($data['area'])) {
-            $area = Area::where('name', $data['area'])->first();
+
+        $area = Area::where('name', $data['area'])->first();
+
+        if (!$area) {
+            $area = null;
         }
 
         // Download and upload image if available

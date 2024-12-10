@@ -448,7 +448,7 @@ function Hit({ hit, wire }) {
                 <figure className="h-48 w-full">
                     <img
                         src={
-                            "https://www.discoverhongkong.com/" +
+                            "https://easyeat.s3.ap-southeast-1.amazonaws.com/" +
                             hit.thumbnail_url
                         }
                         alt={hit.name}

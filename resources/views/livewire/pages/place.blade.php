@@ -26,7 +26,7 @@ class extends Component {
     <!-- Main Image Gallery -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div class="aspect-video rounded-lg overflow-hidden">
-            <img src="{{ $place->thumbnail_url ? Storage::disk('s3')->temporaryUrl($place->thumbnail_url, now()->addMinutes(5)) : 'https://placehold.co/600x400' }}" 
+            <img src="{{ $place->thumbnail_url ? config('filesystems.disks.s3.url') . '/' . $place->thumbnail_url : 'https://placehold.co/600x400' }}" 
                  alt="{{ $place->name }}" 
                  class="w-full h-full object-cover">
         </div>
@@ -34,7 +34,7 @@ class extends Component {
         <div class="grid grid-cols-2 gap-4">
             @foreach(array_slice($place->images, 0, 2) as $image)
             <div class="aspect-square rounded-lg overflow-hidden">
-                <img src="{{ Storage::disk('s3')->temporaryUrl($image, now()->addMinutes(5)) }}" 
+                <img src="{{ $image ? config('filesystems.disks.s3.url') . '/' . $image : 'https://placehold.co/600x400' }}" 
                      alt="{{ $place->name }}" 
                      class="w-full h-full object-cover">
             </div>

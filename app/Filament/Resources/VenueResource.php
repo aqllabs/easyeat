@@ -49,7 +49,14 @@ class VenueResource extends Resource
                     ->required()
                     ->numeric(),
                 Forms\Components\FileUpload::make('thumbnail_url')
-                    ->image(),
+                    ->image()
+                    ->disk('s3')
+                    ->directory('venues')
+                    ->visibility('public')
+                    ->imageResizeMode('cover')
+                    ->imageCropAspectRatio('16:9')
+                    ->imageResizeTargetWidth('1920')
+                    ->imageResizeTargetHeight('1080'),
                 Forms\Components\FileUpload::make('images')
                     ->image()
                     ->columnSpanFull()
