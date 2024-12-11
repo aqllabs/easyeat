@@ -177,7 +177,7 @@ class extends Component
                             <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($diet['image'])
-                                    <img src="{{ $diet['image'] }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                    <img src="{{ Storage::disk("s3")->url($diet['image']) }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $diet['count'] }}</span>
@@ -187,9 +187,9 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle">❮</button>
-                    <button class="btn btn-circle">❯</button>
+                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle pointer-events-auto">❮</button>
+                    <button class="btn btn-circle pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
@@ -208,6 +208,9 @@ class extends Component
                         <div id="location-{{ $index }}" class="carousel-item w-72">
                             <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
+                                @if($location['image'])
+                                    <img src="{{ Storage::disk("s3")->url($location['image']) }}" alt="{{ $location['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                @endif
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $location['count'] }}</span>
                                     <span class="font-semibold text-center px-2">{{ $location['name'] }}</span>
@@ -216,9 +219,9 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle">❮</button>
-                    <button class="btn btn-circle">❯</button>
+                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle pointer-events-auto">❮</button>
+                    <button class="btn btn-circle pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
@@ -235,7 +238,7 @@ class extends Component
                 <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
                     @foreach ($cuisine_counts as $index => $cuisine)
                         <div id="cuisine-{{ $index }}" class="carousel-item w-72">
-                            <a href="{{ route('places.index', ['cuisine' => $cuisine['name']]) }}" 
+                            <a href="{{ route('places.index', ['cuisines' => $cuisine['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($cuisine['image'])
                                     <img src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
@@ -271,6 +274,9 @@ class extends Component
                         <div id="venue-type-{{ $index }}" class="carousel-item w-72">
                             <a href="{{ route('places.index', ['venue' => $venue_type['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
+                                @if($venue_type['image'])
+                                    <img src="{{ Storage::disk("s3")->url($venue_type['image']) }}" alt="{{ $venue_type['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                @endif
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $venue_type['count'] }}</span>
                                     <span class="font-semibold text-center px-2">{{ $venue_type['name'] }}</span>
@@ -279,9 +285,9 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle">❮</button>
-                    <button class="btn btn-circle">❯</button>
+                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle pointer-events-auto">❮</button>
+                    <button class="btn btn-circle pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
