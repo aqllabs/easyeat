@@ -387,7 +387,6 @@ function Restaurants() {
                                                 }`}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="btn btn-sm btn-primary"
                                             >
                                                 Get Directions
                                             </a>
