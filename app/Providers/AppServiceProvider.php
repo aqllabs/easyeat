@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Model::unguard();
-        URL::forceScheme('https');
+        // URL::forceScheme('https');
 
         // View::share(['schema' => ['organization' => app(SchemaOrg::class)->organization()]]);
     }

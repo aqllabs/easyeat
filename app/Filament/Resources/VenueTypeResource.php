@@ -26,6 +26,8 @@ class VenueTypeResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required(),
                 Forms\Components\TextInput::make('display_name'),
+                Forms\Components\FileUpload::make("image")->disk('s3')->directory('venue_type')->visibility('private')->image()
+
             ]);
     }
 

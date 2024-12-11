@@ -48,17 +48,18 @@ class extends Component
     public function getDietaryCounts()
     {
         return DB::table('venues')
+        //image
             ->join('diet_category_venue', 'venues.id', '=', 'diet_category_venue.venue_id')
             ->join('diet_categories', 'diet_category_venue.diet_category_id', '=', 'diet_categories.id')
-            ->select('diet_categories.display_name', DB::raw('count(DISTINCT venues.id) as count'))
-            ->groupBy('diet_categories.id', 'diet_categories.display_name')
+            ->select('diet_categories.display_name', 'diet_categories.image', DB::raw('count(DISTINCT venues.id) as count'))
+            ->groupBy('diet_categories.id', 'diet_categories.display_name', 'diet_categories.image')
             ->orderByDesc('count')
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
-                    'image' => $this->getUnsplashImage($item->display_name . ' food')
+                    'image' => $item->image
                 ];
             });
     }
@@ -67,15 +68,16 @@ class extends Component
     {
         return DB::table('venues')
             ->join('areas', 'venues.area_id', '=', 'areas.id')
-            ->select('areas.display_name', DB::raw('count(venues.id) as count'))
+            ->select('areas.display_name', 'areas.image', DB::raw('count(venues.id) as count'))
             ->whereNotNull('venues.area_id')
-            ->groupBy('areas.id', 'areas.display_name')
+            ->groupBy('areas.id', 'areas.display_name', 'areas.image')
             ->orderByDesc('count')
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
+                    'image' => $item->image,
                 ];
             });
     }
@@ -85,14 +87,15 @@ class extends Component
         return DB::table('venues')
             ->join('cuisine_venue', 'venues.id', '=', 'cuisine_venue.venue_id')
             ->join('cuisines', 'cuisine_venue.cuisine_id', '=', 'cuisines.id')
-            ->select('cuisines.display_name', DB::raw('count(DISTINCT venues.id) as count'))
-            ->groupBy('cuisines.id', 'cuisines.display_name')
+            ->select('cuisines.display_name', 'cuisines.image', DB::raw('count(DISTINCT venues.id) as count'))
+            ->groupBy('cuisines.id', 'cuisines.display_name', 'cuisines.image')
             ->orderByDesc('count')
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
+                    'image' => $item->image,
                 ];
             });
     }
@@ -101,14 +104,15 @@ class extends Component
     {
         return DB::table('venues')
             ->join('venue_types', 'venues.venue_type_id', '=', 'venue_types.id')
-            ->select('venue_types.display_name', DB::raw('count(venues.id) as count'))
-            ->groupBy('venue_types.id', 'venue_types.display_name')
+            ->select('venue_types.display_name', 'venue_types.image', DB::raw('count(venues.id) as count'))
+            ->groupBy('venue_types.id', 'venue_types.display_name', 'venue_types.image')
             ->orderByDesc('count')
             ->get()
             ->map(function($item) {
                 return [
                     'name' => $item->display_name,
                     'count' => $item->count . '+',
+                    'image' => $item->image,
                 ];
             });
     }
@@ -233,17 +237,22 @@ class extends Component
                         <div id="cuisine-{{ $index }}" class="carousel-item w-72">
                             <a href="{{ route('places.index', ['cuisine' => $cuisine['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
-                                    <span class="text-2xl font-bold mb-1">{{ $cuisine['count'] }}</span>
-                                    <span class="font-semibold text-center px-2">{{ $cuisine['name'] }}</span>
+                                @if($cuisine['image'])
+                                    <img src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
+                                         alt="{{ $cuisine['name'] }}" 
+                                         class="absolute inset-0 w-full h-full object-cover">
+                                @endif
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/80 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-all">
+                                    <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $cuisine['count'] }}</span>
+                                    <span class="font-semibold text-center px-2 pointer-events-none">{{ $cuisine['name'] }}</span>
                                 </div>
                             </a>
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle">❮</button>
-                    <button class="btn btn-circle">❯</button>
+                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
+                    <button class="btn btn-circle pointer-events-auto">❮</button>
+                    <button class="btn btn-circle pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>

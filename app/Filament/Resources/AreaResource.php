@@ -26,6 +26,7 @@ class AreaResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required(),
                 Forms\Components\TextInput::make('display_name'),
+                Forms\Components\FileUpload::make("image")->disk('s3')->directory('area')->visibility('private')->image()
             ]);
     }
 

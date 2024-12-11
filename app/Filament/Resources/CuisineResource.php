@@ -12,6 +12,7 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Log;
 
 class CuisineResource extends Resource
 {
@@ -26,6 +27,11 @@ class CuisineResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->required(),
                 Forms\Components\TextInput::make('display_name'),
+                Forms\Components\FileUpload::make("image")
+                    ->disk('s3')
+                    ->image()
+                    ->visibility('private')
+                    ->directory('cuisines')
             ]);
     }
 
