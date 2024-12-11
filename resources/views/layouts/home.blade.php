@@ -15,6 +15,10 @@
     <meta name="twitter:description" content="@yield('seo.description', 'Find the perfect restaurant for your dietary needs. Browse reviews and menus filtered by allergies, restrictions, and preferences.')">
     <meta name="twitter:image" content="@yield('seo.image', asset('images/easyeat-social-share.jpg'))">
     <meta name="twitter:site" content="@EasyEat">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="@yield('seo.title', config('app.name', 'EasyEat - Dietary-Friendly Restaurant Finder'))">
     <meta property="og:description" content="@yield('seo.description', 'Find the perfect restaurant for your dietary needs. Browse reviews and menus filtered by allergies, restrictions, and preferences.')">

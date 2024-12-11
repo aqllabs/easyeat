@@ -28,7 +28,7 @@ export default {
         themes: [
             {
                 mytheme: {
-                    primary: "#fd9a21", // Main CTA buttons, important highlights, brand identity
+                    primary: "#ff914d", // Main CTA buttons, important highlights, brand identity
                     secondary: "#eda66f", // Secondary actions, notifications, badges
                     accent: "#b4c96e", // Accent elements, success states, positive interactions
                     neutral: "#1A1A1A", // Text, headers, navigation elements

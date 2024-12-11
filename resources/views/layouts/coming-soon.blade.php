@@ -9,6 +9,10 @@
 
     <meta name="description" content="@yield('seo.description', 'Your default description goes here')">
     <meta name="keywords" content="@yield('seo.keywords', 'your, default, keywords')">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
+
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('seo.title', config('app.name', 'Laravel'))">
