@@ -177,7 +177,7 @@ class extends Component
                             <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($diet['image'])
-                                    <img src="{{ Storage::disk("s3")->url($diet['image']) }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                    <img loading="lazy" src="{{ Storage::disk("s3")->url($diet['image']) }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $diet['count'] }}</span>
@@ -209,9 +209,9 @@ class extends Component
                             <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($location['image'])
-                                    <img src="{{ Storage::disk("s3")->url($location['image']) }}" alt="{{ $location['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                    <img loading="lazy" src="{{ Storage::disk("s3")->url($location['image']) }}" alt="{{ $location['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $location['count'] }}</span>
                                     <span class="font-semibold text-center px-2">{{ $location['name'] }}</span>
                                 </div>
@@ -241,11 +241,11 @@ class extends Component
                             <a href="{{ route('places.index', ['cuisines' => $cuisine['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($cuisine['image'])
-                                    <img src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
+                                    <img loading="lazy" src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
                                          alt="{{ $cuisine['name'] }}" 
                                          class="absolute inset-0 w-full h-full object-cover">
                                 @endif
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/80 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-all">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $cuisine['count'] }}</span>
                                     <span class="font-semibold text-center px-2 pointer-events-none">{{ $cuisine['name'] }}</span>
                                 </div>
@@ -275,9 +275,9 @@ class extends Component
                             <a href="{{ route('places.index', ['venue' => $venue_type['name']]) }}" 
                                class="card relative h-48 w-full overflow-hidden">
                                 @if($venue_type['image'])
-                                    <img src="{{ Storage::disk("s3")->url($venue_type['image']) }}" alt="{{ $venue_type['name'] }}" class="absolute inset-0 w-full h-full object-cover">
+                                    <img loading="lazy" src="{{ Storage::disk("s3")->url($venue_type['image']) }}" alt="{{ $venue_type['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
-                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $venue_type['count'] }}</span>
                                     <span class="font-semibold text-center px-2">{{ $venue_type['name'] }}</span>
                                 </div>
