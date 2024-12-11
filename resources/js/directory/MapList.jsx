@@ -505,7 +505,7 @@ function Hit({ hit, wire }) {
             <div className="card-body p-4">
                 <div className="flex justify-between items-start">
                     <a
-                        className="link link-secondary no-underline "
+                        className="link no-underline "
                         onClick={(e) => {
                             e.stopPropagation();
                             Livewire.navigate(`/places/${hit.id}`);
