@@ -17,8 +17,8 @@
     <meta name="twitter:site" content="@EasyEat">
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('favicon.ico') }}">
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=1">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('favicon.ico') }}?v=1">
     <!-- Open Graph Tags -->
     <meta property="og:title" content="@yield('seo.title', config('app.name', 'EasyEat - Dietary-Friendly Restaurant Finder'))">
     <meta property="og:description" content="@yield('seo.description', 'Find the perfect restaurant for your dietary needs. Browse reviews and menus filtered by allergies, restrictions, and preferences.')">

@@ -157,7 +157,15 @@ class extends Component
             
             <div class="hidden md:block">
                 <div class="w-96 h-64 rounded-lg overflow-hidden">
-                    <img src="{{ asset('/images/food-collage.jpeg') }}" alt="Food Collage" class="w-full h-full object-cover">
+                        <img 
+                            src="{{ asset('/images/food-collage.jpeg') }}" 
+                            alt="Food Collage" 
+                            class="w-full h-full object-cover"
+                            width="384"
+                            height="256"
+                            loading="lazy"
+                            decoding="async"
+                        >
                 </div>
             </div>
         </div>
