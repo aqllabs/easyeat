@@ -15,9 +15,11 @@ use App\Http\Middleware\Subscribed;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Livewire\RestaurantDirectory;
+use App\Livewire\FeedbackPage;
 
 //Route::get('/', [HomeController::class, 'index']);
 Volt::route('/', 'pages.home2')->name('home');
+Volt::route('feedback', 'feedbackpage')->name('feedback');
 
 Route::get('sitemap', [SitemapController::class, 'index'])->name('sitemap');
 Route::get('changelog', [ChangelogController::class, 'index'])->name('changelog');

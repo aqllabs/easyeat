@@ -48,10 +48,12 @@
     @viteReactRefresh
     @stack('scripts')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
 
     <!-- Styles -->
     @livewireStyles
     @fluxStyles
+    @filamentStyles
 
 </head>
 <body>
@@ -68,7 +70,7 @@
 
 @livewireScripts
 @fluxScripts
-
+@filamentScripts
 
 {{--for SweetAlert2--}}
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

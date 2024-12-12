@@ -1,6 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
+import preset from "./vendor/filament/support/tailwind.config.preset";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -12,6 +13,9 @@ export default {
         "./resources/js/**/*.jsx",
         "./vendor/livewire/flux-pro/stubs/**/*.blade.php",
         "./vendor/livewire/flux/stubs/**/*.blade.php",
+        "./app/Filament/**/*.php",
+        "./resources/views/filament/**/*.blade.php",
+        "./vendor/filament/**/*.blade.php",
     ],
 
     theme: {
@@ -23,6 +27,7 @@ export default {
     },
     darkMode: "class",
     plugins: [forms, typography, require("daisyui")],
+    presets: [preset],
 
     daisyui: {
         themes: [
