@@ -20,6 +20,8 @@
                 document.documentElement.setAttribute('data-theme', 'dim');
             }
         </script>
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="35207053-f7eb-481e-9178-8b082141f149"></script>
+
 
         <!-- Scripts -->
         @viteReactRefresh
