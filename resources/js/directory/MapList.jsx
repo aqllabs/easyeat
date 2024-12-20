@@ -51,7 +51,7 @@ function MapList({ wire, ...props }) {
     }
 
     return (
-        <div className="flex h-screen flex-col overflow-hidden relative">
+        <div className="flex h-dvh flex-col overflow-hidden relative">
             <InstantSearch
                 searchClient={searchClient}
                 indexName="venues"
