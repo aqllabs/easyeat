@@ -29,6 +29,7 @@ Volt::route('map', 'pages.map')->name('map');
 Volt::route('places/{id}', 'pages.place')->name('places.show');
 Volt::route('places', 'pages.places')->name('places.index');
 Volt::route('shop', 'pages.shop')->name('shop.index');
+Volt::route('cuisines', 'pages.cuisines')->name('cuisines.index');
 
 // Demo Coming Soon Page
 Route::get('coming-soon', function () {
