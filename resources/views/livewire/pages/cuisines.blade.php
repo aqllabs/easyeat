@@ -35,7 +35,7 @@ class extends Component {
     <section class="mb-16">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl text-gray-600">Explore Cuisines</h2>
-            <a href="{{ route('places.index', ['filter' => 'cuisine']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+            <a href="{{ route('places.index', ['filter' => 'cuisines']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
                 See More →
             </a>
         </div>

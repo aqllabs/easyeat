@@ -40,7 +40,7 @@ class extends Component {
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @foreach ($location_counts as $location)
                 <div class="card relative h-36 md:h-48 w-full overflow-hidden">
-                    <a href="{{ route('places.index', ['location' => $location['name']]) }}">
+                    <a href="{{ route('places.index', ['area' => $location['name']]) }}">
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-blue-400/60 to-blue-500/60 hover:from-blue-500/70 hover:to-blue-600/70 transition-colors">
                             <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $location['count'] }}</span>
                             <span class="font-semibold text-center px-2 pointer-events-none">{{ $location['name'] }}</span>

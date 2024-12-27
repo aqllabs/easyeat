@@ -34,14 +34,14 @@ class extends Component {
     <section class="mb-16">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl text-gray-600">Explore Venue Types</h2>
-            <a href="{{ route('places.index', ['filter' => 'venue_type']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+            <a href="{{ route('places.index', ['filter' => 'venue']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
                 See More →
             </a>
         </div>
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @foreach ($venue_type_counts as $type)
                 <div class="card relative h-36 md:h-48 w-full overflow-hidden">
-                    <a href="{{ route('places.index', ['venue_type' => $type['name']]) }}">
+                    <a href="{{ route('places.index', ['venue' => $type['name']]) }}">
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-purple-400/60 to-purple-500/60 hover:from-purple-500/70 hover:to-purple-600/70 transition-colors">
                             <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $type['count'] }}</span>
                             <span class="font-semibold text-center px-2 pointer-events-none">{{ $type['name'] }}</span>
