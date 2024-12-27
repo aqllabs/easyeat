@@ -30,6 +30,10 @@ Volt::route('places/{id}', 'pages.place')->name('places.show');
 Volt::route('places', 'pages.places')->name('places.index');
 Volt::route('shop', 'pages.shop')->name('shop.index');
 Volt::route('cuisines', 'pages.cuisines')->name('cuisines.index');
+Volt::route('locations', 'pages.locations')->name('locations.index');
+Volt::route('dietary', 'pages.dietary')->name('dietary.index');
+Volt::route('venue-types', 'pages.venue-types')->name('venue-types.index');
+Volt::route('about', 'pages.about')->name('about');
 
 // Demo Coming Soon Page
 Route::get('coming-soon', function () {

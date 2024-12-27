@@ -31,7 +31,7 @@ class extends Component {
     }
 }; ?>
 
-<div>
+<div class="mt-8">
     <section class="mb-16">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl text-gray-600">Explore Cuisines</h2>

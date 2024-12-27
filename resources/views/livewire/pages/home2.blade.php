@@ -134,9 +134,9 @@ class extends Component
   <div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <!-- Hero Section -->
-        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
-            <div class="max-w-xl">
-                <h1 class="text-4xl font-bold mb-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 mb-8 md:mb-16">
+            <div class="w-full max-w-xl">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">
                     Discover Nearby Restaurants
                     <span class="block">Suited To Your <span class="text-orange-500">Dietary Needs</span></span>
                 </h1>
@@ -145,16 +145,23 @@ class extends Component
                 <form wire:submit="search">
                     <div class="join w-full">
                         <input 
-                        wire:model="searchQuery"
-                        type="text" 
-                        placeholder="Search by Restaurant, Dietary Needs, Cuisine, Location" 
-                        class="join-item input input-bordered w-full"
-                    >
-                        <button  class="join-item btn btn-neutral">Search Now</button>
+                            wire:model="searchQuery"
+                            type="text" 
+                            placeholder="Search restaurants..." 
+                            class="join-item input input-bordered w-full text-base"
+                        >
+                        <button class="join-item btn btn-neutral">Search</button>
                     </div>
                 </form>
+                {{-- or label --}}
+                <div class="flex justify-center mt-4 space-y-2 flex-col sm:hidden">
+                    <div class="text-center text-gray-500">Or</div>
+                    <flux:button href="{{route('map')}}" icon="map">View on Map</flux:button>
+                </div>
+
             </div>
             
+            <!-- Desktop hero image remains unchanged -->
             <div class="hidden md:block">
                 <div class="w-96 h-64 rounded-lg overflow-hidden">
                         <img 
@@ -171,19 +178,19 @@ class extends Component
         </div>
 
         <!-- Dietary Requirements Section -->
-        <section class="mb-16">
+        <section class="mb-8 md:mb-16">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl text-gray-600">Search by Dietary Needs</h2>
-                <a href="{{ route('places.index', ['filter' => 'dietary']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                <a href="{{ route('dietary.index') }}" class="text-orange-500 hover:text-orange-600 font-medium">
                     See More →
                 </a>
             </div>
             <div class="carousel w-full relative">
-                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                <div class="carousel carousel-center w-full p-2 md:p-4 space-x-3 md:space-x-4 rounded-box">
                     @foreach ($dietary_counts as $diet)
-                        <div id="dietary-{{ $loop->index }}" class="carousel-item w-72">
+                        <div id="dietary-{{ $loop->index }}" class="carousel-item w-48 md:w-72">
                             <a href="{{ route('places.index', ['diet' => $diet['name']]) }}" 
-                               class="card relative h-48 w-full overflow-hidden">
+                               class="card relative h-36 md:h-48 w-full overflow-hidden">
                                 @if($diet['image'])
                                     <img loading="lazy" src="{{ Storage::disk("s3")->url($diet['image']) }}" alt="{{ $diet['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
@@ -195,27 +202,29 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle pointer-events-auto">❮</button>
-                    <button class="btn btn-circle pointer-events-auto">❯</button>
+                
+                <!-- Mobile-friendly carousel controls -->
+                <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between z-10 px-2 md:px-5">
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❮</button>
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
 
         <!-- Locations Section -->
-        <section class="mb-16">
+        <section class="mb-8 md:mb-16">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl text-gray-600">Search by Location</h2>
-                <a href="{{ route('places.index', ['filter' => 'location']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                <a href="{{ route('locations.index') }}" class="text-orange-500 hover:text-orange-600 font-medium">
                     See More →
                 </a>
             </div>
             <div class="carousel w-full relative">
-                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                <div class="carousel carousel-center w-full p-2 md:p-4 space-x-3 md:space-x-4 rounded-box">
                     @foreach ($location_counts as $index => $location)
-                        <div id="location-{{ $index }}" class="carousel-item w-72">
+                        <div id="location-{{ $index }}" class="carousel-item w-48 md:w-72">
                             <a href="{{ route('places.index', ['area' => $location['name']]) }}" 
-                               class="card relative h-48 w-full overflow-hidden">
+                               class="card relative h-36 md:h-48 w-full overflow-hidden">
                                 @if($location['image'])
                                     <img loading="lazy" src="{{ Storage::disk("s3")->url($location['image']) }}" alt="{{ $location['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
@@ -227,27 +236,29 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle pointer-events-auto">❮</button>
-                    <button class="btn btn-circle pointer-events-auto">❯</button>
+                
+                <!-- Mobile-friendly carousel controls -->
+                <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between z-10 px-2 md:px-5">
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❮</button>
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
 
         <!-- Cuisines Section -->
-        <section class="mb-16">
+        <section class="mb-8 md:mb-16">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl text-gray-600">Search by Cuisine</h2>
-                <a href="{{ route('places.index', ['filter' => 'cuisine']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                <a href="{{ route('cuisines.index') }}" class="text-orange-500 hover:text-orange-600 font-medium">
                     See More →
                 </a>
             </div>
             <div class="carousel w-full relative">
-                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                <div class="carousel carousel-center w-full p-2 md:p-4 space-x-3 md:space-x-4 rounded-box">
                     @foreach ($cuisine_counts as $index => $cuisine)
-                        <div id="cuisine-{{ $index }}" class="carousel-item w-72">
+                        <div id="cuisine-{{ $index }}" class="carousel-item w-48 md:w-72">
                             <a href="{{ route('places.index', ['cuisines' => $cuisine['name']]) }}" 
-                               class="card relative h-48 w-full overflow-hidden">
+                               class="card relative h-36 md:h-48 w-full overflow-hidden">
                                 @if($cuisine['image'])
                                     <img loading="lazy" src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
                                          alt="{{ $cuisine['name'] }}" 
@@ -261,27 +272,29 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle pointer-events-auto">❮</button>
-                    <button class="btn btn-circle pointer-events-auto">❯</button>
+                
+                <!-- Mobile-friendly carousel controls -->
+                <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between z-10 px-2 md:px-5">
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❮</button>
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
 
         <!-- Venue Types Section -->
-        <section class="mb-16">
+        <section class="mb-8 md:mb-16">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl text-gray-600">Search by Venue Type</h2>
-                <a href="{{ route('places.index', ['filter' => 'venue_type']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                <a href="{{ route('venue-types.index') }}" class="text-orange-500 hover:text-orange-600 font-medium">
                     See More →
                 </a>
             </div>
             <div class="carousel w-full relative">
-                <div class="carousel carousel-center w-full p-4 space-x-4 rounded-box">
+                <div class="carousel carousel-center w-full p-2 md:p-4 space-x-3 md:space-x-4 rounded-box">
                     @foreach ($venue_type_counts as $index => $venue_type)
-                        <div id="venue-type-{{ $index }}" class="carousel-item w-72">
+                        <div id="venue-type-{{ $index }}" class="carousel-item w-48 md:w-72">
                             <a href="{{ route('places.index', ['venue' => $venue_type['name']]) }}" 
-                               class="card relative h-48 w-full overflow-hidden">
+                               class="card relative h-36 md:h-48 w-full overflow-hidden">
                                 @if($venue_type['image'])
                                     <img loading="lazy" src="{{ Storage::disk("s3")->url($venue_type['image']) }}" alt="{{ $venue_type['name'] }}" class="absolute inset-0 w-full h-full object-cover">
                                 @endif
@@ -293,9 +306,11 @@ class extends Component
                         </div>
                     @endforeach
                 </div>
-                <div class="absolute left-5 pointer-events-none right-5 top-1/2 flex -translate-y-1/2 transform justify-between z-10">
-                    <button class="btn btn-circle pointer-events-auto">❮</button>
-                    <button class="btn btn-circle pointer-events-auto">❯</button>
+                
+                <!-- Mobile-friendly carousel controls -->
+                <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between z-10 px-2 md:px-5">
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❮</button>
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❯</button>
                 </div>
             </div>
         </section>
