@@ -234,7 +234,7 @@ class extends Component {
 
             <!-- Dietary Preference -->
             <div class="mb-6">
-                <flux:checkbox.group wire:model.live="filterValues.diet_categories" label="Dietary preference">
+                <flux:checkbox.group wire:model.live.debounce.500ms="filterValues.diet_categories" label="Dietary preference">
                     @foreach($diet_categories as $category)
                         <flux:checkbox
                             label="{{ $category->display_name }}"
@@ -267,7 +267,7 @@ class extends Component {
             <!-- Venue Type -->
             <div class="mb-6">
                 <flux:select 
-                    wire:model.live="filterValues.venue_type" 
+                    wire:model.live.debounce.500ms="filterValues.venue_type" 
                     label="Venue Type"
                     placeholder="Select Venue Type"
                     class="border-0 p-0"
@@ -287,7 +287,7 @@ class extends Component {
             <!-- Vegetarian Type -->    
             <div class="mb-6">
                 <flux:select 
-                    wire:model.live="filterValues.vegetarian_type" 
+                    wire:model.live.debounce.500ms="filterValues.vegetarian_type" 
                     label="Vegetarian Type"
                     class="border-0 p-0"
                     placeholder="Select Vegetarian Type"
@@ -307,7 +307,7 @@ class extends Component {
             <!-- Area -->
             <div class="mb-6">
                 <flux:select 
-                    wire:model.live="filterValues.areas" 
+                    wire:model.live.debounce.500ms="filterValues.areas" 
                     label="Area"
                     searchable
                     placeholder="Select Area"
@@ -327,7 +327,7 @@ class extends Component {
             <!-- Cuisines -->
             <div class="mb-6">
                 <flux:select 
-                    wire:model.live="filterValues.cuisines" 
+                    wire:model.live.debounce.500ms="filterValues.cuisines" 
                     label="Cuisines"
                     placeholder="Select Cuisines"
                     multiple
@@ -348,7 +348,7 @@ class extends Component {
             <div class="mb-6">
                 <flux:select 
                     class="border-0 p-0"
-                    wire:model.live="filterValues.price_range" 
+                    wire:model.live.debounce.500ms="filterValues.price_range" 
                     placeholder="Select Price Range"
                     label="Price Range"
                     multiple
