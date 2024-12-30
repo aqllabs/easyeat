@@ -46,22 +46,22 @@ class extends Component {
     <div class="mb-20">
         <div class="bg-white rounded-xl shadow-md p-10 border border-orange-100">
             <div class="mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6">The Problem</h2>
-                <p class="text-lg text-gray-700 leading-relaxed">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">The Problem</h2>
+                <p class="text-lg text-gray-700 leading-relaxed text-center">
                     Hong Kong is known to be an international city however there has always been a struggle for those in the underrepresented communities to locate dining options that cater to their unique dietary needs. Existing platforms, apps, websites, and blogs offer too many choices and can be difficult to navigate, making it overwhelming to find the right place to dine.
                 </p>
             </div>
             
             <div class="mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Solution</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Our Solution</h2>
+                <p class="text-lg text-gray-700 leading-relaxed text-center mb-6">
                     Easy Eat allows people from diverse backgrounds and dietary needs to find restaurants in Hong Kong that cater to their needs, including Vegetarian, Vegan, Jain and Halal food.
                 </p>
             </div>
 
             <div class="text-center mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
-                <p class="text-gray-600 text-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
                     To promote inclusive dining, believing that eating should be made easy for everyone.
                 </p>
             </div>
@@ -102,11 +102,11 @@ class extends Component {
     <!-- Our Story Section -->
     <div class="mb-20">
         <div class="bg-white rounded-xl shadow-md p-10 border border-orange-100">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Our Story</h2>
-            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Our Story</h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
                 Easy Eat was introduced by Foodie Explorerz, the existing No.1 Instagram page catering to people with dietary requirements in Hong Kong. Foodie Explorerz was introduced as a page to share restaurants in Hong Kong, however after the founder realised they had dietary requirements and was limited to what type of content they could post they decided to focus and cater to this niche and underrepresented community.
             </p>
-            <p class="text-gray-700 mb-8 leading-relaxed">
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed text-center">
                 Foodie Explorerz has now grown to 24k Followers, and has been growing for the past 4 years- making headlines in large media publications including SCMP, CGTN, CNA and more!
             </p>
             
@@ -124,16 +124,6 @@ class extends Component {
                              alt="RTHK" 
                              class="h-28 w-full object-contain opacity-90 hover:opacity-100">
                     </a>
-
-                    <!-- CNA -->
-                    <a href="https://www.channelnewsasia.com/east-asia/hong-kong-woo-southeast-asia-muslim-tourists-diversify-mainland-4581351" 
-                       target="_blank" 
-                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/cna.png') }}" 
-                             alt="CNA" 
-                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                    </a>
-
                     <!-- CGTN -->
                     <a href="https://francais.cgtn.com/news/2024-06-22/1804344490073722881/index.html" 
                        target="_blank" 
@@ -151,10 +141,9 @@ class extends Component {
                              alt="SCMP" 
                              class="h-28 w-full object-contain opacity-90 hover:opacity-100">
                     </a>
-                </div>
+            
 
                 <!-- Extended Media Coverage Grid -->
-                <div class="grid md:grid-cols-4 gap-8">
                     <a href="https://youtu.be/OA8KlobYNTI?si=aZos_5DA3gMkVD6t" 
                        target="_blank" 
                        class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
@@ -163,37 +152,25 @@ class extends Component {
                              class="h-28 w-full object-contain opacity-90 hover:opacity-100">
                     </a>
 
-                    <a href="https://www.straitstimes.com/asia/east-asia/hong-kong-seeks-to-expand-halal-food-options-to-draw-more-muslim-tourists" 
-                       target="_blank" 
-                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/straits.png') }}" 
-                             alt="Straits Times" 
-                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                    </a>
+                </div>
+                <div class="grid grid-cols-4 gap-8 mb-12">
+                    <div class="col-span-4 md:col-span-2 md:col-start-2 flex justify-center gap-8">
+                        <a href="https://www.straitstimes.com/asia/east-asia/hong-kong-seeks-to-expand-halal-food-options-to-draw-more-muslim-tourists" 
+                           target="_blank" 
+                           class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                            <img src="{{ asset('/images/media-logos/straits.png') }}" 
+                                 alt="Straits Times" 
+                                 class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                        </a>
 
-                    <a href="https://www.scmp.com/news/hong-kong/hong-kong-economy/article/3259242/can-hong-kong-be-more-muslim-friendly-having-more-halal-dining-options-can-help-attract-middle-east" 
-                       target="_blank" 
-                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/scmp.png') }}" 
-                             alt="SCMP" 
-                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                    </a>
-
-                    <a href="https://www.scmp.com/news/hong-kong/society/article/3199392/halal-hong-kong-muslims-cheer-kfcs-move-hope-more-fast-food-chains-restaurants-will-cater-community" 
-                       target="_blank" 
-                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/scmp.png') }}" 
-                             alt="SCMP" 
-                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                    </a>
-
-                    <a href="https://sassyhongkong.com/halal-restaurants-in-hong-kong-eat-drink/" 
-                       target="_blank" 
-                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/sassy.png') }}" 
-                             alt="Sassy Hong Kong" 
-                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                    </a>
+                        <a href="https://sassyhongkong.com/halal-restaurants-in-hong-kong-eat-drink/" 
+                           target="_blank" 
+                           class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                            <img src="{{ asset('/images/media-logos/sassy.png') }}" 
+                                 alt="Sassy Hong Kong" 
+                                 class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,7 +180,7 @@ class extends Component {
     <div class="mb-20">
         <div class="bg-white rounded-xl shadow-md p-10 border border-orange-100">
             <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Our Partners</h2>
-            <div class="grid grid-cols-3 gap-12 items-center justify-items-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
                 <img src="/images/partners/hkstp.png" alt="HKSTP" class="h-36 object-contain">
                 <img src="/images/partners/fsi.png" alt="FSI" class="h-36 object-contain">
                 <img src="/images/partners/guidefong.png" alt="GuideFong" class="h-36 object-contain">
