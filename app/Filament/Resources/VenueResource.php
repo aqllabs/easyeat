@@ -61,7 +61,7 @@ class VenueResource extends Resource
                     ->image()
                     ->disk('s3')
                     ->directory('venues')
-                    ->visibility('public')
+                    ->visibility('private')
                     ->columnSpanFull()
                     ->multiple(),
                 Forms\Components\Textarea::make('description')
