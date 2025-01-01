@@ -101,9 +101,9 @@ class VenueResource extends Resource
                     ->state(fn($record) => $record->dietCategories->pluck('display_name')->join(', ')),
                 Tables\Columns\TextColumn::make('halalAssurance.display_name'),
                 Tables\Columns\TextColumn::make('venue_type')
-                    ->state(fn($record) => $record->venueType->display_name),
+                    ->state(fn($record) => $record->venueType?->display_name ?? '-'),
                 Tables\Columns\TextColumn::make('vegetarian_type')
-                    ->state(fn($record) => $record->vegetarianType?->display_name),
+                    ->state(fn($record) => $record->vegetarianType?->display_name ?? '-'),
             ])
             ->filters([
                 SelectFilter::make('cousines')
