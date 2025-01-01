@@ -59,6 +59,9 @@ class VenueResource extends Resource
                     ->imageResizeTargetHeight('1080'),
                 Forms\Components\FileUpload::make('images')
                     ->image()
+                    ->disk('s3')
+                    ->directory('venues')
+                    ->visibility('public')
                     ->columnSpanFull()
                     ->multiple(),
                 Forms\Components\Textarea::make('description')
