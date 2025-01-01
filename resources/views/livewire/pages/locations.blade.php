@@ -8,15 +8,17 @@ class extends Component {
     public function getLocationCounts()
     {
         return DB::table('venues')
-            ->select('location', DB::raw('count(*) as count'))
-            ->whereNotNull('location')
-            ->groupBy('location')
+            ->join('areas', 'venues.area_id', '=', 'areas.id')
+            ->select('areas.display_name', 'areas.image', DB::raw('count(DISTINCT venues.id) as count'))
+            ->whereNotNull('areas.id')
+            ->groupBy('areas.id', 'areas.display_name', 'areas.image')
             ->orderByDesc('count')
             ->get()
             ->map(function($item) {
                 return [
-                    'name' => $item->location,
+                    'name' => $item->display_name,
                     'count' => $item->count . '+',
+                    'image' => $item->image,
                 ];
             });
     }
@@ -41,6 +43,11 @@ class extends Component {
             @foreach ($location_counts as $location)
                 <div class="card relative h-36 md:h-48 w-full overflow-hidden">
                     <a href="{{ route('places.index', ['area' => $location['name']]) }}">
+                        @if($location['image'])
+                            <img loading="lazy" src="{{ Storage::disk("s3")->url($location['image']) }}" 
+                                 alt="{{ $location['name'] }}" 
+                                 class="absolute inset-0 w-full h-full object-cover">
+                        @endif
                         <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-blue-400/60 to-blue-500/60 hover:from-blue-500/70 hover:to-blue-600/70 transition-colors">
                             <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $location['count'] }}</span>
                             <span class="font-semibold text-center px-2 pointer-events-none">{{ $location['name'] }}</span>
