@@ -52,7 +52,7 @@ class VenueResource extends Resource
                     ->image()
                     ->disk('s3')
                     ->directory('venues')
-                    ->visibility('public')
+                    ->visibility('private')
                     ->imageResizeMode('cover')
                     ->imageCropAspectRatio('16:9')
                     ->imageResizeTargetWidth('1920')
