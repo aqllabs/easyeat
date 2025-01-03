@@ -100,43 +100,90 @@ class extends Component {
 
     protected function loadVenues()
     {
-        $query = Venue::search($this->search)
-            ->query(fn (Builder $query) => 
-                $query->with([
-                    'dietCategories:id,display_name',
-                    'halalAssurance:id,display_name',
-                    'venueType:id,display_name',
-                    'cuisines:id,display_name',
-                    'priceRange:id,display_name',
-                    'area:id,display_name',
-                    'vegetarianType:id,display_name',
-                ])
-            );
+        $query = Venue::query()
+            ->with([
+                'dietCategories:id,display_name',
+                'halalAssurance:id,display_name', 
+                'venueType:id,display_name',
+                'cuisines:id,display_name',
+                'priceRange:id,display_name',
+                'area:id,display_name',
+                'vegetarianType:id,display_name',
+                'chain:id,name',
+            ])
+            ->select('venues.*')
+            ->selectRaw('COALESCE(chain_id, id) as group_id')
+            ->orderBy('group_id')
+            ->orderBy('name');
+
+        if ($this->search) {
+            $query->whereLike(['name', 'address', 'dietCategories.display_name', 'halalAssurance.display_name', 'venueType.display_name', 'cuisines.display_name', 'priceRange.display_name', 'vegetarianType.display_name'], $this->search);
+        }
 
         // Apply filters using relationships
         if (!empty($this->filterValues['diet_categories'])) {
-            $query->whereIn('diet_categories', $this->filterValues['diet_categories']);
+            $query->whereHas('dietCategories', function($q) {
+                $q->whereIn('display_name', $this->filterValues['diet_categories']);
+            });
         }
         if (!empty($this->filterValues['halal_assurance'])) {
-            $query->whereIn('halal_assurance', $this->filterValues['halal_assurance']);
+            $query->whereHas('halalAssurance', function($q) {
+                $q->whereIn('display_name', $this->filterValues['halal_assurance']);
+            });
         }
         if (!empty($this->filterValues['venue_type'])) {
-            $query->whereIn('venue_type', $this->filterValues['venue_type']);
+            $query->whereHas('venueType', function($q) {
+                $q->whereIn('display_name', $this->filterValues['venue_type']);
+            });
         }
         if (!empty($this->filterValues['areas'])) {
-            $query->whereIn('area', $this->filterValues['areas']);
+            $query->whereHas('area', function($q) {
+                $q->whereIn('display_name', $this->filterValues['areas']);
+            });
         }
         if (!empty($this->filterValues['cuisines'])) {
-            $query->whereIn('cuisines', $this->filterValues['cuisines']);
+            $query->whereHas('cuisines', function($q) {
+                $q->whereIn('display_name', $this->filterValues['cuisines']);
+            });
         }
         if (!empty($this->filterValues['price_range'])) {
-            $query->whereIn('price_range', $this->filterValues['price_range']);
+            $query->whereHas('priceRange', function($q) {
+                $q->whereIn('display_name', $this->filterValues['price_range']);
+            });
         }
         if (!empty($this->filterValues['vegetarian_type'])) {
-            $query->whereIn('vegetarian_type', $this->filterValues['vegetarian_type']);
+            $query->whereHas('vegetarianType', function($q) {
+                $q->whereIn('display_name', $this->filterValues['vegetarian_type']);
+            });
         }
 
-        return $query->paginate(15);
+        // Get the paginated results first
+        $paginatedResults = $query->paginate(15);
+
+        // Group venues by chain_id or their own id if standalone
+        $groupedVenues = $paginatedResults->getCollection()
+            ->groupBy('group_id')
+            ->map(function ($venues) {
+                $firstVenue = $venues->first();
+                return [
+                    'name' => $firstVenue->chain ? $firstVenue->chain->name : $firstVenue->name,
+                    'is_chain' => $firstVenue->chain_id !== null,
+                    'thumbnail_url' => $firstVenue->thumbnail_url,
+                    'venues' => $venues,
+                    'shared_attributes' => [
+                        'halalAssurance' => $firstVenue->halalAssurance,
+                        'dietCategories' => $firstVenue->dietCategories,
+                        'vegetarianType' => $firstVenue->vegetarianType,
+                        'cuisines' => $firstVenue->cuisines,
+                        'priceRange' => $firstVenue->priceRange,
+                    ],
+                ];
+            });
+
+        // Create a new paginator with the grouped results
+        $paginatedResults->setCollection($groupedVenues);
+        
+        return $paginatedResults;
     }
 
     public function resetFilters()
@@ -368,66 +415,65 @@ class extends Component {
         <!-- Venue Cards -->
         <div class="flex-1">
             <div class="grid grid-cols-1 gap-6">
-                @foreach($venues as $venue)
+                @foreach($venues as $group)
                     <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                         <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
-                                src="{{ $venue->thumbnail_url ? Storage::disk('s3')->url($venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
-                                alt="{{ $venue->name }}"
+                                src="{{ $group['thumbnail_url'] ? Storage::disk('s3')->url($group['thumbnail_url']) : 'https://placehold.co/600x400' }}"
+                                alt="{{ $group['name'] }}"
                                 class="w-full h-full object-cover"
                             >
                         </figure>
                         <div class="card-body sm:w-2/3">
                             <div class="flex justify-between items-start">
-                                <a href="{{ route('places.show', $venue->id) }}" class="hover:text-primary transition-colors">
-                                    <h3 class="card-title">{{ $venue->name }}</h3>
-                                </a>
+                                <h3 class="card-title">
+                                    {{ $group['name'] }}
+                                    @if($group['is_chain'])
+                                        <span class="badge badge-secondary">Chain</span>
+                                    @endif
+                                </h3>
                             </div>
 
                             <div class="flex flex-wrap gap-2">
-                                @if($venue->halalAssurance)
+                                @if($group['shared_attributes']['halalAssurance'])
                                     <div class="badge badge-primary">
-                                        {{ $venue->halalAssurance->display_name }}
+                                        {{ $group['shared_attributes']['halalAssurance']->display_name }}
                                     </div>
                                 @endif
-                                @if($venue->dietCategories)
-                                    @foreach($venue->dietCategories as $category)
-                                        <div class="badge badge-primary">
-                                            {{ $category->display_name }}
-                                        </div>
-                                    @endforeach
-                                @endif
-
-                                @if($venue->vegetarianType)
+                                @foreach($group['shared_attributes']['dietCategories'] as $category)
                                     <div class="badge badge-primary">
-                                        {{ $venue->vegetarianType->display_name }}
+                                        {{ $category->display_name }}
+                                    </div>
+                                @endforeach
+                                @if($group['shared_attributes']['vegetarianType'])
+                                    <div class="badge badge-primary">
+                                        {{ $group['shared_attributes']['vegetarianType']->display_name }}
                                     </div>
                                 @endif
-
-                                @if($venue->cuisines)
-                                    @foreach($venue->cuisines as $cuisine)
-                                        <div class="badge badge-primary badge-outline">
-                                            {{ $cuisine->display_name }}
-                                        </div>
-                                    @endforeach
-                                @endif
-
-                                @if($venue->price_range)
+                                @foreach($group['shared_attributes']['cuisines'] as $cuisine)
+                                    <div class="badge badge-primary badge-outline">
+                                        {{ $cuisine->display_name }}
+                                    </div>
+                                @endforeach
+                                @if($group['shared_attributes']['priceRange'])
                                     <div class="badge badge-accent badge-outline">
-                                        {{ $venue->price_range->display_name }}
+                                        {{ $group['shared_attributes']['priceRange']->display_name }}
                                     </div>
                                 @endif
                             </div>
 
-                            @if($venue->address)
-                                <div class="text-base-content/70 flex items-start gap-2">
-                                    <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                    </svg>
-                                    <p class="flex-1">{{ $venue->address }}</p>
-                                </div>
-                            @endif
+                            <div class="space-y-2">
+                                <h4 class="font-semibold">{{ $group['is_chain'] ? 'Locations:' : 'Address:' }}</h4>
+                                @foreach($group['venues'] as $venue)
+                                    <div class="text-base-content/70 flex items-start gap-2">
+                                        <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <p class="flex-1">{{ $venue->address }}</p>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 @endforeach
