@@ -111,10 +111,7 @@ class extends Component {
                 'vegetarianType:id,display_name',
                 'chain:id,name',
             ])
-            ->select('venues.*')
-            ->selectRaw('COALESCE(chain_id, id) as group_id')
-            ->orderBy('group_id')
-            ->orderBy('name');
+            ->select('venues.*');
 
         if ($this->search) {
             $query->whereLike(['name', 'address', 'dietCategories.display_name', 'halalAssurance.display_name', 'venueType.display_name', 'cuisines.display_name', 'priceRange.display_name', 'vegetarianType.display_name'], $this->search);
@@ -157,33 +154,21 @@ class extends Component {
             });
         }
 
-        // Get the paginated results first
-        $paginatedResults = $query->paginate(15);
+        // Before returning the paginated results, add grouping
+        $query->when(true, function ($query) {
+            return $query->select([
+                'venues.chain_id',
+                \DB::raw('COALESCE(venues.chain_id, venues.id) as grouping_key'),
+                \DB::raw('MIN(venues.id) as id'),
+                \DB::raw('MIN(venues.name) as name'),
+                \DB::raw('MIN(venues.thumbnail_url) as thumbnail_url'),
+                \DB::raw("GROUP_CONCAT(venues.address, ' | ') as addresses")
+            ])
+            ->groupBy(\DB::raw('COALESCE(venues.chain_id, venues.id)'))
+            ->orderBy(\DB::raw('MIN(venues.name)'));
+        });
 
-        // Group venues by chain_id or their own id if standalone
-        $groupedVenues = $paginatedResults->getCollection()
-            ->groupBy('group_id')
-            ->map(function ($venues) {
-                $firstVenue = $venues->first();
-                return [
-                    'name' => $firstVenue->chain ? $firstVenue->chain->name : $firstVenue->name,
-                    'is_chain' => $firstVenue->chain_id !== null,
-                    'thumbnail_url' => $firstVenue->thumbnail_url,
-                    'venues' => $venues,
-                    'shared_attributes' => [
-                        'halalAssurance' => $firstVenue->halalAssurance,
-                        'dietCategories' => $firstVenue->dietCategories,
-                        'vegetarianType' => $firstVenue->vegetarianType,
-                        'cuisines' => $firstVenue->cuisines,
-                        'priceRange' => $firstVenue->priceRange,
-                    ],
-                ];
-            });
-
-        // Create a new paginator with the grouped results
-        $paginatedResults->setCollection($groupedVenues);
-        
-        return $paginatedResults;
+        return $query->paginate(15);
     }
 
     public function resetFilters()
@@ -415,71 +400,70 @@ class extends Component {
         <!-- Venue Cards -->
         <div class="flex-1">
             <div class="grid grid-cols-1 gap-6">
-                @foreach($venues as $group)
+                @foreach($venues as $venue)
                     <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                         <figure class="h-48 sm:h-56 sm:w-1/3">
                             <img
-                                src="{{ $group['thumbnail_url'] ? Storage::disk('s3')->url($group['thumbnail_url']) : 'https://placehold.co/600x400' }}"
-                                alt="{{ $group['name'] }}"
+                                src="{{ $venue->thumbnail_url ? Storage::disk('s3')->url($venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
+                                alt="{{ $venue->name }}"
                                 class="w-full h-full object-cover"
                             >
                         </figure>
                         <div class="card-body sm:w-2/3">
                             <div class="flex justify-between items-start">
-                                <h3 class="card-title">
-                                    {{ $group['name'] }}
-                                    @if($group['is_chain'])
-                                        <span class="badge badge-secondary">Chain</span>
-                                    @endif
-                                </h3>
+                                <a href="{{ route('places.show', $venue->id) }}" class="hover:text-primary transition-colors">
+                                    <h3 class="card-title">{{ $venue->name }}</h3>
+                                </a>
                             </div>
 
                             <div class="flex flex-wrap gap-2">
-                                @if($group['shared_attributes']['halalAssurance'])
+                                @if($venue->halalAssurance)
                                     <div class="badge badge-primary">
-                                        {{ $group['shared_attributes']['halalAssurance']->display_name }}
+                                        {{ $venue->halalAssurance->display_name }}
                                     </div>
                                 @endif
-                                @foreach($group['shared_attributes']['dietCategories'] as $category)
+                                @if($venue->dietCategories)
+                                    @foreach($venue->dietCategories as $category)
+                                        <div class="badge badge-primary">
+                                            {{ $category->display_name }}
+                                        </div>
+                                    @endforeach
+                                @endif
+
+                                @if($venue->vegetarianType)
                                     <div class="badge badge-primary">
-                                        {{ $category->display_name }}
-                                    </div>
-                                @endforeach
-                                @if($group['shared_attributes']['vegetarianType'])
-                                    <div class="badge badge-primary">
-                                        {{ $group['shared_attributes']['vegetarianType']->display_name }}
+                                        {{ $venue->vegetarianType->display_name }}
                                     </div>
                                 @endif
-                                @foreach($group['shared_attributes']['cuisines'] as $cuisine)
-                                    <div class="badge badge-primary badge-outline">
-                                        {{ $cuisine->display_name }}
-                                    </div>
-                                @endforeach
-                                @if($group['shared_attributes']['priceRange'])
+
+                                @if($venue->cuisines)
+                                    @foreach($venue->cuisines as $cuisine)
+                                        <div class="badge badge-primary badge-outline">
+                                            {{ $cuisine->display_name }}
+                                        </div>
+                                    @endforeach
+                                @endif
+
+                                @if($venue->price_range)
                                     <div class="badge badge-accent badge-outline">
-                                        {{ $group['shared_attributes']['priceRange']->display_name }}
+                                        {{ $venue->price_range->display_name }}
                                     </div>
                                 @endif
                             </div>
 
-                            <div class="space-y-2">
-                                <h4 class="font-semibold">{{ $group['is_chain'] ? 'Locations:' : 'Address:' }}</h4>
-                                @foreach($group['venues'] as $venue)
-                                    <div class="text-base-content/70 flex items-start gap-2">
-                                        <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                        </svg>
-                                        <p class="flex-1">{{ $venue->address }}</p>
-                                    </div>
-                                @endforeach
+                            <div class="text-base-content/70 flex items-start gap-2">
+                                <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <p class="flex-1">{{ $venue->addresses ?? $venue->address }}</p>
                             </div>
                         </div>
                     </div>
                 @endforeach
-            </div>
-            <div class="mt-6">
-                {{ $venues->links() }}
+                <div class="mt-4">
+                    {{ $venues->links() }}
+                </div>
             </div>
         </div>
     </div>
