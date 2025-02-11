@@ -25,14 +25,14 @@ class ArticleResource extends Resource
                 Forms\Components\TextInput::make('title')
                     ->required(),
                 Forms\Components\RichEditor::make('content')
-                    ->fileAttachmentsDisk(config('filesystems.default'))
+                    ->fileAttachmentsDisk('s3')
                     ->fileAttachmentsDirectory('article')
-                    ->fileAttachmentsVisibility('public')
+                    ->fileAttachmentsVisibility('private')
                     ->required(),
                 Forms\Components\FileUpload::make('thumbnail')
-                    ->disk(config('filesystems.default'))
+                    ->disk('s3')
                     ->directory('articles')
-                    ->visibility('public')
+                    ->visibility('private')
                     ->image()
                     ->imageEditor()
                     ->imageEditorAspectRatios([
