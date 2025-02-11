@@ -12,7 +12,7 @@
             {{-- <li><a href="{{ route('shop.index') }}">{{ __('Shop') }}</a></li> --}}
             {{-- <li><a href="#pricing">{{ __('Pricing') }}</a></li> --}}
             {{-- <li><a href="#">{{ __('How It Works') }}</a></li> --}}
-            {{-- <li><a href="{{ route('blog.index') }}">{{ __('Blog') }}</a></li> --}}
+            <li><a href="{{ route('blog.index') }}">{{ __('Blog') }}</a></li>
             <li><a href="{{ route('about') }}">{{ __('About') }}</a></li>
             {{-- <li><a href="{{ route('coming-soon') }}">{{ __('Coming Soon') }}</a></li> --}}
             {{-- <li><a href="{{ route('changelog') }}">{{ __('Changelog') }}</a></li> --}}
