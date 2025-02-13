@@ -25,7 +25,7 @@ export default {
             },
         },
     },
-    darkMode: "class",
+    darkMode: null,
     plugins: [forms, typography, require("daisyui")],
     presets: [preset],
 
