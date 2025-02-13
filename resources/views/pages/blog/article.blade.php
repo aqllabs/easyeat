@@ -1,6 +1,6 @@
 @section('seo.title', $article->title)
 @section('seo.description', $article->seo_description)
-@section('seo.image', $article->icon)
+@section('seo.image', Storage::disk('s3')->url($article->thumbnail))
 
 <x-home-layout>
     <div class="lg:flex lg:items-start lg:justify-between lg:flex-col py-16">
@@ -35,7 +35,7 @@
     </div>
     <div>
         <div class="w-full sm:max-w-2xl mt-4 rounded-xl overflow-hidden">
-            <img class="w-full" src="{{ $article->icon }}" alt="{{ $article->title }}">
+            <img class="w-full" src="{{ Storage::disk('s3')->url($article->thumbnail) }}" alt="{{ $article->title }}">
         </div>
         <div class="w-full sm:max-w-2xl mt-6 bg-white overflow-hidden sm:rounded-lg prose">
             {!! $article->content !!}

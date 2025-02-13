@@ -9,6 +9,8 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
+use App\Forms\Components\PublicRichEditor;
 
 class ArticleResource extends Resource
 {
@@ -24,9 +26,9 @@ class ArticleResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
-                Forms\Components\RichEditor::make('content')
+                PublicRichEditor::make('content')
                     ->fileAttachmentsDisk('s3')
-                    ->fileAttachmentsDirectory('article')
+                    ->fileAttachmentsDirectory('articles')
                     ->fileAttachmentsVisibility('private')
                     ->required(),
                 Forms\Components\FileUpload::make('thumbnail')

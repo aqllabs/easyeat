@@ -1,6 +1,6 @@
 <article class="cursor-pointer flex max-w-xl flex-col items-start justify-between">
     <div class="rounded-xl h-52 w-full overflow-hidden shadow-md">
-        <img class="object-contain object-center" src="{{ $article->icon }}" alt="">
+        <img class="object-contain object-center" src="{{ Storage::disk('s3')->url($article->thumbnail) }}" alt="">
     </div>
     <div class="flex items-center gap-x-4 text-xs mt-4">
         <time datetime="2020-03-16" class="text-gray-500">{{ $article->created_at}}</time>
