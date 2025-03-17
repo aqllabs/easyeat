@@ -4,11 +4,11 @@
             <img class="ml-2 w-24 h-12 object-fill" src="{{ asset('/images/easyeat2.png') }}" alt="">
         </a>
     </div>
-    <div class="navbar-center hidden sm:flex">
-        <ul class="menu menu-horizontal px-1">
+    <div class="navbar-center ">
+        <ul class="menu menu-horizontal px-1 sm:flex">
             {{-- <li><a href="#features">{{ __('About Us') }}</a></li> --}}
-            <li><a href="{{ route('places.index') }}">{{ __('Explore') }}</a></li>
-            <li><a href="{{ route('map') }}">{{ __('Map') }}</a></li>
+            <li class="hidden sm:block"><a href="{{ route('places.index') }}">{{ __('Explore') }}</a></li>
+            <li class="hidden sm:block"><a href="{{ route('map') }}">{{ __('Map') }}</a></li>
             {{-- <li><a href="{{ route('shop.index') }}">{{ __('Shop') }}</a></li> --}}
             {{-- <li><a href="#pricing">{{ __('Pricing') }}</a></li> --}}
             {{-- <li><a href="#">{{ __('How It Works') }}</a></li> --}}
@@ -19,6 +19,5 @@
         </ul>
     </div>
     <div class="navbar-end">
-        {{-- <a href="{{ route('login') }}" class="btn btn-secondary">{{ __('Login') }}</a> --}}
     </div>
 </div>

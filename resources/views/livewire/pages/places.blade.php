@@ -369,65 +369,69 @@ class extends Component {
         <div class="flex-1">
             <div class="grid grid-cols-1 gap-6">
                 @foreach($venues as $venue)
-                    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
-                        <figure class="h-48 sm:h-56 sm:w-1/3">
-                            <img
-                                src="{{ $venue->thumbnail_url ? Storage::disk('s3')->url($venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
-                                alt="{{ $venue->name }}"
-                                class="w-full h-full object-cover"
-                            >
-                        </figure>
-                        <div class="card-body sm:w-2/3">
-                            <div class="flex justify-between items-start">
-                                <a href="{{ route('places.show', $venue->id) }}" class="hover:text-primary transition-colors">
-                                    <h3 class="card-title">{{ $venue->name }}</h3>
-                                </a>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                @if($venue->halalAssurance)
-                                    <div class="badge badge-primary">
-                                        {{ $venue->halalAssurance->display_name }}
-                                    </div>
-                                @endif
-                                @if($venue->dietCategories)
-                                    @foreach($venue->dietCategories as $category)
-                                        <div class="badge badge-primary">
-                                            {{ $category->display_name }}
-                                        </div>
-                                    @endforeach
-                                @endif
-
-                                @if($venue->vegetarianType)
-                                    <div class="badge badge-primary">
-                                        {{ $venue->vegetarianType->display_name }}
-                                    </div>
-                                @endif
-
-                                @if($venue->cuisines)
-                                    @foreach($venue->cuisines as $cuisine)
-                                        <div class="badge badge-primary badge-outline">
-                                            {{ $cuisine->display_name }}
-                                        </div>
-                                    @endforeach
-                                @endif
-
-                                @if($venue->price_range)
-                                    <div class="badge badge-accent badge-outline">
-                                        {{ $venue->price_range->display_name }}
-                                    </div>
-                                @endif
-                            </div>
-
-                            @if($venue->address)
-                                <div class="text-base-content/70 flex items-start gap-2">
-                                    <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                    </svg>
-                                    <p class="flex-1">{{ $venue->address }}</p>
+                    <div class="relative">
+                        <a href="{{ route('places.show', $venue->id) }}" class="absolute inset-0 z-10 sm:hidden"></a>
+                        <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
+                            <figure class="h-48 sm:h-56 sm:w-1/3">
+                                <img
+                                    src="{{ $venue->thumbnail_url ? Storage::disk('s3')->url($venue->thumbnail_url) : 'https://placehold.co/600x400' }}"
+                                    alt="{{ $venue->name }}"
+                                    class="w-full h-full object-cover"
+                                >
+                            </figure>
+                            <div class="card-body sm:w-2/3">
+                                <div class="flex justify-between items-start">
+                                    <a href="{{ route('places.show', $venue->id) }}" class="hidden sm:inline hover:text-primary transition-colors">
+                                        <h3 class="card-title">{{ $venue->name }}</h3>
+                                    </a>
+                                    <h3 class="card-title sm:hidden">{{ $venue->name }}</h3>
                                 </div>
-                            @endif
+
+                                <div class="flex flex-wrap gap-2">
+                                    @if($venue->halalAssurance)
+                                        <div class="badge badge-primary">
+                                            {{ $venue->halalAssurance->display_name }}
+                                        </div>
+                                    @endif
+                                    @if($venue->dietCategories)
+                                        @foreach($venue->dietCategories as $category)
+                                            <div class="badge badge-primary">
+                                                {{ $category->display_name }}
+                                            </div>
+                                        @endforeach
+                                    @endif
+
+                                    @if($venue->vegetarianType)
+                                        <div class="badge badge-primary">
+                                            {{ $venue->vegetarianType->display_name }}
+                                        </div>
+                                    @endif
+
+                                    @if($venue->cuisines)
+                                        @foreach($venue->cuisines as $cuisine)
+                                            <div class="badge badge-primary badge-outline">
+                                                {{ $cuisine->display_name }}
+                                            </div>
+                                        @endforeach
+                                    @endif
+
+                                    @if($venue->price_range)
+                                        <div class="badge badge-accent badge-outline">
+                                            {{ $venue->price_range->display_name }}
+                                        </div>
+                                    @endif
+                                </div>
+
+                                @if($venue->address)
+                                    <div class="text-base-content/70 flex items-start gap-2">
+                                        <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                        </svg>
+                                        <p class="flex-1">{{ $venue->address }}</p>
+                                    </div>
+                                @endif
+                            </div>
                         </div>
                     </div>
                 @endforeach
