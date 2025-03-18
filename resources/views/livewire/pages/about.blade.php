@@ -181,7 +181,7 @@ class extends Component {
         <div class="bg-white rounded-xl shadow-md p-10 border border-orange-100">
             <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Our Partners</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
-                {{-- <img src="/images/partners/hkstp.png" alt="HKSTP" class="h-36 object-contain"> --}}
+                <img src="/images/partners/halal-asos.png" alt="Halal Asosiation" class="h-36 object-contain">
                 <img src="/images/partners/fsi.png" alt="FSI" class="h-36 object-contain">
                 <img src="/images/partners/guidefong.png" alt="GuideFong" class="h-36 object-contain">
             </div>
