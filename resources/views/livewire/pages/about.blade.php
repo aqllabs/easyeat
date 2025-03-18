@@ -2,7 +2,6 @@
 
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
-use App\Models\Page;
 use App\Models\ContactResponse;
 new #[Layout('layouts.home')]
 class extends Component {
@@ -25,11 +24,6 @@ class extends Component {
         session()->flash('success', 'Thank you for your message! We will get back to you soon.');
         $this->dispatch('scroll-to-top');
     }
-
-    public function mount() {
-        $this->page = Page::where('slug', 'about-us')->first();
-    }
-
 }; ?>
 
 <div class="mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
