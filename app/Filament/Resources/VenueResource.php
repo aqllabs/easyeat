@@ -15,6 +15,7 @@ use App\Models\PriceRange;
 use App\Models\Cuisine;
 use App\Models\Venue;
 use App\Models\VenueType;
+use App\Forms\Components\PublicRichEditor;
 
 class VenueResource extends Resource
 {
@@ -64,8 +65,11 @@ class VenueResource extends Resource
                     ->visibility('private')
                     ->columnSpanFull()
                     ->multiple(),
-                Forms\Components\Textarea::make('description')
-                    ->columnSpanFull(),
+                PublicRichEditor::make('description')
+                    ->fileAttachmentsDisk('s3')
+                    ->fileAttachmentsDirectory('venues')
+                    ->fileAttachmentsVisibility('private')
+                    ->required(),
                 Forms\Components\Select::make('diet_categories')->multiple()
                     ->relationship(name: 'dietCategories', titleAttribute: 'display_name')->preload(),
                 Forms\Components\Select::make('halal_assurance_id')

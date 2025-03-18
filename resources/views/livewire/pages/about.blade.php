@@ -2,6 +2,7 @@
 
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
+use App\Models\Page;
 use App\Models\ContactResponse;
 new #[Layout('layouts.home')]
 class extends Component {
@@ -9,6 +10,7 @@ class extends Component {
     public $name;
     public $email;
     public $message;
+    public $page;
 
     public function storeContactResponse() {
         $validated = $this->validate([
@@ -22,6 +24,10 @@ class extends Component {
         
         session()->flash('success', 'Thank you for your message! We will get back to you soon.');
         $this->dispatch('scroll-to-top');
+    }
+
+    public function mount() {
+        $this->page = Page::where('slug', 'about-us')->first();
     }
 
 }; ?>
@@ -38,7 +44,7 @@ class extends Component {
         <div class="flex justify-center">
             <img src="{{ asset('/images/aboutus.png') }}" alt="EasyEat Logo" class="h-24 w-auto">
         </div>
-        <h1 class="text-5xl font-bold text-gray-800 mb-6 leading-tight">About EasyEat</h1>
+        <h1 class="text-5xl font-bold text-gray-800 mb-6 leading-tight">About Easy Eat</h1>
         <p class="text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">Hong Kong's first one-stop, user-friendly platform that helps people with dietary requirements easily locate suitable restaurants.</p>
     </div>
 
@@ -181,7 +187,7 @@ class extends Component {
         <div class="bg-white rounded-xl shadow-md p-10 border border-orange-100">
             <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Our Partners</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
-                <img src="/images/partners/hkstp.png" alt="HKSTP" class="h-36 object-contain">
+                {{-- <img src="/images/partners/hkstp.png" alt="HKSTP" class="h-36 object-contain"> --}}
                 <img src="/images/partners/fsi.png" alt="FSI" class="h-36 object-contain">
                 <img src="/images/partners/guidefong.png" alt="GuideFong" class="h-36 object-contain">
             </div>
@@ -189,7 +195,7 @@ class extends Component {
     </div>
 
     <!-- Contact Section -->
-    <div class="mb-20">
+    <div id="contact" class="mb-20">
         <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-10 shadow-md">
             <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
             <p class="text-lg text-gray-700 text-center mb-10">For inquiries about our platform or business opportunities please reach out to us at <a href="mailto:info@tryeasyeat.com" class="text-orange-500 hover:text-orange-600">info@tryeasyeat.com</a> or fill out the contact form below.</p>
@@ -243,3 +249,7 @@ class extends Component {
         });
     </script>
 </div> 
+
+{{-- <div>
+    {!! $page->content !!}
+</div> --}}

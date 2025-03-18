@@ -55,7 +55,7 @@ class extends Component {
 
     <!-- Description -->
     <div class="mb-8">
-        <p class="text-gray-700 leading-relaxed">{{ $place->description }}</p>
+        <p class="text-gray-700 leading-relaxed">{!! $place->description !!}</p>
     </div>
 
     <!-- Info Grid -->
@@ -63,8 +63,7 @@ class extends Component {
         <div class="space-y-4">
             @if($place->website)
             <div>
-                <h3 class="font-semibold">Website</h3>
-                <a href="{{ $place->website }}" class="text-blue-500 hover:underline" target="_blank">Visit Website</a>
+                <a href="{{ $place->website }}" class="text-blue-500 hover:underline" target="_blank">Website</a>
             </div>
             @endif
             <div>

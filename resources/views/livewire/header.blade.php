@@ -14,6 +14,7 @@
             {{-- <li><a href="#">{{ __('How It Works') }}</a></li> --}}
             <li><a href="{{ route('blog.index') }}">{{ __('Blog') }}</a></li>
             <li><a href="{{ route('about') }}">{{ __('About') }}</a></li>
+            <li><a href="{{ route('about') }}#contact">{{ __('Contact Us') }}</a></li>
             {{-- <li><a href="{{ route('coming-soon') }}">{{ __('Coming Soon') }}</a></li> --}}
             {{-- <li><a href="{{ route('changelog') }}">{{ __('Changelog') }}</a></li> --}}
         </ul>

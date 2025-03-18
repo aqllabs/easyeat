@@ -369,8 +369,7 @@ class extends Component {
         <div class="flex-1">
             <div class="grid grid-cols-1 gap-6">
                 @foreach($venues as $venue)
-                    <div class="relative">
-                        <a href="{{ route('places.show', $venue->id) }}" class="absolute inset-0 z-10 sm:hidden"></a>
+                    <a href="{{ route('places.show', $venue->id) }}" class="block">
                         <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow sm:card-side">
                             <figure class="h-48 sm:h-56 sm:w-1/3">
                                 <img
@@ -381,10 +380,7 @@ class extends Component {
                             </figure>
                             <div class="card-body sm:w-2/3">
                                 <div class="flex justify-between items-start">
-                                    <a href="{{ route('places.show', $venue->id) }}" class="hidden sm:inline hover:text-primary transition-colors">
-                                        <h3 class="card-title">{{ $venue->name }}</h3>
-                                    </a>
-                                    <h3 class="card-title sm:hidden">{{ $venue->name }}</h3>
+                                    <h3 class="card-title">{{ $venue->name }}</h3>
                                 </div>
 
                                 <div class="flex flex-wrap gap-2">
@@ -414,7 +410,7 @@ class extends Component {
                                             </div>
                                         @endforeach
                                     @endif
-                                    @if($venue->price_range)
+                                    @if($venue->priceRange)
                                         <div class="badge badge-accent badge-outline">
                                             {{ $venue->priceRange->display_name }}
                                         </div>
@@ -426,13 +422,13 @@ class extends Component {
                                         <svg class="w-5 h-5 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                          </svg>
+                                        </svg>
                                         <p class="flex-1">{{ $venue->address }}</p>
                                     </div>
                                 @endif
                             </div>
                         </div>
-                    </div>
+                    </a>
                 @endforeach
             </div>
             <div class="mt-6">
