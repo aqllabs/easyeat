@@ -28,7 +28,11 @@ class FoodTypeResource extends Resource
                 Forms\Components\TextInput::make('display_name')
                     ->required(),
                 Forms\Components\FileUpload::make('image')
-                    ->image(),
+                    ->image()
+                    ->disk('s3')
+                    ->directory('food_type')
+                    ->visibility('private')
+                    ->image()
             ]);
     }
 
