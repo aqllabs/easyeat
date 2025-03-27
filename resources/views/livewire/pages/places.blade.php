@@ -378,6 +378,26 @@ class extends Component {
                     @endforeach
                 </flux:select>
             </div>
+
+            <!-- Food Types -->
+            <div class="mb-6">
+                <flux:select 
+                    class="border-0 p-0"
+                    wire:model.live.debounce.500ms="filterValues.food_types" 
+                    placeholder="Select Food Types"
+                    label="Food Types"
+                    multiple
+                    searchable
+                    variant="listbox"
+                    clearable
+                >
+                    @foreach($food_types as $type)
+                        <flux:option value="{{ $type->display_name }}">
+                            {{ $type->display_name }}
+                        </flux:option>
+                    @endforeach
+                </flux:select>
+            </div>
         </div>
 
         <!-- Venue Cards -->
