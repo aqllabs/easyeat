@@ -48,6 +48,9 @@ class extends Component {
     public $selectedFoodType = '';
 
     #[Url]
+    public $noAlcohol = false;
+
+    #[Url]
     public $search = '';
 
     public $filterValues = [
@@ -59,6 +62,7 @@ class extends Component {
         'price_range' => [],
         'vegetarian_type' => [],
         'food_types' => [],
+        'no_alcohol' => false,
     ];
 
     protected function getFilterArray($string)
@@ -87,6 +91,7 @@ class extends Component {
             'price_range' => $this->getFilterArray($this->selectedPrice),
             'vegetarian_type' => $this->getFilterArray($this->selectedVegetarian),
             'food_types' => $this->getFilterArray($this->selectedFoodType),
+            'no_alcohol' => $this->noAlcohol,
         ];
     }
 
@@ -102,6 +107,7 @@ class extends Component {
             $this->selectedPrice = $this->getFilterString($this->filterValues['price_range']);
             $this->selectedVegetarian = $this->getFilterString($this->filterValues['vegetarian_type']);
             $this->selectedFoodType = $this->getFilterString($this->filterValues['food_types']);
+            $this->noAlcohol = $this->filterValues['no_alcohol'];
             $this->resetPage();
         }
     }
@@ -147,6 +153,9 @@ class extends Component {
         if (!empty($this->filterValues['food_types'])) {
             $query->whereIn('food_types', $this->filterValues['food_types']);
         }
+        if ($this->filterValues['no_alcohol']) {
+            $query->where('no_alcohol', true);
+        }
 
         return $query->paginate(15);
     }
@@ -162,6 +171,7 @@ class extends Component {
             'price_range' => [],
             'vegetarian_type' => [],
             'food_types' => [],
+            'no_alcohol' => false,
         ];
         $this->search = '';
         $this->resetPage();
@@ -174,6 +184,7 @@ class extends Component {
         $this->selectedPrice = '';
         $this->selectedVegetarian = '';
         $this->selectedFoodType = '';
+        $this->noAlcohol = false;
     }
 
     public function with()
@@ -397,6 +408,14 @@ class extends Component {
                         </flux:option>
                     @endforeach
                 </flux:select>
+            </div>
+
+            <!-- No Alcohol -->
+            <div class="mb-6">
+                <flux:checkbox
+                    wire:model.live.debounce.500ms="filterValues.no_alcohol"
+                    label="No Alcohol"
+                />
             </div>
         </div>
 

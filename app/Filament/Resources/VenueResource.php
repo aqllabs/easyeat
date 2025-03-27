@@ -82,6 +82,8 @@ class VenueResource extends Resource
                 Forms\Components\Select::make('food_types')->multiple()
                     ->relationship(name: 'foodTypes', titleAttribute: 'display_name')
                     ->preload(),
+                Forms\Components\Checkbox::make('no_alcohol')
+                    ->label('No Alcohol'),
             ]);
     }
 

@@ -62,6 +62,18 @@ class extends Component {
         <p class="text-gray-700 leading-relaxed">{!! $place->description !!}</p>
     </div>
 
+    <!-- Remarks -->
+    @if($place->remarks && count($place->remarks) > 0)
+    <div class="mb-8">
+        <h3 class="text-2xl font-semibold mb-4">Additional Information</h3>
+        <ul class="list-disc list-inside space-y-2">
+            @foreach($place->remarks as $remark)
+                <li class="text-gray-700">{{ $remark }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <!-- Info Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         <div class="space-y-4">
@@ -89,6 +101,30 @@ class extends Component {
             <div>
                 <h3 class="font-semibold">Contact:</h3>
                 <p>{{ $place->telephone }}</p>
+            </div>
+            @endif
+            @if($place->email)
+            <div>
+                <h3 class="font-semibold">Email:</h3>
+                <a href="mailto:{{ $place->email }}" class="text-blue-500 hover:underline">{{ $place->email }}</a>
+            </div>
+            @endif
+            @if($place->google_maps_url)
+            <div>
+                <h3 class="font-semibold">Google Maps:</h3>
+                <a href="{{ $place->google_maps_url }}" class="text-blue-500 hover:underline" target="_blank">View on Google Maps</a>
+            </div>
+            @endif
+            @if($place->vegetarianType)
+            <div>
+                <h3 class="font-semibold">Vegetarian Type:</h3>
+                <p>{{ $place->vegetarianType->display_name }}</p>
+            </div>
+            @endif
+            @if($place->no_alcohol)
+            <div>
+                <h3 class="font-semibold">Alcohol:</h3>
+                <p>No Alcohol Served</p>
             </div>
             @endif
             @if($place->opening_hours)

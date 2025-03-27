@@ -138,7 +138,7 @@ return [
         'key' => env('MEILISEARCH_KEY'),
         'index-settings' => [
             Venue::class => [
-                'filterableAttributes' => ['cuisines', 'area', 'city', 'diet_categories', 'halal_assurance', 'price_range', 'venue_type', 'vegetarian_type', '_geo', 'food_types'],
+                'filterableAttributes' => ['cuisines', 'area', 'city', 'diet_categories', 'halal_assurance', 'price_range', 'venue_type', 'vegetarian_type', '_geo', 'food_types', 'no_alcohol'],
                 'sortableAttributes' => ['created_at', '_geo'],
             ],
         ],

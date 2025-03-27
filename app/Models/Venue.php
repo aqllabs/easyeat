@@ -31,6 +31,7 @@ class Venue extends Model
         'venue_type',
         'halal_assurance_expiry_date',
         'vegetarian_type_id',
+        'no_alcohol',
     ];
 
     protected $casts = [
@@ -60,6 +61,7 @@ class Venue extends Model
             'thumbnail_url' => $this->thumbnail_url,
             'opening_hours' => $this->opening_hours,
             'vegetarian_type' => $this->vegetarianType?->display_name ?? null,
+            'no_alcohol' => $this->no_alcohol,
             '_geo' => [
                 'lat' => (float) $this->lat,
                 'lng' => (float) $this->lng,
