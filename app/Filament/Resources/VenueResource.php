@@ -79,6 +79,9 @@ class VenueResource extends Resource
                 Forms\Components\Select::make('vegetarian_type_id')
                     ->relationship(name: 'vegetarianType', titleAttribute: 'display_name')
                     ->preload(),
+                Forms\Components\Select::make('food_types')->multiple()
+                    ->relationship(name: 'foodTypes', titleAttribute: 'display_name')
+                    ->preload(),
             ]);
     }
 

@@ -56,6 +56,7 @@ class Venue extends Model
             'halal_assurance' => $this->halalAssurance?->display_name ?? null,
             'price_range' => $this->priceRange?->display_name ?? null,
             'venue_type' => $this->venueType?->display_name ?? null,
+            'food_types' => $this->foodTypes?->pluck('display_name')->toArray() ?? [],
             'thumbnail_url' => $this->thumbnail_url,
             'opening_hours' => $this->opening_hours,
             'vegetarian_type' => $this->vegetarianType?->display_name ?? null,
@@ -101,5 +102,10 @@ class Venue extends Model
     public function vegetarianType()
     {
         return $this->belongsTo(VegetarianType::class);
+    }
+
+    public function foodTypes()
+    {
+        return $this->belongsToMany(FoodType::class);
     }
 }

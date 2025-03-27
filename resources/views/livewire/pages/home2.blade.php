@@ -16,6 +16,8 @@ use App\Models\PriceRange;
 use App\Models\Area;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
+use App\Models\FoodType;
+
 new #[Layout('layouts.home')]
 class extends Component 
 {
@@ -117,6 +119,24 @@ class extends Component
             });
     }
 
+    public function getFoodTypeCounts()
+    {
+        return DB::table('venues')
+            ->join('food_type_venue', 'venues.id', '=', 'food_type_venue.venue_id')
+            ->join('food_types', 'food_type_venue.food_type_id', '=', 'food_types.id')
+            ->select('food_types.display_name', 'food_types.image', DB::raw('count(DISTINCT venues.id) as count'))
+            ->groupBy('food_types.id', 'food_types.display_name', 'food_types.image')
+            ->orderByDesc('count')
+            ->get()
+            ->map(function($item) {
+                return [
+                    'name' => $item->display_name,
+                    'count' => $item->count . '+',
+                    'image' => $item->image,
+                ];
+            });
+    }
+
     public function with()
     {
         return [
@@ -124,6 +144,7 @@ class extends Component
             'location_counts' => cache()->remember('location_counts', now()->addHour(), fn() => $this->getLocationCounts()),
             'cuisine_counts' => cache()->remember('cuisine_counts', now()->addHour(), fn() => $this->getCuisineCounts()),
             'venue_type_counts' => cache()->remember('venue_type_counts', now()->addHour(), fn() => $this->getVenueTypeCounts()),
+            'food_type_counts' => cache()->remember('food_type_counts', now()->addHour(), fn() => $this->getFoodTypeCounts()),
         ];
     }
 }
@@ -301,6 +322,42 @@ class extends Component
                                 <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
                                     <span class="text-2xl font-bold mb-1">{{ $venue_type['count'] }}</span>
                                     <span class="font-semibold text-center px-2">{{ $venue_type['name'] }}</span>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+                
+                <!-- Mobile-friendly carousel controls -->
+                <div class="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between z-10 px-2 md:px-5">
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❮</button>
+                    <button class="btn btn-circle btn-sm md:btn-md pointer-events-auto">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food Types Section -->
+        <section class="mb-8 md:mb-16">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl text-gray-600">Search by Food Type</h2>
+                <a href="{{ route('places.index', ['filter' => 'food_type']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
+                    See More →
+                </a>
+            </div>
+            <div class="carousel w-full relative">
+                <div class="carousel carousel-center w-full p-2 md:p-4 space-x-3 md:space-x-4 rounded-box">
+                    @foreach ($food_type_counts as $foodType)
+                        <div id="food-type-{{ $loop->index }}" class="carousel-item w-48 md:w-72">
+                            <a href="{{ route('places.index', ['food_type' => $foodType['name']]) }}" 
+                               class="card relative h-36 md:h-48 w-full overflow-hidden">
+                                @if($foodType['image'])
+                                    <img loading="lazy" src="{{ Storage::disk("s3")->url($foodType['image']) }}" 
+                                         alt="{{ $foodType['name'] }}" 
+                                         class="absolute inset-0 w-full h-full object-cover">
+                                @endif
+                                <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
+                                    <span class="text-2xl font-bold mb-1">{{ $foodType['count'] }}</span>
+                                    <span class="font-semibold text-center px-2">{{ $foodType['name'] }}</span>
                                 </div>
                             </a>
                         </div>

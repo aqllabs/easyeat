@@ -16,6 +16,8 @@ use Illuminate\Database\Eloquent\Builder;
 use Livewire\WithPagination;
 use App\Models\VegetarianType;
 use Illuminate\Support\Facades\Storage;
+use App\Models\FoodType;
+
 new #[Layout('layouts.home')]
 class extends Component {
     use WithPagination;
@@ -42,6 +44,9 @@ class extends Component {
     #[Url(as: 'vegetarian')]
     public $selectedVegetarian = '';
 
+    #[Url(as: 'food_type')]
+    public $selectedFoodType = '';
+
     #[Url]
     public $search = '';
 
@@ -53,6 +58,7 @@ class extends Component {
         'cuisines' => [],
         'price_range' => [],
         'vegetarian_type' => [],
+        'food_types' => [],
     ];
 
     protected function getFilterArray($string)
@@ -80,6 +86,7 @@ class extends Component {
             'venue_type' => $this->getFilterArray($this->selectedVenue),
             'price_range' => $this->getFilterArray($this->selectedPrice),
             'vegetarian_type' => $this->getFilterArray($this->selectedVegetarian),
+            'food_types' => $this->getFilterArray($this->selectedFoodType),
         ];
     }
 
@@ -94,6 +101,7 @@ class extends Component {
             $this->selectedVenue = $this->getFilterString($this->filterValues['venue_type']);
             $this->selectedPrice = $this->getFilterString($this->filterValues['price_range']);
             $this->selectedVegetarian = $this->getFilterString($this->filterValues['vegetarian_type']);
+            $this->selectedFoodType = $this->getFilterString($this->filterValues['food_types']);
             $this->resetPage();
         }
     }
@@ -110,6 +118,7 @@ class extends Component {
                     'priceRange:id,display_name',
                     'area:id,display_name',
                     'vegetarianType:id,display_name',
+                    'foodTypes:id,display_name',
                 ])
             );
 
@@ -135,6 +144,9 @@ class extends Component {
         if (!empty($this->filterValues['vegetarian_type'])) {
             $query->whereIn('vegetarian_type', $this->filterValues['vegetarian_type']);
         }
+        if (!empty($this->filterValues['food_types'])) {
+            $query->whereIn('food_types', $this->filterValues['food_types']);
+        }
 
         return $query->paginate(15);
     }
@@ -149,6 +161,7 @@ class extends Component {
             'cuisines' => [],
             'price_range' => [],
             'vegetarian_type' => [],
+            'food_types' => [],
         ];
         $this->search = '';
         $this->resetPage();
@@ -160,6 +173,7 @@ class extends Component {
         $this->selectedVenue = '';
         $this->selectedPrice = '';
         $this->selectedVegetarian = '';
+        $this->selectedFoodType = '';
     }
 
     public function with()
@@ -173,6 +187,7 @@ class extends Component {
             'cuisines' => cache()->remember('cuisines', now()->addHour(), fn() => Cuisine::all(['id', 'display_name'])),
             'price_range' => cache()->remember('price_range', now()->addHour(), fn() => PriceRange::all(['id', 'display_name'])),
             'vegetarian_type' => cache()->remember('vegetarian_type', now()->addHour(), fn() => VegetarianType::all(['id', 'display_name'])),
+            'food_types' => cache()->remember('food_types', now()->addHour(), fn() => FoodType::all(['id', 'display_name'])),
         ];
     }
 }; ?>

@@ -2,6 +2,7 @@
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 use App\Models\Venue;
+use App\Models\FoodType;
 use Illuminate\Support\Facades\Storage;
 
 new #[Layout('layouts.home')] 
@@ -10,7 +11,7 @@ class extends Component {
 
     public function mount($id)
     {
-        $this->place = Venue::with(['cuisines', 'dietCategories', 'halalAssurance', 'priceRange', 'venueType'])->findOrFail($id);
+        $this->place = Venue::with(['cuisines', 'dietCategories', 'halalAssurance', 'priceRange', 'venueType', 'foodTypes'])->findOrFail($id);
     }
 }; ?>
 
@@ -50,6 +51,9 @@ class extends Component {
         @endforeach
         @foreach($place->dietCategories as $category)
             <span class="px-3 py-1 bg-green-100 rounded-full text-sm">{{ $category->display_name ?? '' }}</span>
+        @endforeach
+        @foreach($place->foodTypes as $foodType)
+            <span class="px-3 py-1 bg-orange-100 rounded-full text-sm">{{ $foodType->display_name ?? '' }}</span>
         @endforeach
     </div>
 
