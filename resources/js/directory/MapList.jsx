@@ -125,6 +125,16 @@ function StickyHeader({ onFilterClick }) {
             attribute: "vegetarian_type",
             operator: "or",
         });
+    const { items: venueTypeItems, refine: refineVenueType } =
+        useRefinementList({
+            attribute: "venue_type",
+            operator: "or",
+        });
+    const { items: priceRangeItems, refine: refinePriceRange } =
+        useRefinementList({
+            attribute: "price_range",
+            operator: "or",
+        });
 
     // Add this hook
     const { refine: clearAllRefinements } = useClearRefinements();
@@ -138,6 +148,10 @@ function StickyHeader({ onFilterClick }) {
         halalItems?.filter((item) => item.isRefined).length || 0;
     const selectedVegetarian =
         vegetarianItems?.filter((item) => item.isRefined).length || 0;
+    const selectedVenueType =
+        venueTypeItems?.filter((item) => item.isRefined).length || 0;
+    const selectedPriceRange =
+        priceRangeItems?.filter((item) => item.isRefined).length || 0;
 
     const setClickedId = useSetAtom(clickedIdAtom);
     const setHoveredId = useSetAtom(hoveredIdAtom);
@@ -150,7 +164,12 @@ function StickyHeader({ onFilterClick }) {
 
     // Calculate total selected filters
     const totalSelectedFilters =
-        selectedCuisines + selectedDiets + selectedHalal + selectedVegetarian;
+        selectedCuisines +
+        selectedDiets +
+        selectedHalal +
+        selectedVegetarian +
+        selectedVenueType +
+        selectedPriceRange;
 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -319,6 +338,82 @@ function StickyHeader({ onFilterClick }) {
                         </div>
                     </div>
                 </div>
+
+                {/* Venue Type Filter */}
+                <div className="dropdown dropdown-end">
+                    <label
+                        tabIndex={0}
+                        className={`btn btn-outline btn-sm m-1 ${
+                            selectedVenueType > 0 ? "btn-secondary" : ""
+                        }`}
+                    >
+                        Venue Type{" "}
+                        {selectedVenueType > 0 && (
+                            <span className="badge badge-sm ml-2">
+                                {selectedVenueType}
+                            </span>
+                        )}
+                    </label>
+                    <div
+                        tabIndex={0}
+                        className="dropdown-content z-[100] card card-compact w-64 p-2 shadow-lg bg-base-100 text-base-content mt-2 left-0 border border-base-300"
+                    >
+                        <div className="card-body">
+                            <h3 className="card-title">Select Venue Type</h3>
+                            <RefinementList
+                                sortBy={["count:desc"]}
+                                operator="or"
+                                attribute="venue_type"
+                                classNames={{
+                                    list: "w-full space-y-2 overflow-y-auto max-h-64",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                    count: "badge badge-sm ml-auto",
+                                    checkbox: "checkbox checkbox-sm",
+                                    showMore: "btn btn-sm btn-primary",
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Price Range Filter */}
+                <div className="dropdown dropdown-end">
+                    <label
+                        tabIndex={0}
+                        className={`btn btn-outline btn-sm m-1 ${
+                            selectedPriceRange > 0 ? "btn-secondary" : ""
+                        }`}
+                    >
+                        Price Range{" "}
+                        {selectedPriceRange > 0 && (
+                            <span className="badge badge-sm ml-2">
+                                {selectedPriceRange}
+                            </span>
+                        )}
+                    </label>
+                    <div
+                        tabIndex={0}
+                        className="dropdown-content z-[100] card card-compact w-64 p-2 shadow-lg bg-base-100 text-base-content mt-2 left-0 border border-base-300"
+                    >
+                        <div className="card-body">
+                            <h3 className="card-title">Select Price Range</h3>
+                            <RefinementList
+                                sortBy={["count:desc"]}
+                                operator="or"
+                                attribute="price_range"
+                                classNames={{
+                                    list: "w-full space-y-2 overflow-y-auto max-h-64",
+                                    item: "hover:bg-base-200 rounded-sm",
+                                    label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                    count: "badge badge-sm ml-auto",
+                                    checkbox: "checkbox checkbox-sm",
+                                    showMore: "btn btn-sm btn-primary",
+                                }}
+                            />
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="flex-1 md:hidden">
                 <button
@@ -436,6 +531,84 @@ function StickyHeader({ onFilterClick }) {
                                         sortBy={["count:desc"]}
                                         operator="or"
                                         attribute="halal_assurance"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Vegetarian Type Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Vegetarian Type
+                                        {selectedVegetarian > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedVegetarian}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="vegetarian_type"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Venue Type Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Venue Type
+                                        {selectedVenueType > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedVenueType}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="venue_type"
+                                        classNames={{
+                                            list: "w-full space-y-2",
+                                            item: "hover:bg-base-300 rounded-sm",
+                                            label: "label cursor-pointer flex items-center gap-2 w-full p-2",
+                                            count: "badge badge-sm ml-auto",
+                                            checkbox: "checkbox checkbox-sm",
+                                        }}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Price Range Filter */}
+                            <div className="card bg-base-200">
+                                <div className="card-body p-4">
+                                    <h3 className="card-title text-base">
+                                        Price Range
+                                        {selectedPriceRange > 0 && (
+                                            <span className="badge badge-primary badge-sm">
+                                                {selectedPriceRange}
+                                            </span>
+                                        )}
+                                    </h3>
+                                    <RefinementList
+                                        sortBy={["count:desc"]}
+                                        operator="or"
+                                        attribute="price_range"
                                         classNames={{
                                             list: "w-full space-y-2",
                                             item: "hover:bg-base-300 rounded-sm",
