@@ -1,4 +1,5 @@
 import { useGeoSearch } from "react-instantsearch";
+import "leaflet/dist/leaflet.css";
 import {
     MapContainer,
     TileLayer,
