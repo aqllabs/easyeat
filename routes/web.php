@@ -7,23 +7,18 @@ use App\Http\Controllers\ChangelogController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OgImageController;
-use App\Http\Controllers\Payments\LemonSqueezyController;
-use App\Http\Controllers\Payments\PaddleController;
 use App\Http\Controllers\Payments\StripeController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Middleware\Subscribed;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
-use App\Livewire\RestaurantDirectory;
-use App\Livewire\FeedbackPage;
 
-//Route::get('/', [HomeController::class, 'index']);
+// Route::get('/', [HomeController::class, 'index']);
 Volt::route('/', 'pages.home2')->name('home');
 Volt::route('feedback', 'feedbackpage')->name('feedback');
 
 Route::get('sitemap', [SitemapController::class, 'index'])->name('sitemap');
 Route::get('changelog', [ChangelogController::class, 'index'])->name('changelog');
-
 
 Volt::route('map', 'pages.map')->name('map');
 Volt::route('places/{id}', 'pages.place')->name('places.show');
@@ -34,6 +29,8 @@ Volt::route('locations', 'pages.locations')->name('locations.index');
 Volt::route('dietary', 'pages.dietary')->name('dietary.index');
 Volt::route('venue-types', 'pages.venue-types')->name('venue-types.index');
 Volt::route('about', 'pages.about')->name('about');
+Volt::route('business', 'pages.business')->name('business');
+Volt::route('products', 'pages.products')->name('products');
 
 // Demo Coming Soon Page
 Route::get('coming-soon', function () {
@@ -88,4 +85,4 @@ Route::middleware([
     });
 });
 
-require_once __DIR__ . '/emails.php';
+require_once __DIR__.'/emails.php';

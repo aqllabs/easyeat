@@ -1,10 +1,12 @@
 <?php
 
-use Livewire\Volt\Component;
+use Illuminate\Support\Facades\DB;
 use Livewire\Attributes\Layout;
+use Livewire\Volt\Component;
 
 new #[Layout('layouts.home')]
-class extends Component {
+class extends Component
+{
     public function getCuisineCounts()
     {
         return DB::table('venues')
@@ -14,10 +16,10 @@ class extends Component {
             ->groupBy('cuisines.id', 'cuisines.display_name', 'cuisines.image')
             ->orderByDesc('count')
             ->get()
-            ->map(function($item) {
+            ->map(function ($item) {
                 return [
                     'name' => $item->display_name,
-                    'count' => $item->count . '+',
+                    'count' => $item->count.'+',
                     'image' => $item->image,
                 ];
             });
@@ -26,31 +28,36 @@ class extends Component {
     public function with()
     {
         return [
-            'cuisine_counts' => cache()->remember('cuisine_counts', now()->addHour(), fn() => $this->getCuisineCounts()),
+            'cuisine_counts' => cache()->remember('cuisine_counts', now()->addHour(), fn () => $this->getCuisineCounts()),
         ];
     }
 }; ?>
+
 
 <div class="mt-8">
     <section class="mb-16">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl text-gray-600">Explore Cuisines</h2>
-            <a href="{{ route('places.index', ['filter' => 'cuisines']) }}" class="text-orange-500 hover:text-orange-600 font-medium">
-                See More →
-            </a>
+            <a href="{{ route("places.index", ["filter" => "cuisines"]) }}" class="text-orange-500 hover:text-orange-600 font-medium">See More →</a>
         </div>
         <div class="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
             @foreach ($cuisine_counts as $cuisine)
                 <div class="card relative h-36 md:h-48 w-full overflow-hidden">
-                    <a href="{{ route('places.index', ['cuisines' => $cuisine['name']]) }}">
-                        @if($cuisine['image'])
-                            <img loading="lazy" src="{{ Storage::disk("s3")->url($cuisine['image']) }}" 
-                                 alt="{{ $cuisine['name'] }}" 
-                                 class="absolute inset-0 w-full h-full object-cover">
+                    <a href="{{ route("places.index", ["cuisines" => $cuisine["name"]]) }}">
+                        @if ($cuisine["image"])
+                            <img
+                                loading="lazy"
+                                src="{{ Storage::disk("s3")->url($cuisine["image"]) }}"
+                                alt="{{ $cuisine["name"] }}"
+                                class="absolute inset-0 w-full h-full object-cover"
+                            />
                         @endif
-                        <div class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors">
-                            <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $cuisine['count'] }}</span>
-                            <span class="font-semibold text-center px-2 pointer-events-none">{{ $cuisine['name'] }}</span>
+
+                        <div
+                            class="absolute inset-0 flex flex-col items-center justify-center text-white bg-gradient-to-br from-orange-400/60 to-orange-500/60 hover:from-orange-500/70 hover:to-orange-600/70 transition-colors"
+                        >
+                            <span class="text-2xl font-bold mb-1 pointer-events-none">{{ $cuisine["count"] }}</span>
+                            <span class="font-semibold text-center px-2 pointer-events-none">{{ $cuisine["name"] }}</span>
                         </div>
                     </a>
                 </div>

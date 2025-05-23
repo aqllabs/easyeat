@@ -67,8 +67,8 @@
     {{ $slot }}
 </div>
 
-{{--<livewire:footer/>--}}
-{{--<livewire:copyright/>--}}
+<livewire:footer/>
+<livewire:copyright/>   
 
 @livewireScripts
 @fluxScripts

@@ -32,5 +32,9 @@ class DatabaseSeeder extends Seeder
         $this->call(VenuesSeeder2::class);
         $this->call(CuisineVenueSeeder::class);
         $this->call(DietCategoryVenueSeeder::class);
+        
+        // New food product related seeders
+        $this->call(ProductTypeSeeder::class);
+        $this->call(DietaryRequirementSeeder::class);
     }
 }
