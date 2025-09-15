@@ -16,10 +16,10 @@
         </ul>
     </div>
     <div class="navbar-end px-4">
-        <ul class="menu menu-horizontal px-1 flex justify-center space-x-1 hidden md:flex">
+        {{-- <ul class="menu menu-horizontal px-1 flex justify-center space-x-1 hidden md:flex">
             <li><a href="{{ route("login") }}" class="btn btn-primary">{{ __("Login") }}</a></li>
             <li><a href="{{ route("register") }}" class="btn btn-secondary">{{ __("Register") }}</a></li>
-        </ul>
+        </ul> --}}
         <flux:dropdown class="md:hidden">
             <flux:button icon-trailing="bars-3" />
 
