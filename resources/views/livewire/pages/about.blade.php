@@ -203,14 +203,14 @@ class extends Component {
                     <a href="#" 
                        target="_blank" 
                        class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/pearl.jpg') }}" 
+                        <img src="{{ asset('/images/media-logos/pearl.jpeg') }}" 
                              alt="Pearl" 
                              class="h-28 w-full object-contain opacity-90 hover:opacity-100">
                     </a>
                     <a href="#" 
                        target="_blank" 
                        class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                        <img src="{{ asset('/images/media-logos/tedx.jpg') }}" 
+                        <img src="{{ asset('/images/media-logos/tedx.jpeg') }}" 
                              alt="TedX" 
                              class="h-28 w-ful
                              l object-contain opacity-90 hover:opacity-100">
