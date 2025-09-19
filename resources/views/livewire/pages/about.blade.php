@@ -153,24 +153,38 @@ class extends Component {
                     </a>
 
                 </div>
-                <div class="grid grid-cols-4 gap-8 mb-12">
-                    <div class="col-span-4 md:col-span-2 md:col-start-2 flex justify-center gap-8">
-                        <a href="https://www.straitstimes.com/asia/east-asia/hong-kong-seeks-to-expand-halal-food-options-to-draw-more-muslim-tourists" 
-                           target="_blank" 
-                           class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                            <img src="{{ asset('/images/media-logos/straits.png') }}" 
-                                 alt="Straits Times" 
-                                 class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                        </a>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                    <a href="https://www.straitstimes.com/asia/east-asia/hong-kong-seeks-to-expand-halal-food-options-to-draw-more-muslim-tourists" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/straits.png') }}" 
+                             alt="Straits Times" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
 
-                        <a href="https://sassyhongkong.com/halal-restaurants-in-hong-kong-eat-drink/" 
-                           target="_blank" 
-                           class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
-                            <img src="{{ asset('/images/media-logos/sassy.png') }}" 
-                                 alt="Sassy Hong Kong" 
-                                 class="h-28 w-full object-contain opacity-90 hover:opacity-100">
-                        </a>
-                    </div>
+                    <a href="https://sassyhongkong.com/halal-restaurants-in-hong-kong-eat-drink/" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/sassy.png') }}" 
+                             alt="Sassy Hong Kong" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
+
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/empoweru.png') }}" 
+                             alt="EmpowerU" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
+
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/phoenix.png') }}" 
+                             alt="Phoenix" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
                 </div>
             </div>
         </div>

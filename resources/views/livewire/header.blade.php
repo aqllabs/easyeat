@@ -7,12 +7,10 @@
     <div class="navbar-center hidden md:flex justify-center flex-grow">
         <ul class="menu menu-horizontal px-1 flex justify-center">
             <li><a href="{{ route("places.index") }}">{{ __("Explore") }}</a></li>
-            <li><a href="{{ route("shop.index") }}">{{ __("Shop") }}</a></li>
             <li><a href="{{ route("map") }}">{{ __("Map") }}</a></li>
             <li><a href="{{ route("blog.index") }}">{{ __("Blog") }}</a></li>
             <li><a href="{{ route("about") }}">{{ __("About") }}</a></li>
             <li><a href="{{ route("about") }}#contact">{{ __("Contact Us") }}</a></li>
-            <li><a href="{{ route("business") }}">{{ __("Business") }}</a></li>
         </ul>
     </div>
     <div class="navbar-end px-4">
@@ -25,12 +23,10 @@
 
             <flux:menu>
                 <flux:menu.item><a href="{{ route("places.index") }}">{{ __("Explore") }}</a></flux:menu.item>
-                <flux:menu.item><a href="{{ route("shop.index") }}">{{ __("Shop") }}</a></flux:menu.item>
                 <flux:menu.item><a href="{{ route("map") }}">{{ __("Map") }}</a></flux:menu.item>
                 <flux:menu.item><a href="{{ route("blog.index") }}">{{ __("Blog") }}</a></flux:menu.item>
                 <flux:menu.item><a href="{{ route("about") }}">{{ __("About") }}</a></flux:menu.item>
                 <flux:menu.item><a href="{{ route("about") }}#contact">{{ __("Contact Us") }}</a></flux:menu.item>
-                <flux:menu.item><a href="{{ route("business") }}">{{ __("Business") }}</a></flux:menu.item>
             </flux:menu>
         </flux:dropdown>
     </div>
