@@ -113,7 +113,7 @@ class extends Component {
             <!-- Media Coverage Section -->
             <div class="space-y-8">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-6">Featured In</h3>
-                
+                eeq
                 <!-- Major Media Logos -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
                     <!-- RTHK -->
@@ -185,7 +185,38 @@ class extends Component {
                              alt="Phoenix" 
                              class="h-28 w-full object-contain opacity-90 hover:opacity-100">
                     </a>
-                </div>
+
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/beatasia.jpg') }}" 
+                             alt="Beat Asia" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
+
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/vegfoodasia.jpg') }}" 
+                             alt="VegFoodAsia" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/pearl.jpg') }}" 
+                             alt="Pearl" 
+                             class="h-28 w-full object-contain opacity-90 hover:opacity-100">
+                    </a>
+                    <a href="#" 
+                       target="_blank" 
+                       class="group p-4 hover:bg-orange-50 rounded-lg transition duration-300">
+                        <img src="{{ asset('/images/media-logos/tedx.jpg') }}" 
+                             alt="TedX" 
+                             class="h-28 w-ful
+                             l object-contain opacity-90 hover:opacity-100">
+                    </a>
+                </div> 
             </div>
         </div>
     </div>
