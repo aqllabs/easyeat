@@ -113,7 +113,6 @@ class extends Component {
             <!-- Media Coverage Section -->
             <div class="space-y-8">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-6">Featured In</h3>
-                eeq
                 <!-- Major Media Logos -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
                     <!-- RTHK -->
