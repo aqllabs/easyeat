@@ -22,17 +22,10 @@
                         <span class="text-base font-medium">/{{ $plan['interval'] }}</span>
                     @endif
                 </p>
-                @if(isset($plan['checkout']) && $plan['checkout'])
-                    <x-paddle-button :checkout="$plan['checkout']"
-                                     class="mb-6 btn btn-secondary btn-wide text-center mx-auto flex">
-                        {{ __('Pay') }}
-                    </x-paddle-button>
-                @else
-                    <a href="{{ route('register') }}"
-                       class="mb-6 btn btn-secondary btn-wide text-center mx-auto flex">
-                        {{ __('Choose Plan') }}
-                    </a>
-                @endif
+                <a href="{{ route('register') }}"
+                   class="mb-6 btn btn-secondary btn-wide text-center mx-auto flex">
+                    {{ __('Choose Plan') }}
+                </a>
                 <p class="text-sm mb-4">*{{ __(':days Days Free Trial', ['days' => 7]) }}</p>
                 <ul>
                     @foreach($plan['features'] as $feature)
